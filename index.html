@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denkenhaus – Escola de Idiomas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── NAVEGAÇÃO ── -->
+<nav>
+  <a class="nav-logo" onclick="goHome()">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+      <path d="M18 3L33 12.5V33H3V12.5L18 3Z" stroke="#f0ead8" stroke-width="1.8" fill="none"/>
+      <ellipse cx="18" cy="22" rx="9" ry="7" stroke="#f0ead8" stroke-width="1.5" fill="none"/>
+      <path d="M13 20 Q15.5 17 18 20 Q20.5 23 23 20" stroke="#f0ead8" stroke-width="1.3" fill="none"/>
+      <line x1="18" y1="20" x2="18" y2="15" stroke="#f0ead8" stroke-width="1.3"/>
+    </svg>
+    <span class="nav-logo-text">DENKENHAUS</span>
+  </a>
+  <div class="nav-actions">
+    <button class="btn-ghost" onclick="openAuth('login')">Entrar</button>
+    <button class="btn-primary" onclick="openAuth('register')">Cadastrar-se</button>
+  </div>
+</nav>
+
+<!-- ══ HOME ══ -->
+<div class="page active" id="homePage">
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✦ Escola de Idiomas Premium</div>
+      <h1>A casa onde o<br><em>pensamento</em><br>encontra a língua.</h1>
+      <p>Aprenda idiomas com método estruturado, trilha gamificada e uma progressão construída para resultados reais.</p>
+      <div class="hero-btns">
+        <button class="btn-primary btn-lg" onclick="document.getElementById('idiomas').scrollIntoView({behavior:'smooth'})">Explorar idiomas</button>
+        <button class="btn-ghost btn-lg" onclick="openAuth('register')">Começar grátis</button>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-number">8</div><div class="stat-label">Idiomas disponíveis</div></div>
+        <div><div class="stat-number">5</div><div class="stat-label">Níveis por idioma</div></div>
+        <div><div class="stat-number">300</div><div class="stat-label">Aulas no acervo</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="idiomas">
+    <div class="reveal">
+      <span class="section-tag">Nossos idiomas</span>
+      <h2 class="section-title">Escolha seu idioma<br>e comece hoje</h2>
+      <p class="section-sub">Cada idioma tem 5 níveis (A1–C1) com 60 aulas cada — trilha gamificada estilo Duolingo.</p>
+    </div>
+    <div class="languages-grid" id="langGrid"></div>
+  </section>
+
+  <section class="features-section">
+    <div class="reveal">
+      <span class="section-tag" style="color:var(--gold)">Metodologia</span>
+      <h2 class="section-title" style="color:var(--cream)">Por que o Denkenhaus<br>é diferente?</h2>
+      <p class="section-sub" style="color:var(--text-light)">Rigor acadêmico + experiência gamificada para você aprender mais e desistir menos.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card reveal"><div class="feat-icon">🎯</div><div class="feat-title">Trilha gamificada</div><div class="feat-desc">60 aulas por nível em trilha visual. Avance lição a lição e acompanhe seu progresso em tempo real.</div></div>
+      <div class="feat-card reveal"><div class="feat-icon">🧠</div><div class="feat-title">Método CEFR</div><div class="feat-desc">Currículo baseado no Quadro Europeu com progressão de A1 a C1, garantindo avanço com confiança.</div></div>
+      <div class="feat-card reveal"><div class="feat-icon">🌍</div><div class="feat-title">Contexto cultural</div><div class="feat-desc">Além da gramática, você aprende cultura, humor e nuances que só falantes nativos conhecem.</div></div>
+      <div class="feat-card reveal"><div class="feat-icon">📊</div><div class="feat-title">Progresso visível</div><div class="feat-desc">Barra de progresso, checkpoints de revisão a cada 15 aulas e certificados ao concluir módulos.</div></div>
+      <div class="feat-card reveal"><div class="feat-icon">⚡</div><div class="feat-title">No seu ritmo</div><div class="feat-desc">Estude quando e onde quiser, 24h por dia em qualquer dispositivo.</div></div>
+      <div class="feat-card reveal"><div class="feat-icon">👥</div><div class="feat-title">Comunidade ativa</div><div class="feat-desc">Pratique com alunos do mundo todo e participe de conversações ao vivo.</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">DENKENHAUS</div>
+    <div class="footer-copy">© 2026 Denkenhaus. Todos os direitos reservados.</div>
+  </footer>
+</div>
+
+<!-- ══ COURSE PAGE ══ -->
+<div class="page" id="coursePage">
+  <div class="course-topbar">
+    <button class="back-btn" onclick="goHome()">← Voltar</button>
+    <span class="course-flag" id="cFlag"></span>
+    <div>
+      <div class="course-lang-name" id="cName"></div>
+      <div class="course-lang-sub" id="cSub"></div>
+    </div>
+  </div>
+  <div class="level-tabs-wrap" id="levelTabsWrap"></div>
+  <div id="pathArea"></div>
+</div>
+
+<!-- ══ LESSON PAGE ══ -->
+<div class="page" id="lessonPage">
+  <div class="lesson-topbar">
+    <button class="lesson-back-btn" onclick="backToCourse()">← Voltar à trilha</button>
+    <div class="lesson-topbar-info">
+      <span id="lessonTopFlag" style="font-size:1.5rem"></span>
+      <span class="lesson-topbar-title" id="lessonTopTitle"></span>
+    </div>
+    <span class="lesson-level-badge" id="lessonTopBadge"></span>
+  </div>
+  <div class="lesson-wrap" id="lessonContentArea"></div>
+</div>
+
+<!-- ══ POPUP RESUMO ══ -->
+<div class="lp-overlay" id="lpOverlay">
+  <div class="lp-card">
+    <div class="lp-head">
+      <div class="lp-icon" id="lpIcon"></div>
+      <div>
+        <div class="lp-title" id="lpTitle"></div>
+        <div class="lp-meta" id="lpMeta"></div>
+      </div>
+    </div>
+    <div class="lp-body">
+      <div class="lp-desc" id="lpDesc"></div>
+      <div class="lp-skills" id="lpSkills"></div>
+    </div>
+    <div class="lp-actions">
+      <button class="btn-cancel2" onclick="closeLP()">Fechar</button>
+      <button class="btn-start" onclick="doStart()">Iniciar aula ▶</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ AUTH MODAL ══ -->
+<div class="modal-overlay" id="authModal">
+  <div class="auth-card">
+    <button class="modal-close" onclick="closeAuth()">×</button>
+    <h2 id="authTitle">Bem-vindo</h2>
+    <p class="auth-sub" id="authSub"></p>
+    <div class="m-tabs">
+      <button class="m-tab active" id="mTabL" onclick="switchTab('login')">Entrar</button>
+      <button class="m-tab" id="mTabR" onclick="switchTab('register')">Cadastrar</button>
+    </div>
+    <div class="t-panel active" id="tpL">
+      <div class="f-group"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
+      <div class="f-group"><label>Senha</label><input type="password" placeholder="••••••••"></div>
+      <button class="btn-primary">Entrar na minha conta</button>
+    </div>
+    <div class="t-panel" id="tpR">
+      <div class="f-group"><label>Nome</label><input type="text" placeholder="Seu nome completo"></div>
+      <div class="f-group"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
+      <div class="f-group"><label>Senha</label><input type="password" placeholder="Mínimo 8 caracteres"></div>
+      <div class="f-group"><label>Confirmar senha</label><input type="password" placeholder="Repita a senha"></div>
+      <button class="btn-primary">Criar conta gratuita</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
