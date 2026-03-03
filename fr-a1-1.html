@@ -1,0 +1,244 @@
+<!-- Francês A1 — Aula 1: Se présenter
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="fr1.png" alt="En classe"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="fr1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 1 — En classe (se présenter)</div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Bonjour ! Comment tu t'appelles ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Yoko</span><span class="dialog-text">Yoko. Et toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Moi, je m'appelle Camille.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Clémence</span><span class="dialog-text">Je m'appelle Clémence. Et vous ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Yoko</span><span class="dialog-text">Moi, c'est Yoko.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Vous parlez quelles langues ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Clémence</span><span class="dialog-text">Je parle français et anglais.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Yoko</span><span class="dialog-text">Je parle japonais et un peu français.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="fr1,.png" alt="Épeler son prénom"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="fr1,1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 2 — Épeler son prénom</div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Pardon, comment ça s'écrit ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">H-U-G-O. Hugo, comme Hugo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Et toi ? Comment tu t'appelles ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Karine. K-A-R-I-N-E.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Igor. I-G-O-R.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Merci !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">De rien.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="fr1,2.png" alt="Cocktail international"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="fr1,2.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 3 — Cocktail international (nationalité)</div>
+          <div class="dialog-line"><span class="dialog-speaker">Alexandra</span><span class="dialog-text">Bonjour, je m'appelle Alexandra Rainer. Je suis grecque.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jim</span><span class="dialog-text">Enchanté. Jim O'Connor. Je suis américain.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Moi, c'est Mei Wang. Je suis chinoise.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Alexandra</span><span class="dialog-text">Vous parlez quelles langues ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jim</span><span class="dialog-text">Je parle anglais et un peu français.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je parle chinois et anglais.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Alexandra</span><span class="dialog-text">Moi, je parle grec et français.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+      <tr><td class="fr-word">Bonjour</td><td>Olá / Bom dia</td><td class="fr-example">Bonjour, je m'appelle Ana.</td></tr>
+      <tr><td class="fr-word">Je m'appelle…</td><td>Eu me chamo…</td><td class="fr-example">Je m'appelle Camille.</td></tr>
+      <tr><td class="fr-word">Moi, c'est…</td><td>Eu sou… (informal)</td><td class="fr-example">Moi, c'est Yoko.</td></tr>
+      <tr><td class="fr-word">Comment tu t'appelles ?</td><td>Como você se chama?</td><td class="fr-example">Comment tu t'appelles ?</td></tr>
+      <tr><td class="fr-word">Et toi ? / Et vous ?</td><td>E você? / E o(a) sr(a)?</td><td class="fr-example">Moi, c'est Paul. Et toi ?</td></tr>
+      <tr><td class="fr-word">Enchanté(e)</td><td>Prazer / Encantado(a)</td><td class="fr-example">Enchanté, je suis Jim.</td></tr>
+      <tr><td class="fr-word">Pardon</td><td>Desculpe / Com licença</td><td class="fr-example">Pardon, comment ça s'écrit ?</td></tr>
+      <tr><td class="fr-word">Comment ça s'écrit ?</td><td>Como se escreve?</td><td class="fr-example">Comment ça s'écrit, Hugo ?</td></tr>
+      <tr><td class="fr-word">Merci / De rien</td><td>Obrigado(a) / De nada</td><td class="fr-example">Merci ! — De rien.</td></tr>
+      <tr><td class="fr-word">Je parle… / un peu</td><td>Eu falo… / um pouco</td><td class="fr-example">Je parle un peu français.</td></tr>
+      <tr><td class="fr-word">Vous parlez quelles langues ?</td><td>Você fala quais línguas?</td><td class="fr-example">Vous parlez quelles langues ?</td></tr>
+      <tr><td class="fr-word">Je suis + nationalité</td><td>Eu sou + nacionalidade</td><td class="fr-example">Je suis brésilienne.</td></tr>
+      <tr><td class="fr-word">Français / Anglais</td><td>Francês / Inglês</td><td class="fr-example">Je parle français et anglais.</td></tr>
+      <tr><td class="fr-word">Japonais / Chinois</td><td>Japonês / Chinês</td><td class="fr-example">Elle parle japonais.</td></tr>
+      <tr><td class="fr-word">Américain(e) / Grec(que)</td><td>Americano(a) / Grego(a)</td><td class="fr-example">Il est américain. Elle est grecque.</td></tr>
+      <tr><td class="fr-word">Brésilien(ne)</td><td>Brasileiro(a)</td><td class="fr-example">Je suis brésilienne.</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+    <div class="grammar-rule">
+      <h4>1. Verbo S'APPELER (presente) — reflexivo</h4>
+      <table class="conj-table">
+        <tr><th>Personne</th><th>Forme</th></tr>
+        <tr><td>Je</td><td class="conj-form">m'appelle</td></tr>
+        <tr><td>Tu</td><td class="conj-form">t'appelles</td></tr>
+        <tr><td>Il / Elle</td><td class="conj-form">s'appelle</td></tr>
+        <tr><td>Nous</td><td class="conj-form">nous appelons</td></tr>
+        <tr><td>Vous</td><td class="conj-form">vous appelez</td></tr>
+        <tr><td>Ils / Elles</td><td class="conj-form">s'appellent</td></tr>
+      </table>
+      <p class="example">Je m'appelle Marie. · Comment tu t'appelles ? · Il s'appelle Hugo.</p>
+    </div>
+    <div class="grammar-rule">
+      <h4>2. Verbo ÊTRE (presente) — nacionalidade e identidade</h4>
+      <table class="conj-table">
+        <tr><th>Personne</th><th>Forme</th></tr>
+        <tr><td>Je</td><td class="conj-form">suis</td></tr>
+        <tr><td>Tu</td><td class="conj-form">es</td></tr>
+        <tr><td>Il / Elle</td><td class="conj-form">est</td></tr>
+        <tr><td>Nous</td><td class="conj-form">sommes</td></tr>
+        <tr><td>Vous</td><td class="conj-form">êtes</td></tr>
+        <tr><td>Ils / Elles</td><td class="conj-form">sont</td></tr>
+      </table>
+      <p class="example">Je suis brésilienne. · Il est américain. · Ils sont chinois.</p>
+    </div>
+    <div class="grammar-rule">
+      <h4>3. Verbo PARLER (presente) — verbos em -er</h4>
+      <table class="conj-table">
+        <tr><th>Personne</th><th>Forme</th></tr>
+        <tr><td>Je</td><td class="conj-form">parle</td></tr>
+        <tr><td>Tu</td><td class="conj-form">parles</td></tr>
+        <tr><td>Il / Elle</td><td class="conj-form">parle</td></tr>
+        <tr><td>Nous</td><td class="conj-form">parlons</td></tr>
+        <tr><td>Vous</td><td class="conj-form">parlez</td></tr>
+        <tr><td>Ils / Elles</td><td class="conj-form">parlent</td></tr>
+      </table>
+      <p class="example">Je parle français. · Tu parles anglais ? · Ils parlent chinois et anglais.</p>
+    </div>
+    <div class="grammar-rule">
+      <h4>4. Nationalité — o adjetivo concorda com o gênero</h4>
+      <p>O adjetivo de nacionalidade varia entre masculino e feminino.</p>
+      <p class="example">Américain / Américaine · Chinois / Chinoise · Grec / Grecque · Brésilien / Brésilienne</p>
+    </div>
+    <div class="grammar-rule">
+      <h4>5. Épeler — soletrar com o alfabeto francês</h4>
+      <p>Pergunta: <strong>Comment ça s'écrit ?</strong> → Como se escreve?</p>
+      <p class="example">H-U-G-O → aGÁ–U–GÊ–O &nbsp;|&nbsp; K-A-R-I-N-E → KÁ–A–ÊRE–I–ÊNE–E</p>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu me chamo Rodrigo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je m'appelle Rodrigo.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Como você se chama?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Comment tu t'appelles ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu falo português e inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je parle portugais et anglais.</div></div>
+      </div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Você fala francês?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu parles français ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou brasileiro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis brésilien.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é americana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est américaine.</div></div>
+      </div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Como se escreve seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Comment ça s'écrit, ton nom ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu falo um pouco de francês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je parle un peu français.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Nós falamos espanhol.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous parlons espagnol.</div></div>
+      </div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eles são chineses.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ils sont chinois.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você se chama Hugo?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu t'appelles Hugo ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Prazer! Eu sou japonesa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Enchantée ! Je suis japonaise.</div></div>
+      </div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ela fala inglês e um pouco de francês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle parle anglais et un peu français.</div></div>
+        <div class="exercise-item"><div class="exercise-q">E você, quais línguas você fala?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Et toi, tu parles quelles langues ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Desculpe, como se escreve?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Pardon, comment ça s'écrit ?</div></div>
+      </div>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 15</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Comment tu t'appelles ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu parles quelles langues ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu es de quelle nationalité ?</div></div>
+    </div>
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu préfères parler français ou anglais ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Comment ça s'écrit, ton prénom ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu épelles ton nom ?</div></div>
+    </div>
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu parles un peu français ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Pourquoi tu apprends le français ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu préfères les langues ou les sciences ?</div></div>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
