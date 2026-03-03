@@ -64,6 +64,14 @@ const AULAS = {
     file:     'aulas/fr-a1-1.html',
   },
 
+   'Francês-A1-2': {
+  icon: '✏️',
+  titulo: 'Nationalités, pays, nombres',
+  descricao: 'Nacionalidades, países, verbo venir de, artigos e números até 20.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-2.html',
+},
   // Adicione novas aulas aqui seguindo o mesmo padrão ↑
 
 };
