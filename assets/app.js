@@ -72,6 +72,15 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-2.html',
 },
+
+'Francês-A1-3': {
+  icon: '🔢',
+  titulo: 'Les nombres (21–69) + révision',
+  descricao: 'Idade com “avoir”, contar participantes e números 21–69 (et un) + revisão de nacionalidades.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-3.html',
+},
   // Adicione novas aulas aqui seguindo o mesmo padrão ↑
 
 };
