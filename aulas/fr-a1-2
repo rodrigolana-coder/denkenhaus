@@ -1,0 +1,252 @@
+<!-- Francês A1 — Aula 2: Nationalités, pays, nombres
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr2.png" alt="Présenter quelqu’un"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Présenter quelqu’un</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Bonjour, je m’appelle Paul Bouchard. Je suis canadien.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Alexandra</span><span class="dialog-text">Moi, je suis Alexandra Rainer. Je suis grecque.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Lui, c’est Michael Kozlowski. Il est polonais.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Michael</span><span class="dialog-text">Enchanté. Vous êtes allemande ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Alexandra</span><span class="dialog-text">Non, je ne suis pas allemande, je suis grecque.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr2-1.png" alt="Parler des pays"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr2-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Parler des pays</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Jeanne</span><span class="dialog-text">Tu viens d’où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je viens de Chine. Je suis chinoise.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jeanne</span><span class="dialog-text">Moi, je viens de France. Je suis française.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu parles anglais ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jeanne</span><span class="dialog-text">Oui, je parle anglais et un peu espagnol.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr2-2.png" alt="Compter au cocktail"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr2-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Compter au cocktail</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Il y a combien de personnes dans la salle ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Je compte… un, deux, trois… vingt !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Vingt personnes ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Oui, et onze sont françaises.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Ah bon ? Il y a aussi des Américains ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Oui, deux Américains et une Mexicaine.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">Je m’appelle…</td><td>Eu me chamo…</td><td class="fr-example">Je m’appelle Paul.</td></tr>
+      <tr><td class="fr-word">Je suis + nationalité</td><td>Eu sou + nacionalidade</td><td class="fr-example">Je suis canadien. / Je suis grecque.</td></tr>
+      <tr><td class="fr-word">Il est / Elle est</td><td>Ele é / Ela é</td><td class="fr-example">Il est polonais. / Elle est française.</td></tr>
+      <tr><td class="fr-word">Lui, c’est…</td><td>Ele é… (apresentando alguém)</td><td class="fr-example">Lui, c’est Michael.</td></tr>
+      <tr><td class="fr-word">Enchanté(e)</td><td>Prazer</td><td class="fr-example">Enchanté. Je suis Michael.</td></tr>
+      <tr><td class="fr-word">Tu viens d’où ?</td><td>Você vem de onde?</td><td class="fr-example">Tu viens d’où ? — Je viens de France.</td></tr>
+      <tr><td class="fr-word">Je viens de…</td><td>Eu venho de…</td><td class="fr-example">Je viens de Chine.</td></tr>
+      <tr><td class="fr-word">Je viens du…</td><td>Eu venho do… (masculino)</td><td class="fr-example">Je viens du Portugal.</td></tr>
+      <tr><td class="fr-word">Je viens des…</td><td>Eu venho dos/das… (plural)</td><td class="fr-example">Je viens des États-Unis.</td></tr>
+      <tr><td class="fr-word">Je viens d’…</td><td>Eu venho de… (vogal)</td><td class="fr-example">Je viens d’Allemagne.</td></tr>
+      <tr><td class="fr-word">Il y a…</td><td>Há / Existe</td><td class="fr-example">Il y a vingt personnes.</td></tr>
+      <tr><td class="fr-word">Combien de… ?</td><td>Quantos…?</td><td class="fr-example">Combien de personnes ?</td></tr>
+      <tr><td class="fr-word">Je compte</td><td>Eu conto</td><td class="fr-example">Je compte… un, deux, trois…</td></tr>
+
+      <tr><td class="fr-word">Français / Française</td><td>Francês / Francesa</td><td class="fr-example">Onze sont françaises.</td></tr>
+      <tr><td class="fr-word">Canadien / Canadienne</td><td>Canadense</td><td class="fr-example">Je suis canadien.</td></tr>
+      <tr><td class="fr-word">Chinois / Chinoise</td><td>Chinês / Chinesa</td><td class="fr-example">Je suis chinoise.</td></tr>
+      <tr><td class="fr-word">Américain / Américaine</td><td>Americano / Americana</td><td class="fr-example">Deux Américains.</td></tr>
+      <tr><td class="fr-word">Mexicain / Mexicaine</td><td>Mexicano / Mexicana</td><td class="fr-example">Une Mexicaine.</td></tr>
+      <tr><td class="fr-word">Allemand / Allemande</td><td>Alemão / Alemã</td><td class="fr-example">Vous êtes allemande ?</td></tr>
+      <tr><td class="fr-word">Grec / Grecque</td><td>Grego / Grega</td><td class="fr-example">Je suis grecque.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Masculin / Féminin des nationalités</h4>
+      <p>Généralement :</p>
+      <ul class="mini-list">
+        <li><strong>-ais → -aise</strong> : Français → Française</li>
+        <li><strong>-ien → -ienne</strong> : Canadien → Canadienne</li>
+        <li><strong>-ois → -oise</strong> : Chinois → Chinoise</li>
+        <li><strong>-ain → -aine</strong> : Américain → Américaine</li>
+        <li><strong>-ol → -ole</strong> : Espagnol → Espagnole</li>
+        <li><strong>-e → identique</strong> : Russe → Russe</li>
+        <li><strong>Cas spécial</strong> : Grec → Grecque / Turc → Turque</li>
+      </ul>
+      <p class="example">Je suis canadien. · Elle est française. · Je suis grecque.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Articles des pays</h4>
+      <ul class="mini-list">
+        <li><strong>Pays féminins</strong> : <strong>la</strong> → la France, la Chine</li>
+        <li><strong>Pays masculins</strong> : <strong>le</strong> → le Portugal, le Mexique</li>
+        <li><strong>Pays pluriels</strong> : <strong>les</strong> → les États-Unis</li>
+        <li><strong>Voyelle</strong> : <strong>l’</strong> → l’Allemagne</li>
+      </ul>
+      <p class="example">la France · le Mexique · les États-Unis · l’Allemagne</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Venir de (de + article)</h4>
+      <table class="conj-table">
+        <tr><th>Forme</th><th>Règle</th><th>Exemple</th></tr>
+        <tr><td class="conj-form">du</td><td>de + le</td><td>Je viens <strong>du</strong> Portugal.</td></tr>
+        <tr><td class="conj-form">de</td><td>féminin (sans article)</td><td>Je viens <strong>de</strong> France.</td></tr>
+        <tr><td class="conj-form">des</td><td>de + les</td><td>Je viens <strong>des</strong> États-Unis.</td></tr>
+        <tr><td class="conj-form">d’</td><td>devant voyelle</td><td>Je viens <strong>d’</strong>Allemagne.</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Compter (0–20)</h4>
+      <p>On utilise les nombres pour parler des personnes : <strong>Il y a…</strong> / <strong>Combien de… ?</strong></p>
+      <p class="example">Il y a vingt personnes. · Il y a onze Français ici. · Il y a deux Américains.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu sou canadense.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis canadien. / Je suis canadienne.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é espanhola.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est espagnole.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele é alemão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il est allemand.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu venho da França.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je viens de France.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Nós somos mexicanos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous sommes mexicains.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há vinte pessoas na sala.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a vingt personnes dans la salle.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Duas pessoas são russas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Deux personnes sont russes.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você é americano?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu es américain ? / Tu es américaine ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu não sou chinês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je ne suis pas chinois. / Je ne suis pas chinoise.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ela fala inglês e espanhol.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle parle anglais et espagnol.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eles vêm do Japão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ils viennent du Japon.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há onze franceses aqui.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a onze Français ici.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu viens d’où ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu es de quelle nationalité ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Combien de langues tu parles ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Il y a combien de personnes dans ta famille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu connais des personnes françaises ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu préfères la France ou le Canada ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu parles un peu espagnol ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Combien de pays tu connais ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu voudrais vivre aux États-Unis ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
