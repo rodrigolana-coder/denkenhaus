@@ -1,0 +1,255 @@
+<!-- Francês A1 — Aula 3: Les nombres (21–69) + révision
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr3.png" alt="Âge et nationalité"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr3.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Âge et nationalité</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Bonjour, je m’appelle Camille.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Moi, c’est Igor. Tu as quel âge ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">J’ai vingt-trois ans. Et toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">J’ai trente et un ans.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Tu viens d’où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Igor</span><span class="dialog-text">Je viens de Russie. Je suis russe.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camille</span><span class="dialog-text">Ah d’accord ! Moi, je suis française.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr3-1.png" alt="Compter des participants"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr3-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Compter des participants</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Il y a combien de personnes au cocktail ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Il y a quarante-deux personnes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Sérieux ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Oui, vingt-cinq femmes et dix-sept hommes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Il y a des Espagnols ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Karine</span><span class="dialog-text">Oui, trois Espagnols et une Mexicaine.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr3-2.png" alt="Numéro de téléphone"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr3-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Numéro de téléphone</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">C’est quoi ton numéro ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Zéro six, cinquante-quatre, trente-huit, soixante-neuf.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Attends… cinquante-quatre ou quarante-quatre ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Cinquante-quatre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">D’accord. Merci !</span></div>
+
+          <div class="note" style="margin-top:0.75rem;font-size:0.85rem;color:#5a6e8a;">
+            Note : <strong>« C’est quoi ton numéro ? »</strong> = forme informelle (argot léger).
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">Tu as quel âge ?</td><td>Você tem quantos anos?</td><td class="fr-example">Tu as quel âge ?</td></tr>
+      <tr><td class="fr-word">J’ai … ans</td><td>Eu tenho … anos</td><td class="fr-example">J’ai vingt-trois ans.</td></tr>
+      <tr><td class="fr-word">Il y a</td><td>Há / Existe</td><td class="fr-example">Il y a quarante-deux personnes.</td></tr>
+      <tr><td class="fr-word">Combien de… ?</td><td>Quantos / Quantas…?</td><td class="fr-example">Combien de personnes ?</td></tr>
+      <tr><td class="fr-word">Attends</td><td>Espera</td><td class="fr-example">Attends… cinquante-quatre ?</td></tr>
+      <tr><td class="fr-word">Sérieux ?</td><td>Sério?</td><td class="fr-example">Sérieux ?</td></tr>
+      <tr><td class="fr-word">C’est quoi… ?</td><td>O que é…? (informal)</td><td class="fr-example">C’est quoi ton numéro ?</td></tr>
+
+      <tr><td class="fr-word">Je m’appelle</td><td>Eu me chamo</td><td class="fr-example">Je m’appelle Camille.</td></tr>
+      <tr><td class="fr-word">Je viens de</td><td>Eu venho de</td><td class="fr-example">Je viens de Russie.</td></tr>
+      <tr><td class="fr-word">Je suis</td><td>Eu sou</td><td class="fr-example">Je suis russe. / Je suis française.</td></tr>
+
+      <tr><td class="fr-word">Russe</td><td>Russo / Russa</td><td class="fr-example">Je suis russe.</td></tr>
+      <tr><td class="fr-word">Espagnol / Espagnole</td><td>Espanhol / Espanhola</td><td class="fr-example">Trois Espagnols.</td></tr>
+      <tr><td class="fr-word">Mexicaine</td><td>Mexicana</td><td class="fr-example">Une Mexicaine.</td></tr>
+
+      <tr><td class="fr-word">Vingt</td><td>Vinte</td><td class="fr-example">Vingt personnes.</td></tr>
+      <tr><td class="fr-word">Trente</td><td>Trinta</td><td class="fr-example">Trente et un ans.</td></tr>
+      <tr><td class="fr-word">Quarante</td><td>Quarenta</td><td class="fr-example">Quarante-deux personnes.</td></tr>
+      <tr><td class="fr-word">Cinquante</td><td>Cinquenta</td><td class="fr-example">Cinquante-quatre.</td></tr>
+      <tr><td class="fr-word">Soixante</td><td>Sessenta</td><td class="fr-example">Soixante-neuf.</td></tr>
+
+      <tr><td class="fr-word">Vingt et un</td><td>Vinte e um</td><td class="fr-example">vingt et un</td></tr>
+      <tr><td class="fr-word">Trente et un</td><td>Trinta e um</td><td class="fr-example">trente et un</td></tr>
+      <tr><td class="fr-word">Quarante-quatre</td><td>Quarenta e quatro</td><td class="fr-example">quarante-quatre</td></tr>
+      <tr><td class="fr-word">Cinquante-six</td><td>Cinquenta e seis</td><td class="fr-example">cinquante-six</td></tr>
+      <tr><td class="fr-word">Soixante-neuf</td><td>Sessenta e nove</td><td class="fr-example">soixante-neuf</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Formation des nombres (21–69)</h4>
+      <p>Structure générale :</p>
+      <ul class="mini-list">
+        <li><strong>20/30/40/50/60 + chiffre</strong> : vingt-deux, trente-trois, quarante-quatre, cinquante-six, soixante-neuf</li>
+        <li><strong>Exception : seulement avec “et un”</strong> : vingt et un, trente et un, quarante et un, cinquante et un, soixante et un</li>
+      </ul>
+      <p class="example">21 = vingt et un · 31 = trente et un · 41 = quarante et un · 61 = soixante et un</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Dire l’âge</h4>
+      <p>On utilise <strong>avoir</strong>, pas <strong>être</strong>.</p>
+      <p class="example">❌ Je suis 23 ans · ✅ J’ai 23 ans</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Il y a</h4>
+      <p><strong>Il y a</strong> + nombre + nom.</p>
+      <p class="example">Il y a quarante personnes. · Il y a vingt-cinq femmes.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Les nombres (21–69) — tableau</h4>
+      <table class="conj-table">
+        <tr><th>Dizaine</th><th>Base</th><th>Exemples</th></tr>
+        <tr><td>20</td><td class="conj-form">vingt</td><td>vingt-deux · vingt-trois · <strong>vingt et un</strong></td></tr>
+        <tr><td>30</td><td class="conj-form">trente</td><td>trente-trois · <strong>trente et un</strong></td></tr>
+        <tr><td>40</td><td class="conj-form">quarante</td><td>quarante-deux · quarante-quatre · <strong>quarante et un</strong></td></tr>
+        <tr><td>50</td><td class="conj-form">cinquante</td><td>cinquante-quatre · cinquante-six · <strong>cinquante et un</strong></td></tr>
+        <tr><td>60</td><td class="conj-form">soixante</td><td>soixante-neuf · <strong>soixante et un</strong></td></tr>
+      </table>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu tenho vinte e dois anos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai vingt-deux ans.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele tem trinta e um anos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il a trente et un ans.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há quarenta pessoas aqui.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a quarante personnes ici.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Nós temos cinquenta alunos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons cinquante élèves.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela tem sessenta e nove anos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle a soixante-neuf ans.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há vinte e cinco mulheres.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a vingt-cinq femmes.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ele vem da Espanha.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il vient d’Espagne.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou mexicano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis mexicain.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Quantas pessoas há na sala?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a combien de personnes dans la salle ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Há trinta e três estudantes.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a trente-trois étudiants.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu falo francês e inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je parle français et anglais.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é russa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est russe.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as quel âge ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Il y a combien de personnes dans ta classe ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu connais quelqu’un qui a soixante ans ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Combien de langues tu parles ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu préfères vingt ou cinquante étudiants dans une classe ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu viens de quelle ville ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu es déjà allé en France ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu connais des personnes russes ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Quel âge a ton meilleur ami ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
