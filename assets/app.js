@@ -81,6 +81,15 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-3.html',
 },
+
+'Francês-A1-4': {
+  icon: '👋',
+  titulo: 'Saluer et prendre congé',
+  descricao: 'Saudações formais e informais, TU vs VOUS e expressões para despedida.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-4.html',
+},
   // Adicione novas aulas aqui seguindo o mesmo padrão ↑
 
 };
