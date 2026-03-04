@@ -134,7 +134,7 @@ function updateNavUser() {
   }
 }
 
-async function doLogin() {
+window.doLogout = async function () {
   const email    = document.getElementById('loginEmail').value.trim();
   const password = document.getElementById('loginPass').value;
   showAuthMsg('');
