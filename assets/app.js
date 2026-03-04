@@ -143,18 +143,24 @@ async function doLogin() {
   closeAuth();
 }
 
-async function doRegister() {
-  const name     = document.getElementById('regName').value.trim();
-  const email    = document.getElementById('regEmail').value.trim();
+window.doRegister = async function () {
+  const name = document.getElementById('regName').value.trim();
+  const email = document.getElementById('regEmail').value.trim();
   const password = document.getElementById('regPass').value;
-  const confirm  = document.getElementById('regConfirm').value;
+  const confirm = document.getElementById('regConfirm').value;
   showAuthMsg('');
   if (password !== confirm) { showAuthMsg('As senhas não coincidem.'); return; }
-  if (password.length < 6)  { showAuthMsg('A senha deve ter pelo menos 6 caracteres.'); return; }
-  const { error } = await sb.auth.signUp({ email, password, options: { data: { full_name: name } } });
+  if (password.length < 6) { showAuthMsg('A senha deve ter pelo menos 6 caracteres.'); return; }
+  const { data, error } = await sb.auth.signUp({
+    email,
+    password,
+    options: {
+      data: { full_name: name }
+    }
+  });
   if (error) { showAuthMsg(error.message); return; }
   showAuthMsg('✅ Confirme seu e-mail para ativar a conta.', true);
-}
+};
 
 async function doLogout() {
   await sb.auth.signOut();
