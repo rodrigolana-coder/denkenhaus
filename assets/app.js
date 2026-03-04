@@ -8,7 +8,7 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* ── WHATSAPP ── */
-const WHATSAPP_NUMBER = '55988601417'; // ← coloque seu número com DDI+DDD
+const WHATSAPP_NUMBER = '5541988601417'; // ← coloque seu número com DDI+DDD
 
 /* ── ADMIN ── verificado no Supabase ── */
 
@@ -132,6 +132,16 @@ function updateNavUser() {
       <button class="btn-ghost" onclick="openAuth('login')">Entrar</button>
       <button class="btn-primary" onclick="openAuth('register')">Cadastrar-se</button>`;
   }
+}
+
+async function doResetPassword() {
+  const email = document.getElementById('loginEmail').value.trim();
+  if (!email) { showAuthMsg('Digite seu e-mail acima primeiro.'); return; }
+  const { error } = await sb.auth.resetPasswordForEmail(email, {
+    redirectTo: 'https://rodrigolana-coder.github.io/denkenhaus/',
+  });
+  if (error) { showAuthMsg(error.message); return; }
+  showAuthMsg('✅ E-mail de redefinição enviado! Verifique sua caixa de entrada.', true);
 }
 
 async function doLogin() {
