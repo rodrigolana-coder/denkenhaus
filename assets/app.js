@@ -134,7 +134,7 @@ function updateNavUser() {
   }
 }
 
-window.doLogout = async function () {
+window.doLogin = async function () {
   const email    = document.getElementById('loginEmail').value.trim();
   const password = document.getElementById('loginPass').value;
   showAuthMsg('');
@@ -162,10 +162,11 @@ window.doRegister = async function () {
   showAuthMsg('✅ Confirme seu e-mail para ativar a conta.', true);
 };
 
-async function doLogout() {
-  await sb.auth.signOut();
+window.doLogout = async function () {
+  await sb.auth.signOut();  // dispara SIGNED_OUT
+  onLogout();               // limpa estado local na hora (garante UI)
   goHome();
-}
+};
 
 function showAuthMsg(msg, success = false) {
   const el = document.getElementById('authMsg');
