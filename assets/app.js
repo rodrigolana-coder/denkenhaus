@@ -4,7 +4,7 @@
 
 /* ── SUPABASE ── */
 const SUPABASE_URL = 'https://yjeurxxxybbfvyzqxrjd.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_V4Eb-C-biOn7LyT1gUFd7Q_1gdjdKXz';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlqZXVyeHh4eWJiZnZ5enF4cmpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MzAxODUsImV4cCI6MjA4ODIwNjE4NX0.vG8AyVPr7XsSBh_wvQW9OoWA9-PLCYOZZ7KuMggPaOU';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* ── WHATSAPP ── */
@@ -134,7 +134,7 @@ function updateNavUser() {
   }
 }
 
-window.doLogin = async function () {
+async function doLogin() {
   const email    = document.getElementById('loginEmail').value.trim();
   const password = document.getElementById('loginPass').value;
   showAuthMsg('');
@@ -143,30 +143,23 @@ window.doLogin = async function () {
   closeAuth();
 }
 
-window.doRegister = async function () {
-  const name = document.getElementById('regName').value.trim();
-  const email = document.getElementById('regEmail').value.trim();
+async function doRegister() {
+  const name     = document.getElementById('regName').value.trim();
+  const email    = document.getElementById('regEmail').value.trim();
   const password = document.getElementById('regPass').value;
-  const confirm = document.getElementById('regConfirm').value;
+  const confirm  = document.getElementById('regConfirm').value;
   showAuthMsg('');
   if (password !== confirm) { showAuthMsg('As senhas não coincidem.'); return; }
-  if (password.length < 6) { showAuthMsg('A senha deve ter pelo menos 6 caracteres.'); return; }
-  const { data, error } = await sb.auth.signUp({
-    email,
-    password,
-    options: {
-      data: { full_name: name }
-    }
-  });
+  if (password.length < 6)  { showAuthMsg('A senha deve ter pelo menos 6 caracteres.'); return; }
+  const { error } = await sb.auth.signUp({ email, password, options: { data: { full_name: name } } });
   if (error) { showAuthMsg(error.message); return; }
   showAuthMsg('✅ Confirme seu e-mail para ativar a conta.', true);
-};
+}
 
-window.doLogout = async function () {
-  await sb.auth.signOut();  // dispara SIGNED_OUT
-  onLogout();               // limpa estado local na hora (garante UI)
+async function doLogout() {
+  await sb.auth.signOut();
   goHome();
-};
+}
 
 function showAuthMsg(msg, success = false) {
   const el = document.getElementById('authMsg');
