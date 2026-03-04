@@ -6,18 +6,57 @@
   <title>Denkenhaus – Escola de Idiomas</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    /* ── PLANOS ── */
+    #plansPage { background: var(--navy-dark); min-height: 100vh; }
+    .plans-hero { text-align: center; padding: 6rem 2rem 3rem; }
+    .plans-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem,4vw,3.5rem); font-weight: 700; color: var(--cream); margin-bottom: 0.75rem; }
+    .plans-hero p { color: var(--text-light); font-size: 1rem; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+    .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; max-width: 1100px; margin: 0 auto; padding: 0 2rem 5rem; }
+    .plan-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 2rem 1.75rem; display: flex; flex-direction: column; transition: all 0.3s; position: relative; }
+    .plan-card:hover { transform: translateY(-6px); border-color: rgba(201,169,110,0.4); }
+    .plan-card.featured { background: rgba(201,169,110,0.08); border-color: var(--gold); }
+    .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--navy-dark); font-size: 0.7rem; font-weight: 800; padding: 0.25rem 0.85rem; border-radius: 100px; letter-spacing: 0.06em; white-space: nowrap; }
+    .plan-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .plan-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--cream); margin-bottom: 0.25rem; }
+    .plan-tagline { color: var(--text-light); font-size: 0.82rem; margin-bottom: 1.5rem; }
+    .plan-price { margin-bottom: 1.5rem; }
+    .plan-price .amount { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--gold); line-height: 1; }
+    .plan-price .period { color: var(--text-light); font-size: 0.78rem; margin-left: 0.25rem; }
+    .plan-price .custom-label { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+    .plan-features { list-style: none; flex: 1; margin-bottom: 1.75rem; }
+    .plan-features li { color: #c8d4e8; font-size: 0.85rem; padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 0.5rem; }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features .fi { font-size: 0.9rem; }
+    .btn-plan { width: 100%; padding: 0.9rem; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; cursor: pointer; transition: all 0.2s; border: none; }
+    .btn-plan-primary { background: var(--gold); color: var(--navy-dark); }
+    .btn-plan-primary:hover { background: #d4b47e; transform: translateY(-1px); }
+    .btn-plan-ghost { background: transparent; color: var(--cream); border: 1.5px solid rgba(201,169,110,0.4) !important; border: none; }
+    .btn-plan-ghost:hover { border-color: var(--gold); background: rgba(201,169,110,0.08); }
+    .btn-plan-whatsapp { background: #25d366; color: #fff; }
+    .btn-plan-whatsapp:hover { background: #1db954; }
+
+    /* ── WHATSAPP FLUTUANTE ── */
+    .wa-fab { position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 999; width: 58px; height: 58px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.45); cursor: pointer; transition: all 0.2s; border: none; }
+    .wa-fab:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
+    .wa-fab svg { width: 30px; height: 30px; fill: white; }
+
+    /* ── MEU PLANO (usuário logado) ── */
+    .my-plan-banner { background: rgba(201,169,110,0.1); border: 1px solid rgba(201,169,110,0.3); border-radius: 12px; padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; max-width: 1100px; margin: 0 auto 1.5rem; }
+    .my-plan-info { color: var(--cream); font-size: 0.88rem; }
+    .my-plan-info strong { color: var(--gold); }
+  </style>
 </head>
 <body>
 
 <!-- ── NAVEGAÇÃO ── -->
 <nav>
   <a class="nav-logo" onclick="goHome()">
-    <img src="/denkenhaus/img/logo.png"
-     alt="Denkenhaus"
-     style="height:40px; width:auto; display:block;">
+    <img src="/denkenhaus/img/logo.png" alt="Denkenhaus" style="height:40px;width:auto;display:block;">
     <span class="nav-logo-text">DENKENHAUS</span>
   </a>
-  <div class="nav-actions">
+  <div class="nav-actions" id="navActions">
     <button class="btn-ghost" onclick="openAuth('login')">Entrar</button>
     <button class="btn-primary" onclick="openAuth('register')">Cadastrar-se</button>
   </div>
@@ -32,7 +71,7 @@
       <p>Aprenda idiomas com método estruturado, trilha gamificada e uma progressão construída para resultados reais.</p>
       <div class="hero-btns">
         <button class="btn-primary btn-lg" onclick="document.getElementById('idiomas').scrollIntoView({behavior:'smooth'})">Explorar idiomas</button>
-        <button class="btn-ghost btn-lg" onclick="openAuth('register')">Começar grátis</button>
+        <button class="btn-ghost btn-lg" onclick="showPage('plansPage')">Ver planos</button>
       </div>
       <div class="hero-stats">
         <div><div class="stat-number">8</div><div class="stat-label">Idiomas disponíveis</div></div>
@@ -69,6 +108,10 @@
 
   <footer>
     <div class="footer-logo">DENKENHAUS</div>
+    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+      <button onclick="showPage('plansPage')" style="background:none;border:none;color:var(--text-light);cursor:pointer;font-size:0.82rem;font-family:'DM Sans',sans-serif;">Planos</button>
+      <button onclick="openWhatsApp()" style="background:none;border:none;color:var(--text-light);cursor:pointer;font-size:0.82rem;font-family:'DM Sans',sans-serif;">WhatsApp</button>
+    </div>
     <div class="footer-copy">© 2026 Denkenhaus. Todos os direitos reservados.</div>
   </footer>
 </div>
@@ -98,6 +141,109 @@
     <span class="lesson-level-badge" id="lessonTopBadge"></span>
   </div>
   <div class="lesson-wrap" id="lessonContentArea"></div>
+</div>
+
+<!-- ══ PLANS PAGE ══ -->
+<div class="page" id="plansPage">
+  <div style="padding-top:80px;">
+    <div class="plans-hero">
+      <span class="section-tag" style="display:block;margin-bottom:0.5rem;">Escolha seu plano</span>
+      <h1>Invista no seu<br><em style="font-style:italic;color:var(--gold)">idioma</em></h1>
+      <p>Acesso completo a todas as aulas, trilhas e materiais. Cancele quando quiser.</p>
+    </div>
+
+    <div id="myPlanBanner"></div>
+
+    <div class="plans-grid">
+
+      <!-- PLANO 1 -->
+      <div class="plan-card">
+        <div class="plan-icon">📚</div>
+        <div class="plan-name">Essencial</div>
+        <div class="plan-tagline">Aprenda no seu ritmo, onde quiser</div>
+        <div class="plan-price">
+          <span class="amount">R$39</span><span style="color:var(--gold);font-size:1.4rem;font-weight:700">,90</span>
+          <span class="period">/mês</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="fi">✅</span> Acesso a todas as aulas</li>
+          <li><span class="fi">✅</span> Todos os idiomas (8 disponíveis)</li>
+          <li><span class="fi">✅</span> Trilha gamificada A1 → C1</li>
+          <li><span class="fi">✅</span> Progresso salvo na nuvem</li>
+          <li><span class="fi">✅</span> Áudios e materiais incluídos</li>
+          <li><span class="fi">❌</span> Aulas com professor</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost" onclick="goToCheckout('basico')">Assinar agora</button>
+      </div>
+
+      <!-- PLANO 2 -->
+      <div class="plan-card featured">
+        <div class="plan-badge">⭐ MAIS POPULAR</div>
+        <div class="plan-icon">🎓</div>
+        <div class="plan-name">Professor 2x</div>
+        <div class="plan-tagline">Prática real com professor nativo</div>
+        <div class="plan-price">
+          <span class="amount">R$150</span>
+          <span class="period">/mês</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="fi">✅</span> Tudo do plano Essencial</li>
+          <li><span class="fi">✅</span> 2 aulas ao vivo por semana</li>
+          <li><span class="fi">✅</span> Correção de pronúncia</li>
+          <li><span class="fi">✅</span> Agendamento flexível</li>
+          <li><span class="fi">✅</span> Feedback personalizado</li>
+          <li><span class="fi">✅</span> Suporte via WhatsApp</li>
+        </ul>
+        <button class="btn-plan btn-plan-primary" onclick="goToCheckout('professor2')">Assinar agora</button>
+      </div>
+
+      <!-- PLANO 3 -->
+      <div class="plan-card">
+        <div class="plan-icon">🚀</div>
+        <div class="plan-name">Professor 5x</div>
+        <div class="plan-tagline">Imersão total para resultados rápidos</div>
+        <div class="plan-price">
+          <span class="amount">R$320</span>
+          <span class="period">/mês</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="fi">✅</span> Tudo do plano Essencial</li>
+          <li><span class="fi">✅</span> 5 aulas ao vivo por semana</li>
+          <li><span class="fi">✅</span> Plano de estudo personalizado</li>
+          <li><span class="fi">✅</span> Correção de redações</li>
+          <li><span class="fi">✅</span> Acesso prioritário ao professor</li>
+          <li><span class="fi">✅</span> Preparação para certificações</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost" onclick="goToCheckout('professor5')">Assinar agora</button>
+      </div>
+
+      <!-- PLANO 4 — PERSONALIZADO -->
+      <div class="plan-card">
+        <div class="plan-icon">✨</div>
+        <div class="plan-name">Personalizado</div>
+        <div class="plan-tagline">Montamos juntos o plano ideal para você</div>
+        <div class="plan-price">
+          <span class="custom-label">Sob consulta</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="fi">✅</span> Número de aulas à sua escolha</li>
+          <li><span class="fi">✅</span> Foco em objetivos específicos</li>
+          <li><span class="fi">✅</span> Empresa ou grupo de alunos</li>
+          <li><span class="fi">✅</span> Horários totalmente flexíveis</li>
+          <li><span class="fi">✅</span> Materiais sob medida</li>
+          <li><span class="fi">✅</span> Preço negociado diretamente</li>
+        </ul>
+        <button class="btn-plan btn-plan-whatsapp" onclick="goToCheckout('custom')">
+          💬 Falar no WhatsApp
+        </button>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;padding-bottom:4rem;">
+      <button onclick="goHome()" style="background:none;border:none;color:var(--text-light);cursor:pointer;font-size:0.85rem;font-family:'DM Sans',sans-serif;">← Voltar para o início</button>
+    </div>
+  </div>
 </div>
 
 <!-- ══ POPUP RESUMO ══ -->
@@ -131,20 +277,28 @@
       <button class="m-tab active" id="mTabL" onclick="switchTab('login')">Entrar</button>
       <button class="m-tab" id="mTabR" onclick="switchTab('register')">Cadastrar</button>
     </div>
+    <p id="authMsg" style="display:none;font-size:0.83rem;margin-bottom:0.75rem;padding:0.5rem 0.75rem;border-radius:6px;background:rgba(231,76,60,0.1);"></p>
     <div class="t-panel active" id="tpL">
-      <div class="f-group"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
-      <div class="f-group"><label>Senha</label><input type="password" placeholder="••••••••"></div>
-      <button class="btn-primary">Entrar na minha conta</button>
+      <div class="f-group"><label>E-mail</label><input id="loginEmail" type="email" placeholder="seu@email.com"></div>
+      <div class="f-group"><label>Senha</label><input id="loginPass" type="password" placeholder="••••••••"></div>
+      <button class="btn-primary" onclick="doLogin()">Entrar na minha conta</button>
     </div>
     <div class="t-panel" id="tpR">
-      <div class="f-group"><label>Nome</label><input type="text" placeholder="Seu nome completo"></div>
-      <div class="f-group"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
-      <div class="f-group"><label>Senha</label><input type="password" placeholder="Mínimo 8 caracteres"></div>
-      <div class="f-group"><label>Confirmar senha</label><input type="password" placeholder="Repita a senha"></div>
-      <button class="btn-primary">Criar conta gratuita</button>
+      <div class="f-group"><label>Nome</label><input id="regName" type="text" placeholder="Seu nome completo"></div>
+      <div class="f-group"><label>E-mail</label><input id="regEmail" type="email" placeholder="seu@email.com"></div>
+      <div class="f-group"><label>Senha</label><input id="regPass" type="password" placeholder="Mínimo 6 caracteres"></div>
+      <div class="f-group"><label>Confirmar senha</label><input id="regConfirm" type="password" placeholder="Repita a senha"></div>
+      <button class="btn-primary" onclick="doRegister()">Criar conta gratuita</button>
     </div>
   </div>
 </div>
+
+<!-- ══ WHATSAPP FLUTUANTE ══ -->
+<button class="wa-fab" onclick="openWhatsApp()" title="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</button>
 
 <script src="assets/app.js"></script>
 </body>
