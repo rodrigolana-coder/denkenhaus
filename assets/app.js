@@ -8,7 +8,7 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* ── WHATSAPP ── */
-const WHATSAPP_NUMBER = '5541988601417'; // ← coloque seu número com DDI+DDD
+const WHATSAPP_NUMBER = '55988601417'; // ← coloque seu número com DDI+DDD
 
 /* ── ADMIN ── verificado no Supabase ── */
 
@@ -256,7 +256,6 @@ function buildHome() {
    COURSE
 ══════════════════════════════════════════ */
 function openCourse(idx) {
-  if (!hasAccess()) { showPage('plansPage'); return; }
   curLang = idx; curLvl = 0;
   const l = LANGS[idx];
   document.getElementById('cFlag').textContent = l.flag;
@@ -318,12 +317,15 @@ function renderPath(li) {
     }
 
     let state, cls, icon;
+    const isFree = n <= 5;
+    const canOpen = isFree || hasAccess();
     if      (n <= done)    { state='done';    cls='n-done';    icon=ICONS[(n-1)%ICONS.length]; }
-    else if (n === done+1) { state='current'; cls='n-current'; icon=ICONS[(n-1)%ICONS.length]; }
+    else if (n === done+1 && canOpen) { state='current'; cls='n-current'; icon=ICONS[(n-1)%ICONS.length]; }
+    else if (!canOpen)     { state='locked';  cls='n-locked';  icon='💎'; }
     else                   { state='locked';  cls='n-locked';  icon='🔒'; }
 
     const rowClass = n===1?'node-row':(n%3===0?'node-row right':(n%3===1?'node-row left':'node-row'));
-    const oc = state!=='locked' ? `openLP(${li},${n})` : `lockedMsg()`;
+    const oc = (state!=='locked' || isFree) ? `openLP(${li},${n})` : `openLP(${li},${n})`;
 
     html += `<div class="${rowClass}">
       <div class="l-node ${cls}" onclick="${oc}" style="background:${state!=='locked'?lv.color:''}" title="Aula ${n}">
@@ -342,6 +344,11 @@ function renderPath(li) {
    POPUP RESUMO
 ══════════════════════════════════════════ */
 function openLP(li, n) {
+  // Aulas 6+ exigem plano
+  if (n > 5 && !hasAccess()) {
+    showPage('plansPage');
+    return;
+  }
   const lv       = LVLS[li];
   const topic    = (TOPICS[lv.id]||[])[n-1] || `Aula ${n}`;
   const chave    = `${LANGS[curLang].name}-${lv.id}-${n}`;
