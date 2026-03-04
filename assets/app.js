@@ -210,8 +210,8 @@ async function loadUserPlan() {
     .select('plano, status, validade')
     .eq('user_id', currentUser.id)
     .eq('status', 'ativo')
-    .single();
-  userPlan = data ? data.plano : null;
+    .limit(1);
+  userPlan = (data && data.length > 0) ? data[0].plano : null;
 }
 
 function hasAccess() {
