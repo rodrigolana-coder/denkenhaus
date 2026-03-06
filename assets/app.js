@@ -74,6 +74,15 @@ const AULAS = {
     duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
     file: 'aulas/fr-a1-4.html',
   },
+'Francês-A1-5': {
+  icon: '📖',
+  titulo: 'Pourquoi Paris est appelée la Ville Lumière',
+  descricao: 'Lecture simple sur l’origine du surnom de Paris + vocabulaire et questions de compréhension.',
+  duracao: '15 min',
+  skills: ['Lecture', 'Vocabulaire', 'Compréhension'],
+  file: 'aulas/fr-a1-5.html'
+},
+   
 };
 
 /* ── ESTADO ── */
