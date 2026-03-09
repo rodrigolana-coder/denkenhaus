@@ -82,7 +82,22 @@ const AULAS = {
   skills: ['Lecture', 'Vocabulaire', 'Compréhension'],
   file: 'aulas/fr-a1-5.html'
 },
-   
+'Francês-A1-6': {
+  icon: '🧑',
+  titulo: 'Profil et présentation',
+  descricao: 'Perfil, estudos, verbo avoir, ne... pas, pas de e possessivos.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-6.html',
+},
+'Francês-A1-7': {
+  icon: '🪪',
+  titulo: 'Demander des documents',
+  descricao: 'Vocabulário de documentos, artigo indefinido e pedidos educados com “je voudrais”.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-7.html',
+},
 };
 
 /* ── ESTADO ── */
