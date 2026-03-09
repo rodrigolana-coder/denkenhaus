@@ -1,0 +1,273 @@
+<!-- Francês A1 — Aula 5: Profil et présentation
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr5.png" alt="Inscription sur Interlingua"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr5.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Inscription sur Interlingua</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Roberto</span><span class="dialog-text">Bonjour, je m’appelle Roberto Sanchez. J’ai vingt-trois ans.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ming</span><span class="dialog-text">Moi, c’est Ming Pei. J’ai vingt-six ans.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Roberto</span><span class="dialog-text">Tu parles quelles langues ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ming</span><span class="dialog-text">Je parle chinois et anglais. Je ne parle pas espagnol.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Roberto</span><span class="dialog-text">Moi, je parle espagnol et un peu anglais.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr5-1.png" alt="Présentation du profil"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr5-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Présentation du profil</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Sven</span><span class="dialog-text">Je suis norvégien. J’ai vingt-trois ans.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ming</span><span class="dialog-text">Tu étudies quoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sven</span><span class="dialog-text">J’étudie les langues. Je parle norvégien, anglais et allemand.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ming</span><span class="dialog-text">Moi, j’étudie le commerce international.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sven</span><span class="dialog-text">Tu as des cours tous les jours ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ming</span><span class="dialog-text">Oui, mais je n’ai pas cours le mardi après-midi.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr5-2.png" alt="Profil et préférences"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr5-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Profil et préférences</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Roberto</span><span class="dialog-text">Tu apprends une langue pour le travail ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sven</span><span class="dialog-text">Oui. J’ai besoin du français pour communiquer avec les gens.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Roberto</span><span class="dialog-text">Moi aussi. Je n’ai pas beaucoup de temps, mais j’étudie tous les jours.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sven</span><span class="dialog-text">Courage !</span></div>
+
+          <div class="note" style="margin-top:0.75rem;font-size:0.85rem;color:#5a6e8a;">
+            Note : <strong>Courage !</strong> = força / ânimo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">Votre profil</td><td>Seu perfil</td><td class="fr-example">Complétez votre profil.</td></tr>
+      <tr><td class="fr-word">Nom</td><td>Nome</td><td class="fr-example">Mon nom est Roberto.</td></tr>
+      <tr><td class="fr-word">Âge</td><td>Idade</td><td class="fr-example">Quel âge tu as ?</td></tr>
+      <tr><td class="fr-word">Langue maternelle</td><td>Língua materna</td><td class="fr-example">Ma langue maternelle est le portugais.</td></tr>
+      <tr><td class="fr-word">Autre langue</td><td>Outra língua</td><td class="fr-example">Je parle une autre langue.</td></tr>
+      <tr><td class="fr-word">Adresse e-mail</td><td>Endereço de e-mail</td><td class="fr-example">Mon adresse e-mail est...</td></tr>
+      <tr><td class="fr-word">Mot de passe</td><td>Senha</td><td class="fr-example">Choisissez un mot de passe.</td></tr>
+      <tr><td class="fr-word">Inscription gratuite</td><td>Inscrição gratuita</td><td class="fr-example">L’inscription est gratuite.</td></tr>
+      <tr><td class="fr-word">Utilisateur</td><td>Usuário</td><td class="fr-example">Je suis un nouvel utilisateur.</td></tr>
+
+      <tr><td class="fr-word">Étudier / J’étudie</td><td>Estudar / Eu estudo</td><td class="fr-example">J’étudie l’économie.</td></tr>
+      <tr><td class="fr-word">Le commerce international</td><td>Comércio internacional</td><td class="fr-example">J’étudie le commerce international.</td></tr>
+      <tr><td class="fr-word">Les langues</td><td>As línguas</td><td class="fr-example">J’étudie les langues.</td></tr>
+      <tr><td class="fr-word">L’architecture</td><td>Arquitetura</td><td class="fr-example">Ils étudient l’architecture.</td></tr>
+      <tr><td class="fr-word">La médecine</td><td>Medicina</td><td class="fr-example">Elle étudie la médecine.</td></tr>
+      <tr><td class="fr-word">Les sciences politiques</td><td>Ciências políticas</td><td class="fr-example">Tu étudies les sciences politiques ?</td></tr>
+      <tr><td class="fr-word">L’économie</td><td>Economia</td><td class="fr-example">J’étudie l’économie.</td></tr>
+      <tr><td class="fr-word">Les mathématiques</td><td>Matemática</td><td class="fr-example">Nous étudions les mathématiques.</td></tr>
+
+      <tr><td class="fr-word">J’ai / Tu as / Il a</td><td>Eu tenho / Você tem / Ele tem</td><td class="fr-example">J’ai vingt-six ans.</td></tr>
+      <tr><td class="fr-word">Nous avons / Vous avez / Ils ont</td><td>Nós temos / O senhor tem / Eles têm</td><td class="fr-example">Nous avons des cours.</td></tr>
+
+      <tr><td class="fr-word">Ne... pas</td><td>Não</td><td class="fr-example">Je ne parle pas espagnol.</td></tr>
+      <tr><td class="fr-word">Je n’ai pas</td><td>Eu não tenho</td><td class="fr-example">Je n’ai pas cours.</td></tr>
+      <tr><td class="fr-word">Pas de</td><td>Nenhum / nenhuma</td><td class="fr-example">Je n’ai pas de temps.</td></tr>
+
+      <tr><td class="fr-word">Mon / Ma / Mes</td><td>Meu / Minha / Meus-Minhas</td><td class="fr-example">Mon nom, ma langue, mes contacts.</td></tr>
+      <tr><td class="fr-word">Votre / Vos</td><td>Seu-Sua / Seus-Suas</td><td class="fr-example">Votre profil, vos informations.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Verbe AVOIR (présent)</h4>
+      <table class="conj-table">
+        <tr><th>Personne</th><th>Forme</th></tr>
+        <tr><td>Je</td><td class="conj-form">j’ai</td></tr>
+        <tr><td>Tu</td><td class="conj-form">tu as</td></tr>
+        <tr><td>Il / Elle</td><td class="conj-form">il / elle a</td></tr>
+        <tr><td>Nous</td><td class="conj-form">nous avons</td></tr>
+        <tr><td>Vous</td><td class="conj-form">vous avez</td></tr>
+        <tr><td>Ils / Elles</td><td class="conj-form">ils / elles ont</td></tr>
+      </table>
+      <p class="example">J’ai 23 ans. · J’ai besoin du français. · Nous avons cours aujourd’hui.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. On utilise AVOIR pour...</h4>
+      <ul class="mini-list">
+        <li><strong>L’âge</strong> : J’ai vingt-six ans.</li>
+        <li><strong>Le besoin</strong> : J’ai besoin du français.</li>
+        <li><strong>Posséder / avoir quelque chose</strong> : J’ai des cours.</li>
+      </ul>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Négation : ne... pas</h4>
+      <p>Structure :</p>
+      <p class="example">Sujet + ne + verbe + pas</p>
+      <p class="example">Je ne parle pas. · Il ne parle pas anglais. · Je n’ai pas cours.</p>
+      <p>⚠️ Devant voyelle, <strong>ne</strong> devient <strong>n’</strong>.</p>
+      <p class="example">Je n’ai pas. · Elle n’étudie pas ici.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Pas de</h4>
+      <p>Après une négation, on utilise souvent <strong>pas de</strong>.</p>
+      <p class="example">Je n’ai pas de cours. · Je n’ai pas de temps. · Je ne parle pas de russe.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Possessifs</h4>
+      <table class="conj-table">
+        <tr><th>Forme</th><th>Usage</th><th>Exemple</th></tr>
+        <tr><td class="conj-form">Mon</td><td>masculin singulier</td><td>Mon nom</td></tr>
+        <tr><td class="conj-form">Ma</td><td>féminin singulier</td><td>Ma langue</td></tr>
+        <tr><td class="conj-form">Mes</td><td>pluriel</td><td>Mes contacts</td></tr>
+        <tr><td class="conj-form">Votre</td><td>singulier formel/pluriel</td><td>Votre profil</td></tr>
+        <tr><td class="conj-form">Vos</td><td>pluriel</td><td>Vos informations</td></tr>
+      </table>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu tenho vinte e seis anos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai vingt-six ans.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu não falo francês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je ne parle pas français.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela não tem aula hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle n’a pas cours aujourd’hui.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Nós temos aulas todos os dias.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons cours tous les jours.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Meu nome é Roberto.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon nom est Roberto.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Minha língua materna é português.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ma langue maternelle est le portugais.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu estudo economia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’étudie l’économie.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele não fala inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il ne parle pas anglais.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Nós não temos tempo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous n’avons pas de temps.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu tenho necessidade de aprender francês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai besoin d’apprendre le français.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eles estudam arquitetura.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ils étudient l’architecture.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu não tenho curso na terça-feira.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je n’ai pas cours le mardi.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as quel âge ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu étudies quoi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu parles combien de langues ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu as cours le week-end ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu as besoin du français pour le travail ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Quelle est ta langue maternelle ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu n’as pas cours quel jour ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu préfères les langues ou les sciences ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu as beaucoup de temps pour étudier ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu veux apprendre combien de langues ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
