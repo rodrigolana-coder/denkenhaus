@@ -1,0 +1,270 @@
+<!-- Francês A1 — Aula 9: Coordonnées et numéros
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr9.png" alt="Donner un numéro de téléphone"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr9.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Donner un numéro de téléphone</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Quel est ton numéro de téléphone ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">06 78 55 12 40.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Attends… zéro six, soixante-dix-huit, cinquante-cinq ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, exactement.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Parfait.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr9-1.png" alt="Donner une adresse"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr9-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Donner une adresse</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Quelle est ton adresse ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">16 rue Saint-Benoît, 75006 Paris.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Et ton e-mail ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">mei.wang@email.com</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Merci !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr9-2.png" alt="Compter et vérifier"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr9-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Compter et vérifier</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Votre numéro de téléphone, s’il vous plaît.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">03 78 65 91 22.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">03… soixante-dix-huit…</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Paul</span><span class="dialog-text">Non, soixante-cinq.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Ah d’accord.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">l’adresse</td><td>endereço</td><td class="fr-example">Quelle est ton adresse ?</td></tr>
+      <tr><td class="fr-word">le numéro de téléphone</td><td>número de telefone</td><td class="fr-example">Quel est ton numéro de téléphone ?</td></tr>
+      <tr><td class="fr-word">l’e-mail</td><td>e-mail</td><td class="fr-example">Et ton e-mail ?</td></tr>
+      <tr><td class="fr-word">les coordonnées</td><td>dados de contato</td><td class="fr-example">Quelles sont vos coordonnées ?</td></tr>
+      <tr><td class="fr-word">une adresse mail</td><td>endereço de e-mail</td><td class="fr-example">J’ai une adresse mail.</td></tr>
+
+      <tr><td class="fr-word">cent</td><td>cem</td><td class="fr-example">cent étudiants</td></tr>
+      <tr><td class="fr-word">mille</td><td>mil</td><td class="fr-example">mille livres</td></tr>
+      <tr><td class="fr-word">dix mille</td><td>dez mil</td><td class="fr-example">dix mille personnes</td></tr>
+      <tr><td class="fr-word">cent mille</td><td>cem mil</td><td class="fr-example">cent mille euros</td></tr>
+      <tr><td class="fr-word">un million</td><td>um milhão</td><td class="fr-example">un million d’habitants</td></tr>
+
+      <tr><td class="fr-word">soixante-dix</td><td>setenta</td><td class="fr-example">soixante-dix</td></tr>
+      <tr><td class="fr-word">soixante-dix-huit</td><td>setenta e oito</td><td class="fr-example">06 78...</td></tr>
+      <tr><td class="fr-word">quatre-vingts</td><td>oitenta</td><td class="fr-example">quatre-vingts étudiants</td></tr>
+      <tr><td class="fr-word">quatre-vingt-dix</td><td>noventa</td><td class="fr-example">quatre-vingt-dix</td></tr>
+
+      <tr><td class="fr-word">attendre</td><td>esperar</td><td class="fr-example">Attends un moment.</td></tr>
+      <tr><td class="fr-word">vérifier</td><td>verificar</td><td class="fr-example">Je vérifie le numéro.</td></tr>
+      <tr><td class="fr-word">exactement</td><td>exatamente</td><td class="fr-example">Oui, exactement.</td></tr>
+      <tr><td class="fr-word">donner</td><td>dar</td><td class="fr-example">Donner une adresse.</td></tr>
+      <tr><td class="fr-word">noter</td><td>anotar</td><td class="fr-example">Note mon numéro.</td></tr>
+
+      <tr><td class="fr-word">tiret (-)</td><td>hífen</td><td class="fr-example">soixante-dix-huit</td></tr>
+      <tr><td class="fr-word">slash (/)</td><td>barra</td><td class="fr-example">/</td></tr>
+      <tr><td class="fr-word">point (.)</td><td>ponto</td><td class="fr-example">.com</td></tr>
+      <tr><td class="fr-word">arobase (@)</td><td>arroba</td><td class="fr-example">email@email.com</td></tr>
+      <tr><td class="fr-word">point d’exclamation (!)</td><td>ponto de exclamação</td><td class="fr-example">Merci !</td></tr>
+      <tr><td class="fr-word">point d’interrogation (?)</td><td>ponto de interrogação</td><td class="fr-example">Quel est ton numéro ?</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Lecture des numéros de téléphone</h4>
+      <p>En français, on lit <strong>les chiffres par groupes de deux</strong>.</p>
+      <p class="example">06 78 55 12 40</p>
+      <p class="example">zéro six · soixante-dix-huit · cinquante-cinq · douze · quarante</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Nombres importants</h4>
+      <p class="example">100 → cent · 1000 → mille</p>
+      <p class="example">cent euros · mille étudiants</p>
+      <p>⚠️ <strong>mille</strong> ne prend jamais de <strong>s</strong>.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Les nombres de 70 à 99</h4>
+
+      <p>En français, les nombres de <strong>70 à 99</strong> ne suivent pas exactement le même modèle que 20–69.</p>
+
+      <table class="conj-table">
+        <tr><th>Nombre</th><th>Formation</th><th>Exemple</th></tr>
+        <tr><td>70</td><td class="conj-form">60 + 10</td><td>soixante-dix</td></tr>
+        <tr><td>71</td><td class="conj-form">60 + 11</td><td>soixante et onze</td></tr>
+        <tr><td>72</td><td class="conj-form">60 + 12</td><td>soixante-douze</td></tr>
+        <tr><td>78</td><td class="conj-form">60 + 18</td><td>soixante-dix-huit</td></tr>
+        <tr><td>80</td><td class="conj-form">4 × 20</td><td>quatre-vingts</td></tr>
+        <tr><td>81</td><td class="conj-form">80 + 1</td><td>quatre-vingt-un</td></tr>
+        <tr><td>90</td><td class="conj-form">80 + 10</td><td>quatre-vingt-dix</td></tr>
+        <tr><td>91</td><td class="conj-form">80 + 11</td><td>quatre-vingt-onze</td></tr>
+      </table>
+
+      <p class="example">70 = soixante-dix · 75 = soixante-quinze · 78 = soixante-dix-huit</p>
+      <p class="example">80 = quatre-vingts · 81 = quatre-vingt-un · 90 = quatre-vingt-dix · 95 = quatre-vingt-quinze</p>
+
+      <p>⚠️ Points importants :</p>
+      <ul class="mini-list">
+        <li><strong>70–79</strong> = <strong>60 + 10–19</strong></li>
+        <li><strong>80</strong> = <strong>quatre-vingts</strong> (com <strong>s</strong>)</li>
+        <li>Mas quando há outro número depois, perde o <strong>s</strong>: <strong>quatre-vingt-un</strong>, <strong>quatre-vingt-dix</strong></li>
+        <li><strong>90–99</strong> = <strong>80 + 10–19</strong></li>
+        <li><strong>71</strong> = <strong>soixante et onze</strong>, mas <strong>81</strong> = <strong>quatre-vingt-un</strong> e <strong>91</strong> = <strong>quatre-vingt-onze</strong></li>
+      </ul>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Liaisons avec les nombres</h4>
+      <p>On fait souvent la liaison :</p>
+      <p class="example">six ans → [si-zan] · trois amis → [troi-zami]</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Qual é seu número de telefone?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quel est ton numéro de téléphone ? / Quel est votre numéro de téléphone ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Meu número é 06 78 55 12 40.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon numéro est 06 78 55 12 40.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Qual é seu endereço?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quelle est ton adresse ? / Quelle est votre adresse ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Meu endereço é 16 rue Victor Hugo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon adresse est 16 rue Victor Hugo.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu tenho um endereço de e-mail.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai une adresse e-mail.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Anote meu número.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Note mon numéro.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Há cem estudantes aqui.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a cent étudiants ici.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há mil livros na biblioteca.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a mille livres dans la bibliothèque.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Meu e-mail é lucas@email.com.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon e-mail est lucas@email.com.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Espere um momento.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Attends un moment. / Attendez un moment.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu verifico o número.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vérifie le numéro.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você pode repetir?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu peux répéter ? / Vous pouvez répéter ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu changes souvent de numéro de téléphone ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu préfères appeler ou envoyer des messages ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu écris beaucoup d’e-mails ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu connais ton numéro par cœur ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu préfères WhatsApp ou e-mail ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu as combien de contacts dans ton téléphone ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu utilises ton téléphone pour étudier ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu préfères écrire ou parler au téléphone ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu utilises souvent Internet ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu envoies des messages tous les jours ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
