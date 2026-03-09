@@ -1,0 +1,252 @@
+<!-- Francês A1 — Aula 8: Poser des questions sur l’identité
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr8.png" alt="Vérifier une inscription"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr8.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Vérifier une inscription</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Bonjour madame. Votre nom ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Martinez.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Votre prénom ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Diana.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Quelle est votre date de naissance ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Le 12 février 1995.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Vous êtes française ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Non, je suis mexicaine.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr8-1.png" alt="Demander les coordonnées"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr8-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Demander les coordonnées</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Quel est votre numéro de téléphone ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">06 43 28 51 20.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Quelle est votre adresse ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">25 rue Victor Hugo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Quelles sont vos coordonnées ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Voici mon adresse e-mail.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr8-2.png" alt="Entre étudiants"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr8-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Entre étudiants</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu es né quand ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Je suis né en mars.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Moi, je suis née en octobre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Tu as quel âge ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">J’ai vingt-quatre ans.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">le nom</td><td>sobrenome</td><td class="fr-example">Votre nom ?</td></tr>
+      <tr><td class="fr-word">le prénom</td><td>nome</td><td class="fr-example">Votre prénom ?</td></tr>
+      <tr><td class="fr-word">la date de naissance</td><td>data de nascimento</td><td class="fr-example">Quelle est votre date de naissance ?</td></tr>
+      <tr><td class="fr-word">l’adresse</td><td>endereço</td><td class="fr-example">Quelle est votre adresse ?</td></tr>
+      <tr><td class="fr-word">le numéro de téléphone</td><td>número de telefone</td><td class="fr-example">Quel est votre numéro de téléphone ?</td></tr>
+      <tr><td class="fr-word">les coordonnées</td><td>dados de contato</td><td class="fr-example">Quelles sont vos coordonnées ?</td></tr>
+
+      <tr><td class="fr-word">Quel est... ?</td><td>Qual é...?</td><td class="fr-example">Quel est votre numéro ?</td></tr>
+      <tr><td class="fr-word">Quelle est... ?</td><td>Qual é...? (feminino)</td><td class="fr-example">Quelle est votre adresse ?</td></tr>
+      <tr><td class="fr-word">Quelles sont... ?</td><td>Quais são...?</td><td class="fr-example">Quelles sont vos coordonnées ?</td></tr>
+      <tr><td class="fr-word">Quand</td><td>Quando</td><td class="fr-example">Tu es né quand ?</td></tr>
+      <tr><td class="fr-word">être né</td><td>nascer</td><td class="fr-example">Je suis né en mars.</td></tr>
+
+      <tr><td class="fr-word">être né en</td><td>nascer em</td><td class="fr-example">Je suis née en octobre.</td></tr>
+      <tr><td class="fr-word">vérifier</td><td>verificar</td><td class="fr-example">Vérifier une inscription.</td></tr>
+      <tr><td class="fr-word">une inscription</td><td>inscrição</td><td class="fr-example">C’est pour une inscription.</td></tr>
+      <tr><td class="fr-word">une adresse e-mail</td><td>endereço de e-mail</td><td class="fr-example">Voici mon adresse e-mail.</td></tr>
+
+      <tr><td class="fr-word">janvier</td><td>janeiro</td><td class="fr-example">Je suis né en janvier.</td></tr>
+      <tr><td class="fr-word">février</td><td>fevereiro</td><td class="fr-example">Le 12 février.</td></tr>
+      <tr><td class="fr-word">mars</td><td>março</td><td class="fr-example">Je suis né en mars.</td></tr>
+      <tr><td class="fr-word">avril</td><td>abril</td><td class="fr-example">Je suis né en avril.</td></tr>
+      <tr><td class="fr-word">mai</td><td>maio</td><td class="fr-example">Je suis né en mai.</td></tr>
+      <tr><td class="fr-word">juin</td><td>junho</td><td class="fr-example">Je suis né en juin.</td></tr>
+      <tr><td class="fr-word">juillet</td><td>julho</td><td class="fr-example">Je suis né en juillet.</td></tr>
+      <tr><td class="fr-word">août</td><td>agosto</td><td class="fr-example">Je suis né en août.</td></tr>
+      <tr><td class="fr-word">septembre</td><td>setembro</td><td class="fr-example">Je suis né en septembre.</td></tr>
+      <tr><td class="fr-word">octobre</td><td>outubro</td><td class="fr-example">Je suis née en octobre.</td></tr>
+      <tr><td class="fr-word">novembre</td><td>novembro</td><td class="fr-example">Je suis né en novembre.</td></tr>
+      <tr><td class="fr-word">décembre</td><td>dezembro</td><td class="fr-example">Je suis né en décembre.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. L’adjectif interrogatif QUEL</h4>
+      <table class="conj-table">
+        <tr><th>Masculin</th><th>Féminin</th><th>Masculin pluriel</th><th>Féminin pluriel</th></tr>
+        <tr>
+          <td class="conj-form">quel</td>
+          <td class="conj-form">quelle</td>
+          <td class="conj-form">quels</td>
+          <td class="conj-form">quelles</td>
+        </tr>
+      </table>
+      <p class="example">Quel est votre numéro ? · Quelle est votre adresse ? · Quels sont vos documents ? · Quelles sont vos coordonnées ?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Question avec inversion simple</h4>
+      <p class="example">Quel est votre numéro ? · Quelle est votre adresse ?</p>
+      <p>Structure :</p>
+      <p class="example">adjectif interrogatif + verbe + sujet</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Être né</h4>
+      <p class="example">Je suis né (masculin) · Je suis née (féminin)</p>
+      <p class="example">Je suis né en mars. · Je suis née en octobre.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Qual é seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quel est votre prénom ? / Quel est ton prénom ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Qual é seu sobrenome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quel est votre nom ? / Quel est ton nom ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Qual é seu número de telefone?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quel est votre numéro de téléphone ? / Quel est ton numéro de téléphone ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Qual é sua data de nascimento?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quelle est votre date de naissance ? / Quelle est ta date de naissance ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu nasci em abril.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis né en avril. / Je suis née en avril.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu nasci em outubro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis né en octobre. / Je suis née en octobre.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Qual é seu endereço?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quelle est votre adresse ? / Quelle est ton adresse ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu tenho vinte e quatro anos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai vingt-quatre ans.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou mexicano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis mexicain. / Je suis mexicaine.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu tenho um endereço de e-mail.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai une adresse e-mail.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Qual é sua nacionalidade?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quelle est votre nationalité ? / Quelle est ta nationalité ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Quais são seus dados de contato?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quelles sont vos coordonnées ? / Quelles sont tes coordonnées ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Quel est ton prénom ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Quel est ton nom de famille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Quel est ton numéro de téléphone ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Quelle est ta date de naissance ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu es né en quel mois ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu préfères ton anniversaire en été ou en hiver ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu as beaucoup de contacts dans ton téléphone ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu changes souvent de numéro ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu utilises ton e-mail tous les jours ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu connais des personnes nées le même mois que toi ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
