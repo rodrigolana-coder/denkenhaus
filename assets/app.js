@@ -387,7 +387,7 @@ function renderPath(li) {
       <div class="l-node ${cls}" onclick="${oc}" style="background:${state!=='locked'?lv.color:''}" title="Aula ${n}">
         <span class="n-icon">${icon}</span>
         <span class="n-label">Aula ${n}</span>
-        <div class="n-tip">Aula ${n} – ${(TOPICS[lv.id]||[])[n-1]||''}</div>
+        <div class="n-tip">Aula ${n}</div>
       </div>
     </div>`;
   }
