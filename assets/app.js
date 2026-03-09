@@ -106,6 +106,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-8.html',
 },
+'Francês-A1-9': {
+  icon: '📞',
+  titulo: 'Coordonnées et numéros',
+  descricao: 'Telefone, endereço, e-mail, leitura de números e explicação de 70 a 99.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-9.html',
+},
 };
 
 /* ── ESTADO ── */
