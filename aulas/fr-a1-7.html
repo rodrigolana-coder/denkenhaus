@@ -1,0 +1,235 @@
+<!-- Francês A1 — Aula 7: Demander des documents
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr7.png" alt="À la médiathèque"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr7.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — À la médiathèque</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Bonjour, je voudrais des informations, s’il vous plaît.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, bien sûr. C’est pour une inscription ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui. Je suis étudiant.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">D’accord. Vous avez une pièce d’identité ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui, j’ai un passeport et une photo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Parfait.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr7-1.png" alt="Au bureau"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr7-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Au bureau</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Bonjour madame.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Bonjour. Je voudrais une carte de médiathèque.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Vous devez remplir un formulaire.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">D’accord.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Vous avez une pièce d’identité ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diana</span><span class="dialog-text">Oui, j’ai une carte d’identité.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr7-2.png" alt="Entre étudiants"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr7-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Entre étudiants</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Tu as une carte de bibliothèque ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, j’ai une carte étudiante.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Tu as aussi une photo ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, et j’ai un passeport.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Parfait, tu peux faire une inscription.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">un formulaire</td><td>formulário</td><td class="fr-example">Vous devez remplir un formulaire.</td></tr>
+      <tr><td class="fr-word">une pièce d’identité</td><td>documento de identidade</td><td class="fr-example">Vous avez une pièce d’identité ?</td></tr>
+      <tr><td class="fr-word">un passeport</td><td>passaporte</td><td class="fr-example">J’ai un passeport.</td></tr>
+      <tr><td class="fr-word">une carte</td><td>cartão</td><td class="fr-example">Je voudrais une carte.</td></tr>
+      <tr><td class="fr-word">une carte étudiante</td><td>carteira de estudante</td><td class="fr-example">J’ai une carte étudiante.</td></tr>
+      <tr><td class="fr-word">une photo</td><td>foto</td><td class="fr-example">J’ai une photo.</td></tr>
+
+      <tr><td class="fr-word">une médiathèque</td><td>biblioteca multimídia</td><td class="fr-example">Je vais à la médiathèque.</td></tr>
+      <tr><td class="fr-word">un employé</td><td>funcionário</td><td class="fr-example">L’employé est au bureau.</td></tr>
+      <tr><td class="fr-word">un vendeur</td><td>vendedor</td><td class="fr-example">Le vendeur est sympa.</td></tr>
+      <tr><td class="fr-word">un étudiant</td><td>estudante</td><td class="fr-example">Je suis étudiant.</td></tr>
+      <tr><td class="fr-word">une étudiante</td><td>estudante (feminino)</td><td class="fr-example">Elle est étudiante.</td></tr>
+
+      <tr><td class="fr-word">Je voudrais…</td><td>Eu gostaria de…</td><td class="fr-example">Je voudrais des informations.</td></tr>
+      <tr><td class="fr-word">des informations</td><td>informações</td><td class="fr-example">Je voudrais des informations.</td></tr>
+      <tr><td class="fr-word">s’il vous plaît</td><td>por favor</td><td class="fr-example">Aidez-moi, s’il vous plaît.</td></tr>
+      <tr><td class="fr-word">remplir</td><td>preencher</td><td class="fr-example">Vous devez remplir un formulaire.</td></tr>
+      <tr><td class="fr-word">une inscription</td><td>inscrição</td><td class="fr-example">C’est pour une inscription ?</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Article indéfini</h4>
+      <p>Utilisé quand on parle de quelque chose de non spécifique.</p>
+      <table class="conj-table">
+        <tr><th>Masculin</th><th>Féminin</th><th>Pluriel</th></tr>
+        <tr><td class="conj-form">un</td><td class="conj-form">une</td><td class="conj-form">des</td></tr>
+      </table>
+      <p class="example">un passeport · une photo · des étudiants</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Demander poliment</h4>
+      <p>Structure très utilisée :</p>
+      <p class="example"><strong>Je voudrais + nom</strong></p>
+      <p class="example">Je voudrais des informations. · Je voudrais une carte.</p>
+      <p>👉 Équivalent de “Eu gostaria de…”</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Révision : AVOIR</h4>
+      <p>On utilise <strong>avoir</strong> pour parler de ce qu’on possède.</p>
+      <p class="example">J’ai un passeport. · Elle a une photo. · Nous avons deux formulaires.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu gostaria de uma informação.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je voudrais une information.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu tenho um passaporte.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai un passeport.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela tem uma foto.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle a une photo.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Nós temos uma inscrição.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons une inscription.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele tem um formulário.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il a un formulaire.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu tenho uma carteira de estudante.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai une carte étudiante.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Você tem um documento de identidade?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu as une pièce d’identité ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu gostaria de um cartão da biblioteca.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je voudrais une carte de bibliothèque.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele tem uma foto e um passaporte.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il a une photo et un passeport.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Nós temos dois formulários.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons deux formulaires.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é estudante.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est étudiante.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou estudante também.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis étudiant aussi. / Je suis étudiante aussi.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as une carte de bibliothèque ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu as un passeport ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu utilises souvent ta carte étudiante ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu dois remplir des formulaires parfois ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu préfères étudier à la maison ou à la bibliothèque ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu lis des livres en français ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu as combien de cartes dans ton portefeuille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu fais souvent des inscriptions en ligne ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu préfères lire des livres ou regarder des films ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu vas souvent dans une bibliothèque ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
