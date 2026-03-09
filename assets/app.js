@@ -98,6 +98,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-7.html',
 },
+'Francês-A1-8': {
+  icon: '📝',
+  titulo: 'Poser des questions sur l’identité',
+  descricao: 'Perguntar nome, sobrenome, telefone, endereço, data de nascimento e usar quel/quelle/quelles.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-8.html',
+},
 };
 
 /* ── ESTADO ── */
