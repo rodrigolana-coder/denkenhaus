@@ -114,6 +114,12 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-9.html',
 },
+Francês-A1-10': {
+    icon: '🌍', titulo: 'Le français dans le monde',
+    descricao: 'Por que o francês é falado em tantos países? Texto sobre países francófonos, vocabulário geográfico e questões de compreensão.',
+    duracao: '15 min', skills: ['Leitura','Vocabulário','Compreensão'],
+    file: 'aulas/fr-a1-10.html',
+  },
 };
 
 /* ── ESTADO ── */
