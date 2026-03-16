@@ -152,6 +152,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-14.html',
 },
+'Francês-A1-15': {
+  icon: '💡',
+  titulo: 'Curiosité — Les auberges de jeunesse',
+  descricao: 'Texte culturel sur les auberges de jeunesse en France.',
+  duracao: '10 min',
+  skills: ['Lecture', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-15.html',
+},
 };
 
 /* ── ESTADO ── */
