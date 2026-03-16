@@ -120,6 +120,14 @@ const AULAS = {
     duracao: '15 min', skills: ['Leitura','Vocabulário','Compreensão'],
     file: 'aulas/fr-a1-10.html',
   },
+'Francês-A1-11': {
+  icon: '🌍',
+  titulo: 'Habiter dans un pays / une ville',
+  descricao: 'Pays, villes, prépositions de lieu, habiter, vivre et monuments célèbres.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-11.html',
+},
 };
 
 /* ── ESTADO ── */
