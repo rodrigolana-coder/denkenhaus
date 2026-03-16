@@ -136,6 +136,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-12.html',
 },
+'Francês-A1-13': {
+  icon: '🗺️',
+  titulo: 'Localiser dans la ville',
+  descricao: 'Prépositions de lieu, localisation, demander son chemin et lire un plan.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-13.html',
+},
 };
 
 /* ── ESTADO ── */
