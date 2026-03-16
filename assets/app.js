@@ -144,6 +144,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-13.html',
 },
+'Francês-A1-14': {
+  icon: '🛏️',
+  titulo: 'Passer une nuit / S’informer sur l’hébergement',
+  descricao: 'Réserver un hébergement, demander des informations et parler des types de logement.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-14.html',
+},
 };
 
 /* ── ESTADO ── */
