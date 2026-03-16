@@ -128,6 +128,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-11.html',
 },
+'Francês-A1-12': {
+  icon: '🏙️',
+  titulo: 'Parler de sa ville',
+  descricao: 'Lieux dans une ville, description, articles et structure il y a.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-12.html',
+},
 };
 
 /* ── ESTADO ── */
