@@ -1,0 +1,249 @@
+<!-- Français A1 — Leçon 12 : Parler de sa ville
+     Contenu interne uniquement — chargé via fetch par app.js -->
+
+<!-- Onglets -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr12.png" alt="Présenter sa ville"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr12.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1 — Présenter sa ville</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu habites où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">J’habite à Pontoise.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">C’est une grande ville ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Non, c’est une petite ville près de Paris.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Il y a des monuments ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, il y a une cathédrale et un musée.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr12-1.png" alt="Les lieux de la ville"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr12-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2 — Les lieux de la ville</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Dans ma ville, il y a une université et une bibliothèque.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Dans ma ville, il y a aussi des parcs.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Il y a un cinéma ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, il y a un cinéma et plusieurs restaurants.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr12-2.png" alt="Parler de son quartier"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr12-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3 — Parler de son quartier</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Ton quartier est comment ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Il est calme.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Il y a des magasins ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, il y a des magasins, un café et un parc.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Ça a l’air sympa.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">une ville</td><td>cidade</td><td class="fr-example">C’est une grande ville.</td></tr>
+      <tr><td class="fr-word">un quartier</td><td>bairro</td><td class="fr-example">Mon quartier est calme.</td></tr>
+      <tr><td class="fr-word">une rue</td><td>rua</td><td class="fr-example">Il y a des magasins dans la rue.</td></tr>
+      <tr><td class="fr-word">un parc</td><td>parque</td><td class="fr-example">Il y a un parc dans ma ville.</td></tr>
+      <tr><td class="fr-word">un musée</td><td>museu</td><td class="fr-example">Il y a un musée ici.</td></tr>
+      <tr><td class="fr-word">une cathédrale</td><td>catedral</td><td class="fr-example">Il y a une cathédrale.</td></tr>
+      <tr><td class="fr-word">une université</td><td>universidade</td><td class="fr-example">Il y a une université dans la ville.</td></tr>
+      <tr><td class="fr-word">une bibliothèque</td><td>biblioteca</td><td class="fr-example">Je vais à la bibliothèque.</td></tr>
+      <tr><td class="fr-word">un cinéma</td><td>cinema</td><td class="fr-example">Il y a un cinéma près d’ici.</td></tr>
+      <tr><td class="fr-word">un restaurant</td><td>restaurante</td><td class="fr-example">Il y a des restaurants.</td></tr>
+      <tr><td class="fr-word">un magasin</td><td>loja</td><td class="fr-example">Il y a un magasin dans la rue.</td></tr>
+
+      <tr><td class="fr-word">grand / grande</td><td>grande</td><td class="fr-example">C’est une grande ville.</td></tr>
+      <tr><td class="fr-word">petit / petite</td><td>pequeno / pequena</td><td class="fr-example">C’est une petite ville.</td></tr>
+      <tr><td class="fr-word">calme</td><td>tranquilo</td><td class="fr-example">Mon quartier est calme.</td></tr>
+      <tr><td class="fr-word">près de</td><td>perto de</td><td class="fr-example">Pontoise est près de Paris.</td></tr>
+
+      <tr><td class="fr-word">il y a</td><td>há / existe</td><td class="fr-example">Il y a un musée.</td></tr>
+      <tr><td class="fr-word">dans ma ville</td><td>na minha cidade</td><td class="fr-example">Dans ma ville, il y a un parc.</td></tr>
+      <tr><td class="fr-word">près de Paris</td><td>perto de Paris</td><td class="fr-example">C’est une ville près de Paris.</td></tr>
+
+      <tr><td class="fr-word">habiter</td><td>morar</td><td class="fr-example">J’habite à Pontoise.</td></tr>
+      <tr><td class="fr-word">vivre</td><td>viver</td><td class="fr-example">Je vis dans une grande ville.</td></tr>
+      <tr><td class="fr-word">un / une / des</td><td>um / uma / uns, umas</td><td class="fr-example">un parc, une rue, des magasins</td></tr>
+      <tr><td class="fr-word">beaucoup de</td><td>muito / muitos, muitas</td><td class="fr-example">Il y a beaucoup de restaurants.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Il y a</h4>
+      <p><strong>Il y a</strong> é usado para dizer que alguma coisa existe ou que há alguma coisa em um lugar.</p>
+      <p class="example">Il y a un musée.</p>
+      <p class="example">Il y a des parcs.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Articles avec les lieux</h4>
+      <p>Usamos <strong>un / une / des</strong> para falar de lugares de modo geral.</p>
+      <p class="example">un parc</p>
+      <p class="example">une université</p>
+      <p class="example">des restaurants</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Décrire un lieu</h4>
+      <p>Estrutura muito útil:</p>
+      <p class="example">Dans ma ville, il y a + lieu</p>
+      <p class="example">Dans ma ville, il y a un musée.</p>
+      <p class="example">Dans mon quartier, il y a des magasins.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Révision</h4>
+      <ul class="mini-list">
+        <li><strong>habiter</strong> / <strong>vivre</strong> para falar do lugar onde se mora</li>
+        <li><strong>à</strong> com cidades: <strong>à Paris</strong></li>
+        <li><strong>en / au / aux</strong> com países: <strong>en France</strong>, <strong>au Canada</strong>, <strong>aux États-Unis</strong></li>
+        <li><strong>un / une / des</strong> com os lugares da cidade</li>
+      </ul>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Na minha cidade há um parque.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Dans ma ville, il y a un parc.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Na minha cidade há uma universidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Dans ma ville, il y a une université.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há muitos restaurantes.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a beaucoup de restaurants.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Minha cidade é pequena.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ma ville est petite.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Minha cidade é grande.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ma ville est grande.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há um cinema.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a un cinéma.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Há uma biblioteca.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a une bibliothèque.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Minha cidade fica perto de Paris.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ma ville est près de Paris.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há um museu na cidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a un musée dans la ville.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Há muitos parques.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a beaucoup de parcs.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Meu bairro é tranquilo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon quartier est calme.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há lojas na rua.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a des magasins dans la rue.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu habites dans quelle ville ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Ta ville est grande ou petite ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Il y a une université dans ta ville ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Il y a beaucoup de restaurants ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu préfères la ville ou la campagne ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Il y a des parcs dans ton quartier ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Ton quartier est calme ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu vas souvent au cinéma ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Il y a un musée dans ta ville ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu aimes ta ville ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
