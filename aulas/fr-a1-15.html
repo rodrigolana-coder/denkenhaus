@@ -1,151 +1,162 @@
-<!-- Français A1 — Curiosité 15 : Pourquoi les auberges de jeunesse sont populaires en France ?
-     Contenu interne uniquement — chargé via fetch par app.js -->
+<!-- Francês A1 — Aula 15: Pourquoi les auberges de jeunesse sont populaires en France ? -->
 
-<div class="c-block">
-  <div class="c-block-title">Curiosité</div>
-<!-- AUDIO -->
-  <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
-    <source src="/denkenhaus/audio/fr/fr15.mp3" type="audio/mpeg">
-  </audio>
-  <div class="fr-curiosity-text">
-    <h3>Pourquoi les auberges de jeunesse sont populaires en France ?</h3>
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Texte</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulaire</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Questions</button>
+</div>
 
-    <p>
-      En France, beaucoup de voyageurs utilisent les <strong>auberges de jeunesse</strong>
-      pour passer une nuit dans une ville.
-    </p>
-
-    <p>
-      Une auberge de jeunesse est souvent <strong>moins chère qu’un hôtel</strong>.
-      Les voyageurs peuvent réserver une <strong>chambre simple</strong>, une
-      <strong>chambre double</strong> ou un <strong>dortoir</strong>.
-    </p>
-
-    <p>
-      Dans beaucoup d’auberges, il y a des <strong>espaces communs</strong> où les
-      voyageurs peuvent parler, cuisiner ou rencontrer des personnes d’autres pays.
-    </p>
-
-    <p>
-      Certaines auberges offrent aussi <strong>le petit déjeuner</strong>, une
-      <strong>connexion Wi-Fi</strong> et des <strong>informations touristiques</strong>
-      sur la ville.
-    </p>
-
-    <p>
-      Aujourd’hui, les auberges de jeunesse sont très populaires chez les
-      <strong>étudiants</strong>, les <strong>jeunes voyageurs</strong> et les personnes
-      qui veulent voyager <strong>avec un petit budget</strong>.
-    </p>
+<!-- 1. TEXTO -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Pourquoi les auberges de jeunesse sont populaires en France ?</div>
+    <div class="fr-dlg-right" style="max-width:900px;margin:0 auto;">
+      <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
+        <source src="/denkenhaus/audio/fr/fr15.mp3" type="audio/mpeg">
+      </audio>
+      <div class="dialog-line">En France, beaucoup de voyageurs utilisent les auberges de jeunesse pour passer une nuit dans une ville.</div>
+      <div class="dialog-line">Une auberge de jeunesse est souvent moins chère qu’un hôtel. Les voyageurs peuvent réserver une chambre simple, une chambre double ou un dortoir.</div>
+      <div class="dialog-line">Dans beaucoup d’auberges, il y a des espaces communs où les voyageurs peuvent parler, cuisiner ou rencontrer des personnes d’autres pays.</div>
+      <div class="dialog-line">Certaines auberges offrent aussi le petit déjeuner, une connexion Wi-Fi et des informations touristiques sur la ville.</div>
+      <div class="dialog-line">Aujourd’hui, les auberges de jeunesse sont très populaires chez les étudiants, les jeunes voyageurs et les personnes qui veulent voyager avec un petit budget.</div>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" disabled>← Anterior</button>
+      <span class="fr-slide-info">Seção 1 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(1)">Próximo →</button>
+    </div>
   </div>
 </div>
 
-<div class="c-block">
-  <div class="c-block-title">Vocabulaire</div>
-
-  <table class="fr-vocab-table">
-    <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
-    <tr><td class="fr-word">une auberge de jeunesse</td><td>albergue juvenil</td><td class="fr-example">Je dors dans une auberge de jeunesse.</td></tr>
-    <tr><td class="fr-word">un voyageur</td><td>viajante</td><td class="fr-example">Le voyageur arrive le soir.</td></tr>
-    <tr><td class="fr-word">passer une nuit</td><td>passar uma noite</td><td class="fr-example">Je passe une nuit à Lyon.</td></tr>
-    <tr><td class="fr-word">moins cher</td><td>mais barato</td><td class="fr-example">L’auberge est moins chère que l’hôtel.</td></tr>
-    <tr><td class="fr-word">réserver</td><td>reservar</td><td class="fr-example">Je veux réserver une chambre.</td></tr>
-    <tr><td class="fr-word">une chambre simple</td><td>quarto individual</td><td class="fr-example">Je prends une chambre simple.</td></tr>
-    <tr><td class="fr-word">une chambre double</td><td>quarto duplo</td><td class="fr-example">Nous prenons une chambre double.</td></tr>
-    <tr><td class="fr-word">un dortoir</td><td>dormitório</td><td class="fr-example">Le dortoir est pour plusieurs personnes.</td></tr>
-    <tr><td class="fr-word">un espace commun</td><td>espaço comum</td><td class="fr-example">On parle dans l’espace commun.</td></tr>
-    <tr><td class="fr-word">rencontrer</td><td>encontrar / conhecer</td><td class="fr-example">Je rencontre des voyageurs espagnols.</td></tr>
-    <tr><td class="fr-word">une connexion Wi-Fi</td><td>conexão Wi-Fi</td><td class="fr-example">Il y a une connexion Wi-Fi dans l’auberge.</td></tr>
-    <tr><td class="fr-word">une information touristique</td><td>informação turística</td><td class="fr-example">Je demande une information touristique.</td></tr>
-    <tr><td class="fr-word">un budget</td><td>orçamento</td><td class="fr-example">Je voyage avec un petit budget.</td></tr>
-  </table>
+<!-- 2. VOCABULAIRE -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulaire</div>
+    <table class="fr-vocab-table">
+      <tr><th>Français</th><th>Português</th></tr>
+      <tr><td class="fr-word">une auberge de jeunesse</td><td>albergue juvenil</td></tr>
+      <tr><td class="fr-word">un voyageur</td><td>viajante</td></tr>
+      <tr><td class="fr-word">passer une nuit</td><td>passar uma noite</td></tr>
+      <tr><td class="fr-word">moins cher</td><td>mais barato</td></tr>
+      <tr><td class="fr-word">réserver</td><td>reservar</td></tr>
+      <tr><td class="fr-word">une chambre simple</td><td>quarto individual</td></tr>
+      <tr><td class="fr-word">une chambre double</td><td>quarto duplo</td></tr>
+      <tr><td class="fr-word">un dortoir</td><td>dormitório</td></tr>
+      <tr><td class="fr-word">un espace commun</td><td>espaço comum</td></tr>
+      <tr><td class="fr-word">rencontrer</td><td>encontrar / conhecer</td></tr>
+      <tr><td class="fr-word">une connexion Wi-Fi</td><td>conexão Wi-Fi</td></tr>
+      <tr><td class="fr-word">une information touristique</td><td>informação turística</td></tr>
+      <tr><td class="fr-word">un budget</td><td>orçamento</td></tr>
+      <tr><td class="fr-word">le petit déjeuner</td><td>café da manhã</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
 </div>
 
-<div class="c-block">
-  <div class="c-block-title">Questions de compréhension</div>
-  <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">
-    Lis la question, choisis ta réponse et clique pour vérifier.
-  </p>
+<!-- 3. QUESTIONS -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Questions de compréhension</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Lis la question, choisis ta réponse et clique pour vérifier.</p>
 
-  <div class="fr-ex-slide fr-active" id="fr-ex-0">
-    <div class="exercise-list">
-      <div class="exercise-item">
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">1. Les voyageurs utilisent les auberges pour :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">B) passer une nuit</div>
-      </div>
+        <div class="exercise-options">A) travailler &nbsp;|&nbsp; B) passer une nuit &nbsp;|&nbsp; C) étudier &nbsp;|&nbsp; D) habiter</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) passer une nuit</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">2. Une auberge de jeunesse est souvent :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">B) moins chère qu’un hôtel</div>
-      </div>
+        <div class="exercise-options">A) plus chère qu’un hôtel &nbsp;|&nbsp; B) moins chère qu’un hôtel &nbsp;|&nbsp; C) la même chose qu’un hôtel &nbsp;|&nbsp; D) gratuite</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) moins chère qu’un hôtel</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">3. Dans une auberge, on peut réserver :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">D) toutes les réponses</div>
-      </div>
+        <div class="exercise-options">A) une chambre simple &nbsp;|&nbsp; B) une chambre double &nbsp;|&nbsp; C) un dortoir &nbsp;|&nbsp; D) toutes les réponses</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ D) toutes les réponses</div>
+      </div></div>
     </div>
-  </div>
 
-  <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
-    <div class="exercise-list">
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">4. Les voyageurs peuvent rencontrer :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">B) des personnes d’autres pays</div>
-      </div>
+        <div class="exercise-options">A) des touristes &nbsp;|&nbsp; B) des personnes d’autres pays &nbsp;|&nbsp; C) des professeurs &nbsp;|&nbsp; D) des policiers</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) des personnes d’autres pays</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">5. Dans certaines auberges, il y a :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">D) toutes les réponses</div>
-      </div>
+        <div class="exercise-options">A) le petit déjeuner &nbsp;|&nbsp; B) le Wi-Fi &nbsp;|&nbsp; C) des informations touristiques &nbsp;|&nbsp; D) toutes les réponses</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ D) toutes les réponses</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-5" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">6. Les auberges sont populaires chez :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">D) toutes les réponses</div>
-      </div>
+        <div class="exercise-options">A) les étudiants &nbsp;|&nbsp; B) les jeunes voyageurs &nbsp;|&nbsp; C) les voyageurs avec un petit budget &nbsp;|&nbsp; D) toutes les réponses</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ D) toutes les réponses</div>
+      </div></div>
     </div>
-  </div>
 
-  <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
-    <div class="exercise-list">
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-6" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">7. Une auberge est souvent :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">C) moins chère</div>
-      </div>
+        <div class="exercise-options">A) petite &nbsp;|&nbsp; B) chère &nbsp;|&nbsp; C) moins chère &nbsp;|&nbsp; D) fermée</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ C) moins chère</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-7" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">8. Dans les espaces communs, les voyageurs peuvent :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">B) parler et cuisiner</div>
-      </div>
+        <div class="exercise-options">A) dormir &nbsp;|&nbsp; B) parler et cuisiner &nbsp;|&nbsp; C) travailler &nbsp;|&nbsp; D) courir</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) parler et cuisiner</div>
+      </div></div>
+    </div>
 
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-8" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">9. Les auberges permettent de :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">D) toutes les réponses</div>
-      </div>
+        <div class="exercise-options">A) rencontrer des personnes &nbsp;|&nbsp; B) voyager moins cher &nbsp;|&nbsp; C) découvrir la ville &nbsp;|&nbsp; D) toutes les réponses</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ D) toutes les réponses</div>
+      </div></div>
     </div>
-  </div>
 
-  <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
-    <div class="exercise-list">
-      <div class="exercise-item">
+    <div class="fr-ex-slide" id="fr-ex-9" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
         <div class="exercise-q">10. Une auberge de jeunesse est :</div>
-        <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
-        <div class="exercise-answer">B) un logement pour voyageurs</div>
-      </div>
+        <div class="exercise-options">A) un musée &nbsp;|&nbsp; B) un logement pour voyageurs &nbsp;|&nbsp; C) un restaurant &nbsp;|&nbsp; D) une école</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) un logement pour voyageurs</div>
+      </div></div>
     </div>
-  </div>
 
-  <div class="fr-nav">
-    <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
-    <span class="fr-slide-info" id="fr-ex-info">Perguntas 1–3 de 10</span>
-    <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Question 1 de 10</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
   </div>
 </div>
