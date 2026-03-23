@@ -160,6 +160,14 @@ const AULAS = {
   skills: ['Lecture', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-15.html',
 },
+'Francês-A1-16': {
+  icon: '🧭',
+  titulo: 'Indiquer un itinéraire',
+  descricao: 'Dar direções, usar verbos de movimento, imperativo simples e pontos de referência na cidade.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-16.html',
+},
 };
 
 /* ── ESTADO ── */
