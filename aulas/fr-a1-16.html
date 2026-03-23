@@ -1,0 +1,271 @@
+<!-- Francês A1 — Aula 16: Indiquer un itinéraire
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr16.png" alt="Demander son chemin"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr16.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Demander son chemin</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Excusez-moi monsieur, je cherche l’auberge de jeunesse.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Oui, bien sûr.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Comment je fais pour y aller ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Alors, prenez la rue à gauche.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">D’accord.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Continuez tout droit.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Oui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Traversez la rue au feu.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Ensuite ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Tournez à droite, et l’auberge est là, près du parc.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Parfait, merci beaucoup !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr16-1.png" alt="Donner un itinéraire"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr16-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Donner un itinéraire</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Où est la gare ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Prenez cette rue.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Ensuite ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Allez tout droit jusqu’au feu.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Puis tournez à gauche.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">C’est loin ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Non, c’est près d’ici.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr16-2.png" alt="Expliquer un trajet"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr16-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Expliquer un trajet</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Pour aller au musée, tu prends la rue principale.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">D’accord.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu continues tout droit.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu passes devant la banque.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Ensuite ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu tournes à droite et tu arrives au musée.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Parfait !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">prendre</td><td>pegar / seguir</td><td class="fr-example">Prenez cette rue.</td></tr>
+      <tr><td class="fr-word">continuer</td><td>continuar</td><td class="fr-example">Continuez tout droit.</td></tr>
+      <tr><td class="fr-word">tourner</td><td>virar</td><td class="fr-example">Tournez à droite.</td></tr>
+      <tr><td class="fr-word">aller</td><td>ir</td><td class="fr-example">Comment je fais pour y aller ?</td></tr>
+      <tr><td class="fr-word">passer</td><td>passar</td><td class="fr-example">Tu passes devant la banque.</td></tr>
+      <tr><td class="fr-word">traverser</td><td>atravessar</td><td class="fr-example">Traversez la rue.</td></tr>
+      <tr><td class="fr-word">arriver</td><td>chegar</td><td class="fr-example">Tu arrives au musée.</td></tr>
+
+      <tr><td class="fr-word">à gauche</td><td>à esquerda</td><td class="fr-example">Tournez à gauche.</td></tr>
+      <tr><td class="fr-word">à droite</td><td>à direita</td><td class="fr-example">Tournez à droite.</td></tr>
+      <tr><td class="fr-word">tout droit</td><td>em frente / reto</td><td class="fr-example">Continuez tout droit.</td></tr>
+
+      <tr><td class="fr-word">prenez</td><td>pegue</td><td class="fr-example">Prenez la rue à gauche.</td></tr>
+      <tr><td class="fr-word">continuez</td><td>continue</td><td class="fr-example">Continuez tout droit.</td></tr>
+      <tr><td class="fr-word">tournez</td><td>vire</td><td class="fr-example">Tournez à droite.</td></tr>
+      <tr><td class="fr-word">allez</td><td>vá</td><td class="fr-example">Allez jusqu’au feu.</td></tr>
+      <tr><td class="fr-word">traversez</td><td>atravesse</td><td class="fr-example">Traversez la rue.</td></tr>
+
+      <tr><td class="fr-word">la rue</td><td>rua</td><td class="fr-example">Prenez cette rue.</td></tr>
+      <tr><td class="fr-word">le feu</td><td>semáforo</td><td class="fr-example">Au feu, tournez à gauche.</td></tr>
+      <tr><td class="fr-word">la gare</td><td>estação</td><td class="fr-example">Où est la gare ?</td></tr>
+      <tr><td class="fr-word">le musée</td><td>museu</td><td class="fr-example">Tu arrives au musée.</td></tr>
+      <tr><td class="fr-word">la banque</td><td>banco</td><td class="fr-example">Tu passes devant la banque.</td></tr>
+      <tr><td class="fr-word">le parc</td><td>parque</td><td class="fr-example">Près du parc.</td></tr>
+      <tr><td class="fr-word">l’auberge</td><td>albergue</td><td class="fr-example">Je cherche l’auberge.</td></tr>
+
+      <tr><td class="fr-word">où est</td><td>onde fica / onde está</td><td class="fr-example">Où est la gare ?</td></tr>
+      <tr><td class="fr-word">près de</td><td>perto de</td><td class="fr-example">L’auberge est près du parc.</td></tr>
+      <tr><td class="fr-word">ensuite</td><td>depois</td><td class="fr-example">Ensuite ?</td></tr>
+      <tr><td class="fr-word">puis</td><td>em seguida</td><td class="fr-example">Puis tournez à gauche.</td></tr>
+      <tr><td class="fr-word">d’abord</td><td>primeiro</td><td class="fr-example">D’abord, prenez la rue principale.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Impératif (forme simple)</h4>
+      <p>Usado para dar instruções.</p>
+      <p class="example">prenez · continuez · tournez · allez · traversez</p>
+      <p>👉 Forma base = <strong>vous</strong> sem o sujeito.</p>
+      <p class="example">Vous prenez → Prenez</p>
+      <p class="example">Vous continuez → Continuez</p>
+      <p class="example">Vous tournez → Tournez</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Donner un itinéraire</h4>
+      <p>Estrutura comum:</p>
+      <p class="example">verbe + direction</p>
+      <p class="example">Prenez la rue à gauche.</p>
+      <p class="example">Tournez à droite.</p>
+      <p class="example">Continuez tout droit.</p>
+      <p class="example">Allez jusqu’au feu.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Ordre des actions</h4>
+      <p>Para organizar um caminho, usamos:</p>
+      <p class="example">d’abord — primeiro</p>
+      <p class="example">ensuite — depois</p>
+      <p class="example">puis — em seguida</p>
+      <p class="example">D’abord, prenez cette rue. Ensuite, continuez tout droit. Puis, tournez à gauche.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Révision : lieux et prépositions</h4>
+      <p>Retomando estruturas já vistas:</p>
+      <p class="example">Où est la gare ?</p>
+      <p class="example">Le musée est à droite.</p>
+      <p class="example">L’auberge est près du parc.</p>
+      <p class="example">Le restaurant est à gauche.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Vire à esquerda.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tournez à gauche.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Continue em frente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Continuez tout droit.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Atravesse a rua.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Traversez la rue.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Vire à direita.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tournez à droite.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Pegue esta rua.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Prenez cette rue.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Vá até o semáforo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Allez jusqu’au feu.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Continue em frente até o parque.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Continuez tout droit jusqu’au parc.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Passe pelo banco.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Passez devant la banque.</div></div>
+        <div class="exercise-item"><div class="exercise-q">O museu fica à direita.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le musée est à droite.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">O hotel fica perto da estação.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">L’hôtel est près de la gare.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Vá em frente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Allez tout droit.</div></div>
+        <div class="exercise-item"><div class="exercise-q">O restaurante fica à esquerda.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le restaurant est à gauche.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu sais donner un itinéraire en français ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu demandes souvent ton chemin ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu préfères utiliser Google Maps ou demander ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu connais bien ta ville ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu te perds souvent ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu préfères marcher ou prendre le bus ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu sais expliquer un chemin à un touriste ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu connais les rues principales de ta ville ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu préfères les grandes villes ou les petites villes ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu aimes visiter de nouvelles villes ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
