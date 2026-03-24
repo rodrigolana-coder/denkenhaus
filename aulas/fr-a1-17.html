@@ -1,0 +1,463 @@
+<!-- Francês A1 — Aula 17: Indiquer un itinéraire -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">🧩 Labirinto</button>
+</div>
+
+<!-- DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+<div class="c-block">
+<div class="c-block-title">Diálogos</div>
+
+<div class="fr-dlg-slide" id="fr-dlg-0">
+<div class="fr-dlg-grid">
+<div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr17.png"></div>
+<div class="fr-dlg-right">
+<audio controls style="width:100%;margin-bottom:0.5rem;"><source src="/denkenhaus/audio/fr/fr17.mp3"></audio>
+<div class="fr-dlg-label">Diálogo 1 — Ultra simple</div>
+<div class="dialog-line"><span class="dialog-speaker">Touriste</span><span class="dialog-text">Excusez-moi, la gare ?</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Prenez cette rue.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Continuez tout droit.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">Tournez à gauche.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Passant</span><span class="dialog-text">La gare est là.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Touriste</span><span class="dialog-text">Merci !</span></div>
+</div></div></div>
+
+<div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+<div class="fr-dlg-grid">
+<div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr17-1.png"></div>
+<div class="fr-dlg-right">
+<audio controls style="width:100%;margin-bottom:0.5rem;"><source src="/denkenhaus/audio/fr/fr17-1.mp3"></audio>
+<div class="fr-dlg-label">Diálogo 2 — Progression</div>
+<div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Je cherche le musée.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Prenez la rue à droite.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Continuez tout droit.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Passez devant la banque.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Tournez à gauche.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Le musée est près du parc.</span></div>
+</div></div></div>
+
+<div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+<div class="fr-dlg-grid">
+<div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr17-2.png"></div>
+<div class="fr-dlg-right">
+<audio controls style="width:100%;margin-bottom:0.5rem;"><source src="/denkenhaus/audio/fr/fr17-2.mp3"></audio>
+<div class="fr-dlg-label">Diálogo 3 — Complet</div>
+<div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Où est l'auberge ?</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu prends la rue principale.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu continues tout droit.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu passes devant la gare.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Ensuite, tu tournes à droite.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Puis tu traverses la rue.</span></div>
+<div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">L'auberge est à gauche.</span></div>
+</div></div></div>
+
+<div class="fr-nav">
+  <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>←</button>
+  <span id="fr-dlg-info">Diálogo 1 de 3</span>
+  <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">→</button>
+</div>
+</div></div>
+
+<!-- VOCAB -->
+<div class="fr-section" id="fr-sec-1">
+<div class="c-block">
+<div class="c-block-title">Vocabulário</div>
+<table class="fr-vocab-table">
+<tr><th>Français</th><th>Português</th></tr>
+<tr><td class="fr-word">prendre</td><td>seguir</td></tr>
+<tr><td class="fr-word">continuer</td><td>continuar</td></tr>
+<tr><td class="fr-word">tourner</td><td>virar</td></tr>
+<tr><td class="fr-word">passer</td><td>passar</td></tr>
+<tr><td class="fr-word">traverser</td><td>atravessar</td></tr>
+<tr><td class="fr-word">à gauche</td><td>à esquerda</td></tr>
+<tr><td class="fr-word">à droite</td><td>à direita</td></tr>
+<tr><td class="fr-word">tout droit</td><td>reto</td></tr>
+<tr><td class="fr-word">la rue</td><td>rua</td></tr>
+<tr><td class="fr-word">la gare</td><td>estação</td></tr>
+<tr><td class="fr-word">le musée</td><td>museu</td></tr>
+<tr><td class="fr-word">la banque</td><td>banco</td></tr>
+<tr><td class="fr-word">le parc</td><td>parque</td></tr>
+<tr><td class="fr-word">d'abord</td><td>primeiro</td></tr>
+<tr><td class="fr-word">ensuite</td><td>depois</td></tr>
+<tr><td class="fr-word">puis</td><td>depois disso</td></tr>
+</table>
+</div></div>
+
+<!-- GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+<div class="c-block">
+<div class="c-block-title">Gramática</div>
+<p><strong>Estrutura:</strong></p>
+<p>Prenez + direction &nbsp;|&nbsp; Tournez à gauche</p>
+<p><strong>Ordem:</strong></p>
+<p>d'abord → ensuite → puis</p>
+<p><strong>Impératif:</strong></p>
+<p>Vous prenez → <strong>Prenez</strong></p>
+</div></div>
+
+<!-- TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+<div class="c-block">
+<div class="c-block-title">Tradução</div>
+<div class="exercise-item">
+  <div class="exercise-q">Pegue esta rua</div>
+  <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+  <div class="exercise-answer">Prenez cette rue</div>
+</div>
+<div class="exercise-item">
+  <div class="exercise-q">Vire à esquerda</div>
+  <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+  <div class="exercise-answer">Tournez à gauche</div>
+</div>
+<div class="exercise-item">
+  <div class="exercise-q">Continue em frente</div>
+  <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+  <div class="exercise-answer">Continuez tout droit</div>
+</div>
+<div class="exercise-item">
+  <div class="exercise-q">Vire à direita</div>
+  <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+  <div class="exercise-answer">Tournez à droite</div>
+</div>
+<div class="exercise-item">
+  <div class="exercise-q">Passe em frente ao banco</div>
+  <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+  <div class="exercise-answer">Passez devant la banque</div>
+</div>
+</div></div>
+
+<!-- LABIRINTO -->
+<div class="fr-section" id="fr-sec-4">
+<div class="c-block">
+<div class="c-block-title">🧩 Jeu du Labyrinthe</div>
+<p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1rem;">
+  Leia as instruções em francês e use as setas para levar o personagem ao destino. 5 níveis de dificuldade!
+</p>
+
+<style>
+.maze-wrap{max-width:520px;margin:0 auto}
+.maze-level-bar{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.maze-lvl-btn{padding:.4rem .9rem;border-radius:8px;border:1.5px solid #c9a96e;background:transparent;color:#c9a96e;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.maze-lvl-btn.active{background:#c9a96e;color:#0d1b2a}
+.maze-lvl-btn.done{background:#27ae60;color:white;border-color:#27ae60}
+.maze-instructions{background:rgba(201,169,110,.1);border:1px solid rgba(201,169,110,.3);border-radius:10px;padding:1rem;margin-bottom:1rem;font-size:.88rem;color:#c8d4e8;line-height:1.8}
+.maze-instructions strong{color:#c9a96e}
+.maze-canvas-wrap{display:flex;justify-content:center;margin-bottom:1rem}
+#mazeCanvas{border-radius:12px;border:2px solid rgba(201,169,110,.3);display:block;max-width:100%;touch-action:none}
+.maze-controls{display:grid;grid-template-columns:repeat(3,56px);grid-template-rows:repeat(3,56px);gap:6px;justify-content:center;margin-bottom:1rem}
+.maze-btn{width:56px;height:56px;border-radius:10px;border:none;font-size:1.5rem;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.maze-btn.dir{background:rgba(201,169,110,.15);color:#c9a96e;border:1.5px solid rgba(201,169,110,.4)}
+.maze-btn.dir:hover{background:rgba(201,169,110,.3);transform:scale(1.08)}
+.maze-btn.dir:active{transform:scale(.95)}
+.maze-btn.empty{background:transparent;border:none;cursor:default;pointer-events:none}
+.maze-status{text-align:center;font-size:.9rem;min-height:2rem;margin-bottom:.5rem;font-weight:600}
+.maze-status.win{color:#27ae60}
+.maze-status.lose{color:#e74c3c}
+.maze-reset-btn{display:block;margin:.5rem auto 0;padding:.5rem 1.5rem;border-radius:8px;border:1.5px solid rgba(201,169,110,.4);background:transparent;color:#c9a96e;font-size:.85rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
+.maze-reset-btn:hover{background:rgba(201,169,110,.15)}
+</style>
+
+<div class="maze-wrap">
+  <div class="maze-level-bar" id="mazeLevelBar"></div>
+  <div class="maze-instructions" id="mazeInstructions"></div>
+  <div class="maze-canvas-wrap">
+    <canvas id="mazeCanvas"></canvas>
+  </div>
+  <div class="maze-status" id="mazeStatus"></div>
+  <div class="maze-controls">
+    <div class="maze-btn empty"></div>
+    <button class="maze-btn dir" onclick="mazeMovePlayer(0,-1)">⬆️</button>
+    <div class="maze-btn empty"></div>
+    <button class="maze-btn dir" onclick="mazeMovePlayer(-1,0)">⬅️</button>
+    <div class="maze-btn empty"></div>
+    <button class="maze-btn dir" onclick="mazeMovePlayer(1,0)">➡️</button>
+    <div class="maze-btn empty"></div>
+    <button class="maze-btn dir" onclick="mazeMovePlayer(0,1)">⬇️</button>
+    <div class="maze-btn empty"></div>
+  </div>
+  <button class="maze-reset-btn" onclick="mazeReset()">🔄 Recomeçar nível</button>
+</div>
+
+<script>
+const MAZE_LEVELS = [
+  {
+    label:'N1', dest:'🥖 Boulangerie',
+    instructions:'<strong>Niveau 1 — Très facile (5×5)</strong><br>D\'abord, allez <strong>tout droit</strong> (⬆️).<br>Puis tournez <strong>à droite</strong> (➡️).<br>Continuez <strong>tout droit</strong> jusqu\'au bout.<br>La boulangerie est là !',
+    G:5,
+    // paredes: ['h' = horizontal entre (x,y) e (x,y+1) | 'v' = vertical entre (x,y) e (x+1,y)]
+    walls:[
+      {t:'h',x:0,y:0},{t:'h',x:1,y:0},{t:'h',x:2,y:0},{t:'h',x:3,y:0},{t:'h',x:4,y:0},
+      {t:'v',x:0,y:0},{t:'v',x:0,y:1},{t:'v',x:0,y:2},{t:'v',x:0,y:3},
+      {t:'h',x:0,y:1},{t:'h',x:1,y:1},
+      {t:'v',x:1,y:1},{t:'v',x:1,y:2},
+      {t:'h',x:2,y:2},{t:'h',x:3,y:2},
+      {t:'v',x:2,y:2},{t:'v',x:3,y:2},{t:'v',x:3,y:3},
+      {t:'h',x:1,y:3},{t:'h',x:2,y:3},
+      {t:'v',x:1,y:3},{t:'v',x:1,y:4},
+      {t:'h',x:3,y:4},{t:'h',x:4,y:3},
+    ],
+    start:[0,4], end:[4,0],
+  },
+  {
+    label:'N2', dest:'🏛️ Musée',
+    instructions:'<strong>Niveau 2 — Facile (6×6)</strong><br>Allez <strong>tout droit</strong> (⬆️) deux fois.<br>Tournez <strong>à droite</strong> (➡️).<br>Continuez <strong>tout droit</strong> (⬆️).<br>Tournez <strong>à gauche</strong> (⬅️) au carrefour.<br>Le musée est là !',
+    G:6,
+    walls:[
+      {t:'h',x:0,y:0},{t:'h',x:1,y:0},{t:'h',x:2,y:0},{t:'h',x:3,y:0},{t:'h',x:4,y:0},{t:'h',x:5,y:0},
+      {t:'v',x:0,y:0},{t:'v',x:0,y:1},{t:'v',x:0,y:2},{t:'v',x:0,y:3},{t:'v',x:0,y:4},
+      {t:'h',x:0,y:2},{t:'h',x:1,y:2},
+      {t:'v',x:1,y:0},{t:'v',x:1,y:1},
+      {t:'h',x:2,y:1},{t:'h',x:3,y:1},
+      {t:'v',x:2,y:1},{t:'v',x:2,y:2},{t:'v',x:2,y:3},
+      {t:'h',x:1,y:3},{t:'h',x:2,y:3},
+      {t:'v',x:3,y:2},{t:'v',x:3,y:3},
+      {t:'h',x:3,y:3},{t:'h',x:4,y:3},
+      {t:'v',x:4,y:1},{t:'v',x:4,y:2},
+      {t:'h',x:4,y:2},{t:'h',x:5,y:2},
+      {t:'v',x:5,y:3},{t:'v',x:5,y:4},
+      {t:'h',x:0,y:4},{t:'h',x:1,y:4},{t:'h',x:2,y:4},
+      {t:'v',x:1,y:4},{t:'v',x:2,y:4},{t:'v',x:3,y:4},
+      {t:'h',x:3,y:5},{t:'h',x:4,y:5},{t:'h',x:5,y:4},
+    ],
+    start:[0,5], end:[5,1],
+  },
+  {
+    label:'N3', dest:'🏨 Hôtel',
+    instructions:'<strong>Niveau 3 — Moyen (7×7)</strong><br>Prenez la rue <strong>à droite</strong> (➡️).<br>Continuez <strong>tout droit</strong> (⬆️) três vezes.<br>Vire <strong>à gauche</strong> (⬅️), depois <strong>à gauche</strong> de novo.<br>Passez devant la gare 🚉.<br>L\'hôtel est <strong>à droite</strong> (➡️).',
+    G:7,
+    walls:[
+      {t:'h',x:0,y:0},{t:'h',x:1,y:0},{t:'h',x:2,y:0},{t:'h',x:3,y:0},{t:'h',x:4,y:0},{t:'h',x:5,y:0},{t:'h',x:6,y:0},
+      {t:'v',x:0,y:0},{t:'v',x:0,y:1},{t:'v',x:0,y:2},{t:'v',x:0,y:3},{t:'v',x:0,y:4},{t:'v',x:0,y:5},
+      {t:'h',x:0,y:1},{t:'h',x:1,y:1},
+      {t:'v',x:1,y:0},{t:'v',x:1,y:1},{t:'v',x:1,y:3},
+      {t:'h',x:1,y:2},{t:'h',x:2,y:2},
+      {t:'v',x:2,y:1},{t:'v',x:2,y:2},
+      {t:'h',x:2,y:3},{t:'h',x:3,y:3},
+      {t:'v',x:3,y:1},{t:'v',x:3,y:2},{t:'v',x:3,y:4},
+      {t:'h',x:3,y:4},{t:'h',x:4,y:4},
+      {t:'v',x:4,y:0},{t:'v',x:4,y:2},{t:'v',x:4,y:3},
+      {t:'h',x:4,y:2},{t:'h',x:5,y:1},
+      {t:'v',x:5,y:1},{t:'v',x:5,y:3},{t:'v',x:5,y:4},
+      {t:'h',x:5,y:3},{t:'h',x:6,y:3},
+      {t:'v',x:6,y:1},{t:'v',x:6,y:2},
+      {t:'h',x:0,y:5},{t:'h',x:1,y:5},{t:'h',x:2,y:5},
+      {t:'v',x:2,y:5},{t:'v',x:3,y:5},{t:'v',x:4,y:5},
+      {t:'h',x:4,y:5},{t:'h',x:5,y:5},{t:'h',x:6,y:4},
+    ],
+    start:[0,6], end:[6,2],
+    landmark:{x:3,y:3,emoji:'🚉'},
+  },
+  {
+    label:'N4', dest:'🏥 Hôpital',
+    instructions:'<strong>Niveau 4 — Difficile (8×8)</strong><br>D\'abord, allez <strong>tout droit</strong> (⬆️).<br>Tournez <strong>à droite</strong> (➡️), depois <strong>tout droit</strong>.<br>Tournez <strong>à gauche</strong> (⬅️) duas vezes.<br>Traversez la rue principale.<br>L\'hôpital est <strong>à gauche</strong> (⬅️).',
+    G:8,
+    walls:[
+      {t:'h',x:0,y:0},{t:'h',x:1,y:0},{t:'h',x:2,y:0},{t:'h',x:3,y:0},{t:'h',x:4,y:0},{t:'h',x:5,y:0},{t:'h',x:6,y:0},{t:'h',x:7,y:0},
+      {t:'v',x:0,y:0},{t:'v',x:0,y:1},{t:'v',x:0,y:2},{t:'v',x:0,y:3},{t:'v',x:0,y:4},{t:'v',x:0,y:5},{t:'v',x:0,y:6},
+      {t:'h',x:0,y:1},{t:'h',x:1,y:1},
+      {t:'v',x:1,y:0},{t:'v',x:1,y:2},{t:'v',x:1,y:4},
+      {t:'h',x:1,y:3},{t:'h',x:2,y:1},{t:'h',x:2,y:3},
+      {t:'v',x:2,y:1},{t:'v',x:2,y:2},{t:'v',x:2,y:5},
+      {t:'h',x:2,y:4},{t:'h',x:3,y:2},{t:'h',x:3,y:4},
+      {t:'v',x:3,y:0},{t:'v',x:3,y:3},{t:'v',x:3,y:5},
+      {t:'h',x:3,y:5},{t:'h',x:4,y:1},{t:'h',x:4,y:3},
+      {t:'v',x:4,y:2},{t:'v',x:4,y:4},{t:'v',x:4,y:6},
+      {t:'h',x:4,y:5},{t:'h',x:5,y:2},{t:'h',x:5,y:4},
+      {t:'v',x:5,y:1},{t:'v',x:5,y:3},{t:'v',x:5,y:5},
+      {t:'h',x:5,y:6},{t:'h',x:6,y:1},{t:'h',x:6,y:5},
+      {t:'v',x:6,y:2},{t:'v',x:6,y:3},{t:'v',x:6,y:6},
+      {t:'h',x:6,y:3},{t:'h',x:7,y:2},{t:'h',x:7,y:4},
+      {t:'v',x:7,y:1},{t:'v',x:7,y:3},{t:'v',x:7,y:5},
+      {t:'h',x:0,y:6},{t:'h',x:1,y:6},{t:'h',x:2,y:6},
+      {t:'h',x:3,y:7},{t:'h',x:4,y:7},{t:'h',x:5,y:7},{t:'h',x:6,y:6},{t:'h',x:7,y:6},
+    ],
+    start:[0,7], end:[7,3],
+    landmark:{x:4,y:4,emoji:'🏪'},
+  },
+  {
+    label:'N5', dest:'🗼 Tour Eiffel',
+    instructions:'<strong>Niveau 5 — Expert (9×9)</strong><br>Prenez la première rue <strong>à gauche</strong> (⬅️).<br>Allez <strong>tout droit</strong> até o carrefour.<br>Tournez <strong>à droite</strong> (➡️) duas vezes.<br>Passez devant le musée 🏛️ e o parque 🌳.<br>Tournez <strong>à gauche</strong> (⬅️).<br>La Tour Eiffel est <strong>tout droit</strong> (⬆️) !',
+    G:9,
+    walls:[
+      {t:'h',x:0,y:0},{t:'h',x:1,y:0},{t:'h',x:2,y:0},{t:'h',x:3,y:0},{t:'h',x:4,y:0},{t:'h',x:5,y:0},{t:'h',x:6,y:0},{t:'h',x:7,y:0},{t:'h',x:8,y:0},
+      {t:'v',x:0,y:0},{t:'v',x:0,y:1},{t:'v',x:0,y:2},{t:'v',x:0,y:3},{t:'v',x:0,y:4},{t:'v',x:0,y:5},{t:'v',x:0,y:6},{t:'v',x:0,y:7},
+      {t:'h',x:0,y:1},{t:'h',x:1,y:1},{t:'h',x:2,y:2},{t:'h',x:3,y:1},
+      {t:'v',x:1,y:0},{t:'v',x:1,y:2},{t:'v',x:1,y:4},{t:'v',x:1,y:6},
+      {t:'h',x:1,y:3},{t:'h',x:1,y:5},{t:'h',x:2,y:4},
+      {t:'v',x:2,y:1},{t:'v',x:2,y:3},{t:'v',x:2,y:5},{t:'v',x:2,y:7},
+      {t:'h',x:2,y:6},{t:'h',x:3,y:3},{t:'h',x:3,y:5},
+      {t:'v',x:3,y:0},{t:'v',x:3,y:2},{t:'v',x:3,y:4},{t:'v',x:3,y:6},
+      {t:'h',x:3,y:7},{t:'h',x:4,y:2},{t:'h',x:4,y:4},
+      {t:'v',x:4,y:1},{t:'v',x:4,y:3},{t:'v',x:4,y:5},{t:'v',x:4,y:7},
+      {t:'h',x:4,y:6},{t:'h',x:5,y:1},{t:'h',x:5,y:5},
+      {t:'v',x:5,y:0},{t:'v',x:5,y:2},{t:'v',x:5,y:4},{t:'v',x:5,y:6},
+      {t:'h',x:5,y:3},{t:'h',x:6,y:2},{t:'h',x:6,y:4},
+      {t:'v',x:6,y:1},{t:'v',x:6,y:3},{t:'v',x:6,y:5},{t:'v',x:6,y:7},
+      {t:'h',x:6,y:6},{t:'h',x:7,y:1},{t:'h',x:7,y:3},
+      {t:'v',x:7,y:0},{t:'v',x:7,y:2},{t:'v',x:7,y:4},{t:'v',x:7,y:6},
+      {t:'h',x:7,y:5},{t:'h',x:7,y:7},{t:'h',x:8,y:2},{t:'h',x:8,y:6},
+      {t:'v',x:8,y:1},{t:'v',x:8,y:3},{t:'v',x:8,y:5},{t:'v',x:8,y:7},
+      {t:'h',x:0,y:7},{t:'h',x:1,y:8},{t:'h',x:2,y:8},{t:'h',x:3,y:8},{t:'h',x:4,y:8},{t:'h',x:5,y:8},{t:'h',x:6,y:8},{t:'h',x:7,y:8},{t:'h',x:8,y:7},
+    ],
+    start:[0,8], end:[8,0],
+    landmark:{x:2,y:3,emoji:'🏛️'},
+    landmark2:{x:6,y:5,emoji:'🌳'},
+  },
+];
+
+let mazeCurrent=0, mazePlayer={x:0,y:0}, mazeDone=[], mazeGameOver=false;
+
+function mazeCanMove(cx,cy,dx,dy){
+  const lv=MAZE_LEVELS[mazeCurrent];
+  const nx=cx+dx, ny=cy+dy;
+  if(nx<0||ny<0||nx>=lv.G||ny>=lv.G) return false;
+  // Parede vertical (entre x e x+1, mesma linha y): t='v', armazenada com menor x
+  // Parede horizontal (entre y e y+1, mesma coluna x): t='h', armazenada com menor y
+  return !lv.walls.some(w=>{
+    if(dx===1  && w.t==='v' && w.x===cx && w.y===cy) return true;
+    if(dx===-1 && w.t==='v' && w.x===nx && w.y===cy) return true;
+    if(dy===1  && w.t==='h' && w.x===cx && w.y===cy) return true;
+    if(dy===-1 && w.t==='h' && w.x===cx && w.y===ny) return true;
+    return false;
+  });
+}
+
+function mazeDraw(){
+  const canvas=document.getElementById('mazeCanvas');
+  const ctx=canvas.getContext('2d');
+  const lv=MAZE_LEVELS[mazeCurrent];
+  const G=lv.G;
+  const W=Math.min(480, window.innerWidth-60);
+  canvas.width=W; canvas.height=W;
+  const C=W/G;
+
+  ctx.fillStyle='#0d1b2a';
+  ctx.fillRect(0,0,W,W);
+
+  // Células do fundo
+  ctx.strokeStyle='rgba(201,169,110,0.07)';
+  ctx.lineWidth=0.5;
+  for(let i=0;i<=G;i++){
+    ctx.beginPath();ctx.moveTo(i*C,0);ctx.lineTo(i*C,W);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(0,i*C);ctx.lineTo(W,i*C);ctx.stroke();
+  }
+
+  // Landmarks
+  const drawEmoji=(emoji,x,y)=>{
+    ctx.font=`${C*0.55}px serif`;
+    ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText(emoji,x*C+C/2,y*C+C/2);
+  };
+  if(lv.landmark) drawEmoji(lv.landmark.emoji,lv.landmark.x,lv.landmark.y);
+  if(lv.landmark2) drawEmoji(lv.landmark2.emoji,lv.landmark2.x,lv.landmark2.y);
+
+  // Destino
+  ctx.fillStyle='rgba(39,174,96,0.2)';
+  ctx.fillRect(lv.end[0]*C+1,lv.end[1]*C+1,C-2,C-2);
+  drawEmoji(lv.dest.split(' ')[0],lv.end[0],lv.end[1]);
+
+  // Paredes
+  ctx.strokeStyle='#c9a96e';
+  ctx.lineWidth=Math.max(2,C*0.08);
+  ctx.lineCap='round';
+  lv.walls.forEach(w=>{
+    ctx.beginPath();
+    if(w.t==='v'){
+      ctx.moveTo((w.x+1)*C,w.y*C);
+      ctx.lineTo((w.x+1)*C,(w.y+1)*C);
+    } else {
+      ctx.moveTo(w.x*C,(w.y+1)*C);
+      ctx.lineTo((w.x+1)*C,(w.y+1)*C);
+    }
+    ctx.stroke();
+  });
+
+  // Borda
+  ctx.strokeStyle='#c9a96e';
+  ctx.lineWidth=3;
+  ctx.strokeRect(1,1,W-2,W-2);
+
+  // Abertura de saída (topo do destino)
+  ctx.strokeStyle='#0d1b2a';
+  ctx.lineWidth=Math.max(3,C*0.09)+2;
+  ctx.beginPath();
+  ctx.moveTo(lv.end[0]*C+2,lv.end[1]*C);
+  ctx.lineTo((lv.end[0]+1)*C-2,lv.end[1]*C);
+  ctx.stroke();
+
+  // Personagem
+  const px=mazePlayer.x*C+C/2;
+  const py=mazePlayer.y*C+C/2;
+  ctx.beginPath();
+  ctx.arc(px,py,C*0.3,0,Math.PI*2);
+  ctx.fillStyle='rgba(201,169,110,0.2)';
+  ctx.fill();
+  drawEmoji('🧍',mazePlayer.x,mazePlayer.y);
+}
+
+function mazeMovePlayer(dx,dy){
+  if(mazeGameOver) return;
+  if(!mazeCanMove(mazePlayer.x,mazePlayer.y,dx,dy)){
+    const el=document.getElementById('mazeStatus');
+    el.textContent='🧱 Mur ! Essayez une autre direction.';
+    el.className='maze-status lose';
+    setTimeout(()=>{if(!mazeGameOver){el.textContent='';el.className='maze-status';}},1200);
+    return;
+  }
+  mazePlayer={x:mazePlayer.x+dx,y:mazePlayer.y+dy};
+  mazeDraw();
+  const lv=MAZE_LEVELS[mazeCurrent];
+  if(mazePlayer.x===lv.end[0]&&mazePlayer.y===lv.end[1]){
+    mazeGameOver=true;
+    if(!mazeDone.includes(mazeCurrent)) mazeDone.push(mazeCurrent);
+    const el=document.getElementById('mazeStatus');
+    el.textContent=`🎉 Bravo ! Vous êtes arrivé(e) à ${lv.dest} !`;
+    el.className='maze-status win';
+    mazeRenderLevelBar();
+    if(mazeCurrent<MAZE_LEVELS.length-1){
+      setTimeout(()=>mazeInit(mazeCurrent+1),2000);
+    } else {
+      setTimeout(()=>{el.textContent='🏆 Félicitations ! Tous les niveaux complétés !';},2000);
+    }
+  }
+}
+
+function mazeInit(level){
+  mazeCurrent=level; mazeGameOver=false;
+  const lv=MAZE_LEVELS[level];
+  mazePlayer={x:lv.start[0],y:lv.start[1]};
+  document.getElementById('mazeInstructions').innerHTML=lv.instructions;
+  document.getElementById('mazeStatus').textContent='';
+  document.getElementById('mazeStatus').className='maze-status';
+  mazeRenderLevelBar();
+  mazeDraw();
+}
+
+function mazeReset(){ mazeInit(mazeCurrent); }
+
+function mazeRenderLevelBar(){
+  document.getElementById('mazeLevelBar').innerHTML=MAZE_LEVELS.map((lv,i)=>{
+    const cls=mazeDone.includes(i)?'done':(i===mazeCurrent?'active':'');
+    return `<button class="maze-lvl-btn ${cls}" onclick="mazeInit(${i})">${lv.label}${mazeDone.includes(i)?' ✓':''}</button>`;
+  }).join('');
+}
+
+document.addEventListener('keydown',function(e){
+  const sec=document.getElementById('fr-sec-4');
+  if(sec&&sec.classList.contains('fr-active')){
+    if(e.key==='ArrowUp'){e.preventDefault();mazeMovePlayer(0,-1);}
+    if(e.key==='ArrowDown'){e.preventDefault();mazeMovePlayer(0,1);}
+    if(e.key==='ArrowLeft'){e.preventDefault();mazeMovePlayer(-1,0);}
+    if(e.key==='ArrowRight'){e.preventDefault();mazeMovePlayer(1,0);}
+  }
+});
+
+setTimeout(()=>mazeInit(0),150);
+</script>
+
+</div></div>
