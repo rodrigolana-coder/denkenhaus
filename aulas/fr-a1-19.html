@@ -1,0 +1,267 @@
+<!-- Francês A1 — Aula 19: Provenance et destination
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr19.png" alt="À la poste"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr19.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — À la poste</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Bonjour, je voudrais envoyer une lettre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">D’accord. Vous envoyez la lettre où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">J’envoie la lettre au Canada.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Et vous êtes d’où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucie</span><span class="dialog-text">Je suis de France.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Employé</span><span class="dialog-text">Très bien.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr19-1.png" alt="Remplir un formulaire"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr19-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Remplir un formulaire</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Tu écris quoi ici ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ici, j’écris le destinataire.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Et là ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Là, c’est l’expéditeur.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Tu envoies la lettre où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Je l’envoie aux États-Unis.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Et tu viens d’où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Je viens d’Italie.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr19-2.png" alt="Parler des pays"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr19-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Parler des pays</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu viens d’où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je viens de Chine.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Et tu vas où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je vais en Espagne.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu connais d’autres pays ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, je vais souvent au Japon.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">une lettre</td><td>carta</td><td class="fr-example">J’envoie une lettre.</td></tr>
+      <tr><td class="fr-word">envoyer</td><td>enviar</td><td class="fr-example">Je veux envoyer une lettre.</td></tr>
+      <tr><td class="fr-word">recevoir</td><td>receber</td><td class="fr-example">Je reçois une lettre.</td></tr>
+      <tr><td class="fr-word">une carte</td><td>cartão</td><td class="fr-example">J’envoie une carte.</td></tr>
+      <tr><td class="fr-word">une adresse</td><td>endereço</td><td class="fr-example">J’écris une adresse.</td></tr>
+
+      <tr><td class="fr-word">l’expéditeur</td><td>remetente</td><td class="fr-example">Là, c’est l’expéditeur.</td></tr>
+      <tr><td class="fr-word">le destinataire</td><td>destinatário</td><td class="fr-example">Ici, j’écris le destinataire.</td></tr>
+      <tr><td class="fr-word">remplir</td><td>preencher</td><td class="fr-example">Je remplis le formulaire.</td></tr>
+      <tr><td class="fr-word">un formulaire</td><td>formulário</td><td class="fr-example">Je remplis un formulaire.</td></tr>
+
+      <tr><td class="fr-word">la France</td><td>França</td><td class="fr-example">Je viens de France.</td></tr>
+      <tr><td class="fr-word">le Canada</td><td>Canadá</td><td class="fr-example">Je vais au Canada.</td></tr>
+      <tr><td class="fr-word">les États-Unis</td><td>Estados Unidos</td><td class="fr-example">Je vais aux États-Unis.</td></tr>
+      <tr><td class="fr-word">l’Italie</td><td>Itália</td><td class="fr-example">Je viens d’Italie.</td></tr>
+      <tr><td class="fr-word">la Chine</td><td>China</td><td class="fr-example">Je viens de Chine.</td></tr>
+      <tr><td class="fr-word">l’Espagne</td><td>Espanha</td><td class="fr-example">Je vais en Espagne.</td></tr>
+      <tr><td class="fr-word">le Japon</td><td>Japão</td><td class="fr-example">Je vais au Japon.</td></tr>
+
+      <tr><td class="fr-word">je viens de</td><td>eu venho de</td><td class="fr-example">Je viens de France.</td></tr>
+      <tr><td class="fr-word">je vais à</td><td>eu vou para</td><td class="fr-example">Je vais à Paris.</td></tr>
+      <tr><td class="fr-word">j’envoie</td><td>eu envio</td><td class="fr-example">J’envoie une lettre.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Provenance (origem)</h4>
+      <p>👉 <strong>de / du / des / d’</strong></p>
+
+      <p><strong>de + pays féminin</strong> → de</p>
+      <p class="example">Je viens de France.</p>
+
+      <p><strong>de + pays masculin</strong> → du</p>
+      <p class="example">Je viens du Canada.</p>
+
+      <p><strong>de + pays pluriel</strong> → des</p>
+      <p class="example">Je viens des États-Unis.</p>
+
+      <p><strong>de + voyelle</strong> → d’</p>
+      <p class="example">Je viens d’Italie.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Destination</h4>
+      <p>👉 <strong>en / au / aux</strong></p>
+
+      <p><strong>pays féminin</strong> → en</p>
+      <p class="example">Je vais en France.</p>
+
+      <p><strong>pays masculin</strong> → au</p>
+      <p class="example">Je vais au Canada.</p>
+
+      <p><strong>pays pluriel</strong> → aux</p>
+      <p class="example">Je vais aux États-Unis.</p>
+
+      <p><strong>pays commençant par voyelle</strong> → en</p>
+      <p class="example">Je vais en Italie. · Je vais en Espagne.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Structure complète</h4>
+      <p class="example">Je viens de + pays</p>
+      <p class="example">Je vais en / au / aux + pays</p>
+      <p class="example">Je viens de Chine. Je vais en Espagne.</p>
+      <p class="example">Je viens du Canada. Je vais au Japon.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Révision : écrire et envoyer</h4>
+      <p class="example">J’écris le destinataire.</p>
+      <p class="example">Je remplis le formulaire.</p>
+      <p class="example">J’envoie une lettre au Canada.</p>
+      <p class="example">Je reçois une carte de France.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu venho da França.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je viens de France.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu venho do Canadá.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je viens du Canada.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu venho dos Estados Unidos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je viens des États-Unis.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu vou para a França.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vais en France.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu vou para o Canadá.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vais au Canada.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu vou para os Estados Unidos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vais aux États-Unis.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu envio uma carta.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’envoie une lettre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu escrevo o destinatário.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’écris le destinataire.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu preencho o formulário.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je remplis le formulaire.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu recebo uma carta.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je reçois une lettre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu vou para a Espanha.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vais en Espagne.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu venho da Itália.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je viens d’Italie.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu viens d’où ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu vas souvent à l’étranger ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu envoies des lettres parfois ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu préfères envoyer un message ou une lettre ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu connais combien de pays ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu veux voyager où ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu préfères l’Europe ou l’Amérique ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu écris souvent des adresses ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu remplis des formulaires souvent ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu veux vivre dans un autre pays ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
