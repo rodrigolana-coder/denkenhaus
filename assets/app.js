@@ -168,6 +168,30 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-16.html',
 },
+'Francês-A1-17': {
+  icon: '🗺️',
+  titulo: 'Indiquer un itinéraire (version simplifiée)',
+  descricao: 'Dar direções com mais repetição, progressão e clareza, reforçando verbos de movimento e direções.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-17.html',
+},
+'Francês-A1-18': {
+  icon: '✉️',
+  titulo: 'Écrire une carte postale',
+  descricao: 'Escrever um cartão postal, falar das férias, dar impressões e usar ce/cette/ces.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-18.html',
+},
+'Francês-A1-19': {
+  icon: '📮',
+  titulo: 'Provenance et destination',
+  descricao: 'Origem e destino com de/du/des e en/au/aux, além de vocabulário de correio e formulários.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-19.html',
+},
 };
 
 /* ── ESTADO ── */
