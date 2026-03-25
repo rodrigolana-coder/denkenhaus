@@ -1,0 +1,255 @@
+<!-- Francês A1 — Aula 18: Écrire une carte postale
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr18.png" alt="Écrire une carte"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr18.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Écrire une carte</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu écris une carte postale ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, j’écris à ma famille.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu écris quoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Je parle de mes vacances.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu dis quoi exactement ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Je dis : “Salut ! Je suis à Rio. Il fait beau et chaud. Bisous !”</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr18-1.png" alt="Parler des vacances"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr18-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Parler des vacances</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu passes de bonnes vacances ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, c’est super !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu fais quoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je visite la ville, je prends des photos et je marche beaucoup.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu aimes ce lieu ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, ce lieu est magnifique.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr18-2.png" alt="Donner ses impressions"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr18-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Donner ses impressions</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu aimes ces monuments ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, ces monuments sont incroyables.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Et ce musée ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Ce musée est très intéressant.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu écris une carte ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, j’écris : “Je passe de très bonnes vacances.”</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">une carte postale</td><td>cartão postal</td><td class="fr-example">J’écris une carte postale.</td></tr>
+      <tr><td class="fr-word">écrire</td><td>escrever</td><td class="fr-example">J’écris à ma famille.</td></tr>
+      <tr><td class="fr-word">envoyer</td><td>enviar</td><td class="fr-example">J’envoie une carte.</td></tr>
+      <tr><td class="fr-word">recevoir</td><td>receber</td><td class="fr-example">Je reçois une carte.</td></tr>
+
+      <tr><td class="fr-word">passer des vacances</td><td>passar férias</td><td class="fr-example">Je passe des vacances à Rio.</td></tr>
+      <tr><td class="fr-word">de bonnes vacances</td><td>boas férias</td><td class="fr-example">Je passe de bonnes vacances.</td></tr>
+      <tr><td class="fr-word">je passe</td><td>eu passo</td><td class="fr-example">Je passe de très bonnes vacances.</td></tr>
+      <tr><td class="fr-word">je visite</td><td>eu visito</td><td class="fr-example">Je visite la ville.</td></tr>
+      <tr><td class="fr-word">je marche</td><td>eu caminho</td><td class="fr-example">Je marche beaucoup.</td></tr>
+      <tr><td class="fr-word">prendre des photos</td><td>tirar fotos</td><td class="fr-example">Je prends des photos.</td></tr>
+
+      <tr><td class="fr-word">c’est super</td><td>é ótimo</td><td class="fr-example">Oui, c’est super !</td></tr>
+      <tr><td class="fr-word">c’est magnifique</td><td>é magnífico</td><td class="fr-example">Ce lieu est magnifique.</td></tr>
+      <tr><td class="fr-word">c’est intéressant</td><td>é interessante</td><td class="fr-example">Ce musée est intéressant.</td></tr>
+      <tr><td class="fr-word">il fait beau</td><td>está bonito (tempo)</td><td class="fr-example">Il fait beau aujourd’hui.</td></tr>
+      <tr><td class="fr-word">il fait chaud</td><td>está quente</td><td class="fr-example">Il fait chaud aujourd’hui.</td></tr>
+
+      <tr><td class="fr-word">ce</td><td>este / esse</td><td class="fr-example">ce musée</td></tr>
+      <tr><td class="fr-word">cette</td><td>esta / essa</td><td class="fr-example">cette ville</td></tr>
+      <tr><td class="fr-word">ces</td><td>estes / esses</td><td class="fr-example">ces monuments</td></tr>
+
+      <tr><td class="fr-word">un monument</td><td>monumento</td><td class="fr-example">Ces monuments sont incroyables.</td></tr>
+      <tr><td class="fr-word">un musée</td><td>museu</td><td class="fr-example">Ce musée est intéressant.</td></tr>
+      <tr><td class="fr-word">une ville</td><td>cidade</td><td class="fr-example">Je visite la ville.</td></tr>
+      <tr><td class="fr-word">un lieu</td><td>lugar</td><td class="fr-example">Ce lieu est magnifique.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Adjectifs démonstratifs</h4>
+      <table class="conj-table">
+        <tr><th>Masculin</th><th>Féminin</th><th>Pluriel</th></tr>
+        <tr><td class="conj-form">ce</td><td class="conj-form">cette</td><td class="conj-form">ces</td></tr>
+      </table>
+      <p class="example">ce musée · cette ville · ces monuments</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Parler des vacances</h4>
+      <p>Structure :</p>
+      <p class="example">Je passe + adjectif + vacances</p>
+      <p class="example">Je passe de bonnes vacances.</p>
+      <p class="example">Je passe de très bonnes vacances.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Donner ses impressions</h4>
+      <p>Structure :</p>
+      <p class="example">C’est + adjectif</p>
+      <p class="example">C’est super.</p>
+      <p class="example">C’est magnifique.</p>
+      <p class="example">C’est intéressant.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Révision : verbes en -er et lieux</h4>
+      <p>On réutilise des verbes déjà vus :</p>
+      <p class="example">Je visite la ville.</p>
+      <p class="example">Je marche beaucoup.</p>
+      <p class="example">J’écris une carte postale.</p>
+      <p class="example">Je suis à Rio.</p>
+      <p class="example">Il y a des monuments dans cette ville.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu escrevo um cartão postal.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’écris une carte postale.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu envio uma carta.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’envoie une carte.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu passo boas férias.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je passe de bonnes vacances.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu visito a cidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je visite la ville.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu tiro fotos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je prends des photos.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Este museu é interessante.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ce musée est intéressant.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Esta cidade é bonita.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Cette ville est belle.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Estes monumentos são incríveis.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ces monuments sont incroyables.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Está quente hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il fait chaud aujourd’hui.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Está bonito hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il fait beau aujourd’hui.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu caminho muito.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je marche beaucoup.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu adoro este lugar.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’adore ce lieu.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu écris des cartes postales ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu préfères envoyer des messages ou des cartes ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu passes de bonnes vacances en général ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu aimes visiter des villes ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu prends beaucoup de photos ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu préfères la plage ou la montagne ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu aimes ce lieu ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu écris à ta famille en vacances ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu préfères voyager seul ou accompagné ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu veux visiter quels pays ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
