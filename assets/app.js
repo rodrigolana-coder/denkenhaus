@@ -192,6 +192,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-19.html',
 },
+'Francês-A1-20': {
+  icon: '📮',
+  titulo: 'Le système postal en France',
+  descricao: 'Funcionamento da La Poste, envio de cartas, código postal e vocabulário essencial.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-20.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
