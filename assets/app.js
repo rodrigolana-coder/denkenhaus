@@ -192,6 +192,23 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-19.html',
 },
+'Espanhol-A1-18': {
+  icon: '✉️',
+  titulo: 'Escribir una postal',
+  descricao: 'Escribir una postal, hablar de las vacaciones, dar opiniones y usar este/esta/estos.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/esp-a1-18.html',
+},
+
+'Espanhol-A1-19': {
+  icon: '📮',
+  titulo: 'Origen y destino',
+  descricao: 'Origen y destino con de y a, además de vocabulario de correos y formularios.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/esp-a1-19.html',
+},
 };
 
 /* ── ESTADO ── */
