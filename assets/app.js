@@ -667,13 +667,13 @@ function frNavDlg(dir) {
 }
 function frNavEx(dir) {
   document.getElementById('fr-ex-'+frExIdx).style.display='none';
-  frExIdx=Math.max(0,Math.min(4,frExIdx+dir));
+frExIdx=Math.max(0,Math.min(document.querySelectorAll('[id^="fr-ex-"]').length-1,frExIdx+dir));
   document.getElementById('fr-ex-'+frExIdx).style.display='block';
   document.getElementById('fr-ex-prev').disabled=frExIdx===0;
-  const labels=['Frases 1–3 de 15','Frases 4–6 de 15','Frases 7–9 de 15','Frases 10–12 de 15','Frases 13–15 de 15'];
-  document.getElementById('fr-ex-info').textContent=labels[frExIdx];
+  const total = document.querySelectorAll('[id^="fr-ex-"]').length;
+document.getElementById('fr-ex-info').textContent = `Question ${frExIdx + 1} de ${total}`;
   const btn=document.getElementById('fr-ex-next');
-  if(frExIdx===4){btn.textContent='Conversação →';btn.onclick=()=>frGoSection(4);}
+  if(frExIdx===document.querySelectorAll('[id^="fr-ex-"]').length-1){btn.textContent='Conversação →';btn.onclick=()=>frGoSection(4);}
   else{btn.textContent='Próximo →';btn.onclick=()=>frNavEx(1);}
 }
 function frNavCv(dir) {
