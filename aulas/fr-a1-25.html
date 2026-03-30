@@ -1,0 +1,161 @@
+<!-- Francês A1 — Aula 25: Comment les Français se saluent-ils ? -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Texte</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulaire</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Questions</button>
+</div>
+
+<!-- 1. TEXTE -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Comment les Français se saluent-ils ?</div>
+    <div class="fr-dlg-right" style="max-width:900px;margin:0 auto;">
+      <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
+        <source src="/denkenhaus/audio/fr/fr25.mp3" type="audio/mpeg">
+      </audio>
+      <div class="dialog-line">En France, les personnes utilisent différentes façons de se saluer selon la situation.</div>
+      <div class="dialog-line">Dans une situation formelle, on dit souvent « Bonjour » et on se serre la main. Par exemple, au travail ou avec une personne que l’on ne connaît pas.</div>
+      <div class="dialog-line">Dans une situation informelle, avec des amis ou la famille, on dit « Salut » et on fait souvent la bise.</div>
+      <div class="dialog-line">La bise est une tradition très connue en France. On fait généralement deux bises, une sur chaque joue, mais dans certaines régions, on fait trois ou même quatre bises.</div>
+      <div class="dialog-line">Les Français utilisent aussi beaucoup les expressions comme « Ça va ? », « Tu vas bien ? » ou « Comment ça va ? » pour commencer une conversation.</div>
+      <div class="dialog-line">Aujourd’hui, certaines personnes préfèrent ne pas faire la bise, surtout dans des situations professionnelles.</div>
+      <div class="dialog-line">Mais dire bonjour et être poli reste très important dans la culture française.</div>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" disabled>← Anterior</button>
+      <span class="fr-slide-info">Seção 1 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULAIRE -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulaire</div>
+    <table class="fr-vocab-table">
+      <tr><th>Français</th><th>Português</th></tr>
+      <tr><td class="fr-word">se saluer</td><td>cumprimentar-se</td></tr>
+      <tr><td class="fr-word">une situation</td><td>situação</td></tr>
+      <tr><td class="fr-word">formel / formelle</td><td>formal</td></tr>
+      <tr><td class="fr-word">informel / informelle</td><td>informal</td></tr>
+      <tr><td class="fr-word">se serrer la main</td><td>apertar a mão</td></tr>
+      <tr><td class="fr-word">la bise</td><td>beijo no rosto</td></tr>
+      <tr><td class="fr-word">une joue</td><td>bochecha</td></tr>
+      <tr><td class="fr-word">une tradition</td><td>tradição</td></tr>
+      <tr><td class="fr-word">une région</td><td>região</td></tr>
+      <tr><td class="fr-word">une expression</td><td>expressão</td></tr>
+      <tr><td class="fr-word">poli</td><td>educado</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. QUESTIONS -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Questions de compréhension</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Lis la question, choisis ta réponse et clique pour vérifier.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">1. Dans une situation formelle, on dit :</div>
+        <div class="exercise-options">A) Salut &nbsp;|&nbsp; B) Bonjour &nbsp;|&nbsp; C) Au revoir &nbsp;|&nbsp; D) Merci</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) Bonjour</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">2. Dans une situation informelle, on dit :</div>
+        <div class="exercise-options">A) Bonjour &nbsp;|&nbsp; B) Salut &nbsp;|&nbsp; C) Bonsoir &nbsp;|&nbsp; D) Pardon</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) Salut</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">3. Dans une situation formelle, on :</div>
+        <div class="exercise-options">A) fait la bise &nbsp;|&nbsp; B) serre la main &nbsp;|&nbsp; C) parle anglais &nbsp;|&nbsp; D) ne parle pas</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) serre la main</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">4. La bise est :</div>
+        <div class="exercise-options">A) une tradition &nbsp;|&nbsp; B) un travail &nbsp;|&nbsp; C) un objet &nbsp;|&nbsp; D) un lieu</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ A) une tradition</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">5. On fait la bise :</div>
+        <div class="exercise-options">A) avec des inconnus &nbsp;|&nbsp; B) avec des amis et la famille &nbsp;|&nbsp; C) avec des professeurs &nbsp;|&nbsp; D) avec des collègues seulement</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) avec des amis et la famille</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-5" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">6. En général, on fait :</div>
+        <div class="exercise-options">A) une bise &nbsp;|&nbsp; B) deux bises &nbsp;|&nbsp; C) cinq bises &nbsp;|&nbsp; D) aucune bise</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) deux bises</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-6" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">7. Dans certaines régions, on fait :</div>
+        <div class="exercise-options">A) deux bises &nbsp;|&nbsp; B) trois ou quatre bises &nbsp;|&nbsp; C) une bise &nbsp;|&nbsp; D) dix bises</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) trois ou quatre bises</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-7" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">8. Les Français disent souvent :</div>
+        <div class="exercise-options">A) Ça va ? &nbsp;|&nbsp; B) Bonjour &nbsp;|&nbsp; C) Comment ça va ? &nbsp;|&nbsp; D) toutes les réponses</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ D) toutes les réponses</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-8" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">9. Aujourd’hui, certaines personnes :</div>
+        <div class="exercise-options">A) aiment plus la bise &nbsp;|&nbsp; B) préfèrent ne pas faire la bise &nbsp;|&nbsp; C) ne parlent pas &nbsp;|&nbsp; D) ne saluent pas</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) préfèrent ne pas faire la bise</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-9" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">10. Être poli est :</div>
+        <div class="exercise-options">A) important &nbsp;|&nbsp; B) inutile &nbsp;|&nbsp; C) difficile &nbsp;|&nbsp; D) rare</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ A) important</div>
+      </div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Question 1 de 10</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
