@@ -224,6 +224,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-23.html',
 },
+'Francês-A1-24': {
+  icon: '🧠',
+  titulo: 'Caractériser une personne',
+  descricao: 'Descrever pessoas com adjetivos, masculino/feminino, plural e características pessoais.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-24.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
