@@ -216,6 +216,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-22.html',
 },
+'Francês-A1-23': {
+  icon: '🧑',
+  titulo: 'Solo ou duo ?',
+  descricao: 'Falar de si, do próprio perfil, do caráter e das relações com outras pessoas.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-23.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
