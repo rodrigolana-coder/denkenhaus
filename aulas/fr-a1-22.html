@@ -1,0 +1,269 @@
+<!-- Francês A1 — Aula 22: Parler de sa profession
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr22.png" alt="Présenter sa profession"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr22.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Présenter sa profession</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu fais quoi comme travail ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Je suis infirmière dans un hôpital.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Ah, c’est intéressant ! Tu travailles beaucoup ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, je travaille tous les jours et parfois le week-end.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Moi, je suis journaliste.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu travailles où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Je travaille dans un journal et je fais des interviews.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">C’est un travail très dynamique !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr22-1.png" alt="Parler des professions"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr22-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Parler des professions</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu connais cette personne ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, c’est un photographe.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Il fait quoi exactement ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Il prend des photos pour des magazines.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Et cette femme ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Elle est coiffeuse.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Elle travaille dans un salon ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, elle travaille dans un salon de coiffure.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr22-2.png" alt="Activités professionnelles"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr22-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Activités professionnelles</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu veux faire quel métier plus tard ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Je veux être musicien.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu joues déjà d’un instrument ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, je joue de la guitare et je chante.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Moi, je veux être vétérinaire.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Pourquoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Parce que j’aime les animaux et je veux travailler avec eux.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">un journaliste</td><td>jornalista</td><td class="fr-example">Je suis journaliste.</td></tr>
+      <tr><td class="fr-word">un infirmier / une infirmière</td><td>enfermeiro / enfermeira</td><td class="fr-example">Elle est infirmière.</td></tr>
+      <tr><td class="fr-word">un photographe</td><td>fotógrafo</td><td class="fr-example">C’est un photographe.</td></tr>
+      <tr><td class="fr-word">un coiffeur / une coiffeuse</td><td>cabeleireiro(a)</td><td class="fr-example">Elle est coiffeuse.</td></tr>
+      <tr><td class="fr-word">un musicien / une musicienne</td><td>músico(a)</td><td class="fr-example">Je veux être musicien.</td></tr>
+      <tr><td class="fr-word">un vétérinaire</td><td>veterinário(a)</td><td class="fr-example">Je veux être vétérinaire.</td></tr>
+
+      <tr><td class="fr-word">un travail</td><td>trabalho</td><td class="fr-example">C’est un travail dynamique.</td></tr>
+      <tr><td class="fr-word">travailler</td><td>trabalhar</td><td class="fr-example">Je travaille dans un hôpital.</td></tr>
+      <tr><td class="fr-word">un hôpital</td><td>hospital</td><td class="fr-example">Je travaille dans un hôpital.</td></tr>
+      <tr><td class="fr-word">un journal</td><td>jornal</td><td class="fr-example">Je travaille dans un journal.</td></tr>
+      <tr><td class="fr-word">un salon</td><td>salão</td><td class="fr-example">Elle travaille dans un salon.</td></tr>
+
+      <tr><td class="fr-word">prendre des photos</td><td>tirar fotos</td><td class="fr-example">Il prend des photos.</td></tr>
+      <tr><td class="fr-word">faire des interviews</td><td>fazer entrevistas</td><td class="fr-example">Je fais des interviews.</td></tr>
+      <tr><td class="fr-word">travailler avec</td><td>trabalhar com</td><td class="fr-example">Je veux travailler avec des animaux.</td></tr>
+
+      <tr><td class="fr-word">un magazine</td><td>revista</td><td class="fr-example">Des photos pour des magazines.</td></tr>
+      <tr><td class="fr-word">un salon de coiffure</td><td>salão de cabeleireiro</td><td class="fr-example">Elle travaille dans un salon de coiffure.</td></tr>
+      <tr><td class="fr-word">un métier</td><td>profissão</td><td class="fr-example">Tu veux faire quel métier plus tard ?</td></tr>
+      <tr><td class="fr-word">un instrument</td><td>instrumento</td><td class="fr-example">Tu joues d’un instrument ?</td></tr>
+      <tr><td class="fr-word">la guitare</td><td>guitarra</td><td class="fr-example">Je joue de la guitare.</td></tr>
+      <tr><td class="fr-word">chanter</td><td>cantar</td><td class="fr-example">Je chante.</td></tr>
+      <tr><td class="fr-word">les animaux</td><td>os animais</td><td class="fr-example">J’aime les animaux.</td></tr>
+      <tr><td class="fr-word">dynamique</td><td>dinâmico</td><td class="fr-example">C’est un travail très dynamique.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Masculin / féminin des professions</h4>
+      <table class="conj-table">
+        <tr><th>Masculin</th><th>Féminin</th></tr>
+        <tr><td class="conj-form">journaliste</td><td class="conj-form">journaliste</td></tr>
+        <tr><td class="conj-form">infirmier</td><td class="conj-form">infirmière</td></tr>
+        <tr><td class="conj-form">photographe</td><td class="conj-form">photographe</td></tr>
+        <tr><td class="conj-form">coiffeur</td><td class="conj-form">coiffeuse</td></tr>
+        <tr><td class="conj-form">musicien</td><td class="conj-form">musicienne</td></tr>
+        <tr><td class="conj-form">vétérinaire</td><td class="conj-form">vétérinaire</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Dire sa profession</h4>
+      <p>👉 estrutura principal:</p>
+      <p class="example">Je suis + profession</p>
+      <p class="example">Je suis journaliste.</p>
+      <p class="example">Je suis infirmière.</p>
+      <p class="example">Je suis photographe.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Poser la question</h4>
+      <p>👉 formas comuns:</p>
+      <p class="example">Tu fais quoi comme travail ?</p>
+      <p class="example">Tu es quoi ?</p>
+      <p class="example">Tu veux faire quel métier plus tard ?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Verbe travailler</h4>
+      <p class="example">Je travaille dans un hôpital.</p>
+      <p class="example">Je travaille dans un journal.</p>
+      <p class="example">Je travaille avec des animaux.</p>
+      <p class="example">Elle travaille dans un salon.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Révision utile</h4>
+      <p>On peut combiner profession + lieu + activité :</p>
+      <p class="example">Je suis journaliste et je travaille dans un journal.</p>
+      <p class="example">Elle est infirmière et elle travaille dans un hôpital.</p>
+      <p class="example">Il est photographe et il prend des photos pour des magazines.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu sou jornalista e trabalho em um jornal.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis journaliste et je travaille dans un journal.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou enfermeira e trabalho em um hospital.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis infirmière et je travaille dans un hôpital.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele é fotógrafo e tira fotos para revistas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il est photographe et il prend des photos pour des magazines.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ela é cabeleireira e trabalha em um salão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est coiffeuse et elle travaille dans un salon.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu quero ser músico no futuro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je veux être musicien plus tard.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu quero trabalhar com animais.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je veux travailler avec des animaux.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu trabalho todos os dias durante a semana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je travaille tous les jours pendant la semaine.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu faço entrevistas para meu trabalho.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je fais des interviews pour mon travail.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu trabalho com pessoas todos os dias.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je travaille avec des personnes tous les jours.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ele quer ser veterinário porque gosta de animais.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il veut être vétérinaire parce qu’il aime les animaux.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu gosto do meu trabalho porque é interessante.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’aime mon travail parce qu’il est intéressant.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu quero ter um trabalho dinâmico.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je veux avoir un travail dynamique.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu fais quoi comme travail ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu veux faire quel métier plus tard ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu préfères travailler seul ou avec des personnes ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu veux travailler dans un bureau ou dehors ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu connais des personnes dans ces professions ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu aimes ton travail ou tes études ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu préfères un travail calme ou dynamique ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu veux travailler avec des animaux ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu veux être journaliste, médecin ou autre chose ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu penses que ton travail idéal est comment ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
