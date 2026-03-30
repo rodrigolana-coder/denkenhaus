@@ -208,6 +208,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-21.html',
 },
+'Francês-A1-22': {
+  icon: '💼',
+  titulo: 'Parler de sa profession',
+  descricao: 'Falar da própria profissão, do local de trabalho e dos objetivos profissionais.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-22.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
