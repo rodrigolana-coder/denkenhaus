@@ -232,6 +232,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-24.html',
 },
+'Francês-A1-25': {
+  icon: '👋',
+  titulo: 'Comment les Français se saluent-ils ?',
+  descricao: 'Cumprimentos formais e informais na França, la bise e relações sociais.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-25.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
