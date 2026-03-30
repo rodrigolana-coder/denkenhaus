@@ -200,6 +200,14 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-20.html',
 },
+'Francês-A1-21': {
+  icon: '❤️',
+  titulo: 'J’adore !',
+  descricao: 'Falar de gostos, preferências, esporte, atividades culturais e frequência.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-21.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
