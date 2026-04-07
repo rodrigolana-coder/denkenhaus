@@ -240,6 +240,14 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-25.html',
 },
+'Francês-A1-26': {
+  icon: '👨‍👩‍👧‍👦',
+  titulo: 'En famille',
+  descricao: 'Falar da família, da árvore genealógica e usar adjetivos possessivos.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-26.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
