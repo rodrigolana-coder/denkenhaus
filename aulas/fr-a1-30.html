@@ -1,0 +1,163 @@
+<!-- Francês A1 — Aula 30: Les habitudes quotidiennes des Français -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Texte</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulaire</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Questions</button>
+</div>
+
+<!-- 1. TEXTE -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Les habitudes quotidiennes des Français</div>
+    <div class="fr-dlg-right" style="max-width:900px;margin:0 auto;">
+      <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
+        <source src="/denkenhaus/audio/fr/fr30.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="dialog-line">En France, les habitudes quotidiennes sont souvent bien organisées. Beaucoup de Français ont une routine régulière pendant la semaine.</div>
+      <div class="dialog-line">Le matin, les Français se réveillent généralement entre 6h30 et 8h00. Ils prennent souvent un petit-déjeuner simple, avec du café, du thé ou du pain avec du beurre ou de la confiture.</div>
+      <div class="dialog-line">La journée de travail commence souvent vers 8h ou 9h. À midi, les Français prennent une pause pour déjeuner.</div>
+      <div class="dialog-line">Le déjeuner est un moment important, et certaines personnes mangent à la maison ou dans un restaurant.</div>
+      <div class="dialog-line">L’après-midi, les Français continuent à travailler ou à étudier. Après le travail, ils rentrent chez eux ou font des activités comme le sport, la lecture ou regarder la télévision.</div>
+      <div class="dialog-line">Le soir, le dîner est aussi un moment important. Les Français dînent souvent vers 19h30 ou 20h30.</div>
+      <div class="dialog-line">Après, ils passent du temps avec la famille ou se reposent.</div>
+      <div class="dialog-line">En général, les Français aiment avoir du temps pour eux, pour se détendre et profiter de la vie.</div>
+    </div>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" disabled>← Anterior</button>
+      <span class="fr-slide-info">Seção 1 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULAIRE -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulaire</div>
+    <table class="fr-vocab-table">
+      <tr><th>Français</th><th>Português</th></tr>
+      <tr><td class="fr-word">une habitude</td><td>hábito</td></tr>
+      <tr><td class="fr-word">quotidien / quotidienne</td><td>cotidiano</td></tr>
+      <tr><td class="fr-word">une routine</td><td>rotina</td></tr>
+      <tr><td class="fr-word">se réveiller</td><td>acordar</td></tr>
+      <tr><td class="fr-word">le petit-déjeuner</td><td>café da manhã</td></tr>
+      <tr><td class="fr-word">déjeuner</td><td>almoçar</td></tr>
+      <tr><td class="fr-word">dîner</td><td>jantar</td></tr>
+      <tr><td class="fr-word">une pause</td><td>pausa</td></tr>
+      <tr><td class="fr-word">rentrer</td><td>voltar</td></tr>
+      <tr><td class="fr-word">se reposer</td><td>descansar</td></tr>
+      <tr><td class="fr-word">profiter de</td><td>aproveitar</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 3</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. QUESTIONS -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Questions de compréhension</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Lis la question, choisis ta réponse et clique pour vérifier.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">1. Les Français ont souvent :</div>
+        <div class="exercise-options">A) une routine &nbsp;|&nbsp; B) un problème &nbsp;|&nbsp; C) un voyage &nbsp;|&nbsp; D) une école</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ A) une routine</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">2. Le matin, ils se réveillent :</div>
+        <div class="exercise-options">A) entre 6h30 et 8h &nbsp;|&nbsp; B) à midi &nbsp;|&nbsp; C) à 22h &nbsp;|&nbsp; D) jamais</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ A) entre 6h30 et 8h</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">3. Le petit-déjeuner est souvent :</div>
+        <div class="exercise-options">A) très grand &nbsp;|&nbsp; B) simple &nbsp;|&nbsp; C) compliqué &nbsp;|&nbsp; D) inexistant</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) simple</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">4. Le travail commence vers :</div>
+        <div class="exercise-options">A) 5h &nbsp;|&nbsp; B) 12h &nbsp;|&nbsp; C) 8h ou 9h &nbsp;|&nbsp; D) 22h</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ C) 8h ou 9h</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">5. Le déjeuner est :</div>
+        <div class="exercise-options">A) rapide et sans importance &nbsp;|&nbsp; B) un moment important &nbsp;|&nbsp; C) inutile &nbsp;|&nbsp; D) tard le soir</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) un moment important</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-5" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">6. L’après-midi, ils :</div>
+        <div class="exercise-options">A) dorment &nbsp;|&nbsp; B) voyagent &nbsp;|&nbsp; C) travaillent ou étudient &nbsp;|&nbsp; D) mangent</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ C) travaillent ou étudient</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-6" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">7. Après le travail, ils :</div>
+        <div class="exercise-options">A) ne font rien &nbsp;|&nbsp; B) font des activités &nbsp;|&nbsp; C) dorment toujours &nbsp;|&nbsp; D) quittent la ville</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) font des activités</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-7" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">8. Le dîner est souvent vers :</div>
+        <div class="exercise-options">A) 10h &nbsp;|&nbsp; B) 15h &nbsp;|&nbsp; C) 19h30 ou 20h30 &nbsp;|&nbsp; D) minuit</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ C) 19h30 ou 20h30</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-8" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">9. Le soir, ils passent du temps :</div>
+        <div class="exercise-options">A) seuls uniquement &nbsp;|&nbsp; B) avec la famille &nbsp;|&nbsp; C) au travail &nbsp;|&nbsp; D) à l’école</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ B) avec la famille</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-9" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">10. En général, les Français aiment :</div>
+        <div class="exercise-options">A) travailler toujours &nbsp;|&nbsp; B) voyager tous les jours &nbsp;|&nbsp; C) se détendre et profiter de la vie &nbsp;|&nbsp; D) ne rien faire</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+        <div class="exercise-answer">✅ C) se détendre et profiter de la vie</div>
+      </div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Question 1 de 10</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
