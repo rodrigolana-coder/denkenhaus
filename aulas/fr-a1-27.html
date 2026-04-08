@@ -1,0 +1,273 @@
+<!-- Francês A1 — Aula 27: Annoncer un événement, réagir
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr27.png" alt="Annoncer une naissance"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr27.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Annoncer une naissance</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">J’ai une grande nouvelle !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Ah oui ? Qu’est-ce que c’est ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ma sœur a eu un bébé !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Félicitations ! C’est une fille ou un garçon ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">C’est une fille. Elle s’appelle Léa.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Elle est comment ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Elle est très petite et très mignonne.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Je suis très contente pour toi !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr27-1.png" alt="Demander des nouvelles"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr27-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Demander des nouvelles</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Salut Hugo, comment ça va ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Ça va bien, merci. Et toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Ça va. Et ta famille, ça va ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, tout va bien. Mes parents vont bien.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Et ton frère ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Il va bien aussi, il travaille beaucoup.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">D’accord, je suis content de l’entendre.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr27-2.png" alt="Réagir à un événement"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr27-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Réagir à un événement</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu sais quoi ? Je vais me marier !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Félicitations ! C’est une très bonne nouvelle !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Merci beaucoup !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Quand est le mariage ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">En juillet, avec ma famille et mes amis.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Tu es heureuse ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, je suis très heureuse !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Je suis très content pour toi !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">une naissance</td><td>nascimento</td><td class="fr-example">C’est une grande naissance pour la famille.</td></tr>
+      <tr><td class="fr-word">un mariage</td><td>casamento</td><td class="fr-example">Le mariage est en juillet.</td></tr>
+      <tr><td class="fr-word">un bébé</td><td>bebê</td><td class="fr-example">Ma sœur a eu un bébé.</td></tr>
+      <tr><td class="fr-word">une fille</td><td>menina</td><td class="fr-example">C’est une fille.</td></tr>
+      <tr><td class="fr-word">un garçon</td><td>menino</td><td class="fr-example">C’est un garçon.</td></tr>
+
+      <tr><td class="fr-word">félicitations</td><td>parabéns</td><td class="fr-example">Félicitations pour cette bonne nouvelle !</td></tr>
+      <tr><td class="fr-word">je suis content(e)</td><td>estou feliz</td><td class="fr-example">Je suis content pour toi.</td></tr>
+      <tr><td class="fr-word">une bonne nouvelle</td><td>boa notícia</td><td class="fr-example">C’est une très bonne nouvelle.</td></tr>
+
+      <tr><td class="fr-word">comment ça va ?</td><td>como vai?</td><td class="fr-example">Salut, comment ça va ?</td></tr>
+      <tr><td class="fr-word">ça va</td><td>tudo bem</td><td class="fr-example">Ça va bien.</td></tr>
+      <tr><td class="fr-word">aller bien</td><td>estar bem</td><td class="fr-example">Mes parents vont bien.</td></tr>
+
+      <tr><td class="fr-word">une sœur</td><td>irmã</td><td class="fr-example">Ma sœur a eu un bébé.</td></tr>
+      <tr><td class="fr-word">un frère</td><td>irmão</td><td class="fr-example">Mon frère va bien.</td></tr>
+      <tr><td class="fr-word">les parents</td><td>pais</td><td class="fr-example">Mes parents vont bien.</td></tr>
+
+      <tr><td class="fr-word">la tête</td><td>cabeça</td><td class="fr-example">Le bébé a une petite tête.</td></tr>
+      <tr><td class="fr-word">les yeux</td><td>olhos</td><td class="fr-example">Le bébé a de grands yeux.</td></tr>
+      <tr><td class="fr-word">les oreilles</td><td>orelhas</td><td class="fr-example">Le bébé a de petites oreilles.</td></tr>
+      <tr><td class="fr-word">le nez</td><td>nariz</td><td class="fr-example">Le bébé a un petit nez.</td></tr>
+      <tr><td class="fr-word">la bouche</td><td>boca</td><td class="fr-example">Le bébé a une petite bouche.</td></tr>
+      <tr><td class="fr-word">les bras</td><td>braços</td><td class="fr-example">Le bébé a de petits bras.</td></tr>
+      <tr><td class="fr-word">les mains</td><td>mãos</td><td class="fr-example">Le bébé a de petites mains.</td></tr>
+      <tr><td class="fr-word">les jambes</td><td>pernas</td><td class="fr-example">Le bébé a de petites jambes.</td></tr>
+
+      <tr><td class="fr-word">heureux / heureuse</td><td>feliz</td><td class="fr-example">Je suis très heureuse.</td></tr>
+      <tr><td class="fr-word">important</td><td>importante</td><td class="fr-example">C’est important pour moi.</td></tr>
+      <tr><td class="fr-word">entendre</td><td>ouvir</td><td class="fr-example">Je suis content de l’entendre.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Annoncer une nouvelle</h4>
+      <p>👉 estrutura:</p>
+      <p class="example">J’ai une grande nouvelle.</p>
+      <p class="example">Je vais me marier.</p>
+      <p class="example">Ma sœur a un bébé.</p>
+      <p class="example">Mon frère va se marier.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Réagir</h4>
+      <p>👉 expressões essenciais:</p>
+      <p class="example">Félicitations !</p>
+      <p class="example">C’est super !</p>
+      <p class="example">Je suis content(e) pour toi.</p>
+      <p class="example">C’est une bonne nouvelle !</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Demander des nouvelles</h4>
+      <p class="example">Comment ça va ?</p>
+      <p class="example">Et ta famille ?</p>
+      <p class="example">Ça va bien ?</p>
+      <p class="example">Et ton frère, il va bien ?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Verbe aller (important)</h4>
+      <p class="example">je vais</p>
+      <p class="example">tu vas</p>
+      <p class="example">il / elle va</p>
+      <p class="example">nous allons</p>
+      <p class="example">vous allez</p>
+      <p class="example">ils / elles vont</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Révision utile : parties du corps</h4>
+      <p>Para descrever um bebê ou uma pessoa:</p>
+      <p class="example">Le bébé a de grands yeux.</p>
+      <p class="example">Le bébé a un petit nez.</p>
+      <p class="example">Le bébé a une petite bouche.</p>
+      <p class="example">Le bébé a de petites mains.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu tenho uma grande notícia para você.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai une grande nouvelle pour toi.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Minha irmã teve um bebê.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ma sœur a eu un bébé.</div></div>
+        <div class="exercise-item"><div class="exercise-q">É uma menina muito bonita.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est une très belle fille.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Parabéns pelo casamento!</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Félicitations pour le mariage !</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu estou muito feliz por você.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis très content(e) pour toi.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Como vai sua família?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Comment va ta famille ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Meus pais estão bem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mes parents vont bien.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Meu irmão trabalha muito durante a semana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mon frère travaille beaucoup pendant la semaine.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu vou me casar no próximo ano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je vais me marier l’année prochaine.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">É uma notícia muito importante para mim.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est une nouvelle très importante pour moi.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu estou contente porque tudo está bem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je suis content(e) parce que tout va bien.</div></div>
+        <div class="exercise-item"><div class="exercise-q">O bebê tem olhos grandes e mãos pequenas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le bébé a de grands yeux et de petites mains.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as déjà annoncé une grande nouvelle ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu connais quelqu’un qui a eu un bébé récemment ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu préfères les mariages grands ou petits ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu demandes souvent des nouvelles de ta famille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Ta famille va bien en général ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu aimes les événements familiaux ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu es content quand tu entends une bonne nouvelle ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu veux te marier un jour ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu préfères vivre seul ou avec ta famille ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu parles souvent avec ta famille ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
