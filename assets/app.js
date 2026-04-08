@@ -256,6 +256,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-27.html',
 },
+'Francês-A1-30': {
+  icon: '⏰',
+  titulo: 'Les habitudes quotidiennes des Français',
+  descricao: 'Rotina, horários e hábitos cotidianos na França.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-30.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
