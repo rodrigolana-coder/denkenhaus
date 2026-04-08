@@ -248,6 +248,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-26.html',
 },
+'Francês-A1-27': {
+  icon: '🎉',
+  titulo: 'Annoncer un événement, réagir',
+  descricao: 'Anunciar um evento familiar, pedir e dar notícias e reagir emocionalmente.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-27.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
