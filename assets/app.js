@@ -256,6 +256,14 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-27.html',
 },
+'Francês-A1-28': {
+  icon: '🕒',
+  titulo: 'Indiquer l’heure et les horaires',
+  descricao: 'Falar sobre horas, horários e rotina diária.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Vocabulário', 'Gramática'],
+  file: 'aulas/fr-a1-28.html',
+},
 'Francês-A1-30': {
   icon: '⏰',
   titulo: 'Les habitudes quotidiennes des Français',
