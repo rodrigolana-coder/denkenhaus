@@ -264,6 +264,14 @@ const AULAS = {
   skills: ['Conversação', 'Vocabulário', 'Gramática'],
   file: 'aulas/fr-a1-28.html',
 },
+'Francês-A1-29': {
+  icon: '📅',
+  titulo: 'Parler de ses habitudes',
+  descricao: 'Falar da rotina, dos hábitos diários e da sequência de ações no presente.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-29.html',
+},
 'Francês-A1-30': {
   icon: '⏰',
   titulo: 'Les habitudes quotidiennes des Français',
