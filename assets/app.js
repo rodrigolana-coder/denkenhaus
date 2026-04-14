@@ -280,6 +280,14 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-30.html',
 },
+'Francês-A1-31': {
+  icon: '🎬',
+  titulo: 'Proposer une sortie',
+  descricao: 'Propor uma saída, aceitar ou recusar convites e usar o futur proche.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Gramática', 'Vocabulário'],
+  file: 'aulas/fr-a1-31.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
