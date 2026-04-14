@@ -1,0 +1,312 @@
+<!-- Francês A1 — Aula 31: Proposer une sortie
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr31.png" alt="Proposer une sortie"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr31.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Proposer une sortie</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu veux aller au cinéma ce soir ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, je veux bien ! Quel film ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Il y a un film intéressant à 20h.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Super ! On se retrouve où ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">On se retrouve devant le cinéma à 19h30.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Parfait, à tout à l’heure !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr31-1.png" alt="Accepter et refuser"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr31-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Accepter et refuser</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu veux boire un café avec moi cet après-midi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Désolé, je ne peux pas, je travaille.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">D’accord, une autre fois alors.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, avec plaisir !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu es libre demain ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, demain je suis libre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Alors on peut aller au café demain.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Parfait !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr31-2.png" alt="Organiser un rendez-vous"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr31-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Organiser un rendez-vous</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu veux faire quelque chose ce week-end ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, pourquoi pas !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">On peut aller au restaurant ou voir une exposition.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Je préfère aller au restaurant.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Très bien, on se retrouve à quelle heure ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">À 20h, ça te va ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Oui, ça me va très bien !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Super, à samedi !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">proposer</td><td>propor</td><td class="fr-example">Je propose une sortie pour ce soir.</td></tr>
+      <tr><td class="fr-word">tu veux… ?</td><td>você quer…?</td><td class="fr-example">Tu veux aller au cinéma ?</td></tr>
+      <tr><td class="fr-word">on peut…</td><td>podemos…</td><td class="fr-example">On peut boire un café.</td></tr>
+      <tr><td class="fr-word">pourquoi pas</td><td>por que não</td><td class="fr-example">Oui, pourquoi pas !</td></tr>
+
+      <tr><td class="fr-word">aller au cinéma</td><td>ir ao cinema</td><td class="fr-example">Je veux aller au cinéma ce soir.</td></tr>
+      <tr><td class="fr-word">boire un café</td><td>tomar café</td><td class="fr-example">On peut boire un café demain.</td></tr>
+      <tr><td class="fr-word">aller au restaurant</td><td>ir ao restaurante</td><td class="fr-example">Je préfère aller au restaurant.</td></tr>
+      <tr><td class="fr-word">voir une exposition</td><td>ver uma exposição</td><td class="fr-example">On peut voir une exposition ce week-end.</td></tr>
+
+      <tr><td class="fr-word">se retrouver</td><td>se encontrar</td><td class="fr-example">On se retrouve devant le cinéma.</td></tr>
+      <tr><td class="fr-word">devant</td><td>em frente a</td><td class="fr-example">On se retrouve devant le restaurant.</td></tr>
+      <tr><td class="fr-word">à quelle heure</td><td>a que horas</td><td class="fr-example">À quelle heure on se retrouve ?</td></tr>
+      <tr><td class="fr-word">être libre</td><td>estar livre</td><td class="fr-example">Je suis libre demain après-midi.</td></tr>
+
+      <tr><td class="fr-word">oui, je veux bien</td><td>sim, quero</td><td class="fr-example">Oui, je veux bien aller au cinéma.</td></tr>
+      <tr><td class="fr-word">avec plaisir</td><td>com prazer</td><td class="fr-example">Oui, avec plaisir !</td></tr>
+      <tr><td class="fr-word">désolé</td><td>desculpa</td><td class="fr-example">Désolé, je ne peux pas.</td></tr>
+      <tr><td class="fr-word">je ne peux pas</td><td>eu não posso</td><td class="fr-example">Je ne peux pas sortir ce soir.</td></tr>
+      <tr><td class="fr-word">une autre fois</td><td>outra vez</td><td class="fr-example">D’accord, une autre fois.</td></tr>
+
+      <tr><td class="fr-word">ça te va ?</td><td>isso serve para você?</td><td class="fr-example">À 20h, ça te va ?</td></tr>
+      <tr><td class="fr-word">ça me va</td><td>isso serve para mim</td><td class="fr-example">Oui, ça me va très bien.</td></tr>
+      <tr><td class="fr-word">ce soir</td><td>esta noite</td><td class="fr-example">Tu veux sortir ce soir ?</td></tr>
+      <tr><td class="fr-word">cet après-midi</td><td>esta tarde</td><td class="fr-example">Je suis libre cet après-midi.</td></tr>
+      <tr><td class="fr-word">ce week-end</td><td>neste fim de semana</td><td class="fr-example">On fait quelque chose ce week-end ?</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Proposer une sortie</h4>
+      <p>👉 estruturas principais:</p>
+      <p class="example">Tu veux + verbe</p>
+      <p class="example">On peut + verbe</p>
+      <p class="example">Tu veux aller au cinéma ?</p>
+      <p class="example">On peut boire un café.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Accepter</h4>
+      <p class="example">Oui, je veux bien.</p>
+      <p class="example">Avec plaisir.</p>
+      <p class="example">D’accord.</p>
+      <p class="example">Pourquoi pas !</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Refuser</h4>
+      <p class="example">Désolé, je ne peux pas.</p>
+      <p class="example">Je travaille.</p>
+      <p class="example">Une autre fois.</p>
+      <p class="example">Je ne suis pas libre ce soir.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Futur proche</h4>
+      <p>👉 aller + infinitif</p>
+      <p class="example">Je vais aller au cinéma.</p>
+      <p class="example">On va se retrouver devant le restaurant.</p>
+      <p class="example">Je vais sortir demain soir.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Révision utile</h4>
+      <p>On combine activité + heure + lieu :</p>
+      <p class="example">On peut aller au cinéma à 20h.</p>
+      <p class="example">On se retrouve devant le café à 15h.</p>
+      <p class="example">Je vais sortir avec mes amis ce week-end.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">1. Você quer ir ao cinema esta noite?</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Tu veux aller au cinéma ce soir ?</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">2. Podemos tomar um café à tarde.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">On peut boire un café cet après-midi.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">3. Eu não posso, eu trabalho hoje.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je ne peux pas, je travaille aujourd’hui.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">4. Podemos nos encontrar em frente ao restaurante.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">On peut se retrouver devant le restaurant.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">5. A que horas você está livre?</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">À quelle heure tu es libre ?</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">6. Eu quero sair com meus amigos neste fim de semana.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je veux sortir avec mes amis ce week-end.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">7. Podemos ver um filme interessante.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">On peut voir un film intéressant.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">8. Eu prefiro ir ao restaurante.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je préfère aller au restaurant.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">9. Podemos nos encontrar às vinte horas.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">On peut se retrouver à vingt heures.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">10. Eu vou sair amanhã à noite.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je vais sortir demain soir.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">11. Desculpa, outra vez talvez.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Désolé, une autre fois peut-être.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">12. Eu estou livre amanhã à tarde.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je suis libre demain après-midi.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu veux aller au cinéma ce week-end ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu préfères le cinéma ou le restaurant ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu es libre ce soir ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu veux boire un café avec un ami ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu fais quoi le week-end ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu préfères sortir le jour ou le soir ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu organises souvent des sorties ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu invites tes amis souvent ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu refuses facilement une invitation ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu aimes faire des activités avec des amis ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
