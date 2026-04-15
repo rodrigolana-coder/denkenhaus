@@ -323,6 +323,14 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-35.html',
 },
+'Francês-A1-36': {
+  icon: '📺',
+  titulo: 'Talking about experiences',
+  descricao: 'Introdução ao present perfect para falar sobre experiências e televisão.',
+  duracao: '30 min',
+  skills: ['Gramática', 'Conversação', 'Compreensão'],
+  file: 'aulas/fr-a1-36.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
