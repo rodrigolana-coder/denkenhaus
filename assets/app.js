@@ -348,6 +348,12 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/esp-a1-19.html',
 },
+'Russo-A1-1': {
+  icon: '💬', titulo: 'Меня зовут — Se apresentar',
+  descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
+  duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
+  file: 'aulas/ru-a1-1.html',
+},
 };
 
 /* ── ESTADO ── */
