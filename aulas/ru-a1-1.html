@@ -1,0 +1,773 @@
+<!-- Russo A1 — Aula 1: Меня зовут / Se apresentar
+     Carregado via fetch pelo app.js -->
+
+<style>
+/* ── TOOLTIP DE TRADUÇÃO ── */
+.ru-word {
+  display: inline;
+  position: relative;
+  cursor: help;
+  border-bottom: 1.5px dashed rgba(123, 97, 255, 0.5);
+  padding-bottom: 1px;
+  transition: color 0.18s, border-color 0.18s;
+  border-radius: 2px;
+}
+.ru-word:hover {
+  color: #a78bfa;
+  border-bottom-color: #a78bfa;
+}
+.ru-word .ru-tip {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #1e1b3a;
+  color: #e2d9ff;
+  font-size: 0.78rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.45), 0 0 0 1px rgba(167,139,250,0.2);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: 999;
+  line-height: 1.5;
+}
+.ru-word .ru-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1e1b3a;
+}
+/* tooltip sai para cima mas se estiver perto do topo vai para baixo */
+.ru-word:hover .ru-tip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── ABAS ── */
+.fr-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 1rem 1rem 0;
+  border-bottom: 2px solid rgba(123,97,255,0.15);
+  margin-bottom: 1.5rem;
+}
+.fr-tab {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #8892a4;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+}
+.fr-tab:hover { color: #a78bfa; background: rgba(167,139,250,0.06); }
+.fr-tab.fr-tab-active {
+  color: #a78bfa;
+  border-bottom-color: #a78bfa;
+  background: rgba(167,139,250,0.08);
+}
+
+/* ── SEÇÕES ── */
+.fr-section { display: none; }
+.fr-section.fr-active { display: block; }
+
+/* ── NAVEGAÇÃO ── */
+.fr-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.fr-nav-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: #7b61ff;
+  color: #fff;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+}
+.fr-nav-btn:hover:not(:disabled) { background: #6d55e8; transform: translateY(-1px); }
+.fr-nav-btn:disabled { opacity: 0.35; cursor: default; }
+.fr-nav-btn.fr-ghost { background: transparent; color: #8892a4; border: 1.5px solid rgba(255,255,255,0.12); }
+.fr-nav-btn.fr-ghost:hover:not(:disabled) { border-color: #7b61ff; color: #a78bfa; background: rgba(123,97,255,0.08); }
+.fr-slide-info { color: #8892a4; font-size: 0.8rem; font-family: 'DM Sans', sans-serif; }
+
+/* ── DIÁLOGOS ── */
+.fr-dlg-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 600px) { .fr-dlg-grid { grid-template-columns: 1fr; } }
+.fr-dlg-img img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  background: rgba(123,97,255,0.1);
+}
+.fr-dlg-label {
+  font-size: 0.78rem;
+  color: #8892a4;
+  margin-bottom: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+.dialog-line {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+.dialog-speaker {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7b61ff;
+  min-width: 80px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.dialog-text {
+  font-size: 0.95rem;
+  color: #c8d4e8;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ── NOTA DO ALFABETO ── */
+.ru-alphabet-note {
+  background: rgba(123,97,255,0.07);
+  border: 1px solid rgba(123,97,255,0.18);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.83rem;
+  color: #c8d4e8;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+.ru-alphabet-note strong { color: #a78bfa; }
+
+/* ── VOCAB TABLE ── */
+.fr-vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+}
+.fr-vocab-table th {
+  background: rgba(123,97,255,0.1);
+  color: #a78bfa;
+  padding: 0.55rem 0.85rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid rgba(123,97,255,0.2);
+}
+.fr-vocab-table td {
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: #c8d4e8;
+  vertical-align: top;
+}
+.fr-vocab-table tr:last-child td { border-bottom: none; }
+.fr-vocab-table .fr-word { color: #e2d9ff; font-weight: 600; }
+.fr-vocab-table .fr-example { color: #8892a4; font-style: italic; }
+
+/* ── GRAMÁTICA ── */
+.grammar-rule {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.grammar-rule:last-child { border-bottom: none; }
+.grammar-rule h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #a78bfa;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+.grammar-rule p { color: #c8d4e8; font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.5rem; }
+.grammar-rule .example {
+  background: rgba(123,97,255,0.07);
+  border-left: 3px solid #7b61ff;
+  padding: 0.6rem 1rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem;
+  color: #e2d9ff;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+}
+.conj-table th {
+  background: rgba(123,97,255,0.1);
+  color: #a78bfa;
+  padding: 0.45rem 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(123,97,255,0.2);
+}
+.conj-table td { padding: 0.45rem 0.75rem; color: #c8d4e8; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.conj-table .conj-form { color: #e2d9ff; font-weight: 700; }
+
+/* ── EXERCÍCIOS ── */
+.exercise-list { display: flex; flex-direction: column; gap: 1rem; }
+.exercise-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+.exercise-q {
+  font-size: 0.95rem;
+  color: #c8d4e8;
+  margin-bottom: 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+}
+.show-answer-btn {
+  background: rgba(123,97,255,0.12);
+  border: 1px solid rgba(123,97,255,0.3);
+  color: #a78bfa;
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.show-answer-btn:hover { background: rgba(123,97,255,0.22); }
+.exercise-answer {
+  display: none;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: rgba(123,97,255,0.08);
+  border-left: 3px solid #7b61ff;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9rem;
+  color: #e2d9ff;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+.exercise-answer.show { display: block; }
+
+/* ── CONVERSAÇÃO ── */
+.fr-conv-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.fr-conv-item:last-child { border-bottom: none; }
+.fr-conv-num {
+  background: rgba(123,97,255,0.15);
+  color: #a78bfa;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(123,97,255,0.25);
+}
+.fr-conv-q {
+  color: #c8d4e8;
+  font-size: 0.95rem;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.55;
+  padding-top: 0.1rem;
+}
+
+/* ── BADGE CIRÍLICO ── */
+.cyrillic-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(123,97,255,0.12);
+  border: 1px solid rgba(123,97,255,0.25);
+  border-radius: 100px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  color: #a78bfa;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+</style>
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- ══ 1. DIÁLOGOS ══ -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="ru-alphabet-note">
+      💡 <strong>Dica:</strong> passe o mouse sobre qualquer palavra ou expressão em russo para ver a tradução instantânea.
+    </div>
+
+    <!-- DIÁLOGO 1 -->
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru1.png" alt="Em sala de aula" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 1 — Em sala de aula (se apresentar)</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Camille</span>
+            <span class="dialog-text">
+              <span class="ru-word">Привет!<span class="ru-tip">Olá! / Oi!</span></span>
+              <span class="ru-word">Как тебя зовут?<span class="ru-tip">Como você se chama? (informal)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Yoko</span>
+            <span class="dialog-text">
+              <span class="ru-word">Йоко.<span class="ru-tip">Yoko. (nome próprio)</span></span>
+              <span class="ru-word">А тебя?<span class="ru-tip">E você? (informal)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Camille</span>
+            <span class="dialog-text">
+              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              <span class="ru-word">Камилль.<span class="ru-tip">Camille. (nome próprio em russo)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Clémence</span>
+            <span class="dialog-text">
+              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              <span class="ru-word">Клеманс.<span class="ru-tip">Clémence. (nome próprio em russo)</span></span>
+              <span class="ru-word">А вас?<span class="ru-tip">E vocês? / E o senhor/a senhora? (formal/plural)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Yoko</span>
+            <span class="dialog-text">
+              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              <span class="ru-word">Йоко.<span class="ru-tip">Yoko.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Camille</span>
+            <span class="dialog-text">
+              <span class="ru-word">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Clémence</span>
+            <span class="dialog-text">
+              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word">по-французски<span class="ru-tip">em francês / francês (adv.)</span></span>
+              <span class="ru-word">и<span class="ru-tip">e</span></span>
+              <span class="ru-word">по-английски.<span class="ru-tip">em inglês / inglês (adv.)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Yoko</span>
+            <span class="dialog-text">
+              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word">по-японски<span class="ru-tip">em japonês / japonês (adv.)</span></span>
+              <span class="ru-word">и<span class="ru-tip">e</span></span>
+              <span class="ru-word">немного<span class="ru-tip">um pouco</span></span>
+              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 2 -->
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru1-1.png" alt="Soletrar o nome" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1-1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 2 — Soletrar o nome</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word">Извините,<span class="ru-tip">Desculpe / Com licença (formal)</span></span>
+              <span class="ru-word">как это пишется?<span class="ru-tip">como isso se escreve?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Hugo</span>
+            <span class="dialog-text">
+              <span class="ru-word">Х-У-Г-О.<span class="ru-tip">H-U-G-O (letras do alfabeto cirílico)</span></span>
+              <span class="ru-word">Хуго,<span class="ru-tip">Hugo</span></span>
+              <span class="ru-word">как<span class="ru-tip">como</span></span>
+              <span class="ru-word">Хуго.<span class="ru-tip">Hugo.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Igor</span>
+            <span class="dialog-text">
+              <span class="ru-word">А тебя как зовут?<span class="ru-tip">E você, como se chama? (informal)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word">Карин.<span class="ru-tip">Karine.</span></span>
+              <span class="ru-word">К-А-Р-И-Н.<span class="ru-tip">K-A-R-I-N (letras do alfabeto cirílico)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Igor</span>
+            <span class="dialog-text">
+              <span class="ru-word">Игорь.<span class="ru-tip">Igor.</span></span>
+              <span class="ru-word">И-Г-О-Р-Ь.<span class="ru-tip">I-G-O-R' (Ь = sinal mole, amolece o R)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word">Спасибо!<span class="ru-tip">Obrigado(a)!</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Hugo</span>
+            <span class="dialog-text">
+              <span class="ru-word">Пожалуйста.<span class="ru-tip">De nada. / Por favor.</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 3 -->
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru1-2.png" alt="Coquetel internacional" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1-2.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 3 — Coquetel internacional (nacionalidade)</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word">Привет,<span class="ru-tip">Olá / Oi</span></span>
+              <span class="ru-word">меня зовут<span class="ru-tip">meu nome é / me chamo</span></span>
+              <span class="ru-word">Александра Райнер.<span class="ru-tip">Alexandra Rainer.</span></span>
+              <span class="ru-word">Я гречанка.<span class="ru-tip">Eu sou grega. (feminino)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Jim</span>
+            <span class="dialog-text">
+              <span class="ru-word">Очень приятно.<span class="ru-tip">Muito prazer. / Encantado.</span></span>
+              <span class="ru-word">Джим О'Коннор.<span class="ru-tip">Jim O'Connor.</span></span>
+              <span class="ru-word">Я американец.<span class="ru-tip">Eu sou americano. (masculino)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é / Me chamo</span></span>
+              <span class="ru-word">Мэй Ван.<span class="ru-tip">Mei Wang.</span></span>
+              <span class="ru-word">Я китаянка.<span class="ru-tip">Eu sou chinesa. (feminino)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Jim</span>
+            <span class="dialog-text">
+              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word">по-английски<span class="ru-tip">em inglês / inglês (adv.)</span></span>
+              <span class="ru-word">и<span class="ru-tip">e</span></span>
+              <span class="ru-word">немного<span class="ru-tip">um pouco</span></span>
+              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word">по-китайски<span class="ru-tip">em chinês / chinês (adv.)</span></span>
+              <span class="ru-word">и<span class="ru-tip">e</span></span>
+              <span class="ru-word">по-английски.<span class="ru-tip">em inglês / inglês (adv.)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word">по-гречески<span class="ru-tip">em grego / grego (adv.)</span></span>
+              <span class="ru-word">и<span class="ru-tip">e</span></span>
+              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 2. VOCABULÁRIO ══ -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+    <table class="fr-vocab-table">
+      <tr><th>Russo</th><th>Tradução</th><th>Exemplo</th></tr>
+      <tr><td class="fr-word">Привет</td><td>Olá / Oi (informal)</td><td class="fr-example">Привет, меня зовут Анна.</td></tr>
+      <tr><td class="fr-word">Меня зовут…</td><td>Meu nome é… / Me chamo…</td><td class="fr-example">Меня зовут Камилль.</td></tr>
+      <tr><td class="fr-word">Как тебя зовут?</td><td>Como você se chama? (informal)</td><td class="fr-example">Привет! Как тебя зовут?</td></tr>
+      <tr><td class="fr-word">Как вас зовут?</td><td>Como você se chama? (formal/plural)</td><td class="fr-example">Добрый день! Как вас зовут?</td></tr>
+      <tr><td class="fr-word">А тебя? / А вас?</td><td>E você? (inf.) / E o sr./a sra.? (form.)</td><td class="fr-example">Меня зовут Игорь. А тебя?</td></tr>
+      <tr><td class="fr-word">Очень приятно</td><td>Muito prazer / Encantado(a)</td><td class="fr-example">Очень приятно, Джим.</td></tr>
+      <tr><td class="fr-word">Извините</td><td>Desculpe / Com licença (formal)</td><td class="fr-example">Извините, как это пишется?</td></tr>
+      <tr><td class="fr-word">Как это пишется?</td><td>Como isso se escreve?</td><td class="fr-example">Как это пишется, Игорь?</td></tr>
+      <tr><td class="fr-word">Спасибо / Пожалуйста</td><td>Obrigado(a) / De nada</td><td class="fr-example">Спасибо! — Пожалуйста.</td></tr>
+      <tr><td class="fr-word">Я говорю… / немного</td><td>Eu falo… / um pouco</td><td class="fr-example">Я говорю немного по-русски.</td></tr>
+      <tr><td class="fr-word">На каких языках вы говорите?</td><td>Em quais línguas você/vocês falam?</td><td class="fr-example">На каких языках вы говорите?</td></tr>
+      <tr><td class="fr-word">Я + nacionalidade</td><td>Eu sou + nacionalidade</td><td class="fr-example">Я бразилец. / Я бразильянка.</td></tr>
+      <tr><td class="fr-word">по-русски / по-английски</td><td>em russo / em inglês</td><td class="fr-example">Я говорю по-русски.</td></tr>
+      <tr><td class="fr-word">по-японски / по-китайски</td><td>em japonês / em chinês</td><td class="fr-example">Она говорит по-японски.</td></tr>
+      <tr><td class="fr-word">американец / американка</td><td>americano / americana</td><td class="fr-example">Он американец. Она американка.</td></tr>
+      <tr><td class="fr-word">бразилец / бразильянка</td><td>brasileiro / brasileira</td><td class="fr-example">Я бразильянка.</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3. GRAMÁTICA ══ -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Como dizer o nome em russo — "Меня зовут"</h4>
+      <p>Em russo <strong>não existe</strong> um verbo reflexivo equivalente ao francês <em>s'appeler</em>. A estrutura usada é:</p>
+      <p class="example">Меня зовут + nome &nbsp;|&nbsp; Меня зовут Анна. &nbsp;|&nbsp; Меня зовут Родриго.</p>
+      <p>Literalmente significa "me chamam de…" — é uma construção impessoal com o verbo <em>звать</em> (chamar). Em A1 não é necessário conjugar esse verbo: basta memorizar a expressão fixa.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Verbo "ser" — não existe no presente em russo!</h4>
+      <p>Para dizer a nacionalidade, o russo simplesmente <strong>omite o verbo "ser"</strong> no presente:</p>
+      <p class="example">Я грек. &nbsp;(Eu sou grego.) &nbsp;|&nbsp; Она американка. &nbsp;(Ela é americana.) &nbsp;|&nbsp; Я бразилец. &nbsp;(Eu sou brasileiro.)</p>
+      <p>⚠️ Não se diz "Я есть…" no russo moderno. O verbo <em>есть</em> (ser/existir) praticamente desapareceu do uso cotidiano.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Verbo ГОВОРИТЬ — "falar" (presente)</h4>
+      <table class="conj-table">
+        <tr><th>Pessoa</th><th>Forma</th><th>Pronúncia aprox.</th></tr>
+        <tr><td>Я (eu)</td><td class="conj-form">говорю</td><td>gavarYÚ</td></tr>
+        <tr><td>Ты (você)</td><td class="conj-form">говоришь</td><td>gavarÍch</td></tr>
+        <tr><td>Он / Она (ele/ela)</td><td class="conj-form">говорит</td><td>gavarÍt</td></tr>
+        <tr><td>Мы (nós)</td><td class="conj-form">говорим</td><td>gavarÍm</td></tr>
+        <tr><td>Вы (vocês/formal)</td><td class="conj-form">говорите</td><td>gavarÍtie</td></tr>
+        <tr><td>Они (eles/elas)</td><td class="conj-form">говорят</td><td>gavarYÁt</td></tr>
+      </table>
+      <p class="example">Я говорю по-русски. &nbsp;|&nbsp; Ты говоришь по-английски? &nbsp;|&nbsp; Они говорят по-китайски.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Idiomas com по- (advérbio de língua)</h4>
+      <p>Para dizer "em qual língua" se fala, usa-se <strong>по-</strong> + nome do idioma com terminação especial:</p>
+      <p class="example">по-русски (em russo) &nbsp;|&nbsp; по-английски (em inglês) &nbsp;|&nbsp; по-французски (em francês) &nbsp;|&nbsp; по-японски (em japonês) &nbsp;|&nbsp; по-китайски (em chinês) &nbsp;|&nbsp; по-испански (em espanhol) &nbsp;|&nbsp; по-португальски (em português)</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Nacionalidade — o substantivo concorda com o gênero</h4>
+      <p>Ao contrário do francês e espanhol, em russo a nacionalidade é um <strong>substantivo</strong> (não adjetivo), e varia entre masculino e feminino:</p>
+      <p class="example">американец / американка &nbsp;|&nbsp; китаец / китаянка &nbsp;|&nbsp; грек / гречанка &nbsp;|&nbsp; бразилец / бразильянка &nbsp;|&nbsp; японец / японка</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>6. TU (ты) vs. VOCÊ formal (вы)</h4>
+      <p>O russo distingue dois níveis de formalidade:</p>
+      <p class="example">ты (tutear — amigos, família, crianças) &nbsp;|&nbsp; вы (formal — desconhecidos, superiores, pessoas mais velhas)</p>
+      <p>⚠️ <strong>вы</strong> também é a forma de plural para "vocês" em qualquer situação.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4. TRADUÇÃO ══ -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o russo.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu me chamo Rodrigo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Меня зовут Родриго.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Como você se chama? (informal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Как тебя зовут?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu falo português e inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я говорю по-португальски и по-английски.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Você fala russo? (informal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ты говоришь по-русски?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou brasileiro. (homem)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я бразилец.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é americana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Она американка.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Como se escreve o seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Как пишется твоё имя?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Pode soletrar, por favor?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Можешь произнести по буквам, пожалуйста?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu falo um pouco de russo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я немного говорю по-русски.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Nós falamos espanhol.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Мы говорим по-испански.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eles são chineses.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Они китайцы.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você se chama Hugo? (informal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Тебя зовут Хуго?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Muito prazer! Eu sou japonesa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Очень приятно! Я японка.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela fala inglês e um pouco de russo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Она говорит по-английски и немного по-русски.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Desculpe, como se escreve?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Извините, как это пишется?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 15</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 5. CONVERSAÇÃO ══ -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Как тебя зовут?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">На каких языках ты говоришь?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Какая у тебя национальность?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Ты предпочитаешь говорить по-русски или по-английски?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Как пишется твоё имя?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Ты можешь произнести своё имя по буквам?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Ты немного говоришь по-русски?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Почему ты учишь русский язык?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Ты знаешь русские имена?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
