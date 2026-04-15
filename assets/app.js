@@ -288,6 +288,41 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/fr-a1-31.html',
 },
+'Francês-A1-32': {
+  icon: '🎉',
+  titulo: 'Inviter quelqu’un',
+  descricao: 'Convidar, aceitar, recusar e organizar encontros com futur proche e impératif.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Interação', 'Gramática'],
+  file: 'aulas/fr-a1-32.html',
+},
+
+'Francês-A1-33': {
+  icon: '📅',
+  titulo: 'Au jour le jour',
+  descricao: 'Descrever a rotina completa com sequência de ações e frequência.',
+  duracao: '25 min',
+  skills: ['Fala', 'Rotina', 'Fluência'],
+  file: 'aulas/fr-a1-33.html',
+},
+
+'Francês-A1-34': {
+  icon: '⏳',
+  titulo: 'Raconter des événements passés',
+  descricao: 'Introdução ao passé composé para contar acontecimentos do passado.',
+  duracao: '30 min',
+  skills: ['Gramática', 'Narrativa', 'Compreensão'],
+  file: 'aulas/fr-a1-34.html',
+},
+
+'Francês-A1-35': {
+  icon: '🎆',
+  titulo: 'La fête nationale en France',
+  descricao: 'Curiosité em passé composé sobre o 14 juillet e a cultura francesa.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-35.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
