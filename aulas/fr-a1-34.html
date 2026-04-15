@@ -1,0 +1,309 @@
+<!-- Francês A2 — Aula 34: Raconter des événements passés
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr34.png" alt="Raconter sa journée passée"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr34.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Raconter sa journée passée</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu as fait quoi hier ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Hier, je me suis réveillée à sept heures et je suis partie travailler.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu as travaillé toute la journée ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, j’ai travaillé jusqu’à dix-sept heures.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Et après ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Après, j’ai rencontré une amie et nous avons bu un café.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu es rentrée tard ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Non, je suis rentrée vers vingt heures et j’ai dîné.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr34-1.png" alt="Raconter un week-end"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr34-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Raconter un week-end</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as fait quoi ce week-end ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Samedi, j’ai fait du sport et j’ai vu un film.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Et dimanche ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Dimanche, je suis resté à la maison et j’ai lu un livre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as aimé ton week-end ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, c’était très tranquille et agréable.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr34-2.png" alt="Raconter une activité"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr34-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Raconter une activité</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu as déjà visité ce musée ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, j’ai visité ce musée la semaine dernière.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">C’était comment ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">C’était très intéressant, j’ai vu beaucoup d’œuvres.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu y es allé seul ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Non, j’y suis allé avec des amis.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Vous avez aimé ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, nous avons beaucoup aimé.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">hier</td><td>ontem</td><td class="fr-example">Hier, j’ai travaillé toute la journée.</td></tr>
+      <tr><td class="fr-word">la semaine dernière</td><td>semana passada</td><td class="fr-example">J’ai visité ce musée la semaine dernière.</td></tr>
+      <tr><td class="fr-word">le week-end</td><td>fim de semana</td><td class="fr-example">J’ai fait du sport ce week-end.</td></tr>
+
+      <tr><td class="fr-word">rencontrer</td><td>encontrar</td><td class="fr-example">J’ai rencontré une amie après le travail.</td></tr>
+      <tr><td class="fr-word">voir</td><td>ver</td><td class="fr-example">J’ai vu un film samedi.</td></tr>
+      <tr><td class="fr-word">visiter</td><td>visitar</td><td class="fr-example">J’ai visité un musée la semaine dernière.</td></tr>
+      <tr><td class="fr-word">rester</td><td>ficar</td><td class="fr-example">Je suis resté à la maison dimanche.</td></tr>
+      <tr><td class="fr-word">rentrer</td><td>voltar</td><td class="fr-example">Je suis rentrée vers vingt heures.</td></tr>
+
+      <tr><td class="fr-word">après</td><td>depois</td><td class="fr-example">Après, nous avons bu un café.</td></tr>
+      <tr><td class="fr-word">puis</td><td>depois</td><td class="fr-example">J’ai travaillé, puis je suis sortie.</td></tr>
+      <tr><td class="fr-word">jusqu’à</td><td>até</td><td class="fr-example">J’ai travaillé jusqu’à dix-sept heures.</td></tr>
+      <tr><td class="fr-word">vers</td><td>por volta de</td><td class="fr-example">Je suis rentré vers vingt heures.</td></tr>
+
+      <tr><td class="fr-word">travailler</td><td>trabalhar</td><td class="fr-example">J’ai travaillé toute la journée.</td></tr>
+      <tr><td class="fr-word">dîner</td><td>jantar</td><td class="fr-example">J’ai dîné à la maison.</td></tr>
+      <tr><td class="fr-word">boire un café</td><td>tomar café</td><td class="fr-example">Nous avons bu un café ensemble.</td></tr>
+      <tr><td class="fr-word">une œuvre</td><td>obra</td><td class="fr-example">J’ai vu beaucoup d’œuvres au musée.</td></tr>
+      <tr><td class="fr-word">tranquille</td><td>tranquilo</td><td class="fr-example">Mon week-end était très tranquille.</td></tr>
+      <tr><td class="fr-word">agréable</td><td>agradável</td><td class="fr-example">C’était un week-end agréable.</td></tr>
+      <tr><td class="fr-word">déjà</td><td>já</td><td class="fr-example">Tu as déjà visité ce musée ?</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Le passé composé (base)</h4>
+      <p>👉 estrutura:</p>
+      <p class="example">avoir / être + participe passé</p>
+      <p class="example">J’ai travaillé.</p>
+      <p class="example">J’ai mangé.</p>
+      <p class="example">J’ai vu.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Verbes avec ÊTRE</h4>
+      <p>👉 mouvement / changement</p>
+      <p class="example">je suis allé(e)</p>
+      <p class="example">je suis parti(e)</p>
+      <p class="example">je suis rentré(e)</p>
+      <p class="example">je suis resté(e)</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Exemples complets</h4>
+      <p class="example">Hier, j’ai travaillé.</p>
+      <p class="example">Après, je suis allé au cinéma.</p>
+      <p class="example">Je suis rentré à 20h.</p>
+      <p class="example">Nous avons bu un café après le travail.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Structure pour raconter</h4>
+      <p>👉 sequência:</p>
+      <p class="example">Hier → action → après → action</p>
+      <p class="example">Hier, j’ai travaillé, puis je suis allé au café.</p>
+      <p class="example">Dimanche, je suis resté à la maison et j’ai lu un livre.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Révision utile</h4>
+      <p>Para contar uma experiência curta:</p>
+      <p class="example">J’ai visité un musée la semaine dernière.</p>
+      <p class="example">J’y suis allé avec des amis.</p>
+      <p class="example">Nous avons beaucoup aimé.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">1. Ontem eu acordei às sete horas e fui trabalhar.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Hier, je me suis réveillé(e) à sept heures et je suis allé(e) travailler.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">2. Eu trabalhei até dezessete horas.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’ai travaillé jusqu’à dix-sept heures.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">3. Depois, eu encontrei um amigo e tomamos um café.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Après, j’ai rencontré un ami et nous avons bu un café.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">4. Eu voltei para casa às vinte horas.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je suis rentré(e) à la maison à vingt heures.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">5. No fim de semana, eu fiz esporte e assisti um filme.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Ce week-end, j’ai fait du sport et j’ai vu un film.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">6. Domingo, eu fiquei em casa e li um livro.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Dimanche, je suis resté(e) à la maison et j’ai lu un livre.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">7. Eu visitei um museu na semana passada.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’ai visité un musée la semaine dernière.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">8. Eu vi muitas coisas interessantes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’ai vu beaucoup de choses intéressantes.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">9. Eu fui ao restaurante com meus amigos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je suis allé(e) au restaurant avec mes amis.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">10. Nós gostamos muito da atividade.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous avons beaucoup aimé l’activité.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">11. Eu tive um fim de semana tranquilo.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’ai eu un week-end tranquille.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">12. Eu fiz muitas atividades interessantes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’ai fait beaucoup d’activités intéressantes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as fait quoi hier ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu as travaillé ou étudié hier ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu es sorti ce week-end ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu as vu un film récemment ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu as visité un musée ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu as rencontré des amis ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu es resté à la maison ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu as aimé ton week-end ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu es rentré tard hier ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu as fait quelque chose d’intéressant ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
