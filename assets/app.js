@@ -354,6 +354,33 @@ const AULAS = {
   duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
   file: 'aulas/ru-a1-1.html',
 },
+'Russo-A1-2': {
+  icon: '🌍', titulo: 'Национальности и страны — Nacionalidades e países',
+  descricao: 'Nacionalidades, países, apresentações e números básicos em contextos reais.',
+  duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
+  file: 'aulas/ru-a1-2.html',
+},
+
+'Russo-A1-3': {
+  icon: '🔢', titulo: 'Возраст и числа — Idade e números',
+  descricao: 'Números de 21 a 69, idade, quantidades e uso prático em diálogos do dia a dia.',
+  duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
+  file: 'aulas/ru-a1-3.html',
+},
+
+'Russo-A1-4': {
+  icon: '👋', titulo: 'Привет и здравствуйте — Cumprimentos e formalidade',
+  descricao: 'Saudações, despedidas, tu vs vous em russo e expressões sociais essenciais.',
+  duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
+  file: 'aulas/ru-a1-4.html',
+},
+
+'Russo-A1-5': {
+  icon: '🇷🇺', titulo: 'Ты и вы — Curiosité sur le russe',
+  descricao: 'Curiosidade cultural sobre a língua russa com texto curto, vocabulário e compreensão.',
+  duracao: '10 min', skills: ['Leitura','Cultura','Vocabulário'],
+  file: 'aulas/ru-a1-5.html',
+},
 };
 
 /* ── ESTADO ── */
