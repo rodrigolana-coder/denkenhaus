@@ -6,15 +6,15 @@
 .ru-word {
   display: inline;
   position: relative;
-  cursor: help;
-  border-bottom: 1.5px dashed rgba(123, 97, 255, 0.5);
+  cursor: pointer;
+  border-bottom: 1.5px dashed rgba(201,169,110,0.5);
   padding-bottom: 1px;
   transition: color 0.18s, border-color 0.18s;
-  border-radius: 2px;
 }
-.ru-word:hover {
-  color: #a78bfa;
-  border-bottom-color: #a78bfa;
+.ru-word:hover,
+.ru-word.tip-open {
+  color: var(--gold, #c9a96e);
+  border-bottom-color: var(--gold, #c9a96e);
 }
 .ru-word .ru-tip {
   visibility: hidden;
@@ -24,17 +24,17 @@
   bottom: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%) translateY(4px);
-  background: #1e1b3a;
-  color: #e2d9ff;
+  background: #0d1520;
+  color: #e8dfc8;
   font-size: 0.78rem;
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  padding: 0.35rem 0.7rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 8px;
   white-space: nowrap;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.45), 0 0 0 1px rgba(167,139,250,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,169,110,0.25);
   transition: opacity 0.18s, transform 0.18s;
-  z-index: 999;
+  z-index: 9999;
   line-height: 1.5;
 }
 .ru-word .ru-tip::after {
@@ -44,299 +44,27 @@
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: #1e1b3a;
+  border-top-color: #0d1520;
 }
-/* tooltip sai para cima mas se estiver perto do topo vai para baixo */
-.ru-word:hover .ru-tip {
+.ru-word:hover .ru-tip,
+.ru-word.tip-open .ru-tip {
   visibility: visible;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-
-/* ── ABAS ── */
-.fr-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  padding: 1rem 1rem 0;
-  border-bottom: 2px solid rgba(123,97,255,0.15);
-  margin-bottom: 1.5rem;
-}
-.fr-tab {
-  padding: 0.55rem 1.1rem;
-  border: none;
-  background: none;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.84rem;
-  font-weight: 600;
-  color: #8892a4;
-  cursor: pointer;
-  border-radius: 8px 8px 0 0;
-  border-bottom: 3px solid transparent;
-  transition: all 0.2s;
-  letter-spacing: 0.02em;
-}
-.fr-tab:hover { color: #a78bfa; background: rgba(167,139,250,0.06); }
-.fr-tab.fr-tab-active {
-  color: #a78bfa;
-  border-bottom-color: #a78bfa;
-  background: rgba(167,139,250,0.08);
+@media (max-width: 480px) {
+  .ru-word .ru-tip {
+    white-space: normal;
+    max-width: 180px;
+    text-align: center;
+  }
 }
 
-/* ── SEÇÕES ── */
-.fr-section { display: none; }
-.fr-section.fr-active { display: block; }
-
-/* ── NAVEGAÇÃO ── */
-.fr-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.07);
-}
-.fr-nav-btn {
-  padding: 0.6rem 1.25rem;
-  border-radius: 8px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  background: #7b61ff;
-  color: #fff;
-  transition: all 0.2s;
-  letter-spacing: 0.02em;
-}
-.fr-nav-btn:hover:not(:disabled) { background: #6d55e8; transform: translateY(-1px); }
-.fr-nav-btn:disabled { opacity: 0.35; cursor: default; }
-.fr-nav-btn.fr-ghost { background: transparent; color: #8892a4; border: 1.5px solid rgba(255,255,255,0.12); }
-.fr-nav-btn.fr-ghost:hover:not(:disabled) { border-color: #7b61ff; color: #a78bfa; background: rgba(123,97,255,0.08); }
-.fr-slide-info { color: #8892a4; font-size: 0.8rem; font-family: 'DM Sans', sans-serif; }
-
-/* ── DIÁLOGOS ── */
-.fr-dlg-grid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 1.5rem;
-  align-items: start;
-}
-@media (max-width: 600px) { .fr-dlg-grid { grid-template-columns: 1fr; } }
-.fr-dlg-img img {
-  width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
-  aspect-ratio: 1;
-  background: rgba(123,97,255,0.1);
-}
-.fr-dlg-label {
-  font-size: 0.78rem;
-  color: #8892a4;
-  margin-bottom: 1rem;
-  font-family: 'DM Sans', sans-serif;
-  font-style: italic;
-}
-.dialog-line {
-  display: flex;
-  gap: 0.75rem;
-  align-items: baseline;
-  margin-bottom: 0.6rem;
-  flex-wrap: wrap;
-}
-.dialog-speaker {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #7b61ff;
-  min-width: 80px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  flex-shrink: 0;
-}
-.dialog-text {
-  font-size: 0.95rem;
-  color: #c8d4e8;
-  line-height: 1.6;
-  flex: 1;
-}
-
-/* ── NOTA DO ALFABETO ── */
-.ru-alphabet-note {
-  background: rgba(123,97,255,0.07);
-  border: 1px solid rgba(123,97,255,0.18);
-  border-radius: 12px;
-  padding: 1rem 1.25rem;
-  font-size: 0.83rem;
-  color: #c8d4e8;
-  font-family: 'DM Sans', sans-serif;
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-.ru-alphabet-note strong { color: #a78bfa; }
-
-/* ── VOCAB TABLE ── */
-.fr-vocab-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.84rem;
-}
-.fr-vocab-table th {
-  background: rgba(123,97,255,0.1);
-  color: #a78bfa;
-  padding: 0.55rem 0.85rem;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  border-bottom: 2px solid rgba(123,97,255,0.2);
-}
-.fr-vocab-table td {
-  padding: 0.55rem 0.85rem;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  color: #c8d4e8;
-  vertical-align: top;
-}
-.fr-vocab-table tr:last-child td { border-bottom: none; }
-.fr-vocab-table .fr-word { color: #e2d9ff; font-weight: 600; }
-.fr-vocab-table .fr-example { color: #8892a4; font-style: italic; }
-
-/* ── GRAMÁTICA ── */
-.grammar-rule {
-  margin-bottom: 1.75rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.grammar-rule:last-child { border-bottom: none; }
-.grammar-rule h4 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #a78bfa;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.02em;
-}
-.grammar-rule p { color: #c8d4e8; font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.5rem; }
-.grammar-rule .example {
-  background: rgba(123,97,255,0.07);
-  border-left: 3px solid #7b61ff;
-  padding: 0.6rem 1rem;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.85rem;
-  color: #e2d9ff;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-.conj-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0.75rem 0;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.84rem;
-}
-.conj-table th {
-  background: rgba(123,97,255,0.1);
-  color: #a78bfa;
-  padding: 0.45rem 0.75rem;
-  text-align: left;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-bottom: 1px solid rgba(123,97,255,0.2);
-}
-.conj-table td { padding: 0.45rem 0.75rem; color: #c8d4e8; border-bottom: 1px solid rgba(255,255,255,0.04); }
-.conj-table .conj-form { color: #e2d9ff; font-weight: 700; }
-
-/* ── EXERCÍCIOS ── */
-.exercise-list { display: flex; flex-direction: column; gap: 1rem; }
-.exercise-item {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 12px;
-  padding: 1rem 1.25rem;
-}
-.exercise-q {
-  font-size: 0.95rem;
-  color: #c8d4e8;
-  margin-bottom: 0.75rem;
-  font-family: 'DM Sans', sans-serif;
-}
-.show-answer-btn {
-  background: rgba(123,97,255,0.12);
-  border: 1px solid rgba(123,97,255,0.3);
-  color: #a78bfa;
-  padding: 0.4rem 0.9rem;
-  border-radius: 8px;
-  font-size: 0.8rem;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.show-answer-btn:hover { background: rgba(123,97,255,0.22); }
-.exercise-answer {
-  display: none;
-  margin-top: 0.75rem;
-  padding: 0.6rem 1rem;
-  background: rgba(123,97,255,0.08);
-  border-left: 3px solid #7b61ff;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.9rem;
-  color: #e2d9ff;
-  font-family: 'DM Sans', sans-serif;
-  font-style: italic;
-}
-.exercise-answer.show { display: block; }
-
-/* ── CONVERSAÇÃO ── */
-.fr-conv-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.fr-conv-item:last-child { border-bottom: none; }
-.fr-conv-num {
-  background: rgba(123,97,255,0.15);
-  color: #a78bfa;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid rgba(123,97,255,0.25);
-}
-.fr-conv-q {
-  color: #c8d4e8;
-  font-size: 0.95rem;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 1.55;
-  padding-top: 0.1rem;
-}
-
-/* ── BADGE CIRÍLICO ── */
-.cyrillic-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(123,97,255,0.12);
-  border: 1px solid rgba(123,97,255,0.25);
-  border-radius: 100px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  color: #a78bfa;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  letter-spacing: 0.03em;
+.ru-tap-hint  { display: none; font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+.ru-mouse-hint {              font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+@media (hover: none) {
+  .ru-tap-hint   { display: block; }
+  .ru-mouse-hint { display: none;  }
 }
 </style>
 
@@ -353,16 +81,14 @@
 <div class="fr-section fr-active" id="fr-sec-0">
   <div class="c-block">
     <div class="c-block-title">Diálogos</div>
-
-    <div class="ru-alphabet-note">
-      💡 <strong>Dica:</strong> passe o mouse sobre qualquer palavra ou expressão em russo para ver a tradução instantânea.
-    </div>
+    <p class="ru-mouse-hint">💡 Passe o mouse sobre as palavras russas para ver a tradução.</p>
+    <p class="ru-tap-hint">💡 Toque nas palavras russas para ver a tradução.</p>
 
     <!-- DIÁLOGO 1 -->
     <div class="fr-dlg-slide" id="fr-dlg-0">
       <div class="fr-dlg-grid">
         <div class="fr-dlg-img">
-          <img src="/denkenhaus/img/ru/ru1.png" alt="Em sala de aula" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+          <img src="/denkenhaus/img/ru/ru1.png" alt="Em sala de aula" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
         </div>
         <div class="fr-dlg-right">
           <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1.mp3" type="audio/mpeg"></audio>
@@ -371,69 +97,69 @@
           <div class="dialog-line">
             <span class="dialog-speaker">Camille</span>
             <span class="dialog-text">
-              <span class="ru-word">Привет!<span class="ru-tip">Olá! / Oi!</span></span>
-              <span class="ru-word">Как тебя зовут?<span class="ru-tip">Como você se chama? (informal)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Привет!<span class="ru-tip">Olá! / Oi!</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Как тебя зовут?<span class="ru-tip">Como você se chama? (informal)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Yoko</span>
             <span class="dialog-text">
-              <span class="ru-word">Йоко.<span class="ru-tip">Yoko. (nome próprio)</span></span>
-              <span class="ru-word">А тебя?<span class="ru-tip">E você? (informal)</span></span>
+              Йоко.
+              <span class="ru-word" onclick="toggleTip(this)">А тебя?<span class="ru-tip">E você? (informal)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Camille</span>
             <span class="dialog-text">
-              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
-              <span class="ru-word">Камилль.<span class="ru-tip">Camille. (nome próprio em russo)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              Камилль.
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Clémence</span>
             <span class="dialog-text">
-              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
-              <span class="ru-word">Клеманс.<span class="ru-tip">Clémence. (nome próprio em russo)</span></span>
-              <span class="ru-word">А вас?<span class="ru-tip">E vocês? / E o senhor/a senhora? (formal/plural)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              Клеманс.
+              <span class="ru-word" onclick="toggleTip(this)">А вас?<span class="ru-tip">E vocês? / E o senhor/a senhora? (formal/plural)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Yoko</span>
             <span class="dialog-text">
-              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
-              <span class="ru-word">Йоко.<span class="ru-tip">Yoko.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Меня зовут<span class="ru-tip">Meu nome é… / Me chamo…</span></span>
+              Йоко.
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Camille</span>
             <span class="dialog-text">
-              <span class="ru-word">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Clémence</span>
             <span class="dialog-text">
-              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
-              <span class="ru-word">по-французски<span class="ru-tip">em francês / francês (adv.)</span></span>
-              <span class="ru-word">и<span class="ru-tip">e</span></span>
-              <span class="ru-word">по-английски.<span class="ru-tip">em inglês / inglês (adv.)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-французски<span class="ru-tip">em francês</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-английски.<span class="ru-tip">em inglês</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Yoko</span>
             <span class="dialog-text">
-              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
-              <span class="ru-word">по-японски<span class="ru-tip">em japonês / japonês (adv.)</span></span>
-              <span class="ru-word">и<span class="ru-tip">e</span></span>
-              <span class="ru-word">немного<span class="ru-tip">um pouco</span></span>
-              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-японски<span class="ru-tip">em japonês</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">немного<span class="ru-tip">um pouco</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-французски.<span class="ru-tip">em francês</span></span>
             </span>
           </div>
         </div>
@@ -444,7 +170,7 @@
     <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
       <div class="fr-dlg-grid">
         <div class="fr-dlg-img">
-          <img src="/denkenhaus/img/ru/ru1-1.png" alt="Soletrar o nome" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+          <img src="/denkenhaus/img/ru/ru1-1.png" alt="Soletrar o nome" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
         </div>
         <div class="fr-dlg-right">
           <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1-1.mp3" type="audio/mpeg"></audio>
@@ -453,55 +179,55 @@
           <div class="dialog-line">
             <span class="dialog-speaker">Karine</span>
             <span class="dialog-text">
-              <span class="ru-word">Извините,<span class="ru-tip">Desculpe / Com licença (formal)</span></span>
-              <span class="ru-word">как это пишется?<span class="ru-tip">como isso se escreve?</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Извините,<span class="ru-tip">Desculpe / Com licença (formal)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">как это пишется?<span class="ru-tip">como isso se escreve?</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Hugo</span>
             <span class="dialog-text">
-              <span class="ru-word">Х-У-Г-О.<span class="ru-tip">H-U-G-O (letras do alfabeto cirílico)</span></span>
-              <span class="ru-word">Хуго,<span class="ru-tip">Hugo</span></span>
-              <span class="ru-word">как<span class="ru-tip">como</span></span>
-              <span class="ru-word">Хуго.<span class="ru-tip">Hugo.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Х-У-Г-О.<span class="ru-tip">H-U-G-O (alfabeto cirílico)</span></span>
+              Хуго,
+              <span class="ru-word" onclick="toggleTip(this)">как<span class="ru-tip">como</span></span>
+              Хуго.
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Igor</span>
             <span class="dialog-text">
-              <span class="ru-word">А тебя как зовут?<span class="ru-tip">E você, como se chama? (informal)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">А тебя как зовут?<span class="ru-tip">E você, como se chama? (informal)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Karine</span>
             <span class="dialog-text">
-              <span class="ru-word">Карин.<span class="ru-tip">Karine.</span></span>
-              <span class="ru-word">К-А-Р-И-Н.<span class="ru-tip">K-A-R-I-N (letras do alfabeto cirílico)</span></span>
+              Карин.
+              <span class="ru-word" onclick="toggleTip(this)">К-А-Р-И-Н.<span class="ru-tip">K-A-R-I-N (alfabeto cirílico)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Igor</span>
             <span class="dialog-text">
-              <span class="ru-word">Игорь.<span class="ru-tip">Igor.</span></span>
-              <span class="ru-word">И-Г-О-Р-Ь.<span class="ru-tip">I-G-O-R' (Ь = sinal mole, amolece o R)</span></span>
+              Игорь.
+              <span class="ru-word" onclick="toggleTip(this)">И-Г-О-Р-Ь.<span class="ru-tip">I-G-O-R' — Ь é o sinal mole, amolece o R</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Karine</span>
             <span class="dialog-text">
-              <span class="ru-word">Спасибо!<span class="ru-tip">Obrigado(a)!</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Спасибо!<span class="ru-tip">Obrigado(a)!</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Hugo</span>
             <span class="dialog-text">
-              <span class="ru-word">Пожалуйста.<span class="ru-tip">De nada. / Por favor.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Пожалуйста.<span class="ru-tip">De nada. / Por favor.</span></span>
             </span>
           </div>
         </div>
@@ -512,7 +238,7 @@
     <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
       <div class="fr-dlg-grid">
         <div class="fr-dlg-img">
-          <img src="/denkenhaus/img/ru/ru1-2.png" alt="Coquetel internacional" onerror="this.style.background='rgba(123,97,255,0.15)';this.removeAttribute('src')">
+          <img src="/denkenhaus/img/ru/ru1-2.png" alt="Coquetel internacional" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
         </div>
         <div class="fr-dlg-right">
           <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru1-2.mp3" type="audio/mpeg"></audio>
@@ -521,66 +247,66 @@
           <div class="dialog-line">
             <span class="dialog-speaker">Alexandra</span>
             <span class="dialog-text">
-              <span class="ru-word">Привет,<span class="ru-tip">Olá / Oi</span></span>
-              <span class="ru-word">меня зовут<span class="ru-tip">meu nome é / me chamo</span></span>
-              <span class="ru-word">Александра Райнер.<span class="ru-tip">Alexandra Rainer.</span></span>
-              <span class="ru-word">Я гречанка.<span class="ru-tip">Eu sou grega. (feminino)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Привет,<span class="ru-tip">Olá / Oi</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">меня зовут<span class="ru-tip">meu nome é / me chamo</span></span>
+              Александра Райнер.
+              <span class="ru-word" onclick="toggleTip(this)">Я гречанка.<span class="ru-tip">Eu sou grega. (feminino)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Jim</span>
             <span class="dialog-text">
-              <span class="ru-word">Очень приятно.<span class="ru-tip">Muito prazer. / Encantado.</span></span>
-              <span class="ru-word">Джим О'Коннор.<span class="ru-tip">Jim O'Connor.</span></span>
-              <span class="ru-word">Я американец.<span class="ru-tip">Eu sou americano. (masculino)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Очень приятно.<span class="ru-tip">Muito prazer. / Encantado.</span></span>
+              Джим О'Коннор.
+              <span class="ru-word" onclick="toggleTip(this)">Я американец.<span class="ru-tip">Eu sou americano. (masculino)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Mei</span>
             <span class="dialog-text">
-              <span class="ru-word">Меня зовут<span class="ru-tip">Meu nome é / Me chamo</span></span>
-              <span class="ru-word">Мэй Ван.<span class="ru-tip">Mei Wang.</span></span>
-              <span class="ru-word">Я китаянка.<span class="ru-tip">Eu sou chinesa. (feminino)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Меня зовут<span class="ru-tip">Meu nome é / Me chamo</span></span>
+              Мэй Ван.
+              <span class="ru-word" onclick="toggleTip(this)">Я китаянка.<span class="ru-tip">Eu sou chinesa. (feminino)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Alexandra</span>
             <span class="dialog-text">
-              <span class="ru-word">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">На каких языках вы говорите?<span class="ru-tip">Em quais línguas vocês falam? (formal/plural)</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Jim</span>
             <span class="dialog-text">
-              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
-              <span class="ru-word">по-английски<span class="ru-tip">em inglês / inglês (adv.)</span></span>
-              <span class="ru-word">и<span class="ru-tip">e</span></span>
-              <span class="ru-word">немного<span class="ru-tip">um pouco</span></span>
-              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-английски<span class="ru-tip">em inglês</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">немного<span class="ru-tip">um pouco</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-французски.<span class="ru-tip">em francês</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Mei</span>
             <span class="dialog-text">
-              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
-              <span class="ru-word">по-китайски<span class="ru-tip">em chinês / chinês (adv.)</span></span>
-              <span class="ru-word">и<span class="ru-tip">e</span></span>
-              <span class="ru-word">по-английски.<span class="ru-tip">em inglês / inglês (adv.)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-китайски<span class="ru-tip">em chinês</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-английски.<span class="ru-tip">em inglês</span></span>
             </span>
           </div>
 
           <div class="dialog-line">
             <span class="dialog-speaker">Alexandra</span>
             <span class="dialog-text">
-              <span class="ru-word">Я говорю<span class="ru-tip">Eu falo</span></span>
-              <span class="ru-word">по-гречески<span class="ru-tip">em grego / grego (adv.)</span></span>
-              <span class="ru-word">и<span class="ru-tip">e</span></span>
-              <span class="ru-word">по-французски.<span class="ru-tip">em francês / francês (adv.)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я говорю<span class="ru-tip">Eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-гречески<span class="ru-tip">em grego</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-французски.<span class="ru-tip">em francês</span></span>
             </span>
           </div>
         </div>
@@ -642,7 +368,7 @@
       <h4>2. Verbo "ser" — não existe no presente em russo!</h4>
       <p>Para dizer a nacionalidade, o russo simplesmente <strong>omite o verbo "ser"</strong> no presente:</p>
       <p class="example">Я грек. &nbsp;(Eu sou grego.) &nbsp;|&nbsp; Она американка. &nbsp;(Ela é americana.) &nbsp;|&nbsp; Я бразилец. &nbsp;(Eu sou brasileiro.)</p>
-      <p>⚠️ Não se diz "Я есть…" no russo moderno. O verbo <em>есть</em> (ser/existir) praticamente desapareceu do uso cotidiano.</p>
+      <p>⚠️ Não se diz "Я есть…" no russo moderno. O verbo <em>есть</em> praticamente desapareceu do uso cotidiano.</p>
     </div>
 
     <div class="grammar-rule">
@@ -666,16 +392,15 @@
     </div>
 
     <div class="grammar-rule">
-      <h4>5. Nacionalidade — o substantivo concorda com o gênero</h4>
-      <p>Ao contrário do francês e espanhol, em russo a nacionalidade é um <strong>substantivo</strong> (não adjetivo), e varia entre masculino e feminino:</p>
+      <h4>5. Nacionalidade — concorda com o gênero</h4>
+      <p>Em russo a nacionalidade é um <strong>substantivo</strong> (não adjetivo), e varia entre masculino e feminino:</p>
       <p class="example">американец / американка &nbsp;|&nbsp; китаец / китаянка &nbsp;|&nbsp; грек / гречанка &nbsp;|&nbsp; бразилец / бразильянка &nbsp;|&nbsp; японец / японка</p>
     </div>
 
     <div class="grammar-rule">
-      <h4>6. TU (ты) vs. VOCÊ formal (вы)</h4>
+      <h4>6. ТЫ (informal) vs. ВЫ (formal/plural)</h4>
       <p>O russo distingue dois níveis de formalidade:</p>
-      <p class="example">ты (tutear — amigos, família, crianças) &nbsp;|&nbsp; вы (formal — desconhecidos, superiores, pessoas mais velhas)</p>
-      <p>⚠️ <strong>вы</strong> também é a forma de plural para "vocês" em qualquer situação.</p>
+      <p class="example">ты — amigos, família, crianças &nbsp;|&nbsp; вы — desconhecidos, superiores, pessoas mais velhas (também plural)</p>
     </div>
 
     <div class="fr-nav">
@@ -771,3 +496,25 @@
     </div>
   </div>
 </div>
+
+<!-- ══ JS — TOOLTIP (mouse + toque mobile) ══ -->
+<script>
+function toggleTip(el) {
+  var wasOpen = el.classList.contains('tip-open');
+  // fecha todos
+  document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+    w.classList.remove('tip-open');
+  });
+  // abre só se não estava aberto
+  if (!wasOpen) el.classList.add('tip-open');
+}
+
+// fecha ao tocar fora
+document.addEventListener('click', function(e) {
+  if (!e.target.closest || !e.target.closest('.ru-word')) {
+    document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+      w.classList.remove('tip-open');
+    });
+  }
+});
+</script>
