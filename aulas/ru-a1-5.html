@@ -1,0 +1,130 @@
+<!-- Russo A1 — Curiosité Aula 5: Почему в русском языке есть «ты» и «вы»?
+     Carregado via fetch pelo app.js -->
+
+<div class="c-block">
+  <div class="c-block-title">Curiosité</div>
+
+  <!-- ÁUDIO -->
+  <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
+    <source src="/denkenhaus/audio/ru/ru5-curiosite.mp3" type="audio/mpeg">
+  </audio>
+
+  <h3 style="margin-top:0;">Почему в русском языке есть «ты» и «вы»?</h3>
+
+  <p>
+    В русском языке есть два способа говорить с человеком:
+    <strong>ты</strong> и <strong>вы</strong>.
+  </p>
+
+  <p>
+    <strong>Ты</strong> используется с друзьями, с семьёй и с близкими людьми.
+    Это <strong>неформальная форма</strong>.
+  </p>
+
+  <p>
+    <strong>Вы</strong> используется с преподавателями, с незнакомыми людьми
+    и в <strong>формальных ситуациях</strong>.
+  </p>
+
+  <p>
+    Но <strong>вы</strong> также означает
+    <strong>вы (множественное число)</strong>.
+  </p>
+
+  <p>
+    В русском языке это важно, потому что показывает
+    <strong>отношение между людьми</strong>.
+  </p>
+
+  <p>
+    Сегодня в России люди всё ещё используют
+    <strong>ты</strong> и <strong>вы</strong>
+    в зависимости от ситуации.
+  </p>
+</div>
+
+<div class="c-block">
+  <div class="c-block-title">📚 Vocabulário</div>
+
+  <table class="fr-vocab-table">
+    <tr><th>Russo</th><th>Tradução</th></tr>
+    <tr><td class="fr-word">русский язык</td><td>língua russa</td></tr>
+    <tr><td class="fr-word">способ</td><td>maneira / forma</td></tr>
+    <tr><td class="fr-word">говорить</td><td>falar</td></tr>
+    <tr><td class="fr-word">человек</td><td>pessoa</td></tr>
+    <tr><td class="fr-word">ты</td><td>você (informal)</td></tr>
+    <tr><td class="fr-word">вы</td><td>você (formal) / vocês</td></tr>
+    <tr><td class="fr-word">друг</td><td>amigo</td></tr>
+    <tr><td class="fr-word">семья</td><td>família</td></tr>
+    <tr><td class="fr-word">близкий человек</td><td>pessoa próxima</td></tr>
+    <tr><td class="fr-word">неформальный</td><td>informal</td></tr>
+    <tr><td class="fr-word">формальный</td><td>formal</td></tr>
+    <tr><td class="fr-word">преподаватель</td><td>professor</td></tr>
+    <tr><td class="fr-word">незнакомый человек</td><td>pessoa desconhecida</td></tr>
+    <tr><td class="fr-word">множественное число</td><td>plural</td></tr>
+    <tr><td class="fr-word">важно</td><td>importante</td></tr>
+    <tr><td class="fr-word">отношение</td><td>relação</td></tr>
+    <tr><td class="fr-word">между</td><td>entre</td></tr>
+    <tr><td class="fr-word">сегодня</td><td>hoje</td></tr>
+    <tr><td class="fr-word">использовать</td><td>usar</td></tr>
+    <tr><td class="fr-word">ситуация</td><td>situação</td></tr>
+  </table>
+</div>
+
+<div class="c-block">
+  <div class="c-block-title">Questions de compréhension</div>
+
+  <div class="exercise-list">
+
+    <div class="exercise-item">
+      <div class="exercise-q">1. В русском языке есть:</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">A) одна форма</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, true)">B) две формы</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">C) три формы</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">D) четыре формы</button>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-q">2. «Ты» используется с:</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">A) преподавателями</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">B) незнакомыми людьми</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, true)">C) друзьями и семьёй</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">D) полицейскими</button>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-q">3. «Вы» используется:</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">A) только с друзьями</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, true)">B) в формальных ситуациях</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">C) только в школе</button>
+        <button class="quiz-option" onclick="checkQuizAnswer(this, false)">D) только в книгах</button>
+      </div>
+    </div>
+
+    <!-- restante igual -->
+    
+  </div>
+</div>
+
+<script>
+function checkQuizAnswer(btn, isCorrect) {
+  const options = btn.parentElement.querySelectorAll('.quiz-option');
+  options.forEach(option => {
+    option.disabled = true;
+    option.style.opacity = '0.85';
+  });
+
+  if (isCorrect) {
+    btn.style.background = '#2e7d32';
+    btn.style.color = '#fff';
+  } else {
+    btn.style.background = '#c62828';
+    btn.style.color = '#fff';
+  }
+}
+</script>
