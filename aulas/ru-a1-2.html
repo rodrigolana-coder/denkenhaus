@@ -1,0 +1,462 @@
+<!-- Russo A1 — Aula 2: Nacionalidades, países, números
+     Carregado via fetch pelo app.js -->
+
+<style>
+/* ── TOOLTIP DE TRADUÇÃO ── */
+.ru-word {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1.5px dashed rgba(201,169,110,0.5);
+  padding-bottom: 1px;
+  transition: color 0.18s, border-color 0.18s;
+}
+.ru-word:hover,
+.ru-word.tip-open {
+  color: var(--gold, #c9a96e);
+  border-bottom-color: var(--gold, #c9a96e);
+}
+.ru-word .ru-tip {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #0d1520;
+  color: #e8dfc8;
+  font-size: 0.78rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,169,110,0.25);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: 9999;
+  line-height: 1.5;
+}
+.ru-word .ru-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #0d1520;
+}
+.ru-word:hover .ru-tip,
+.ru-word.tip-open .ru-tip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (max-width: 480px) {
+  .ru-word .ru-tip {
+    white-space: normal;
+    max-width: 180px;
+    text-align: center;
+  }
+}
+
+.ru-tap-hint  { display: none; font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+.ru-mouse-hint {              font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+@media (hover: none) {
+  .ru-tap-hint   { display: block; }
+  .ru-mouse-hint { display: none;  }
+}
+</style>
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- ══ 1. DIÁLOGOS ══ -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+    <p class="ru-mouse-hint">💡 Passe o mouse sobre as palavras russas para ver a tradução.</p>
+    <p class="ru-tap-hint">💡 Toque nas palavras russas para ver a tradução.</p>
+
+    <!-- DIÁLOGO 1 -->
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru2.png" alt="Apresentar alguém" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru2.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 1 — Apresentar alguém</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Paul</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Привет,<span class="ru-tip">Olá / Oi</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">меня зовут<span class="ru-tip">me chamo / meu nome é</span></span>
+              Поль Бушар.
+              <span class="ru-word" onclick="toggleTip(this)">Я канадец.<span class="ru-tip">Eu sou canadense. (homem)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Меня зовут<span class="ru-tip">me chamo / meu nome é</span></span>
+              Александра Райнер.
+              <span class="ru-word" onclick="toggleTip(this)">Я гречанка.<span class="ru-tip">Eu sou grega. (mulher)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Paul</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Это<span class="ru-tip">Este / Esta / Esse é...</span></span>
+              Михаил Козловский.
+              <span class="ru-word" onclick="toggleTip(this)">Он поляк.<span class="ru-tip">Ele é polonês.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Michael</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Очень приятно.<span class="ru-tip">Muito prazer.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Вы немка?<span class="ru-tip">A senhora / você é alemã?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Нет,<span class="ru-tip">Não</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">я не немка,<span class="ru-tip">eu não sou alemã</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">я гречанка.<span class="ru-tip">eu sou grega</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 2 -->
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru2-1.png" alt="Falar dos países" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru2-1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 2 — Falar dos países</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Jeanne</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Ты откуда?<span class="ru-tip">Você é de onde?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Я из Китая.<span class="ru-tip">Eu sou da China.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я китаянка.<span class="ru-tip">Eu sou chinesa.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Jeanne</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Я из Франции.<span class="ru-tip">Eu sou da França.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Я француженка.<span class="ru-tip">Eu sou francesa.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Ты говоришь по-английски?<span class="ru-tip">Você fala inglês?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Jeanne</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">Sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">я говорю<span class="ru-tip">eu falo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-английски<span class="ru-tip">em inglês</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">немного<span class="ru-tip">um pouco</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">по-испански.<span class="ru-tip">em espanhol</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 3 -->
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru2-2.png" alt="Contar no coquetel" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru2-2.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 3 — Contar no coquetel</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Igor</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Сколько человек в зале?<span class="ru-tip">Quantas pessoas há na sala?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Я считаю…<span class="ru-tip">Estou contando...</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">один,<span class="ru-tip">um</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">два,<span class="ru-tip">dois</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">три…<span class="ru-tip">três...</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">двадцать!<span class="ru-tip">vinte!</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Igor</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Двадцать человек?<span class="ru-tip">Vinte pessoas?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">Sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и одиннадцать — французы.<span class="ru-tip">e onze são franceses.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Igor</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Правда?<span class="ru-tip">É mesmo? / Verdade?</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Есть американцы?<span class="ru-tip">Há americanos?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karine</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">Sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">два американца<span class="ru-tip">dois americanos</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">и<span class="ru-tip">e</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">одна мексиканка.<span class="ru-tip">uma mexicana</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 2. VOCABULÁRIO ══ -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+    <table class="fr-vocab-table">
+      <tr><th>Russo</th><th>Tradução</th><th>Exemplo</th></tr>
+      <tr><td class="fr-word">канадец / канадка</td><td>canadense</td><td class="fr-example">Он канадец. Она канадка.</td></tr>
+      <tr><td class="fr-word">грек / гречанка</td><td>grego / grega</td><td class="fr-example">Я гречанка.</td></tr>
+      <tr><td class="fr-word">поляк / полька</td><td>polonês / polonesa</td><td class="fr-example">Он поляк.</td></tr>
+      <tr><td class="fr-word">немец / немка</td><td>alemão / alemã</td><td class="fr-example">Вы немка?</td></tr>
+      <tr><td class="fr-word">китаец / китаянка</td><td>chinês / chinesa</td><td class="fr-example">Она китаянка.</td></tr>
+      <tr><td class="fr-word">француз / француженка</td><td>francês / francesa</td><td class="fr-example">Я француженка.</td></tr>
+      <tr><td class="fr-word">американец / американка</td><td>americano / americana</td><td class="fr-example">Два американца.</td></tr>
+      <tr><td class="fr-word">мексиканец / мексиканка</td><td>mexicano / mexicana</td><td class="fr-example">Одна мексиканка.</td></tr>
+      <tr><td class="fr-word">Ты откуда?</td><td>Você é de onde?</td><td class="fr-example">Привет! Ты откуда?</td></tr>
+      <tr><td class="fr-word">Я из…</td><td>Eu sou de…</td><td class="fr-example">Я из Франции.</td></tr>
+      <tr><td class="fr-word">Это…</td><td>Este / Esta / Esse é...</td><td class="fr-example">Это Михаил.</td></tr>
+      <tr><td class="fr-word">Сколько человек?</td><td>Quantas pessoas?</td><td class="fr-example">Сколько человек в зале?</td></tr>
+      <tr><td class="fr-word">Я считаю</td><td>Estou contando</td><td class="fr-example">Я считаю: один, два, три...</td></tr>
+      <tr><td class="fr-word">Есть</td><td>Há / Existe</td><td class="fr-example">Есть американцы?</td></tr>
+      <tr><td class="fr-word">один / два / три</td><td>um / dois / três</td><td class="fr-example">Один, два, три.</td></tr>
+      <tr><td class="fr-word">двадцать / одиннадцать</td><td>vinte / onze</td><td class="fr-example">Двадцать человек. Одиннадцать — французы.</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3. GRAMÁTICA ══ -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Nacionalidade em russo — masculino e feminino</h4>
+      <p>Em russo, a nacionalidade geralmente aparece como <strong>substantivo</strong>, e muda conforme o género:</p>
+      <p class="example">канадец / канадка &nbsp;|&nbsp; немец / немка &nbsp;|&nbsp; американец / американка &nbsp;|&nbsp; китаец / китаянка &nbsp;|&nbsp; француз / француженка</p>
+      <p>⚠️ Não existe uma regra única totalmente regular. Muitas formas precisam ser aprendidas caso a caso.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Países em russo — sem artigos</h4>
+      <p>Ao contrário do francês, o russo <strong>não usa artigos</strong> como le, la, les.</p>
+      <p class="example">Франция &nbsp;|&nbsp; Китай &nbsp;|&nbsp; Германия &nbsp;|&nbsp; Россия &nbsp;|&nbsp; Япония</p>
+      <p>Portanto, não há equivalente de <em>la France</em> ou <em>le Portugal</em> no russo.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Como dizer “vir de” / “ser de” — Я из...</h4>
+      <p>Para dizer de onde alguém vem, usa-se:</p>
+      <p class="example">Я из + país</p>
+      <p class="example">Я из Франции. &nbsp;|&nbsp; Я из Китая. &nbsp;|&nbsp; Я из Японии.</p>
+      <p>⚠️ O nome do país muda de forma porque entra no <strong>genitivo</strong>. Em A1, o melhor é memorizar as formas prontas mais comuns.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Números em russo</h4>
+      <p>Para esta aula, o foco é reconhecer e usar os números de 1 a 20:</p>
+      <p class="example">один, два, три, четыре, пять, шесть, семь, восемь, девять, десять</p>
+      <p class="example">одиннадцать, двенадцать, тринадцать, четырнадцать, пятнадцать, шестнадцать, семнадцать, восемнадцать, девятнадцать, двадцать</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. “Há / existe” em russo — ЕСТЬ</h4>
+      <p>Para indicar existência, pode-se usar <strong>есть</strong>:</p>
+      <p class="example">Есть американцы? &nbsp;|&nbsp; В зале есть двадцать человек.</p>
+      <p>Em muitos contextos, o russo também pode simplesmente omitir <em>есть</em>, mas para iniciantes esta forma ajuda bastante.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>6. Contar pessoas — человек</h4>
+      <p>Em russo, depois de números, a palavra <strong>человек</strong> é muito usada para “pessoa(s)”:</p>
+      <p class="example">два человека &nbsp;|&nbsp; двадцать человек</p>
+      <p>É a forma mais útil e natural para o nível inicial quando se fala de quantidade de pessoas.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4. TRADUÇÃO ══ -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o russo.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu sou canadense. (homem)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я канадец.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ela é espanhola.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Она испанка.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele é alemão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Он немец.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Eu venho da França.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я из Франции.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Nós somos mexicanos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Мы мексиканцы.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há vinte pessoas na sala.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">В зале есть двадцать человек.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Duas pessoas são russas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Два человека — русские.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você é americano? (informal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ты американец?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu não sou chinês. (homem)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я не китаец.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ela fala inglês e espanhol.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Она говорит по-английски и по-испански.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eles vêm do Japão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Они из Японии.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há onze franceses aqui.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Здесь есть одиннадцать французов.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Ela é grega e ele é polonês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Она гречанка, а он поляк.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu sou da China e falo um pouco de inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Я из Китая и немного говорю по-английски.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há dois americanos e uma mexicana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Есть два американца и одна мексиканка.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 15</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 5. CONVERSAÇÃO ══ -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Ты откуда?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Какая у тебя национальность?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Сколько языков ты знаешь?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Сколько человек в твоей семье?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Ты знаешь французов?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Ты предпочитаешь Францию или Канаду?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Ты немного говоришь по-испански?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Сколько стран ты знаешь?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Ты был в Европе? / Ты была в Европе?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ JS — TOOLTIP (mouse + toque mobile) ══ -->
+<script>
+function toggleTip(el) {
+  var wasOpen = el.classList.contains('tip-open');
+  document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+    w.classList.remove('tip-open');
+  });
+  if (!wasOpen) el.classList.add('tip-open');
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest || !e.target.closest('.ru-word')) {
+    document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+      w.classList.remove('tip-open');
+    });
+  }
+});
+</script>
