@@ -1,0 +1,474 @@
+<!-- Russo A1 — Aula 4: Cumprimentos / despedidas / ты e вы
+     Carregado via fetch pelo app.js -->
+
+<style>
+/* ── TOOLTIP DE TRADUÇÃO ── */
+.ru-word {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1.5px dashed rgba(201,169,110,0.5);
+  padding-bottom: 1px;
+  transition: color 0.18s, border-color 0.18s;
+}
+.ru-word:hover,
+.ru-word.tip-open {
+  color: var(--gold, #c9a96e);
+  border-bottom-color: var(--gold, #c9a96e);
+}
+.ru-word .ru-tip {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: #0d1520;
+  color: #e8dfc8;
+  font-size: 0.78rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,169,110,0.25);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: 9999;
+  line-height: 1.5;
+}
+.ru-word .ru-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #0d1520;
+}
+.ru-word:hover .ru-tip,
+.ru-word.tip-open .ru-tip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (max-width: 480px) {
+  .ru-word .ru-tip {
+    white-space: normal;
+    max-width: 180px;
+    text-align: center;
+  }
+}
+
+.ru-tap-hint  { display: none; font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+.ru-mouse-hint {              font-size:0.78rem; color:#5a6e8a; font-family:'DM Sans',sans-serif; font-style:italic; margin-bottom:1rem; }
+@media (hover: none) {
+  .ru-tap-hint   { display: block; }
+  .ru-mouse-hint { display: none;  }
+}
+</style>
+
+<!-- Abas -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- ══ 1. DIÁLOGOS ══ -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+    <p class="ru-mouse-hint">💡 Passe o mouse sobre as palavras russas para ver a tradução.</p>
+    <p class="ru-tap-hint">💡 Toque nas palavras russas para ver a tradução.</p>
+
+    <!-- DIÁLOGO 1 -->
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru4.png" alt="Na universidade" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru4.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 1 — Na universidade (relação formal)</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Lucas</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Здравствуйте,<span class="ru-tip">Olá / Bom dia (formal)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">господин.<span class="ru-tip">senhor</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Monsieur Martin</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Здравствуйте.<span class="ru-tip">Olá / Bom dia (formal)</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Вы новый?<span class="ru-tip">Você é novo? (formal)</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Lucas</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">меня зовут<span class="ru-tip">me chamo / meu nome é</span></span>
+              Лукас.
+              <span class="ru-word" onclick="toggleTip(this)">Я бразилец.<span class="ru-tip">Eu sou brasileiro.</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Monsieur Martin</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Очень приятно.<span class="ru-tip">Prazer / muito prazer</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Вы на первом курсе?<span class="ru-tip">Você está no primeiro ano?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Lucas</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">мне двадцать лет.<span class="ru-tip">eu tenho vinte anos</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Monsieur Martin</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Очень хорошо.<span class="ru-tip">Muito bem.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Хорошего дня!<span class="ru-tip">Tenha um bom dia!</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Lucas</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Спасибо,<span class="ru-tip">obrigado</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">до свидания!<span class="ru-tip">tchau / adeus (formal)</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 2 -->
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru4-1.png" alt="No corredor" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru4-1.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 2 — No corredor (relação informal)</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Hugo</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Привет!<span class="ru-tip">Oi!</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Как дела?<span class="ru-tip">Tudo bem?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karim</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Хорошо,<span class="ru-tip">Tudo bem</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">а у тебя?<span class="ru-tip">e você?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Hugo</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Хорошо.<span class="ru-tip">Tudo bem.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">Ты идёшь на занятие?<span class="ru-tip">Você vai para a aula?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karim</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">у меня занятие<span class="ru-tip">eu tenho aula / uma aula</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">в десять часов.<span class="ru-tip">às dez horas</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Hugo</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Ладно,<span class="ru-tip">ok / certo</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">до встречи!<span class="ru-tip">até mais / até logo</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Karim</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">До встречи!<span class="ru-tip">Até mais / até logo</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIÁLOGO 3 -->
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/ru/ru4-2.png" alt="Despedir-se" onerror="this.style.background='rgba(201,169,110,0.08)';this.removeAttribute('src')">
+        </div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/ru/ru4-2.mp3" type="audio/mpeg"></audio>
+          <div class="fr-dlg-label">Diálogo 3 — Despedir-se</div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Ну,<span class="ru-tip">bom / então</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">мне нужно идти.<span class="ru-tip">eu preciso ir</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Уже?<span class="ru-tip">Já?</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Да,<span class="ru-tip">sim</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">меня ждут<span class="ru-tip">estão me esperando</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">тридцать человек.<span class="ru-tip">trinta pessoas</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Хорошо.<span class="ru-tip">Certo.</span></span>
+              <span class="ru-word" onclick="toggleTip(this)">До завтра!<span class="ru-tip">Até amanhã!</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Mei</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">До скорого!<span class="ru-tip">Até breve!</span></span>
+            </span>
+          </div>
+
+          <div class="dialog-line">
+            <span class="dialog-speaker">Alexandra</span>
+            <span class="dialog-text">
+              <span class="ru-word" onclick="toggleTip(this)">Хорошего вечера!<span class="ru-tip">Boa noite / tenha uma boa noite!</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 2. VOCABULÁRIO ══ -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+    <table class="fr-vocab-table">
+      <tr><th>Russo</th><th>Tradução</th><th>Exemplo</th></tr>
+      <tr><td class="fr-word">Здравствуйте</td><td>Olá / bom dia (formal)</td><td class="fr-example">Здравствуйте, вы новый?</td></tr>
+      <tr><td class="fr-word">Добрый вечер</td><td>Boa noite (cumprimento)</td><td class="fr-example">Добрый вечер, господин.</td></tr>
+      <tr><td class="fr-word">господин / госпожа</td><td>senhor / senhora</td><td class="fr-example">Здравствуйте, господин.</td></tr>
+      <tr><td class="fr-word">Как вы?</td><td>Como o senhor / a senhora está?</td><td class="fr-example">Как вы сегодня?</td></tr>
+      <tr><td class="fr-word">Очень приятно</td><td>Prazer / muito prazer</td><td class="fr-example">Очень приятно, Лукас.</td></tr>
+      <tr><td class="fr-word">Привет</td><td>Oi</td><td class="fr-example">Привет! Как дела?</td></tr>
+      <tr><td class="fr-word">Как дела?</td><td>Tudo bem?</td><td class="fr-example">Привет! Как дела?</td></tr>
+      <tr><td class="fr-word">Хорошо</td><td>Tudo bem / bem</td><td class="fr-example">Хорошо, а у тебя?</td></tr>
+      <tr><td class="fr-word">а у тебя?</td><td>e você?</td><td class="fr-example">Хорошо, а у тебя?</td></tr>
+      <tr><td class="fr-word">До свидания</td><td>Tchau (formal)</td><td class="fr-example">Спасибо, до свидания!</td></tr>
+      <tr><td class="fr-word">До завтра</td><td>Até amanhã</td><td class="fr-example">До завтра!</td></tr>
+      <tr><td class="fr-word">До скорого</td><td>Até breve</td><td class="fr-example">До скорого!</td></tr>
+      <tr><td class="fr-word">До встречи</td><td>Até mais / até logo</td><td class="fr-example">Ладно, до встречи!</td></tr>
+      <tr><td class="fr-word">Хорошего дня / вечера</td><td>Bom dia / boa noite (despedida)</td><td class="fr-example">Хорошего дня! / Хорошего вечера!</td></tr>
+      <tr><td class="fr-word">Мне нужно идти</td><td>Eu preciso ir</td><td class="fr-example">Мне нужно идти.</td></tr>
+      <tr><td class="fr-word">новый / новая</td><td>novo / nova</td><td class="fr-example">Вы новый? Она новая здесь.</td></tr>
+    </table>
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3. GRAMÁTICA ══ -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. ТЫ vs ВЫ</h4>
+      <p>Em russo, existe uma distinção muito importante entre o uso informal e formal:</p>
+      <p class="example">ты — amigos, família, jovens, pessoas próximas</p>
+      <p class="example">вы — pessoa desconhecida, professor, situação profissional, respeito, ou plural</p>
+      <p class="example">Ты идёшь на занятие? &nbsp;|&nbsp; Вы новый?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Perguntas simples em russo</h4>
+      <p>Em russo, perguntas simples são normalmente feitas com a <strong>entoação</strong>, sem verbo auxiliar:</p>
+      <p class="example">Вы новый? &nbsp;|&nbsp; Ты бразилец? &nbsp;|&nbsp; Как дела?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Как дела?</h4>
+      <p><strong>Как дела?</strong> é uma expressão fixa muito comum para perguntar “Tudo bem?”.</p>
+      <p class="example">Как дела? &nbsp;|&nbsp; Хорошо. &nbsp;|&nbsp; Не очень. &nbsp;|&nbsp; Плохо.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Cumprimentos formais e informais</h4>
+      <p>O russo distingue claramente o registo:</p>
+      <p class="example">Здравствуйте — formal</p>
+      <p class="example">Привет — informal</p>
+      <p>O mesmo vale para despedidas, como <em>До свидания</em> (mais formal) e <em>До встречи</em> (mais neutro / informal).</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. “Eu preciso ir”</h4>
+      <p>Em russo, uma forma natural de dizer isso é:</p>
+      <p class="example">Мне нужно идти.</p>
+      <p>Literalmente: “para mim é necessário ir”.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>6. Revisão integrada</h4>
+      <p>Estruturas já vistas que continuam nesta aula:</p>
+      <p class="example">Меня зовут... &nbsp;|&nbsp; Я бразилец. &nbsp;|&nbsp; Мне двадцать лет. &nbsp;|&nbsp; Есть / меня ждут тридцать человек.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4. TRADUÇÃO ══ -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o russo.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Olá, senhor.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Здравствуйте, господин.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Oi, tudo bem?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Привет, как дела?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu preciso ir.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Мне нужно идти.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Até amanhã.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">До завтра.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Ele é novo aqui.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Он здесь новый.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você está bem? (formal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Как вы?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Você está bem? (informal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Как дела? / Ты в порядке?</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há vinte estudantes na sala.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">В зале есть двадцать студентов.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Eu me chamo Lucas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Меня зовут Лукас.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Boa noite (quando chega).</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Добрый вечер.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Tchau, até breve.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">До свидания, до скорого.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Você é brasileiro? (formal)</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Вы бразилец?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">Oi, eu preciso ir. Até amanhã.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Привет, мне нужно идти. До завтра.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Bom dia, senhor. Eu sou brasileiro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Здравствуйте, господин. Я бразилец.</div></div>
+        <div class="exercise-item"><div class="exercise-q">Há trinta pessoas que estão me esperando.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Меня ждут тридцать человек.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 15</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 5. CONVERSAÇÃO ══ -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Ты предпочитаешь говорить «привет» или «здравствуйте»?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">В каких ситуациях ты используешь «вы»?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Ты говоришь «до свидания» или «до встречи» с друзьями?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Ты говоришь по-французски со своими преподавателями?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Ты знаешь неформальные выражения по-французски?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Ты сейчас новый на каком-нибудь курсе?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Как ты прощаешься на работе?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Ты используешь «ты» или «вы» с пожилыми людьми?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Ты считаешь, что французский более формальный, чем португальский?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 9</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ JS — TOOLTIP (mouse + toque mobile) ══ -->
+<script>
+function toggleTip(el) {
+  var wasOpen = el.classList.contains('tip-open');
+  document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+    w.classList.remove('tip-open');
+  });
+  if (!wasOpen) el.classList.add('tip-open');
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest || !e.target.closest('.ru-word')) {
+    document.querySelectorAll('.ru-word.tip-open').forEach(function(w) {
+      w.classList.remove('tip-open');
+    });
+  }
+});
+</script>
