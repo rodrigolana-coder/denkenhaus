@@ -331,6 +331,14 @@ const AULAS = {
   skills: ['Gramática', 'Conversação', 'Compreensão'],
   file: 'aulas/fr-a1-36.html',
 },
+'Francês-A1-40': {
+  icon: '🌿',
+  titulo: 'Les conseils des Français pour bien vivre',
+  descricao: 'Curiosité com conselhos, hábitos, passé composé e impératif.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Vocabulário', 'Compreensão'],
+  file: 'aulas/fr-a1-40.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
