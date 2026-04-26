@@ -764,9 +764,39 @@ async function doStart() {
 
 async function completeAndContinue(langIdx, lvlIdx, n) {
   await markLessonDone(langIdx, lvlIdx, n);
+
+  // Se concluiu a aula 60 (último nível concluído), desbloqueia o próximo nível
+  if (n === 60 && lvlIdx < LVLS.length - 1) {
+    const nextLvlIdx = lvlIdx + 1;
+    const nextLvlId  = LVLS[nextLvlIdx].id;
+    const langName   = LANGS[langIdx].name;
+
+    // Só cria se ainda não existir registro
+    const { data } = await sb.from('progresso')
+      .select('aulas_concluidas')
+      .eq('user_id', currentUser.id)
+      .eq('lang', langName)
+      .eq('nivel', nextLvlId)
+      .single();
+
+    if (!data) {
+      await sb.from('progresso').insert({
+        user_id: currentUser.id,
+        lang: langName,
+        nivel: nextLvlId,
+        aulas_concluidas: 0,
+      });
+      await loadProgress();
+
+      // Muda automaticamente para a aba do próximo nível
+      backToCourse();
+      switchLvl(nextLvlIdx);
+      return;
+    }
+  }
+
   backToCourse();
 }
-
 /* ══════════════════════════════════════════
    EXERCÍCIOS
 ══════════════════════════════════════════ */
