@@ -323,14 +323,43 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-35.html',
 },
+   
 'Francês-A1-36': {
-  icon: '📺',
-  titulo: 'Talking about experiences',
-  descricao: 'Introdução ao present perfect para falar sobre experiências e televisão.',
-  duracao: '30 min',
-  skills: ['Gramática', 'Conversação', 'Compreensão'],
+  icon: '🎊',
+  titulo: 'Jour de fête',
+  descricao: 'Falar sobre festas, fazer perguntas e responder em uma interação real.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Perguntas', 'Vocabulário'],
   file: 'aulas/fr-a1-36.html',
 },
+
+'Francês-A1-37': {
+  icon: '🎄',
+  titulo: 'Parler des rituels de fêtes',
+  descricao: 'Falar sobre tradições, rituais de festas, opinião e contraste simples.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Opinião', 'Passé composé'],
+  file: 'aulas/fr-a1-37.html',
+},
+
+'Francês-A1-38': {
+  icon: '☎️',
+  titulo: 'Grande nouvelle !',
+  descricao: 'Telefonar, anunciar uma notícia, reagir e combinar ações futuras.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Passé composé', 'Futur proche'],
+  file: 'aulas/fr-a1-38.html',
+},
+
+'Francês-A1-39': {
+  icon: '💡',
+  titulo: 'Donner des conseils',
+  descricao: 'Dar conselhos práticos usando impératif, ordem de ações e expressões úteis.',
+  duracao: '25 min',
+  skills: ['Conversação', 'Impératif', 'Vocabulário'],
+  file: 'aulas/fr-a1-39.html',
+},
+
 'Francês-A1-40': {
   icon: '🌿',
   titulo: 'Les conseils des Français pour bien vivre',
