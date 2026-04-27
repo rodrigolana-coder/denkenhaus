@@ -1,0 +1,304 @@
+<!-- Francês A1 — Aula 39: Donner des conseils
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr39.png" alt="Conseils pour voyager"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr39.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Conseils pour voyager</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Je veux faire le tour du monde. Tu as des conseils ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, bien sûr. D’abord, prépare ton voyage à l’avance.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">D’accord.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ensuite, organise ton itinéraire et réserve tes hôtels.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">C’est important ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, et surtout, prends assez d’argent.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Et pour la sécurité ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Fais attention et informe-toi sur les pays.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Merci, ça m’aide beaucoup !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr39-1.png" alt="Conseils entre amis"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr39-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Conseils entre amis</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Je suis stressée pour mon travail.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Ne t’inquiète pas.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as des conseils ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, repose-toi et organise ton temps.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">C’est difficile…</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Fais une liste de tes tâches et commence par les plus importantes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Bonne idée !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Et prends des pauses.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr39-2.png" alt="Conseils pratiques"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr39-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Conseils pratiques</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je veux apprendre le français plus vite.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Alors, pratique tous les jours.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">D’accord.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Écoute des audios, lis des textes et parle avec des gens.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Je fais déjà ça un peu.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Continue, et ne t’arrête pas.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Merci, je vais essayer !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">un conseil</td><td>conselho</td><td class="fr-example">Tu as des conseils pour moi ?</td></tr>
+      <tr><td class="fr-word">conseiller</td><td>aconselhar</td><td class="fr-example">Je peux te conseiller.</td></tr>
+      <tr><td class="fr-word">aider</td><td>ajudar</td><td class="fr-example">Ça m’aide beaucoup.</td></tr>
+
+      <tr><td class="fr-word">préparer</td><td>preparar</td><td class="fr-example">Prépare ton voyage à l’avance.</td></tr>
+      <tr><td class="fr-word">organiser</td><td>organizar</td><td class="fr-example">Organise ton temps.</td></tr>
+      <tr><td class="fr-word">réserver</td><td>reservar</td><td class="fr-example">Réserve tes hôtels avant de voyager.</td></tr>
+      <tr><td class="fr-word">prendre</td><td>pegar / levar</td><td class="fr-example">Prends assez d’argent.</td></tr>
+      <tr><td class="fr-word">faire attention</td><td>tomar cuidado</td><td class="fr-example">Fais attention pendant la viagem.</td></tr>
+
+      <tr><td class="fr-word">d’abord</td><td>primeiro</td><td class="fr-example">D’abord, prépare ton voyage.</td></tr>
+      <tr><td class="fr-word">ensuite</td><td>depois</td><td class="fr-example">Ensuite, organise ton itinéraire.</td></tr>
+      <tr><td class="fr-word">surtout</td><td>principalmente</td><td class="fr-example">Surtout, prends assez d’argent.</td></tr>
+      <tr><td class="fr-word">ne t’inquiète pas</td><td>não se preocupe</td><td class="fr-example">Ne t’inquiète pas, ça va aller.</td></tr>
+
+      <tr><td class="fr-word">un voyage</td><td>viagem</td><td class="fr-example">Prépare ton voyage.</td></tr>
+      <tr><td class="fr-word">un itinéraire</td><td>itinerário</td><td class="fr-example">Organise ton itinéraire.</td></tr>
+      <tr><td class="fr-word">la sécurité</td><td>segurança</td><td class="fr-example">Informe-toi sur la sécurité.</td></tr>
+      <tr><td class="fr-word">une tâche</td><td>tarefa</td><td class="fr-example">Fais une liste de tes tâches.</td></tr>
+      <tr><td class="fr-word">une pause</td><td>pausa</td><td class="fr-example">Prends des pauses.</td></tr>
+      <tr><td class="fr-word">se reposer</td><td>descansar</td><td class="fr-example">Repose-toi un peu.</td></tr>
+      <tr><td class="fr-word">continuer</td><td>continuar</td><td class="fr-example">Continue à étudier.</td></tr>
+      <tr><td class="fr-word">s’arrêter</td><td>parar</td><td class="fr-example">Ne t’arrête pas.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Impératif</h4>
+      <p>👉 usado para dar conselhos.</p>
+      <p class="example">Prépare ton voyage.</p>
+      <p class="example">Organise ton temps.</p>
+      <p class="example">Prends assez d’argent.</p>
+      <p class="example">Écoute des audios.</p>
+      <p class="example">Lis des textes.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Impératif négatif</h4>
+      <p class="example">Ne t’inquiète pas.</p>
+      <p class="example">Ne fais pas ça.</p>
+      <p class="example">Ne t’arrête pas.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Exemples complets</h4>
+      <p class="example">Prépare ton voyage.</p>
+      <p class="example">Organise ton temps.</p>
+      <p class="example">Fais attention.</p>
+      <p class="example">Ne t’inquiète pas.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Structure de conseil</h4>
+      <p>👉 padrão natural:</p>
+      <p class="example">D’abord…</p>
+      <p class="example">Ensuite…</p>
+      <p class="example">Puis…</p>
+      <p class="example">D’abord prépare ton voyage, ensuite organise ton itinéraire.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">1. Prepare sua viagem com antecedência.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Prépare ton voyage à l’avance.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">2. Organize seu tempo e suas atividades.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Organise ton temps et tes activités.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">3. Faça uma lista de coisas importantes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Fais une liste des choses importantes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">4. Reserve seus hotéis antes de viajar.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Réserve tes hôtels avant de voyager.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">5. Tome cuidado durante a viagem.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Fais attention pendant le voyage.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">6. Não se preocupe com pequenos problemas.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Ne t’inquiète pas pour les petits problèmes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">7. Pratique francês todos os dias.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Pratique le français tous les jours.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">8. Escute áudios e leia textos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Écoute des audios et lis des textes.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">9. Fale com outras pessoas em francês.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Parle avec d’autres personnes en français.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">10. Continue estudando regularmente.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Continue à étudier régulièrement.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">11. Não pare de aprender.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Ne t’arrête pas d’apprendre.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">12. Faça pausas para descansar.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Prends des pauses pour te reposer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu donnes souvent des conseils ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu écoutes les conseils des autres ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu préfères donner ou recevoir des conseils ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu donnes des conseils à tes amis ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu suis toujours les conseils ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu es organisé dans ta vie ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu fais une liste de tâches ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu prends des pauses ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu aides les autres facilement ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu demandes des conseils ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
