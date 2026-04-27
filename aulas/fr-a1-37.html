@@ -1,0 +1,276 @@
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr37.png" alt="Traditions familiales"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr37.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Traditions familiales</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu as des traditions dans ta famille pour les fêtes ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, à Noël, nous mangeons toujours ensemble.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Vous faites quelque chose de especial ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, nous préparons un grand dîner et nous ouvrons les cadeaux après.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Vous avez fait ça l’année dernière aussi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, nous avons fait la même chose.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu aimes cette tradition ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, parce que c’est un moment important avec la famille.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr37-1.png" alt="Comparer les habitudes"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr37-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Comparer les habitudes</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Chez moi, nous célébrons surtout les anniversaires. Et chez toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Chez moi, nous célébrons Noël et le Nouvel An.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Vous sortez ou vous restez à la maison ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Parfois nous sortons, mais souvent nous restons à la maison.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Vous avez fait quelque chose de spécial cette année ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, nous sommes allés au restaurant.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">C’était bien ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, c’était très agréable.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr37-2.png" alt="Donner son opinion"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr37-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Donner son opinion</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu penses que les fêtes sont importantes ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, je pense que c’est important pour la famille.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Pourquoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Parce qu’on peut se retrouver et passer du temps ensemble.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu préfères les fêtes traditionnelles ou modernes ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Je préfère les fêtes traditionnelles.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Pourquoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Parce qu’elles sont plus simples et plus authentiques.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+      <tr><td class="fr-word">une tradition</td><td>tradição</td><td class="fr-example">C'est une tradition familiale.</td></tr>
+      <tr><td class="fr-word">célébrer</td><td>celebrar</td><td class="fr-example">Nous célébrons Noël.</td></tr>
+      <tr><td class="fr-word">un rituel</td><td>ritual</td><td class="fr-example">C'est un rituel important.</td></tr>
+      <tr><td class="fr-word">ouvrir</td><td>abrir</td><td class="fr-example">Nous ouvrons les cadeaux.</td></tr>
+      <tr><td class="fr-word">sortir</td><td>sair</td><td class="fr-example">Parfois nous sortons.</td></tr>
+      <tr><td class="fr-word">rester</td><td>ficar</td><td class="fr-example">Nous restons à la maison.</td></tr>
+      <tr><td class="fr-word">ensemble</td><td>juntos</td><td class="fr-example">Nous mangeons ensemble.</td></tr>
+      <tr><td class="fr-word">souvent</td><td>frequentemente</td><td class="fr-example">Nous restons souvent ici.</td></tr>
+      <tr><td class="fr-word">parfois</td><td>às vezes</td><td class="fr-example">Parfois nous allons au restaurant.</td></tr>
+      <tr><td class="fr-word">l’année dernière</td><td>ano passado</td><td class="fr-example">L'année dernière, nous avons voyagé.</td></tr>
+      <tr><td class="fr-word">je pense que</td><td>eu acho que</td><td class="fr-example">Je pense que c’est important.</td></tr>
+      <tr><td class="fr-word">agréable</td><td>agradável</td><td class="fr-example">C’était très agréable.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Présent (Habitudes)</h4>
+      <p>Usado para descrever tradições que se repetem.</p>
+      <p class="example">Nous mangeons ensemble à Noël.</p>
+      <p class="example">Nous préparons le dîner.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Passé Composé (Expérience)</h4>
+      <p>Usado para falar do que foi feito em uma festa específica no passado.</p>
+      <p class="example">Nous avons préparé un grand dîner.</p>
+      <p class="example">Nous sommes allés au restaurant.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Donner son opinion</h4>
+      <p>Estrutura básica para expressar o que você acha:</p>
+      <p class="example">Je pense que c’est important.</p>
+      <p class="example">Je pense que c’est agréable.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Contraste: Mais / Souvent / Parfois</h4>
+      <p class="example">Nous sortons **parfois**, mais **souvent** nous restons.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">1. Na minha família, nós celebramos o Natal todos os anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Dans ma famille, nous célébrons Noël tous les ans.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">2. Nós comemos juntos e abrimos presentes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous mangeons ensemble et nous ouvrons des cadeaux.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">3. Nós preparamos um jantar especial para a família.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous préparons un dîner spécial pour la famille.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">4. No ano passado, nós fomos a um restaurante.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">L’année dernière, nous sommes allés au restaurant.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">5. Nós gostamos de passar tempo juntos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous aimons passer du temps ensemble.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">6. Às vezes nós saímos, mas geralmente ficamos em casa.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Parfois nous sortons, mais souvent nous restons à la maison.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">7. Eu acho que as festas são importantes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je pense que les fêtes sont importantes.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">8. Eu prefiro as tradições simples.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Je préfère les traditions simples.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">9. Nós celebramos com nossos amigos e família.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous célébrons avec nos amis et notre famille.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item">
+          <div class="exercise-q">10. Nós fazemos algo especial nessa ocasião.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous faisons quelque chose de spécial à cette occasion.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">11. Eu gosto dessas tradições porque são importantes.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">J’aime ces traditions parce qu’elles sont importantes.</div>
+        </div>
+        <div class="exercise-item">
+          <div class="exercise-q">12. Nós tivemos um momento muito agradável.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Nous avons passé un moment très agréable.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta para praticar.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu as des traditions dans ta famille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Tu célèbres Noël ou une autre fête ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu préfères les fêtes en famille ou entre amis ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu fais quelque chose de spécial d'habitude ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu es déjà allé au restaurant pour une fête ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu penses que les fêtes sont importantes ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu préfères les traditions anciennes ou modernes ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu passes beaucoup de temps avec ta famille ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu fais quoi normalement pendant les fêtes ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Quelle est ta fête préférée et pourquoi ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
