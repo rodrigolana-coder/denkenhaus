@@ -50,7 +50,7 @@ const AULAS = {
     duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
     file: 'aulas/gl-a1-1.html',
   },
-'English-A1-1': {
+'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
     duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
