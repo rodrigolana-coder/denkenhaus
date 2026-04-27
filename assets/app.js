@@ -391,7 +391,7 @@ const AULAS = {
   skills: ['Conversação', 'Gramática', 'Vocabulário'],
   file: 'aulas/esp-a1-19.html',
 },
-'English-B1-1': {
+'Inglês-B1-1': {
     icon: '🤝', 
     titulo: 'First Impressions',
     descricao: "Diálogos sobre primeiras impressões, uso de Present Simple vs. Continuous e phrasal verbs sociais como 'come across as'.",
