@@ -162,27 +162,34 @@
 <div class="fr-section" id="fr-sec-3">
   <div class="c-block">
     <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer out loud, as if you were in a real class.</p>
 
-    <div class="fr-conv-slide fr-active">
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
       <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Do you think having a balanced life is important? Why?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Do you separate work and personal life?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">What do you usually do in your free time?</div></div>
     </div>
 
-    <div class="fr-conv-slide" style="display:none;">
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
       <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Do you think people work too much today?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">What helps you relax after a stressful day?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Do you enjoy spending time with family or friends more?</div></div>
     </div>
 
-    <div class="fr-conv-slide" style="display:none;">
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
       <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Do you usually organise your day?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Do you prefer staying at home or going outside?</div></div>
       <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What simple habits make your life better?</div></div>
     </div>
 
-    <div class="fr-conv-slide" style="display:none;">
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
       <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Do you agree that happiness comes from small things?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
     </div>
   </div>
 </div>
