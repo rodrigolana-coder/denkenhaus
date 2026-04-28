@@ -399,6 +399,41 @@ const AULAS = {
     skills: ['Social Interaction', 'Opinion Phrases', 'Grammar'],
     file: 'aulas/en-b1-1.html',
 },
+'Inglês-B1-2': {
+    icon: '🗣️',
+    titulo: 'Ways of Speaking',
+    descricao: "Diálogos sobre comunicação, maneiras de falar, conselhos com should/shouldn’t e expressões como 'make small talk' e 'stumble over your words'.",
+    duracao: '30 min',
+    skills: ['Communication', 'Advice Structures', 'Speaking'],
+    file: 'aulas/en-b1-2.html',
+},
+
+'Inglês-B1-3': {
+    icon: '👨‍👩‍👧‍👦',
+    titulo: 'Family Ties & Past Experiences',
+    descricao: "Diálogos sobre família, infância e experiências passadas, com foco em Past Simple, Past Continuous, Past Perfect e 'used to'.",
+    duracao: '30 min',
+    skills: ['Family Vocabulary', 'Past Tenses', 'Life Experiences'],
+    file: 'aulas/en-b1-3.html',
+},
+
+'Inglês-B1-4': {
+    icon: '🧠',
+    titulo: 'Family Influence & Life Stories',
+    descricao: "Diálogos sobre influência familiar, personalidade e escolhas de vida, com foco em sequência narrativa, Past Perfect e formação de adjetivos.",
+    duracao: '30 min',
+    skills: ['Life Stories', 'Personality', 'Narrative Grammar'],
+    file: 'aulas/en-b1-4.html',
+},
+
+'Inglês-B1-5': {
+    icon: '⚖️',
+    titulo: 'British Habits for a Balanced Life',
+    descricao: "Texto cultural sobre hábitos britânicos para uma vida equilibrada, vocabulário de bem-estar e perguntas de compreensão e conversação.",
+    duracao: '30 min',
+    skills: ['Reading', 'Well-being Vocabulary', 'Conversation'],
+    file: 'aulas/en-b1-5.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
