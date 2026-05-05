@@ -374,6 +374,14 @@ const AULAS = {
   skills: ['Leitura', 'Vocabulário', 'Compreensão'],
   file: 'aulas/fr-a1-40.html',
 },
+'Francês-A1-41': {
+  icon: '🧑‍🎤',
+  titulo: 'Vie privée, vie publique',
+  descricao: 'Contar fatos da vida e falar de biografias usando passé composé.',
+  duracao: '30 min',
+  skills: ['Passé composé', 'Narrativa', 'Biografia'],
+  file: 'aulas/fr-a1-41.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
