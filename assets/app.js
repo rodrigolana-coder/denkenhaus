@@ -382,6 +382,14 @@ const AULAS = {
   skills: ['Passé composé', 'Narrativa', 'Biografia'],
   file: 'aulas/fr-a1-41.html',
 },
+'Francês-A1-42': {
+  icon: '👤',
+  titulo: 'Décrire une personne',
+  descricao: 'Descrever pessoas, falar de mudanças, semelhanças, avoir l’air e c’est / il est.',
+  duracao: '30 min',
+  skills: ['Description', 'Passé composé', 'Grammaire'],
+  file: 'aulas/fr-a1-42.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
