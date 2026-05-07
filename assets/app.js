@@ -450,6 +450,14 @@ const AULAS = {
     skills: ['Reading', 'Well-being Vocabulary', 'Conversation'],
     file: 'aulas/en-b1-5.html',
 },
+'Inglês-B1-6': {
+  icon: '📱',
+  titulo: 'Mobile connections',
+  descricao: 'Falar sobre celular, comunicação, contato, habilidade e obrigação.',
+  duracao: '30 min',
+  skills: ['Conversation', 'Vocabulary', 'Grammar'],
+  file: 'aulas/en-b1-6.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
