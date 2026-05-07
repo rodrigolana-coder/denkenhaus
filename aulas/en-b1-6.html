@@ -1,0 +1,414 @@
+<!-- English B1 — Class 6: Mobile connections
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="en-tabs">
+  <button class="en-tab en-tab-active" onclick="enGoSection(0)">Dialogues</button>
+  <button class="en-tab" onclick="enGoSection(1)">Vocabulary</button>
+  <button class="en-tab" onclick="enGoSection(2)">Grammar</button>
+  <button class="en-tab" onclick="enGoSection(3)">Translation</button>
+  <button class="en-tab" onclick="enGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="en-section en-active" id="en-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="en-dlg-slide" id="en-dlg-0">
+      <div class="en-dlg-grid">
+        <div class="en-dlg-img">
+          <img src="/denkenhaus/img/en/126.png" alt="Mobile connections">
+        </div>
+
+        <div class="en-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/126.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="en-dlg-label">Dialogue 1 — Staying in touch</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Are you always on your phone too?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Honestly, yes. I use it all the time to stay in touch with people.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Same here. I’d probably lose touch with some friends without it.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Exactly. I especially use it to keep in touch with my family.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Do you think people depend too much on phones nowadays?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Maybe. Some people can’t even go out without checking their phones every five minutes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">That’s true. I try not to use mine all the time.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="en-dlg-slide" id="en-dlg-1" style="display:none;">
+      <div class="en-dlg-grid">
+        <div class="en-dlg-img">
+          <img src="/denkenhaus/img/en/126-1.png" alt="Phone habits">
+        </div>
+
+        <div class="en-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/126-1.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="en-dlg-label">Dialogue 2 — Phone habits</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">When did you get your first mobile phone?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">I was about twelve, I think.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">That’s quite young.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Yes, but my parents wanted to contact me after school.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">What about you?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">I got mine when I was fourteen.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">Nowadays, children get phones earlier and earlier.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="en-dlg-slide" id="en-dlg-2" style="display:none;">
+      <div class="en-dlg-grid">
+        <div class="en-dlg-img">
+          <img src="/denkenhaus/img/en/126-2.png" alt="Technology and life">
+        </div>
+
+        <div class="en-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/126-2.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="en-dlg-label">Dialogue 3 — Technology and life</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">I think people spend too much time online.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">I agree to some extent.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">Some people can’t even have dinner without checking their phones.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">That’s true. We should disconnect more often.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">Phones are useful, but people shouldn’t become obsessed with them.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Exactly. Technology should help us, not control us.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="en-nav">
+      <button class="en-nav-btn en-ghost" id="en-dlg-prev" onclick="enNavDlg(-1)" disabled>← Previous</button>
+      <span class="en-slide-info" id="en-dlg-info">Dialogue 1 of 3</span>
+      <button class="en-nav-btn" id="en-dlg-next" onclick="enNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="en-section" id="en-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="en-vocab-table">
+      <tr>
+        <th>Word / Expression</th>
+        <th>Translation</th>
+        <th>Example</th>
+      </tr>
+
+      <tr>
+        <td class="en-word">stay in touch</td>
+        <td>manter contato</td>
+        <td class="en-example">I stay in touch with my family.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">lose touch</td>
+        <td>perder contato</td>
+        <td class="en-example">We lost touch after school.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">depend on</td>
+        <td>depender de</td>
+        <td class="en-example">Many people depend on technology.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">check</td>
+        <td>verificar</td>
+        <td class="en-example">He checks his phone constantly.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">contact</td>
+        <td>contatar</td>
+        <td class="en-example">My parents contacted me yesterday.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">nowadays</td>
+        <td>hoje em dia</td>
+        <td class="en-example">Nowadays everyone has a smartphone.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">online</td>
+        <td>online</td>
+        <td class="en-example">She spends hours online.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">disconnect</td>
+        <td>desconectar</td>
+        <td class="en-example">People should disconnect more often.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">obsessed</td>
+        <td>obcecado</td>
+        <td class="en-example">Some people are obsessed with social media.</td>
+      </tr>
+
+      <tr>
+        <td class="en-word">technology</td>
+        <td>tecnologia</td>
+        <td class="en-example">Technology changes our lives.</td>
+      </tr>
+    </table>
+
+    <div class="en-nav">
+      <button class="en-nav-btn en-ghost" onclick="enGoSection(0)">← Previous</button>
+      <span class="en-slide-info">Section 2 of 5</span>
+      <button class="en-nav-btn" onclick="enGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="en-section" id="en-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar</div>
+
+    <div class="grammar-rule">
+      <h4>1. Verb + infinitive</h4>
+
+      <p class="example">I want to contact my friends.</p>
+      <p class="example">People need to disconnect sometimes.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Modal verbs</h4>
+
+      <p class="example">People can communicate easily.</p>
+      <p class="example">You shouldn’t use your phone constantly.</p>
+      <p class="example">We should spend more time face to face.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Frequency expressions</h4>
+
+      <p class="example">all the time</p>
+      <p class="example">every five minutes</p>
+      <p class="example">more often</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Present simple for habits</h4>
+
+      <p class="example">I use my phone every day.</p>
+      <p class="example">She checks her messages constantly.</p>
+    </div>
+
+    <div class="en-nav">
+      <button class="en-nav-btn en-ghost" onclick="enGoSection(1)">← Previous</button>
+      <span class="en-slide-info">Section 3 of 5</span>
+      <button class="en-nav-btn" onclick="enGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="en-section" id="en-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">
+      Translate from Portuguese to English.
+    </p>
+
+    <div class="en-ex-slide en-active" id="en-ex-0">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">1. Eu uso meu telefone o tempo todo.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">I use my phone all the time.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">2. Eu quero manter contato com meus amigos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">I want to stay in touch with my friends.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">3. Algumas pessoas dependem demais da tecnologia.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">Some people depend too much on technology.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="en-ex-slide" id="en-ex-1" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">4. Eu verifico meu telefone a cada cinco minutos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">I check my phone every five minutes.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">5. Hoje em dia, todo mundo usa smartphones.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">Nowadays, everyone uses smartphones.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">6. Nós deveríamos nos desconectar mais frequentemente.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">We should disconnect more often.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="en-ex-slide" id="en-ex-2" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">7. Algumas pessoas ficam obcecadas por redes sociais.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">Some people become obsessed with social media.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">8. Eu gosto de conversar cara a cara.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">I like talking face to face.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">9. A tecnologia deveria ajudar as pessoas.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">Technology should help people.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="en-ex-slide" id="en-ex-3" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">10. Eu não consigo sair sem meu telefone.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">I can’t go out without my phone.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">11. Meus pais queriam me contatar depois da escola.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">My parents wanted to contact me after school.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">12. As pessoas deveriam passar menos tempo online.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+          <div class="exercise-answer">People should spend less time online.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="en-nav">
+      <button class="en-nav-btn en-ghost" id="en-ex-prev" onclick="enNavEx(-1)" disabled>← Previous</button>
+      <span class="en-slide-info" id="en-ex-info">Sentences 1–3 of 12</span>
+      <button class="en-nav-btn" id="en-ex-next" onclick="enNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="en-section" id="en-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">
+      Answer the questions out loud.
+    </p>
+
+    <div class="en-conv-slide en-active" id="en-cv-0">
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">1</div>
+        <div class="en-conv-q">Do you use your phone a lot?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">2</div>
+        <div class="en-conv-q">Do you stay in touch with friends online?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">3</div>
+        <div class="en-conv-q">How often do you check your phone?</div>
+      </div>
+
+    </div>
+
+    <div class="en-conv-slide" id="en-cv-1" style="display:none;">
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">4</div>
+        <div class="en-conv-q">Do people depend too much on technology?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">5</div>
+        <div class="en-conv-q">When did you get your first phone?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">6</div>
+        <div class="en-conv-q">Do you prefer texting or calling?</div>
+      </div>
+
+    </div>
+
+    <div class="en-conv-slide" id="en-cv-2" style="display:none;">
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">7</div>
+        <div class="en-conv-q">Do you spend too much time online?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">8</div>
+        <div class="en-conv-q">Do you think children should have phones?</div>
+      </div>
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">9</div>
+        <div class="en-conv-q">Can you disconnect easily?</div>
+      </div>
+
+    </div>
+
+    <div class="en-conv-slide" id="en-cv-3" style="display:none;">
+
+      <div class="en-conv-item">
+        <div class="en-conv-num">10</div>
+        <div class="en-conv-q">How does technology affect your life?</div>
+      </div>
+
+    </div>
+
+    <div class="en-nav">
+      <button class="en-nav-btn en-ghost" id="en-cv-prev" onclick="enNavCv(-1)" disabled>← Previous</button>
+      <span class="en-slide-info" id="en-cv-info">Questions 1–3 of 10</span>
+      <button class="en-nav-btn" id="en-cv-next" onclick="enNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
