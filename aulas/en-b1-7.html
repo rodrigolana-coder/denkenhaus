@@ -1,0 +1,254 @@
+<!-- English B1 — Class 7: Relationships & Phrasal verbs
+     Estrutura do app em fr; arquivos em /en/127 -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammar</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/127.png" alt="Family arguments"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/127.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1 — Family arguments</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mandy</span><span class="dialog-text">Why is your brother upset again?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Gill</span><span class="dialog-text">He had a huge argument with our dad yesterday.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mandy</span><span class="dialog-text">Really? What happened?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Gill</span><span class="dialog-text">My dad told him to stop going out so much, and he got angry.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mandy</span><span class="dialog-text">That doesn’t surprise me. He’s always been stubborn.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Gill</span><span class="dialog-text">True. They usually get on well, but sometimes they argue about everything.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mandy</span><span class="dialog-text">Families are complicated sometimes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Gill</span><span class="dialog-text">Definitely. But they’ll probably make up soon.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/127-1.png" alt="Talking about relationships"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/127-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2 — Talking about relationships</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Are you still going out with Kevin?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">No, we split up last month.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oh no… I’m sorry to hear that.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">It’s okay. We had been having problems for a while.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">That must have been difficult.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Yeah, but I think it was the right decision.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Do you still keep in touch with him?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Not really. We don’t talk much anymore.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/127-2.png" alt="Giving advice"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/127-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3 — Giving advice</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">I forgot to reply to my boss’s message yesterday.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">You should have answered earlier.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">I know… I was too tired when I got home.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">You shouldn’t ignore work messages completely.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">True. I also forgot to turn off my phone during dinner.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">That’s becoming a habit.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">Yeah… I think I need to disconnect more often.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Probably. You don’t have to be available all the time.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Word / Expression</th><th>Translation</th><th>Example</th></tr>
+
+      <tr><td class="fr-word">get on well</td><td>se dar bem</td><td class="fr-example">They usually get on well.</td></tr>
+      <tr><td class="fr-word">go out with</td><td>namorar</td><td class="fr-example">Are you still going out with Kevin?</td></tr>
+      <tr><td class="fr-word">split up</td><td>terminar relacionamento</td><td class="fr-example">We split up last month.</td></tr>
+      <tr><td class="fr-word">make up</td><td>fazer as pazes</td><td class="fr-example">They’ll probably make up soon.</td></tr>
+      <tr><td class="fr-word">fall out</td><td>brigar / romper relação</td><td class="fr-example">They fell out after an argument.</td></tr>
+
+      <tr><td class="fr-word">turn off</td><td>desligar</td><td class="fr-example">I forgot to turn off my phone.</td></tr>
+      <tr><td class="fr-word">reply to</td><td>responder</td><td class="fr-example">I forgot to reply to my boss’s message.</td></tr>
+      <tr><td class="fr-word">ignore</td><td>ignorar</td><td class="fr-example">You shouldn’t ignore work messages.</td></tr>
+      <tr><td class="fr-word">disconnect</td><td>se desconectar</td><td class="fr-example">I need to disconnect more often.</td></tr>
+      <tr><td class="fr-word">be available</td><td>estar disponível</td><td class="fr-example">You don’t have to be available all the time.</td></tr>
+
+      <tr><td class="fr-word">for a while</td><td>por um tempo</td><td class="fr-example">We had been having problems for a while.</td></tr>
+      <tr><td class="fr-word">that doesn’t surprise me</td><td>isso não me surpreende</td><td class="fr-example">That doesn’t surprise me.</td></tr>
+      <tr><td class="fr-word">I’m sorry to hear that</td><td>sinto muito ouvir isso</td><td class="fr-example">I’m sorry to hear that.</td></tr>
+      <tr><td class="fr-word">it was the right decision</td><td>foi a decisão certa</td><td class="fr-example">I think it was the right decision.</td></tr>
+      <tr><td class="fr-word">not anymore</td><td>não mais</td><td class="fr-example">We don’t talk much anymore.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar</div>
+
+    <div class="grammar-rule">
+      <h4>1. Expressing ability</h4>
+      <p><strong>could / was able to</strong></p>
+      <p class="example">I could read when I was four.</p>
+      <p class="example">She was able to solve the problem.</p>
+      <p><strong>Negative:</strong></p>
+      <p class="example">couldn’t</p>
+      <p class="example">wasn’t able to</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Obligation & necessity</h4>
+      <p><strong>have to / had to</strong></p>
+      <p class="example">I have to reply to messages.</p>
+      <p class="example">We had to leave early.</p>
+      <p><strong>don’t have to</strong></p>
+      <p class="example">You don’t have to answer immediately.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Advice & criticism</h4>
+      <p><strong>should / shouldn’t</strong></p>
+      <p class="example">You should disconnect more often.</p>
+      <p class="example">People shouldn’t use phones all the time.</p>
+      <p><strong>should have / shouldn’t have</strong> = criticism or regret</p>
+      <p class="example">You should have replied earlier.</p>
+      <p class="example">I shouldn’t have ignored the message.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Connected speech</h4>
+      <p>Common spoken English connections:</p>
+      <p class="example">Can you → /kənju/</p>
+      <p class="example">Did you → /dɪdʒu/</p>
+      <p class="example">Have to → /hæftə/</p>
+      <p>Important for listening comprehension.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Previous</button>
+      <span class="fr-slide-info">Section 3 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu me dou bem com a maior parte da minha família.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I get on well with most of my family.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Eles brigaram, mas fizeram as pazes depois.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">They fell out, but they made up later.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Eu terminei meu relacionamento há alguns meses.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I split up with my partner a few months ago.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Você deveria responder suas mensagens mais rápido.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">You should reply to your messages faster.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Eu não consegui desligar meu telefone ontem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I couldn’t turn off my phone yesterday.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Nós tivemos que sair cedo da festa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">We had to leave the party early.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Você não precisa estar disponível o tempo todo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">You don’t have to be available all the time.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu acho que eles vão fazer as pazes logo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I think they’ll make up soon.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Ela não conseguiu entender o problema.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">She wasn’t able to understand the problem.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Eu não deveria ter ignorado aquela mensagem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I shouldn’t have ignored that message.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Algumas pessoas se apaixonam muito rapidamente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Some people fall in love very quickly.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Eu preciso me desconectar mais frequentemente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I need to disconnect more often.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Do you usually get on well with your family?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Have you ever fallen out with a close friend?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Do you think relationships are more difficult today? Why?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Have you ever split up with someone?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Is it important to make up after an argument?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Do you think people are too connected to their phones?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Are you usually available online all the time?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Have you ever ignored someone’s message by mistake?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What should people do after an argument?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Do you find spoken English difficult to understand sometimes? Why?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
