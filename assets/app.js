@@ -458,6 +458,14 @@ const AULAS = {
   skills: ['Conversation', 'Vocabulary', 'Grammar'],
   file: 'aulas/en-b1-6.html',
 },
+'Inglês-B1-7': {
+  icon: '💬',
+  titulo: 'Relationships & Phrasal verbs',
+  descricao: 'Falar sobre relações, conflitos, conselhos e phrasal verbs em contexto real.',
+  duracao: '30 min',
+  skills: ['Phrasal verbs', 'Advice', 'Connected speech'],
+  file: 'aulas/en-b1-7.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
