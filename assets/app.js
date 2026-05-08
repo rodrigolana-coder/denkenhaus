@@ -390,6 +390,22 @@ const AULAS = {
   skills: ['Description', 'Passé composé', 'Grammaire'],
   file: 'aulas/fr-a1-42.html',
 },
+'Francês-A1-43': {
+  icon: '🍂',
+  titulo: 'Au fil des saisons',
+  descricao: 'Falar das estações, sensações, verbos de percepção e experiências no passé composé.',
+  duracao: '30 min',
+  skills: ['Perception', 'Passé composé', 'Vocabulário'],
+  file: 'aulas/fr-a1-43.html',
+},
+'Francês-A1-45': {
+  icon: '🇨🇦',
+  titulo: 'Pourquoi les Canadiens français parlent-ils français ?',
+  descricao: 'Curiosité sobre a história do francês no Canadá, Québec e cultura francófona.',
+  duracao: '20 min',
+  skills: ['Leitura', 'Cultura', 'Compreensão'],
+  file: 'aulas/fr-a1-45.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
