@@ -482,6 +482,14 @@ const AULAS = {
   skills: ['Phrasal verbs', 'Advice', 'Connected speech'],
   file: 'aulas/en-b1-7.html',
 },
+'Inglês-B1-8': {
+  icon: '✈️',
+  titulo: 'Travel experiences & Present Perfect',
+  descricao: 'Falar sobre experiências de viagem, adaptação cultural, saudade de casa e uso de Present Perfect Simple/Continuous.',
+  duracao: '30 min',
+  skills: ['Travel Vocabulary', 'Present Perfect', 'Storytelling'],
+  file: 'aulas/en-b1-8.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
