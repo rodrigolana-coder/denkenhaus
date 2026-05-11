@@ -398,6 +398,14 @@ const AULAS = {
   skills: ['Perception', 'Passé composé', 'Vocabulário'],
   file: 'aulas/fr-a1-43.html',
 },
+'Francês-A1-44': {
+  icon: '🔁',
+  titulo: 'Révision — classes 41 à 43',
+  descricao: 'Revisão de passé composé, descrição física, avoir l’air, c’est/il est, estações e percepção.',
+  duracao: '30 min',
+  skills: ['Révision', 'Passé composé', 'Description'],
+  file: 'aulas/fr-a1-44.html',
+},
 'Francês-A1-45': {
   icon: '🇨🇦',
   titulo: 'Pourquoi les Canadiens français parlent-ils français ?',
