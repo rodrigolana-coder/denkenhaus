@@ -414,6 +414,14 @@ const AULAS = {
   skills: ['Leitura', 'Cultura', 'Compreensão'],
   file: 'aulas/fr-a1-45.html',
 },
+'Francês-A1-46': {
+  icon: '🌦️',
+  titulo: 'Parler du climat',
+  descricao: 'Falar sobre clima, météo, estações, sensações e experiências no passé composé.',
+  duracao: '30 min',
+  skills: ['Météo', 'Passé composé', 'Conversation'],
+  file: 'aulas/fr-a1-46.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
