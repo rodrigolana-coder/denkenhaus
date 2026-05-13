@@ -422,6 +422,14 @@ const AULAS = {
   skills: ['Météo', 'Passé composé', 'Conversation'],
   file: 'aulas/fr-a1-46.html',
 },
+'Francês-A1-47': {
+  icon: '🌨️',
+  titulo: 'Révision complète — Le climat',
+  descricao: 'Grande revisão sobre clima, estações, météo, inversion e passé composé.',
+  duracao: '35 min',
+  skills: ['Météo', 'Inversion', 'Révision'],
+  file: 'aulas/fr-a1-47.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
