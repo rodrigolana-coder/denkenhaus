@@ -514,6 +514,14 @@ const AULAS = {
   skills: ['Travel Vocabulary', 'Present Perfect', 'Storytelling'],
   file: 'aulas/en-b1-8.html',
 },
+'Inglês-B1-9': {
+  icon: '🌍',
+  titulo: 'Life-changing experiences & Bhutan',
+  descricao: 'Falar sobre experiências transformadoras, adaptação, sentimentos e cultura do Butão.',
+  duracao: '35 min',
+  skills: ['Present Perfect', 'Adjectives', 'Opinion'],
+  file: 'aulas/en-b1-9.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
