@@ -522,6 +522,14 @@ const AULAS = {
   skills: ['Present Perfect', 'Adjectives', 'Opinion'],
   file: 'aulas/en-b1-9.html',
 },
+'Inglês-B1-10': {
+  icon: '💭',
+  titulo: 'Dreams, ambitions & hypothetical situations',
+  descricao: 'Falar sobre sonhos, carreira, ambições e situações hipotéticas usando would e second conditional.',
+  duracao: '35 min',
+  skills: ['Would', 'Second conditional', 'Conversation'],
+  file: 'aulas/en-b1-10.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
