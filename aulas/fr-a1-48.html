@@ -1,0 +1,258 @@
+<!-- Francês A1 — Aula 48: Faire les courses
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr48.png" alt="Au supermarché"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr48.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Au supermarché</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Salut Lucas, tu fais les courses ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui, je dois acheter quelques choses pour la maison.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu cherches quoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Je voudrais du pain, du lait et des pommes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ah, moi aussi je dois acheter des légumes.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu prends quoi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Des tomates, des carottes et de la salade.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Il y a beaucoup de monde aujourd’hui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, surtout près de la caisse.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr48-1.png" alt="Demander un prix"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr48-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Demander un prix</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Bonjour monsieur.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Le vendeur</span><span class="dialog-text">Bonjour madame.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Combien coûtent les fraises ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Le vendeur</span><span class="dialog-text">Elles coûtent quatre euros le kilo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">D’accord. Et le fromage ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Le vendeur</span><span class="dialog-text">Le fromage coûte six euros.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Je vais prendre du fromage et des fraises, s’il vous plaît.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Le vendeur</span><span class="dialog-text">Très bien.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr48-2.png" alt="À la caisse"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr48-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — À la caisse</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">La caissière</span><span class="dialog-text">Bonjour monsieur. Vous avez une carte de fidélité ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Non, désolé.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">La caissière</span><span class="dialog-text">Vous prenez un sac ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, s’il vous plaît.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">La caissière</span><span class="dialog-text">Ça fait vingt-trois euros cinquante.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Je peux payer par carte ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">La caissière</span><span class="dialog-text">Oui, bien sûr.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Merci beaucoup. Bonne journée !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">La caissière</span><span class="dialog-text">Merci, à vous aussi.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">le pain</td><td>pão</td><td class="fr-example">Je voudrais du pain.</td></tr>
+      <tr><td class="fr-word">le lait</td><td>leite</td><td class="fr-example">Nous avons besoin de lait.</td></tr>
+      <tr><td class="fr-word">le fromage</td><td>queijo</td><td class="fr-example">Le fromage coûte six euros.</td></tr>
+      <tr><td class="fr-word">les pommes</td><td>maçãs</td><td class="fr-example">Je voudrais des pommes.</td></tr>
+      <tr><td class="fr-word">les fraises</td><td>morangos</td><td class="fr-example">Combien coûtent les fraises ?</td></tr>
+      <tr><td class="fr-word">les légumes</td><td>legumes</td><td class="fr-example">Je dois acheter des légumes.</td></tr>
+      <tr><td class="fr-word">les tomates</td><td>tomates</td><td class="fr-example">Je prends des tomates.</td></tr>
+      <tr><td class="fr-word">les carottes</td><td>cenouras</td><td class="fr-example">Elle achète des carottes.</td></tr>
+      <tr><td class="fr-word">la salade</td><td>salada</td><td class="fr-example">Je prends de la salade.</td></tr>
+      <tr><td class="fr-word">l’eau</td><td>água</td><td class="fr-example">Je voudrais de l’eau.</td></tr>
+
+      <tr><td class="fr-word">le supermarché</td><td>supermercado</td><td class="fr-example">Je vais au supermarché.</td></tr>
+      <tr><td class="fr-word">le vendeur / la vendeuse</td><td>vendedor(a)</td><td class="fr-example">Le vendeur est très gentil.</td></tr>
+      <tr><td class="fr-word">la caisse</td><td>caixa</td><td class="fr-example">Il y a beaucoup de monde près de la caisse.</td></tr>
+      <tr><td class="fr-word">un sac</td><td>sacola</td><td class="fr-example">Vous prenez un sac ?</td></tr>
+      <tr><td class="fr-word">une carte</td><td>cartão</td><td class="fr-example">Je peux payer par carte ?</td></tr>
+      <tr><td class="fr-word">le prix</td><td>preço</td><td class="fr-example">Quel est le prix ?</td></tr>
+      <tr><td class="fr-word">le kilo</td><td>quilo</td><td class="fr-example">Quatre euros le kilo.</td></tr>
+
+      <tr><td class="fr-word">acheter</td><td>comprar</td><td class="fr-example">Je dois acheter du pain.</td></tr>
+      <tr><td class="fr-word">prendre</td><td>pegar / levar</td><td class="fr-example">Je vais prendre du fromage.</td></tr>
+      <tr><td class="fr-word">payer</td><td>pagar</td><td class="fr-example">Je peux payer par carte ?</td></tr>
+      <tr><td class="fr-word">coûter</td><td>custar</td><td class="fr-example">Le fromage coûte six euros.</td></tr>
+      <tr><td class="fr-word">chercher</td><td>procurar</td><td class="fr-example">Tu cherches quoi ?</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Les articles partitifs</h4>
+      <p>Usados para falar de uma quantidade não precisa.</p>
+
+      <table class="conj-table">
+        <tr><th>Tipo</th><th>Forma</th><th>Exemplo</th></tr>
+        <tr><td>Masculin</td><td class="conj-form">du</td><td>du pain / du fromage</td></tr>
+        <tr><td>Féminin</td><td class="conj-form">de la</td><td>de la salade</td></tr>
+        <tr><td>Devant voyelle</td><td class="conj-form">de l’</td><td>de l’eau</td></tr>
+        <tr><td>Pluriel</td><td class="conj-form">des</td><td>des pommes / des légumes</td></tr>
+      </table>
+
+      <p class="example">❌ Je veux pain.</p>
+      <p class="example">✅ Je veux du pain.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Demander un prix</h4>
+      <p><strong>Combien coûte… ?</strong> → singular</p>
+      <p class="example">Combien coûte le fromage ?</p>
+
+      <p><strong>Combien coûtent… ?</strong> → plural</p>
+      <p class="example">Combien coûtent les pommes ?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Vouloir au magasin</h4>
+      <p><strong>Je voudrais...</strong> é mais educado que <strong>Je veux...</strong>.</p>
+      <p class="example">Je voudrais du pain.</p>
+      <p class="example">Nous voudrions de l’eau.</p>
+      <p class="example">Je vais prendre du fromage.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu gostaria de comprar pão e queijo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je voudrais acheter du pain et du fromage.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Quanto custam os morangos?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Combien coûtent les fraises ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Nós precisamos de água e leite.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons besoin d’eau et de lait.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Ela compra tomates e salada.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle achète des tomates et de la salade.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Há muita gente perto do caixa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a beaucoup de monde près de la caisse.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Eu posso pagar com cartão?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je peux payer par carte ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. O vendedor procura uma sacola.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le vendeur cherche un sac.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eles compraram legumes no supermercado.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ils ont acheté des légumes au supermarché.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Eu gostaria de maçãs e cenouras.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je voudrais des pommes et des carottes.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. O queijo custa seis euros o quilo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le fromage coûte six euros le kilo.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Você quer água ou leite?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu veux de l’eau ou du lait ?</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Nós vamos fazer compras esta tarde.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous allons faire les courses cet après-midi.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu fais souvent les courses ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Quel est ton supermarché préféré ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu achètes beaucoup de fruits ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu préfères les légumes ou les fruits ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Tu bois beaucoup d’eau ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu aimes le fromage ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Combien coûte le pain dans ta ville ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu paies souvent par carte ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu prends toujours un sac au magasin ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Qu’est-ce que tu achètes chaque semaine ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
