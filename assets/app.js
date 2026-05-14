@@ -430,6 +430,14 @@ const AULAS = {
   skills: ['Météo', 'Inversion', 'Révision'],
   file: 'aulas/fr-a1-47.html',
 },
+'Francês-A1-48': {
+  icon: '🛒',
+  titulo: 'Faire les courses',
+  descricao: 'Fazer compras, pedir preços, usar artigos partitivos e praticar situações no supermercado.',
+  duracao: '30 min',
+  skills: ['Courses', 'Articles partitifs', 'Questions'],
+  file: 'aulas/fr-a1-48.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
