@@ -446,6 +446,14 @@ const AULAS = {
   skills: ['Restaurant', 'Articles partitifs', 'Questions'],
   file: 'aulas/fr-a1-49.html',
 },
+'Francês-A1-50': {
+  icon: '🥖',
+  titulo: 'La gastronomie française',
+  descricao: 'Curiosité sobre gastronomia francesa, boulangeries, fromages, restaurantes e spécialités régionales.',
+  duracao: '20 min',
+  skills: ['Lecture', 'Culture', 'Compréhension'],
+  file: 'aulas/fr-a1-50.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
