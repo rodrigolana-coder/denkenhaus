@@ -538,6 +538,14 @@ const AULAS = {
   skills: ['Would', 'Second conditional', 'Conversation'],
   file: 'aulas/en-b1-10.html',
 },
+'Inglês-B1-11': {
+  icon: '🎓',
+  titulo: 'Education, learning & intelligence',
+  descricao: 'Discutir educação, formas de aprendizagem, inteligência, professores e hábitos de estudo.',
+  duracao: '35 min',
+  skills: ['Relative clauses', 'Gerunds', 'Infinitives'],
+  file: 'aulas/en-b1-11.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
