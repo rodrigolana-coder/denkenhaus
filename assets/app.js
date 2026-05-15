@@ -438,6 +438,14 @@ const AULAS = {
   skills: ['Courses', 'Articles partitifs', 'Questions'],
   file: 'aulas/fr-a1-48.html',
 },
+'Francês-A1-49': {
+  icon: '🍽️',
+  titulo: 'Au restaurant',
+  descricao: 'Revisão de alimentos e partitivos, pedidos no restaurante, perguntas úteis e pagamento da conta.',
+  duracao: '30 min',
+  skills: ['Restaurant', 'Articles partitifs', 'Questions'],
+  file: 'aulas/fr-a1-49.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
