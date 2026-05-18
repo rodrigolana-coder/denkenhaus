@@ -454,6 +454,14 @@ const AULAS = {
   skills: ['Lecture', 'Culture', 'Compréhension'],
   file: 'aulas/fr-a1-50.html',
 },
+'Francês-A1-51': {
+  icon: '🏠',
+  titulo: 'À la maison',
+  descricao: 'Falar sobre tarefas domésticas, cômodos da casa, il faut, devoir e passé composé.',
+  duracao: '30 min',
+  skills: ['Maison', 'Obligation', 'Passé composé'],
+  file: 'aulas/fr-a1-51.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
