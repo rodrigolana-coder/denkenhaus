@@ -1,0 +1,261 @@
+<!-- English B1 — Class 12: Grammar Review & Real-life Communication
+     Estrutura do app em fr; arquivos em /en/132 -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammar</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/132.png" alt="Looking back"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/132.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1 — Looking back</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Do you remember how nervous we used to feel when speaking English?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Definitely. I couldn’t even start a conversation properly.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Same here. Now I feel much more confident.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">I think practising regularly has helped a lot.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Absolutely. If I hadn’t practised so much, I wouldn’t feel this comfortable today.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">I agree. Little by little, everything became more natural.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">What helped you improve the most?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Probably travelling and talking to people face to face.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/132-1.png" alt="Talking about plans"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/132-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2 — Talking about plans</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">What would you like to do next year?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">I’d like to study abroad for a while.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">Really? Where would you go?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Maybe Canada. I’ve always wanted to experience life there.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">That would be amazing.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">What about you?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">I’m thinking about changing careers.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">That’s a big decision.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">I know, but I want to do something which makes me happier.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/132-2.png" alt="Advice and experiences"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/132-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3 — Advice & experiences</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">I’ve been feeling stressed recently.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">You should probably take a break.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">Yeah… I’ve been working too much lately.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">That happens. You don’t have to be productive all the time.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">True. I also need to stop checking my phone constantly.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Honestly, people who disconnect more usually feel better.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">You’re right. If I managed my time better, I’d probably feel less stressed.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Exactly. Balance makes a huge difference.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Word / Expression</th><th>Translation</th><th>Example</th></tr>
+
+      <tr><td class="fr-word">confident</td><td>confiante</td><td class="fr-example">Now I feel much more confident.</td></tr>
+      <tr><td class="fr-word">comfortable</td><td>confortável</td><td class="fr-example">I feel comfortable speaking English.</td></tr>
+      <tr><td class="fr-word">improve</td><td>melhorar</td><td class="fr-example">What helped you improve?</td></tr>
+      <tr><td class="fr-word">experience</td><td>experiência</td><td class="fr-example">I want to experience life abroad.</td></tr>
+      <tr><td class="fr-word">decision</td><td>decisão</td><td class="fr-example">That’s a big decision.</td></tr>
+      <tr><td class="fr-word">balance</td><td>equilíbrio</td><td class="fr-example">Balance makes a huge difference.</td></tr>
+      <tr><td class="fr-word">productive</td><td>produtivo</td><td class="fr-example">You don’t have to be productive all the time.</td></tr>
+      <tr><td class="fr-word">stressed</td><td>estressado</td><td class="fr-example">I’ve been feeling stressed recently.</td></tr>
+      <tr><td class="fr-word">motivated</td><td>motivado</td><td class="fr-example">Motivated students usually improve faster.</td></tr>
+      <tr><td class="fr-word">organised</td><td>organizado</td><td class="fr-example">I wish I were more organised.</td></tr>
+
+      <tr><td class="fr-word">little by little</td><td>pouco a pouco</td><td class="fr-example">Little by little, everything became more natural.</td></tr>
+      <tr><td class="fr-word">for a while</td><td>por um tempo</td><td class="fr-example">I’d like to study abroad for a while.</td></tr>
+      <tr><td class="fr-word">recently</td><td>recentemente</td><td class="fr-example">I’ve been feeling stressed recently.</td></tr>
+      <tr><td class="fr-word">constantly</td><td>constantemente</td><td class="fr-example">I need to stop checking my phone constantly.</td></tr>
+      <tr><td class="fr-word">make a difference</td><td>fazer diferença</td><td class="fr-example">Balance makes a huge difference.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar Review</div>
+
+    <div class="grammar-rule">
+      <h4>1. Past forms</h4>
+      <p><strong>Past Simple</strong></p>
+      <p class="example">I travelled last year.</p>
+
+      <p><strong>Past Continuous</strong></p>
+      <p class="example">I was studying while she was cooking.</p>
+
+      <p><strong>Past Perfect</strong></p>
+      <p class="example">I had already finished before he arrived.</p>
+
+      <p><strong>Used to</strong></p>
+      <p class="example">We used to feel nervous when speaking English.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Present Perfect</h4>
+      <p><strong>Experiences</strong></p>
+      <p class="example">I’ve visited many places.</p>
+
+      <p><strong>Duration</strong></p>
+      <p class="example">I’ve been studying English for three years.</p>
+
+      <p><strong>Recent situations</strong></p>
+      <p class="example">I’ve been feeling stressed recently.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Hypothetical language</h4>
+      <p><strong>would</strong></p>
+      <p class="example">I’d like to study abroad.</p>
+      <p class="example">I’d rather work from home.</p>
+
+      <p><strong>Second Conditional</strong></p>
+      <p class="example">If I had more time, I’d travel more.</p>
+      <p class="example">If I managed my time better, I’d feel less stressed.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Main uses</h4>
+      <p><strong>Past forms</strong> → storytelling, past habits and life experiences.</p>
+      <p><strong>Present Perfect</strong> → experiences, unfinished time, duration and recent changes.</p>
+      <p><strong>Hypothetical language</strong> → dreams, preferences, imagination and unreal situations.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Previous</button>
+      <span class="fr-slide-info">Section 3 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu costumava ter dificuldade para falar inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I used to have difficulty speaking English.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Eu tenho estudado regularmente nos últimos meses.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I’ve been studying regularly over the last few months.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Se eu tivesse mais tempo, eu viajaria mais.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">If I had more time, I’d travel more.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Eu gostaria de estudar no exterior algum dia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I’d like to study abroad someday.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Pessoas que praticam frequentemente melhoram mais rápido.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">People who practise often improve faster.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Eu estava estudando enquanto meus amigos saíam.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I was studying while my friends were going out.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Eu já tinha terminado o exercício antes da aula começar.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I had already finished the exercise before the class started.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu acho que equilíbrio é importante na vida.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I think balance is important in life.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Você deveria descansar mais frequentemente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">You should rest more often.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Eu quero melhorar minha pronúncia em inglês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I want to improve my English pronunciation.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Eu tenho me sentido muito cansado recentemente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I’ve been feeling very tired recently.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Pouco a pouco, tudo começou a parecer mais natural.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Little by little, everything started to feel more natural.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">What grammar point do you find most difficult in English?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Do you think your English has improved recently?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">What helps you learn faster?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Would you like to study abroad someday?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">If you could change one thing about your routine, what would it be?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Do you prefer learning grammar or speaking naturally?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Have you ever felt frustrated while learning a language?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">What motivates you to continue studying English?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Do you think practice is more important than talent?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">What advice would you give to someone starting English now?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
