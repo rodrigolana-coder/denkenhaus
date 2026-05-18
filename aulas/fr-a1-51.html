@@ -1,0 +1,254 @@
+<!-- Francês A1 — Aula 51: À la maison
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr51.png" alt="Ranger la maison"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr51.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Ranger la maison</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">La maison est un peu en désordre aujourd’hui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui, il faut ranger le salon et nettoyer la cuisine.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu peux faire la vaisselle ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui, pas de problème.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Merci. Moi, je vais passer l’aspirateur dans la chambre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Et après, nous devons sortir les poubelles.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">D’accord. Nous avons beaucoup de choses à faire aujourd’hui.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr51-1.png" alt="Les tâches quotidiennes"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr51-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Les tâches quotidiennes</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu fais souvent le ménage chez toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, un peu tous les jours.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Qu’est-ce que tu fais exactement ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Je lave la cuisine, je range ma chambre et je fais la lessive.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu cuisines aussi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, surtout le week-end.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as fait le ménage hier ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, j’ai nettoyé tout l’appartement.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr51-2.png" alt="Organisation à la maison"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr51-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Organisation à la maison</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Qui fait les tâches ménagères chez toi ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Nous faisons les tâches ensemble.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Ah bon ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui. Moi, je fais souvent la cuisine et ma sœur lave les vêtements.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Et le salon ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Nous le nettoyons ensemble le samedi.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">C’est bien organisé.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, sinon la maison devient très désordonnée !</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">la cuisine</td><td>cozinha</td><td class="fr-example">Il faut nettoyer la cuisine.</td></tr>
+      <tr><td class="fr-word">le salon</td><td>sala</td><td class="fr-example">Il faut ranger le salon.</td></tr>
+      <tr><td class="fr-word">la chambre</td><td>quarto</td><td class="fr-example">Je range ma chambre.</td></tr>
+      <tr><td class="fr-word">l’appartement</td><td>apartamento</td><td class="fr-example">J’ai nettoyé tout l’appartement.</td></tr>
+      <tr><td class="fr-word">la maison</td><td>casa</td><td class="fr-example">La maison est en désordre.</td></tr>
+
+      <tr><td class="fr-word">ranger</td><td>arrumar</td><td class="fr-example">Il faut ranger le salon.</td></tr>
+      <tr><td class="fr-word">nettoyer</td><td>limpar</td><td class="fr-example">Je nettoie la cuisine.</td></tr>
+      <tr><td class="fr-word">laver</td><td>lavar</td><td class="fr-example">Ma sœur lave les vêtements.</td></tr>
+      <tr><td class="fr-word">faire la vaisselle</td><td>lavar a louça</td><td class="fr-example">Tu peux faire la vaisselle ?</td></tr>
+      <tr><td class="fr-word">faire le ménage</td><td>fazer limpeza</td><td class="fr-example">Tu fais souvent le ménage ?</td></tr>
+      <tr><td class="fr-word">faire la lessive</td><td>lavar roupa</td><td class="fr-example">Je fais la lessive.</td></tr>
+      <tr><td class="fr-word">passer l’aspirateur</td><td>passar aspirador</td><td class="fr-example">Je vais passer l’aspirateur.</td></tr>
+      <tr><td class="fr-word">sortir les poubelles</td><td>tirar o lixo</td><td class="fr-example">Nous devons sortir les poubelles.</td></tr>
+      <tr><td class="fr-word">cuisiner</td><td>cozinhar</td><td class="fr-example">Je cuisine le week-end.</td></tr>
+
+      <tr><td class="fr-word">être en désordre</td><td>estar bagunçado</td><td class="fr-example">La maison est en désordre.</td></tr>
+      <tr><td class="fr-word">ensemble</td><td>juntos</td><td class="fr-example">Nous faisons les tâches ensemble.</td></tr>
+      <tr><td class="fr-word">tous les jours</td><td>todos os dias</td><td class="fr-example">Je fais le ménage tous les jours.</td></tr>
+      <tr><td class="fr-word">le week-end</td><td>fim de semana</td><td class="fr-example">Je cuisine le week-end.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Il faut</h4>
+      <p><strong>Il faut</strong> indica obrigação geral.</p>
+      <p>Structure :</p>
+      <p class="example">il faut + infinitif</p>
+      <p class="example">Il faut nettoyer la cuisine.</p>
+      <p class="example">Il faut ranger le salon.</p>
+      <p class="example">Il faut faire la vaisselle.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Devoir</h4>
+      <p><strong>Devoir</strong> indica obrigação pessoal.</p>
+      <p>Structure :</p>
+      <p class="example">devoir + infinitif</p>
+      <p class="example">Je dois ranger ma chambre.</p>
+      <p class="example">Nous devons sortir les poubelles.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Il faut x devoir</h4>
+      <p><strong>Il faut</strong> → obrigação geral.</p>
+      <p class="example">Il faut nettoyer la maison.</p>
+
+      <p><strong>Devoir</strong> → obrigação pessoal.</p>
+      <p class="example">Je dois nettoyer ma chambre.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Révision — Passé composé</h4>
+      <p>Usado para falar de ações concluídas no passado.</p>
+      <p class="example">J’ai nettoyé l’appartement.</p>
+      <p class="example">Nous avons fait le ménage.</p>
+      <p class="example">Elle a lavé la vaisselle.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. É preciso limpar a cozinha hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il faut nettoyer la cuisine aujourd’hui.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Eu devo arrumar meu quarto esta manhã.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je dois ranger ma chambre ce matin.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Nós fizemos a limpeza ontem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons fait le ménage hier.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Ela lavou a louça depois do jantar.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle a fait la vaisselle après le dîner.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Eles passaram o aspirador na sala.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ils ont passé l’aspirateur dans le salon.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. A casa está muito bagunçada hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La maison est très en désordre aujourd’hui.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Nós devemos tirar o lixo esta noite.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous devons sortir les poubelles ce soir.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu cozinho frequentemente no fim de semana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je cuisine souvent le week-end.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Ele limpou todo o apartamento sozinho.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il a nettoyé tout l’appartement seul.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. É preciso lavar roupa amanhã.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il faut faire la lessive demain.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Nós organizamos a casa juntos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous organisons la maison ensemble.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Você faz as tarefas domésticas todos os dias?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Tu fais les tâches ménagères tous les jours ?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu fais souvent le ménage ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Quelle tâche ménagère tu détestes ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Tu cuisines chez toi ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Tu fais la vaisselle tous les jours ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Ta chambre est organisée ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Qui fait le ménage chez toi ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu passes souvent l’aspirateur ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu préfères cuisiner ou nettoyer ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu as fait le ménage hier ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Quelle pièce de la maison tu préfères ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
