@@ -562,6 +562,14 @@ const AULAS = {
   skills: ['Relative clauses', 'Gerunds', 'Infinitives'],
   file: 'aulas/en-b1-11.html',
 },
+'Inglês-B1-12': {
+  icon: '🔁',
+  titulo: 'Grammar Review & Real-life Communication',
+  descricao: 'Revisar past forms, present perfect e hypothetical language em comunicação real.',
+  duracao: '35 min',
+  skills: ['Grammar review', 'Present perfect', 'Hypotheticals'],
+  file: 'aulas/en-b1-12.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
