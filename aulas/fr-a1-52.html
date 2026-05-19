@@ -1,0 +1,261 @@
+<!-- Francês A1 — Aula 52: Décrire son appartement
+     Apenas conteúdo interno — carregado via fetch pelo app.js -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr52.png" alt="Décrire son appartement"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr52.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Décrire son appartement</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu habites dans une maison ou un appartement ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">J’habite dans un appartement au centre-ville.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Il est grand ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, assez grand. Il y a deux chambres, un salon et une cuisine.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu aimes ton appartement ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, beaucoup. Il est calme et lumineux.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Tu as décoré l’appartement toi-même ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Oui, j’ai acheté quelques meubles le mois dernier.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr52-1.png" alt="Les meubles"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr52-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Les meubles</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Où est le canapé ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Il est devant la télévision.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Et la table ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Elle est à côté de la fenêtre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as une grande cuisine ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Non, mais il y a assez d’espace.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu as acheté ces meubles récemment ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui, nous les avons achetés il y a deux semaines.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr52-2.png" alt="Organiser une chambre"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr52-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Organiser une chambre</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Ta chambre est toujours bien rangée ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Pas toujours… mais j’essaie !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Où est ton bureau ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Il est près du lit.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Et tes livres ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Ils sont sur l’étagère.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Tu dois ranger un peu !</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui, il faut organiser cette chambre aujourd’hui.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">un appartement</td><td>apartamento</td><td class="fr-example">J’habite dans un appartement.</td></tr>
+      <tr><td class="fr-word">une maison</td><td>casa</td><td class="fr-example">Tu habites dans une maison ?</td></tr>
+      <tr><td class="fr-word">une chambre</td><td>quarto</td><td class="fr-example">Il y a deux chambres.</td></tr>
+      <tr><td class="fr-word">le salon</td><td>sala</td><td class="fr-example">Le canapé est dans le salon.</td></tr>
+      <tr><td class="fr-word">la cuisine</td><td>cozinha</td><td class="fr-example">Il y a une table dans la cuisine.</td></tr>
+      <tr><td class="fr-word">la salle de bain</td><td>banheiro</td><td class="fr-example">Il faut nettoyer la salle de bain.</td></tr>
+
+      <tr><td class="fr-word">un canapé</td><td>sofá</td><td class="fr-example">Le canapé est devant la télévision.</td></tr>
+      <tr><td class="fr-word">une table</td><td>mesa</td><td class="fr-example">La table est à côté de la fenêtre.</td></tr>
+      <tr><td class="fr-word">une chaise</td><td>cadeira</td><td class="fr-example">Il y a deux chaises dans la cuisine.</td></tr>
+      <tr><td class="fr-word">un lit</td><td>cama</td><td class="fr-example">Le bureau est près du lit.</td></tr>
+      <tr><td class="fr-word">un bureau</td><td>escrivaninha</td><td class="fr-example">Mon bureau est dans ma chambre.</td></tr>
+      <tr><td class="fr-word">une étagère</td><td>prateleira</td><td class="fr-example">Les livres sont sur l’étagère.</td></tr>
+      <tr><td class="fr-word">une télévision</td><td>televisão</td><td class="fr-example">Le canapé est devant la télévision.</td></tr>
+
+      <tr><td class="fr-word">devant</td><td>em frente de</td><td class="fr-example">Le canapé est devant la télévision.</td></tr>
+      <tr><td class="fr-word">derrière</td><td>atrás de</td><td class="fr-example">La chaise est derrière la table.</td></tr>
+      <tr><td class="fr-word">à côté de</td><td>ao lado de</td><td class="fr-example">La table est à côté de la fenêtre.</td></tr>
+      <tr><td class="fr-word">près de</td><td>perto de</td><td class="fr-example">Le bureau est près du lit.</td></tr>
+      <tr><td class="fr-word">sur</td><td>sobre / em cima de</td><td class="fr-example">Les livres sont sur l’étagère.</td></tr>
+      <tr><td class="fr-word">sous</td><td>embaixo de</td><td class="fr-example">Le sac est sous la table.</td></tr>
+      <tr><td class="fr-word">dans</td><td>dentro de</td><td class="fr-example">Le lit est dans la chambre.</td></tr>
+
+      <tr><td class="fr-word">grand(e)</td><td>grande</td><td class="fr-example">L’appartement est assez grand.</td></tr>
+      <tr><td class="fr-word">petit(e)</td><td>pequeno(a)</td><td class="fr-example">La cuisine est petite.</td></tr>
+      <tr><td class="fr-word">calme</td><td>calmo(a)</td><td class="fr-example">L’appartement est calme.</td></tr>
+      <tr><td class="fr-word">lumineux / lumineuse</td><td>iluminado(a)</td><td class="fr-example">La chambre est lumineuse.</td></tr>
+      <tr><td class="fr-word">désordonné(e)</td><td>bagunçado(a)</td><td class="fr-example">La chambre est désordonnée.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática</div>
+
+    <div class="grammar-rule">
+      <h4>1. Il y a</h4>
+      <p>Usamos <strong>il y a</strong> para descrever o que existe em um lugar.</p>
+      <p class="example">Il y a deux chambres.</p>
+      <p class="example">Il y a une table dans la cuisine.</p>
+      <p class="example">Il y a beaucoup de meubles.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Les prépositions de lieu</h4>
+      <p>As preposições indicam onde algo está.</p>
+      <p class="example">Le canapé est devant la télévision.</p>
+      <p class="example">Les livres sont sur l’étagère.</p>
+      <p class="example">La table est à côté de la fenêtre.</p>
+      <p class="example">Le bureau est près du lit.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Devoir / Il faut — révision</h4>
+      <p><strong>Devoir</strong> → obrigação pessoal.</p>
+      <p class="example">Je dois ranger ma chambre.</p>
+
+      <p><strong>Il faut</strong> → obrigação geral.</p>
+      <p class="example">Il faut nettoyer la cuisine.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Passé composé — révision</h4>
+      <p>Usado para falar de ações concluídas no passado.</p>
+      <p class="example">J’ai acheté des meubles.</p>
+      <p class="example">Nous avons décoré l’appartement.</p>
+      <p class="example">Ils ont acheté ces meubles récemment.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu moro em um apartamento no centro da cidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’habite dans un appartement au centre-ville.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Há duas cadeiras na cozinha.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a deux chaises dans la cuisine.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. O sofá está em frente da televisão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le canapé est devant la télévision.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Os livros estão sobre a prateleira.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Les livres sont sur l’étagère.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Nós compramos móveis novos no mês passado.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons acheté de nouveaux meubles le mois dernier.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. O quarto está muito bagunçado hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La chambre est très désordonnée aujourd’hui.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Eu devo organizar meu escritório.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je dois organiser mon bureau.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. A mesa está ao lado da janela.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La table est à côté de la fenêtre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Há muito espaço na sala.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il y a beaucoup d’espace dans le salon.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Nós decoramos o apartamento juntos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Nous avons décoré l’appartement ensemble.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. A cama está perto da janela.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Le lit est près de la fenêtre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. É preciso limpar o banheiro hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il faut nettoyer la salle de bain aujourd’hui.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Tu habites dans une maison ou un appartement ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Combien de chambres il y a chez toi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Quelle est ta pièce préférée ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Ta chambre est organisée ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Où est ton bureau ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Tu as beaucoup de meubles ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Tu préfères les grands ou les petits appartements ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Tu aimerais changer quelque chose chez toi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Tu as décoré ta chambre ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Tu fais souvent le ménage chez toi ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
