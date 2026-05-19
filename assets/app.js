@@ -462,6 +462,14 @@ const AULAS = {
   skills: ['Maison', 'Obligation', 'Passé composé'],
   file: 'aulas/fr-a1-51.html',
 },
+'Francês-A1-52': {
+  icon: '🛋️',
+  titulo: 'Décrire son appartement',
+  descricao: 'Descrever casa e apartamento, móveis, peças, preposições de lugar, il y a e passé composé.',
+  duracao: '30 min',
+  skills: ['Maison', 'Prépositions de lieu', 'Description'],
+  file: 'aulas/fr-a1-52.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
