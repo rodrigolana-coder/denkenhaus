@@ -470,6 +470,14 @@ const AULAS = {
   skills: ['Maison', 'Prépositions de lieu', 'Description'],
   file: 'aulas/fr-a1-52.html',
 },
+'Francês-A1-53': {
+  icon: '🏡',
+  titulo: 'Inviter quelqu’un chez soi',
+  descricao: 'Convidar alguém para casa, receber convidados, revisar preposições de lugar, devoir, il faut, futur proche e passé composé.',
+  duracao: '30 min',
+  skills: ['Invitation', 'Maison', 'Prépositions de lieu'],
+  file: 'aulas/fr-a1-53.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
