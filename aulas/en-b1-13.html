@@ -1,0 +1,288 @@
+<!-- English B1 — Lesson 13: Position of Adverbs
+     Estrutura do app em fr; arquivos em /en/133 -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammar</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/133.png" alt="Morning habits"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/133.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1 — Morning habits</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Have you always woken up this early?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">No, I’ve only recently started waking up at 6 a.m.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Really? I’ve never been a morning person.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">I usually study before work now.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">I’ve always preferred studying at night.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Have you ever tried studying in the morning?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Yes, but I’ve never liked it very much.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/133-1.png" alt="Before the meeting"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/133-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2 — Before the meeting</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Had you already finished the report before the meeting?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Yes, I had already sent everything to my boss.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Really? I had just started mine.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">I had always prepared things early before I changed jobs.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">I had never worked in such a stressful office before.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Have you already adapted to the new routine?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">I think I’ve finally become more organised.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/133-2.png" alt="Daily routine"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/133-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3 — Daily routine</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Do you usually wake up early?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Yes, I always wake up at 6 a.m.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Really? I normally wake up around 8.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">I sometimes study before work.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">I rarely study in the morning.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Do you often drink coffee before class?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Yes, I almost always drink coffee.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>English</th><th>Português</th><th>Example</th></tr>
+      <tr><td class="fr-word">always</td><td>sempre</td><td class="fr-example">I always wake up early.</td></tr>
+      <tr><td class="fr-word">usually</td><td>geralmente</td><td class="fr-example">I usually study before work.</td></tr>
+      <tr><td class="fr-word">often</td><td>frequentemente</td><td class="fr-example">Do you often drink coffee?</td></tr>
+      <tr><td class="fr-word">sometimes</td><td>às vezes</td><td class="fr-example">I sometimes study before work.</td></tr>
+      <tr><td class="fr-word">rarely</td><td>raramente</td><td class="fr-example">I rarely study in the morning.</td></tr>
+      <tr><td class="fr-word">never</td><td>nunca</td><td class="fr-example">I’ve never been a morning person.</td></tr>
+      <tr><td class="fr-word">already</td><td>já</td><td class="fr-example">I had already sent everything.</td></tr>
+      <tr><td class="fr-word">just</td><td>acabado de</td><td class="fr-example">I had just started mine.</td></tr>
+      <tr><td class="fr-word">recently</td><td>recentemente</td><td class="fr-example">I’ve recently started waking up early.</td></tr>
+      <tr><td class="fr-word">ever</td><td>alguma vez</td><td class="fr-example">Have you ever tried studying in the morning?</td></tr>
+      <tr><td class="fr-word">yet</td><td>ainda / já</td><td class="fr-example">Have you finished yet?</td></tr>
+      <tr><td class="fr-word">still</td><td>ainda</td><td class="fr-example">I still haven’t finished.</td></tr>
+      <tr><td class="fr-word">morning person</td><td>pessoa matinal</td><td class="fr-example">I’ve never been a morning person.</td></tr>
+      <tr><td class="fr-word">stressful</td><td>estressante</td><td class="fr-example">It was a stressful office.</td></tr>
+      <tr><td class="fr-word">routine</td><td>rotina</td><td class="fr-example">Have you adapted to the new routine?</td></tr>
+      <tr><td class="fr-word">organised</td><td>organizado(a)</td><td class="fr-example">I’ve finally become more organised.</td></tr>
+      <tr><td class="fr-word">adapt</td><td>adaptar-se</td><td class="fr-example">I adapted to the new routine.</td></tr>
+      <tr><td class="fr-word">prepare</td><td>preparar</td><td class="fr-example">I had always prepared things early.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar — Position of Adverbs</div>
+
+    <div class="grammar-rule">
+      <h4>1. With normal verbs — Present Simple</h4>
+      <p>Adverbs of frequency usually come before the main verb.</p>
+
+      <table class="conj-table">
+        <tr><th>Subject</th><th>Adverb</th><th>Verb</th></tr>
+        <tr><td>I</td><td class="conj-form">always</td><td>study</td></tr>
+        <tr><td>She</td><td class="conj-form">usually</td><td>works</td></tr>
+        <tr><td>They</td><td class="conj-form">rarely</td><td>travel</td></tr>
+      </table>
+
+      <p class="example">I always drink coffee in the morning.</p>
+      <p class="example">She usually studies after dinner.</p>
+      <p class="example">They rarely watch television.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. With the verb “to be”</h4>
+      <p>The adverb comes after the verb “to be”.</p>
+
+      <table class="conj-table">
+        <tr><th>Subject</th><th>To be</th><th>Adverb</th></tr>
+        <tr><td>He</td><td>is</td><td class="conj-form">always</td></tr>
+        <tr><td>We</td><td>are</td><td class="conj-form">usually</td></tr>
+        <tr><td>I</td><td>am</td><td class="conj-form">never</td></tr>
+      </table>
+
+      <p class="example">He is always tired.</p>
+      <p class="example">We are usually busy.</p>
+      <p class="example">I am never late.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. With Present Perfect</h4>
+      <p>The adverb normally comes between <strong>have / has</strong> and the past participle.</p>
+
+      <table class="conj-table">
+        <tr><th>Subject</th><th>have/has</th><th>Adverb</th><th>Past participle</th></tr>
+        <tr><td>I</td><td>have</td><td class="conj-form">always</td><td>loved</td></tr>
+        <tr><td>She</td><td>has</td><td class="conj-form">never</td><td>visited</td></tr>
+        <tr><td>They</td><td>have</td><td class="conj-form">already</td><td>finished</td></tr>
+      </table>
+
+      <p class="example">I have always liked languages.</p>
+      <p class="example">She has never visited Canada.</p>
+      <p class="example">We have already finished the lesson.</p>
+      <p class="example">He has just arrived.</p>
+      <p class="example">They have recently moved here.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. With Past Perfect</h4>
+      <p>The adverb normally comes between <strong>had</strong> and the past participle.</p>
+
+      <table class="conj-table">
+        <tr><th>Subject</th><th>had</th><th>Adverb</th><th>Past participle</th></tr>
+        <tr><td>I</td><td>had</td><td class="conj-form">already</td><td>eaten</td></tr>
+        <tr><td>She</td><td>had</td><td class="conj-form">never</td><td>seen</td></tr>
+        <tr><td>They</td><td>had</td><td class="conj-form">always</td><td>studied</td></tr>
+      </table>
+
+      <p class="example">I had already left when she called.</p>
+      <p class="example">She had never travelled abroad before.</p>
+      <p class="example">They had always wanted to study English.</p>
+      <p class="example">We had just finished dinner.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Previous</button>
+      <span class="fr-slide-info">Section 3 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu sempre estudo antes do trabalho.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I always study before work.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Ela geralmente acorda cedo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">She usually wakes up early.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Nós raramente saímos durante a semana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">We rarely go out during the week.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Eu nunca fui uma pessoa matinal.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I have never been a morning person.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Você já terminou o relatório?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Have you already finished the report?</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Ela acabou de chegar em casa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">She has just arrived home.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Nós sempre gostamos de aprender idiomas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">We have always liked learning languages.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eles nunca visitaram Londres.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">They have never visited London.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Eu recentemente comecei um novo curso.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I have recently started a new course.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Nós já tínhamos terminado a reunião.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">We had already finished the meeting.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Ela nunca tinha trabalhado naquele lugar antes.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">She had never worked in that place before.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Eu tinha acabado de sair quando você ligou.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I had just left when you called.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">13. Você geralmente toma café da manhã cedo?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Do you usually have breakfast early?</div></div>
+        <div class="exercise-item"><div class="exercise-q">14. Eles sempre quiseram morar no exterior.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">They have always wanted to live abroad.</div></div>
+        <div class="exercise-item"><div class="exercise-q">15. Eu ainda não terminei o livro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I still haven’t finished the book.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 15</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Have you always liked studying languages?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Have you ever visited another country?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">What have you recently started doing?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Had you already studied English before this course?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">What had you never done before last year?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Do you usually wake up early?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Are you always organised?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Have you ever changed your routine completely?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What had you already done before today?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">What do you rarely do during the week?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
