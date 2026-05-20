@@ -9,7 +9,6 @@ const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* ── WHATSAPP ── */
 const WHATSAPP_NUMBER = '5541988601417'; // ← coloque seu número com DDI+DDD
-
 /* ── ADMIN ── verificado no Supabase ── */
 
 /* ── DADOS ── */
@@ -593,6 +592,14 @@ const AULAS = {
   duracao: '35 min',
   skills: ['Grammar review', 'Present perfect', 'Hypotheticals'],
   file: 'aulas/en-b1-12.html',
+},
+'Inglês-B1-13': {
+  icon: '📍',
+  titulo: 'Position of Adverbs',
+  descricao: 'Estudar a posição dos advérbios com Present Simple, to be, Present Perfect e Past Perfect.',
+  duracao: '35 min',
+  skills: ['Adverbs', 'Present Perfect', 'Past Perfect'],
+  file: 'aulas/en-b1-13.html',
 },
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
