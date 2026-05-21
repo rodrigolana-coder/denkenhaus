@@ -1,0 +1,204 @@
+<!-- English B1 — Class 14: Decisions, regrets & life choices
+     Estrutura do app em fr; arquivos em /en/134 -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/134.png" alt="A difficult decision"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/134.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1 — A difficult decision</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Have you ever regretted an important decision?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Yes, definitely. A few years ago, I turned down a job opportunity abroad.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Really? Why?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">I was afraid of leaving my family and starting over in another country.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">That’s understandable. Do you regret it now?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Sometimes. I think I would have learned a lot from that experience.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Maybe, but life can change quickly. Another opportunity could appear.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">True. I try not to think too much about the past anymore.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/134-1.png" alt="Taking risks"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/134-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2 — Taking risks</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">Do you think people should take more risks in life?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">It depends. Some risks can completely change your future.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">That’s true.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">If I hadn’t started studying English, my life would probably be very different today.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">Same here. Learning another language opens many doors.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Exactly. I’ve become much more confident since I started speaking with people from other countries.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ana</span><span class="dialog-text">I think experiences are what help people grow the most.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">I completely agree.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/134-2.png" alt="Looking back"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/134-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3 — Looking back</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">What advice would you give to your younger self?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Honestly, I’d tell myself not to worry so much about what other people think.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">That’s good advice.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">I used to compare myself to everyone around me.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">A lot of people do that.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Yes, but over time I realised everyone follows a different path.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mark</span><span class="dialog-text">I think people become happier when they stop trying to please everyone.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Jelena</span><span class="dialog-text">Definitely. Life becomes much lighter after that.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Word / Expression</th><th>Translation</th><th>Example</th></tr>
+
+      <tr><td class="fr-word">decision</td><td>decisão</td><td class="fr-example">Have you ever regretted an important decision?</td></tr>
+      <tr><td class="fr-word">opportunity</td><td>oportunidade</td><td class="fr-example">I turned down a job opportunity abroad.</td></tr>
+      <tr><td class="fr-word">risk</td><td>risco</td><td class="fr-example">Some risks can change your future.</td></tr>
+      <tr><td class="fr-word">turn down</td><td>recusar</td><td class="fr-example">He turned down the offer.</td></tr>
+      <tr><td class="fr-word">start over</td><td>recomeçar</td><td class="fr-example">I was afraid of starting over.</td></tr>
+      <tr><td class="fr-word">path</td><td>caminho</td><td class="fr-example">Everyone follows a different path.</td></tr>
+
+      <tr><td class="fr-word">regret</td><td>arrepender-se</td><td class="fr-example">Do you regret it now?</td></tr>
+      <tr><td class="fr-word">confident</td><td>confiante</td><td class="fr-example">I’ve become much more confident.</td></tr>
+      <tr><td class="fr-word">afraid</td><td>com medo</td><td class="fr-example">I was afraid of leaving my family.</td></tr>
+      <tr><td class="fr-word">compare yourself</td><td>comparar-se</td><td class="fr-example">I used to compare myself to everyone.</td></tr>
+      <tr><td class="fr-word">realise</td><td>perceber</td><td class="fr-example">I realised everyone follows a different path.</td></tr>
+      <tr><td class="fr-word">pleased</td><td>satisfeito</td><td class="fr-example">People try to keep everyone pleased.</td></tr>
+
+      <tr><td class="fr-word">a few years ago</td><td>alguns anos atrás</td><td class="fr-example">A few years ago, I turned down an opportunity.</td></tr>
+      <tr><td class="fr-word">over time</td><td>com o tempo</td><td class="fr-example">Over time, I realised many things.</td></tr>
+      <tr><td class="fr-word">nowadays</td><td>hoje em dia</td><td class="fr-example">Nowadays, I think differently.</td></tr>
+      <tr><td class="fr-word">same here</td><td>eu também</td><td class="fr-example">Same here.</td></tr>
+      <tr><td class="fr-word">open doors</td><td>abrir portas</td><td class="fr-example">Learning another language opens many doors.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 4</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. TRANSLATION -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu recusei uma oportunidade importante alguns anos atrás.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I turned down an important opportunity a few years ago.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Se eu tivesse mais coragem, eu viajaria mais.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">If I had more courage, I would travel more.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Eu me tornei mais confiante com o tempo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I became more confident over time.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Eu costumava me comparar com outras pessoas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I used to compare myself to other people.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Aprender inglês abriu muitas portas para mim.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Learning English opened many doors for me.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Eu acho que experiências difíceis ajudam as pessoas a crescer.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I think difficult experiences help people grow.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Eu tinha medo de começar de novo em outro país.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I was afraid of starting over in another country.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Se eu não tivesse estudado inglês, minha vida seria diferente hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">If I hadn’t studied English, my life would be different today.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Eu tento não pensar demais no passado.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I try not to think too much about the past.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Muitas pessoas se preocupam demais com a opinião dos outros.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Many people worry too much about other people’s opinions.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Eu percebi que cada pessoa segue um caminho diferente.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I realised that each person follows a different path.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. A vida fica mais leve quando você para de tentar agradar todo mundo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Life becomes lighter when you stop trying to please everyone.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. CONVERSATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Have you ever regretted an important decision?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">What opportunity would you never refuse?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Do you think people should take more risks in life? Why?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">What advice would you give to your younger self?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Have you changed a lot over the years?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">What experience has made you more confident?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">If you could change one thing about your past, what would it be?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Do you compare yourself to other people sometimes?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What opportunities would you like to have in the future?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Do you think learning languages changes people? Why?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
