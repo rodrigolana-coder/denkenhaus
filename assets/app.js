@@ -477,6 +477,14 @@ const AULAS = {
   skills: ['Invitation', 'Maison', 'Prépositions de lieu'],
   file: 'aulas/fr-a1-53.html',
 },
+'Francês-A1-54': {
+  icon: '🎉',
+  titulo: 'Une soirée entre amis',
+  descricao: 'Revisar casa, móveis, tarefas domésticas, preposições de lugar e conversas naturais entre amigos.',
+  duracao: '25 min',
+  skills: ['Maison', 'Révision', 'Conversation'],
+  file: 'aulas/fr-a1-54.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
