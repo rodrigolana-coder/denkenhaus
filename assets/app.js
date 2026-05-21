@@ -601,6 +601,14 @@ const AULAS = {
   skills: ['Adverbs', 'Present Perfect', 'Past Perfect'],
   file: 'aulas/en-b1-13.html',
 },
+'Inglês-B1-14': {
+  icon: '🧭',
+  titulo: 'Decisions, regrets & life choices',
+  descricao: 'Falar sobre decisões, arrependimentos, oportunidades, riscos e escolhas de vida.',
+  duracao: '30 min',
+  skills: ['Reflection', 'Regrets', 'Hypotheticals'],
+  file: 'aulas/en-b1-14.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
