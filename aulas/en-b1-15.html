@@ -1,0 +1,210 @@
+<!-- English B1 — Class 15: Why Canada attracts people from all over the world
+     Estrutura do app em fr; arquivos em /en/135 -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Text</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Questions</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Conversation</button>
+</div>
+
+<!-- 1. TEXT -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Why Canada attracts people from all over the world</div>
+
+    <div class="fr-dlg-right" style="max-width:900px;margin:0 auto;">
+      <audio controls style="width:100%;margin-bottom:1rem;border-radius:8px;">
+        <source src="/denkenhaus/audio/en/135.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="dialog-line">Canada is one of the countries that attracts the most immigrants and international students nowadays.</div>
+      <div class="dialog-line">Many people move there because they believe the country offers a better quality of life, safer cities, and more opportunities for work and education.</div>
+      <div class="dialog-line">Canada is also known for being multicultural. In large cities like Toronto and Vancouver, people from many different countries live together and speak different languages every day.</div>
+      <div class="dialog-line">Another interesting aspect is the weather. Winters in Canada can be extremely cold, especially in some northern regions. Because of that, many newcomers experience culture shock during their first winter.</div>
+      <div class="dialog-line">Even so, many people say that living in Canada has changed their lives positively. They often become more independent and open-minded after adapting to a completely different environment.</div>
+      <div class="dialog-line">Canada is also famous for its natural landscapes. The country has enormous forests, mountains, lakes, and national parks which attract millions of tourists every year.</div>
+      <div class="dialog-line">Some people move to Canada temporarily to study or work, while others decide to stay permanently and start a new life there.</div>
+      <div class="dialog-line">Many immigrants explain that the process can be challenging at first, but over time they get used to the culture and build new relationships.</div>
+      <div class="dialog-line">In the end, Canada has become a symbol of opportunity, diversity, and new beginnings for many people around the world.</div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" disabled>← Previous</button>
+      <span class="fr-slide-info">Section 1 of 4</span>
+      <button class="fr-nav-btn" onclick="frGoSection(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>English</th><th>Português</th></tr>
+      <tr><td class="fr-word">immigrant</td><td>imigrante</td></tr>
+      <tr><td class="fr-word">international student</td><td>estudante internacional</td></tr>
+      <tr><td class="fr-word">quality of life</td><td>qualidade de vida</td></tr>
+      <tr><td class="fr-word">opportunity</td><td>oportunidade</td></tr>
+      <tr><td class="fr-word">multicultural</td><td>multicultural</td></tr>
+      <tr><td class="fr-word">newcomer</td><td>recém-chegado</td></tr>
+      <tr><td class="fr-word">culture shock</td><td>choque cultural</td></tr>
+      <tr><td class="fr-word">open-minded</td><td>mente aberta</td></tr>
+      <tr><td class="fr-word">environment</td><td>ambiente</td></tr>
+      <tr><td class="fr-word">landscape</td><td>paisagem</td></tr>
+      <tr><td class="fr-word">national park</td><td>parque nacional</td></tr>
+      <tr><td class="fr-word">temporarily</td><td>temporariamente</td></tr>
+      <tr><td class="fr-word">permanently</td><td>permanentemente</td></tr>
+      <tr><td class="fr-word">diversity</td><td>diversidade</td></tr>
+      <tr><td class="fr-word">new beginning</td><td>novo começo</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 4</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. QUESTIONS -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Comprehension Questions</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Read the question, choose your answer and click to check.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">1. Why do many people move to Canada?</div>
+        <div class="exercise-options">A) Because the weather is warm &nbsp;|&nbsp; B) Because they want to travel &nbsp;|&nbsp; C) Because they believe Canada offers better opportunities &nbsp;|&nbsp; D) Because they dislike their countries</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) Because they believe Canada offers better opportunities</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">2. Canada is known for being:</div>
+        <div class="exercise-options">A) isolated &nbsp;|&nbsp; B) multicultural &nbsp;|&nbsp; C) traditional &nbsp;|&nbsp; D) expensive</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ B) multicultural</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">3. In cities like Toronto and Vancouver:</div>
+        <div class="exercise-options">A) everyone speaks English only &nbsp;|&nbsp; B) few immigrants live there &nbsp;|&nbsp; C) people from many countries live together &nbsp;|&nbsp; D) tourism is prohibited</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) people from many countries live together</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">4. Winters in Canada can be:</div>
+        <div class="exercise-options">A) relaxing &nbsp;|&nbsp; B) short &nbsp;|&nbsp; C) extremely cold &nbsp;|&nbsp; D) dangerous everywhere</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) extremely cold</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-4" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">5. Many newcomers experience:</div>
+        <div class="exercise-options">A) happiness immediately &nbsp;|&nbsp; B) culture shock &nbsp;|&nbsp; C) financial success &nbsp;|&nbsp; D) loneliness forever</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ B) culture shock</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-5" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">6. Living in Canada often makes people:</div>
+        <div class="exercise-options">A) less independent &nbsp;|&nbsp; B) more stressed &nbsp;|&nbsp; C) more open-minded &nbsp;|&nbsp; D) less social</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) more open-minded</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-6" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">7. Canada is famous for:</div>
+        <div class="exercise-options">A) deserts &nbsp;|&nbsp; B) beaches only &nbsp;|&nbsp; C) natural landscapes &nbsp;|&nbsp; D) ancient monuments</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) natural landscapes</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-7" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">8. Some people move to Canada:</div>
+        <div class="exercise-options">A) permanently &nbsp;|&nbsp; B) temporarily &nbsp;|&nbsp; C) both temporarily and permanently &nbsp;|&nbsp; D) only for tourism</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) both temporarily and permanently</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-8" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">9. The adaptation process can be:</div>
+        <div class="exercise-options">A) easy for everyone &nbsp;|&nbsp; B) challenging at first &nbsp;|&nbsp; C) impossible &nbsp;|&nbsp; D) unnecessary</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ B) challenging at first</div>
+      </div></div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-9" style="display:none;">
+      <div class="exercise-list"><div class="exercise-item">
+        <div class="exercise-q">10. Canada has become a symbol of:</div>
+        <div class="exercise-options">A) competition &nbsp;|&nbsp; B) luxury &nbsp;|&nbsp; C) opportunity and diversity &nbsp;|&nbsp; D) isolation</div>
+        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">Show answer</button>
+        <div class="exercise-answer">✅ C) opportunity and diversity</div>
+      </div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Question 1 of 10</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. CONVERSATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Would you like to live in Canada someday? Why or why not?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Do you think adapting to another country is difficult?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Have you ever experienced culture shock?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">What country would you most like to visit or live in?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Do you think multicultural societies are positive? Why?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Would you prefer living in a big city or a small town in another country?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">What challenges do immigrants usually face?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Do you think moving abroad changes people?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What aspects of your culture would you miss the most?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Would you move to another country for work or study? Why?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
