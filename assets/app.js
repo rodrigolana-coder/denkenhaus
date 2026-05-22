@@ -625,6 +625,14 @@ const AULAS = {
   skills: ['Reflection', 'Regrets', 'Hypotheticals'],
   file: 'aulas/en-b1-14.html',
 },
+'Inglês-B1-15': {
+  icon: '🇨🇦',
+  titulo: 'Why Canada attracts people from all over the world',
+  descricao: 'Curiosity lesson about Canada, immigration, multiculturalism, adaptation and new beginnings.',
+  duracao: '25 min',
+  skills: ['Reading', 'Culture', 'Conversation'],
+  file: 'aulas/en-b1-15.html',
+},
 'Russo-A1-1': {
   icon: '💬', titulo: 'Меня зовут — Se apresentar',
   descricao: 'Diálogos reais em russo com tradução por hover, gramática essencial e vocabulário.',
