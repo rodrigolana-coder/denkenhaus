@@ -485,6 +485,14 @@ const AULAS = {
   skills: ['Maison', 'Révision', 'Conversation'],
   file: 'aulas/fr-a1-54.html',
 },
+'Francês-A1-55': {
+  icon: '☕',
+  titulo: 'Les cafés en France',
+  descricao: 'Curiosité sobre a cultura dos cafés franceses, bebidas, terrasses, pâtisseries e momentos sociais.',
+  duracao: '20 min',
+  skills: ['Lecture', 'Culture', 'Compréhension'],
+  file: 'aulas/fr-a1-55.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
