@@ -493,6 +493,14 @@ const AULAS = {
   skills: ['Lecture', 'Culture', 'Compréhension'],
   file: 'aulas/fr-a1-55.html',
 },
+'Francês-A1-56': {
+  icon: '☕',
+  titulo: 'Au café',
+  descricao: 'Pedir em um café, falar de bebidas e pâtisseries, usar partitifs e praticar interações sociais naturais.',
+  duracao: '30 min',
+  skills: ['Café', 'Partitifs', 'Interaction sociale'],
+  file: 'aulas/fr-a1-56.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
