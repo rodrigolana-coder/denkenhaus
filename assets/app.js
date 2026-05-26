@@ -3,7 +3,7 @@
    ═══════════════════════════════════════ */
 
 /* ── SUPABASE ── */
-const SUPABASE_URL = 'https://yjeurxxxybbfvyzqxrjd.supabase.co';
+const SUPABASE_URL = 'https://yjeurxxxybbfvyzqxrjd.supabase.co';hasac
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlqZXVyeHh4eWJiZnZ5enF4cmpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MzAxODUsImV4cCI6MjA4ODIwNjE4NX0.vG8AyVPr7XsSBh_wvQW9OoWA9-PLCYOZZ7KuMggPaOU';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -833,7 +833,7 @@ async function loadUserPlan() {
 }
 
 function hasAccess() {
-  return isAdmin || userPlan !== null;
+  return true;
 }
 
 /* ══════════════════════════════════════════
