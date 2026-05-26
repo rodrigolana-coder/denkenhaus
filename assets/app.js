@@ -501,6 +501,14 @@ const AULAS = {
   skills: ['Café', 'Partitifs', 'Interaction sociale'],
   file: 'aulas/fr-a1-56.html',
 },
+'Francês-A1-57': {
+  icon: '🥐',
+  titulo: 'Au petit-déjeuner',
+  descricao: 'Falar sobre café da manhã, hábitos alimentares, boulangerie, alimentos, bebidas, partitifs e perguntas naturais.',
+  duracao: '30 min',
+  skills: ['Petit-déjeuner', 'Partitifs', 'Habitudes'],
+  file: 'aulas/fr-a1-57.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
