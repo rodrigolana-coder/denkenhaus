@@ -1,0 +1,194 @@
+<!-- Francês A1/A2 — Aula 58: Un week-end entre amis -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Texte 1</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Questions 1</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Texte 2</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Questions 2</button>
+</div>
+
+<!-- TEXTE 1 -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Texte 1 — Une soirée chez Emma</div>
+
+    <div class="fr-text-grid">
+      <div class="fr-text-img">
+        <img src="/denkenhaus/img/fr/fr58.png" alt="Une soirée chez Emma">
+      </div>
+
+      <div class="fr-text-right">
+        <audio controls style="width:100%;margin-bottom:1rem;border-radius:10px;">
+          <source src="/denkenhaus/audio/fr/fr58.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="fr-reading-text">
+          <p>
+            Vendredi soir, Lucas est allé chez son amie Emma avec deux autres amis.
+            Emma habite dans un petit appartement près du centre-ville.
+          </p>
+
+          <p>
+            Quand Lucas est arrivé, Emma préparait déjà quelque chose à manger dans la cuisine.
+            Sur la table, il y avait du pain, du fromage, des boissons et quelques desserts.
+          </p>
+
+          <p>
+            Avant le dîner, tout le monde a aidé à organiser l’appartement.
+            Lucas a mis les boissons sur la table et Emma a rangé le salon.
+          </p>
+
+          <p>
+            Après le repas, ils ont parlé pendant longtemps.
+            Ils ont aussi regardé un film et bu du café ensemble.
+          </p>
+
+          <p>
+            Dehors, il pleuvait un peu, mais l’ambiance dans l’appartement était très calme et chaleureuse.
+          </p>
+
+          <p>
+            Vers minuit, les amis sont partis et Emma a commencé à nettoyer un peu la cuisine avant de dormir.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" disabled>← Anterior</button>
+      <span class="fr-slide-info">Texto 1 de 2</span>
+      <button class="fr-nav-btn" onclick="frGoSection(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- QUESTIONS TEXTE 1 -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Questions de conversation — Texte 1</div>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv1-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Décris une soirée parfaite avec des amis.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Qu’est-ce que tu prépares généralement quand des invités viennent chez toi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Comment est l’ambiance idéale pour une soirée entre amis ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv1-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Raconte une soirée que tu as beaucoup aimée récemment.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Explique comment tu organises ta maison avant de recevoir des personnes.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Quels types de films ou de musiques sont parfaits pour une soirée tranquille ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv1-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Décris ton appartement ou ta maison idéale pour recevoir des amis.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Quelles activités préfères-tu faire avec des amis à la maison ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Explique la différence entre une soirée calme et une grande fête pour toi.</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv1-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Raconte ce que tu fais normalement pendant un week-end tranquille.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">11</div><div class="fr-conv-q">Décris le meilleur repas que tu as partagé avec des amis.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">12</div><div class="fr-conv-q">Explique pourquoi certaines personnes préfèrent rester à la maison le week-end.</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv1-prev" onclick="frNavCv1(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv1-info">Perguntas 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-cv1-next" onclick="frNavCv1(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- TEXTE 2 -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Texte 2 — Mon week-end idéal</div>
+
+    <div class="fr-text-grid">
+      <div class="fr-text-img">
+        <img src="/denkenhaus/img/fr/fr58-1.png" alt="Mon week-end idéal">
+      </div>
+
+      <div class="fr-text-right">
+        <audio controls style="width:100%;margin-bottom:1rem;border-radius:10px;">
+          <source src="/denkenhaus/audio/fr/fr58-1.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="fr-reading-text">
+          <p>
+            Le week-end, j’aime me reposer après le travail.
+            Le samedi matin, je me réveille plus tard et je prépare un petit-déjeuner avec du café et des croissants.
+          </p>
+
+          <p>
+            Quand il fait beau, j’aime sortir un peu, marcher dans la ville ou aller dans un café.
+            Parfois, je prends un livre ou mon ordinateur.
+          </p>
+
+          <p>
+            L’après-midi, je fais souvent le ménage et je range mon appartement.
+            Ensuite, je vais au supermarché pour acheter des choses pour la semaine.
+          </p>
+
+          <p>
+            Le soir, j’aime rester à la maison, regarder un film ou inviter quelques amis.
+            Nous parlons, nous mangeons quelque chose et nous passons un moment tranquille.
+          </p>
+
+          <p>
+            Dimanche est généralement un jour plus calme.
+            Quand il pleut, je préfère écouter de la musique ou lire.
+          </p>
+
+          <p>
+            Le week-end dernier, j’ai essayé une nouvelle pâtisserie française dans un petit café.
+            C’était délicieux.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Texto 2 de 2</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- QUESTIONS TEXTE 2 -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Questions de conversation — Texte 2</div>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv2-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Décris ton week-end idéal du matin au soir.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Explique comment tu passes normalement ton samedi.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Quels endroits aimes-tu visiter pendant ton temps libre et pourquoi ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv2-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Décris l’ambiance parfaite d’un café pour travailler ou se détendre.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Raconte une expérience agréable que tu as vécue dans un café ou un restaurant.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Comment organises-tu ton appartement ou ta maison pendant le week-end ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv2-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Quels types d’activités te détendent le plus après une semaine de travail ou d’études ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Décris le petit-déjeuner parfait pour toi.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Explique ce que tu aimes faire quand il pleut dehors.</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv2-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Raconte une sortie ou une activité que tu as faite récemment pendant le week-end.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">11</div><div class="fr-conv-q">Quels types de personnes aiment les week-ends calmes, selon toi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">12</div><div class="fr-conv-q">Décris une journée simple mais parfaite pour toi.</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv2-prev" onclick="frNavCv2(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv2-info">Perguntas 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-cv2-next" onclick="frNavCv2(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
