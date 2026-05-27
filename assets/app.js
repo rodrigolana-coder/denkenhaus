@@ -509,6 +509,14 @@ const AULAS = {
   skills: ['Petit-déjeuner', 'Partitifs', 'Habitudes'],
   file: 'aulas/fr-a1-57.html',
 },
+'Francês-A1-58': {
+  icon: '🎧',
+  titulo: 'Un week-end entre amis',
+  descricao: 'Textes longs et conversation naturelle sur les week-ends, les amis, les cafés et la maison.',
+  duracao: '35 min',
+  skills: ['Conversation', 'Week-end', 'Production orale'],
+  file: 'aulas/fr-a1-58.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
