@@ -517,6 +517,14 @@ const AULAS = {
   skills: ['Conversation', 'Week-end', 'Production orale'],
   file: 'aulas/fr-a1-58.html',
 },
+'Francês-A1-59': {
+  icon: '🗼',
+  titulo: 'Une journée à Paris',
+  descricao: 'Textes longs et conversation naturelle sur Paris, voyages, cafés, météo, maison et journées tranquilles.',
+  duracao: '35 min',
+  skills: ['Conversation', 'Voyage', 'Production orale'],
+  file: 'aulas/fr-a1-59.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
