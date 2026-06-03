@@ -525,6 +525,14 @@ const AULAS = {
   skills: ['Conversation', 'Voyage', 'Production orale'],
   file: 'aulas/fr-a1-59.html',
 },
+'Francês-A2-1': {
+  icon: '🏝️',
+  titulo: 'Les voyages et les paysages',
+  descricao: 'Falar sobre viagens, paisagens, lugares, atividades, adjetivos descritivos e usar o pronome Y.',
+  duracao: '35 min',
+  skills: ['Voyage', 'Paysages', 'Pronom Y'],
+  file: 'aulas/fr-a1-61.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
