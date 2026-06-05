@@ -55,6 +55,14 @@ const AULAS = {
     duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
     file: 'aulas/en-a1-1.html',
   },
+  'Inglês-A1-2': {
+  icon: '🔤',
+  titulo: 'Introduce Yourself',
+  descricao: 'Apresentar-se, perguntar nomes, soletrar nomes, contar de 0 a 10 e reconhecer o alfabeto em inglês.',
+  duracao: '30 min',
+  skills: ['Introductions', 'Alphabet', 'Numbers'],
+  file: 'aulas/en-a1-2.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
