@@ -541,6 +541,14 @@ const AULAS = {
   skills: ['Voyage', 'Paysages', 'Pronom Y'],
   file: 'aulas/fr-a1-61.html',
 },
+'Francês-A2-2': {
+  icon: '🏙️',
+  titulo: 'Une capitale européenne',
+  descricao: 'Falar sobre ações em curso, usar être en train de, continuar o pronome Y e pedir informações em uma cidade.',
+  duracao: '35 min',
+  skills: ['Être en train de', 'Pronom Y', 'Ville'],
+  file: 'aulas/fr-a1-62.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
