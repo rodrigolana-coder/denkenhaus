@@ -1,0 +1,249 @@
+<!-- English A1 — Class 2: Introduce Yourself -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammar</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/2.png" alt="First Meeting"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Kate</span><span class="dialog-text">Hi! I'm Kate. What's your name?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Clive</span><span class="dialog-text">My name's Clive.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Kate</span><span class="dialog-text">Nice to meet you.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Clive</span><span class="dialog-text">Nice to meet you, too.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/2-1.png" alt="Doctor Appointment"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/2-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Doctor</span><span class="dialog-text">Hello, Mr Dentor.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mr Dentor</span><span class="dialog-text">Hello. Nice to meet you.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Doctor</span><span class="dialog-text">Nice to meet you, too.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/2-2.png" alt="At the Hotel"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/2-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Receptionist</span><span class="dialog-text">Hello.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Guest</span><span class="dialog-text">Hello. My name's Isabela.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Receptionist</span><span class="dialog-text">Welcome to Hotel Panorama, Ms Isabela.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Guest</span><span class="dialog-text">Thank you.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Receptionist</span><span class="dialog-text">You're in room 3-1-5.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>English</th><th>Português</th><th>Example</th></tr>
+
+      <tr><td class="fr-word">hello</td><td>olá</td><td class="fr-example">Hello, Mr Dentor.</td></tr>
+      <tr><td class="fr-word">hi</td><td>oi</td><td class="fr-example">Hi! I'm Kate.</td></tr>
+      <tr><td class="fr-word">welcome</td><td>bem-vindo(a)</td><td class="fr-example">Welcome to Hotel Panorama.</td></tr>
+      <tr><td class="fr-word">thank you</td><td>obrigado(a)</td><td class="fr-example">Thank you.</td></tr>
+      <tr><td class="fr-word">nice to meet you</td><td>prazer em conhecer você</td><td class="fr-example">Nice to meet you.</td></tr>
+      <tr><td class="fr-word">nice to meet you, too</td><td>prazer em conhecer você também</td><td class="fr-example">Nice to meet you, too.</td></tr>
+
+      <tr><td class="fr-word">my name is...</td><td>meu nome é...</td><td class="fr-example">My name is Isabela.</td></tr>
+      <tr><td class="fr-word">my name's...</td><td>meu nome é...</td><td class="fr-example">My name's Clive.</td></tr>
+      <tr><td class="fr-word">I'm...</td><td>eu sou...</td><td class="fr-example">I'm Kate.</td></tr>
+      <tr><td class="fr-word">what's your name?</td><td>qual é o seu nome?</td><td class="fr-example">What's your name?</td></tr>
+      <tr><td class="fr-word">how do you spell your name?</td><td>como se escreve seu nome?</td><td class="fr-example">How do you spell your name?</td></tr>
+
+      <tr><td class="fr-word">hotel</td><td>hotel</td><td class="fr-example">Welcome to the hotel.</td></tr>
+      <tr><td class="fr-word">room</td><td>quarto</td><td class="fr-example">You're in room 315.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar</div>
+
+    <div class="grammar-rule">
+      <h4>The alphabet — A–Z</h4>
+
+      <table class="conj-table">
+        <tr><th>Letter</th><th>Pronunciation</th><th>Letter</th><th>Pronunciation</th></tr>
+        <tr><td>A</td><td>/eɪ/</td><td>N</td><td>/en/</td></tr>
+        <tr><td>B</td><td>/biː/</td><td>O</td><td>/oʊ/</td></tr>
+        <tr><td>C</td><td>/siː/</td><td>P</td><td>/piː/</td></tr>
+        <tr><td>D</td><td>/diː/</td><td>Q</td><td>/kjuː/</td></tr>
+        <tr><td>E</td><td>/iː/</td><td>R</td><td>/ɑːr/</td></tr>
+        <tr><td>F</td><td>/ef/</td><td>S</td><td>/es/</td></tr>
+        <tr><td>G</td><td>/dʒiː/</td><td>T</td><td>/tiː/</td></tr>
+        <tr><td>H</td><td>/eɪtʃ/</td><td>U</td><td>/juː/</td></tr>
+        <tr><td>I</td><td>/aɪ/</td><td>V</td><td>/viː/</td></tr>
+        <tr><td>J</td><td>/dʒeɪ/</td><td>W</td><td>/ˈdʌbəl juː/</td></tr>
+        <tr><td>K</td><td>/keɪ/</td><td>X</td><td>/eks/</td></tr>
+        <tr><td>L</td><td>/el/</td><td>Y</td><td>/waɪ/</td></tr>
+        <tr><td>M</td><td>/em/</td><td>Z</td><td>/ziː/</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Example names</h4>
+      <p class="example">Emma · John · Lucas · Anna · Daniel · Sarah · Rodrigo · Sophie</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Numbers 0–10</h4>
+
+      <table class="conj-table">
+        <tr><th>Number</th><th>English</th><th>Number</th><th>English</th></tr>
+        <tr><td>0</td><td>zero</td><td>6</td><td>six</td></tr>
+        <tr><td>1</td><td>one</td><td>7</td><td>seven</td></tr>
+        <tr><td>2</td><td>two</td><td>8</td><td>eight</td></tr>
+        <tr><td>3</td><td>three</td><td>9</td><td>nine</td></tr>
+        <tr><td>4</td><td>four</td><td>10</td><td>ten</td></tr>
+        <tr><td>5</td><td>five</td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Review from Class 1</h4>
+      <p class="example">I am / I'm</p>
+      <p class="example">You are / You're</p>
+      <p class="example">Are you...?</p>
+      <p class="example">My name is...</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Previous</button>
+      <span class="fr-slide-info">Section 3 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Olá. Meu nome é Rodrigo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Hello. My name is Rodrigo.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Oi. Qual é o seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Hi. What's your name?</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Meu nome é Emma.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">My name is Emma.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Prazer em conhecer você.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Nice to meet you.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Prazer em conhecer você também.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Nice to meet you, too.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Bem-vindo ao hotel.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Welcome to the hotel.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Obrigado.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Thank you.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu estou no quarto 5-2-1.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">I'm in room 5-2-1.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Como se escreve seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">How do you spell your name?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. R-O-D-R-I-G-O.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">R-O-D-R-I-G-O.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Sete, oito, nove.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Seven, eight, nine.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Um, dois, três.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">One, two, three.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">What's your name?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">How do you spell your name?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">What's your surname?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Can you spell your surname?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">What is your favourite number?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Can you count from zero to ten?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Do you have a nickname?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">What do people usually call you?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Have you ever met someone from another country?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">What do you usually say when you meet someone for the first time?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
