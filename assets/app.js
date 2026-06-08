@@ -79,6 +79,14 @@ const AULAS = {
   skills: ['Film Genres', 'Possessive Adjectives', 'Favourites'],
   file: 'aulas/en-a1-4.html',
 },
+'Inglês-A1-5': {
+  icon: '🌍',
+  titulo: 'Why is English Spoken in So Many Countries?',
+  descricao: 'Curiosity lesson about English, countries, communication, the internet and words from different languages.',
+  duracao: '20 min',
+  skills: ['Reading', 'Culture', 'Comprehension'],
+  file: 'aulas/en-a1-5.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
