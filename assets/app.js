@@ -87,6 +87,14 @@ const AULAS = {
   skills: ['Reading', 'Culture', 'Comprehension'],
   file: 'aulas/en-a1-5.html',
 },
+'Inglês-A1-6': {
+  icon: '👨‍👩‍👧‍👦',
+  titulo: 'My Family',
+  descricao: 'Falar sobre membros da família, revisar o verbo to be, usar possessive ’s e my/your/his/her.',
+  duracao: '30 min',
+  skills: ['Family', 'To be review', 'Possessive ’s'],
+  file: 'aulas/en-a1-6.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
