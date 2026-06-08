@@ -63,6 +63,22 @@ const AULAS = {
   skills: ['Introductions', 'Alphabet', 'Numbers'],
   file: 'aulas/en-a1-2.html',
 },
+'Inglês-A1-3': {
+  icon: '🌍',
+  titulo: 'Countries & He / She / It',
+  descricao: 'Aprender países, nacionalidades e usar he, she e it com o verbo to be para identificar pessoas e objetos.',
+  duracao: '30 min',
+  skills: ['Countries', 'Nationalities', 'To Be'],
+  file: 'aulas/en-a1-3.html',
+},
+'Inglês-A1-4': {
+  icon: '🎬',
+  titulo: 'Favourite Films',
+  descricao: 'Falar sobre filmes favoritos, gêneros de filmes, atores e atrizes, e usar adjetivos possessivos em inglês.',
+  duracao: '30 min',
+  skills: ['Film Genres', 'Possessive Adjectives', 'Favourites'],
+  file: 'aulas/en-a1-4.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
