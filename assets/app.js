@@ -581,6 +581,14 @@ const AULAS = {
   skills: ['Être en train de', 'Pronom Y', 'Ville'],
   file: 'aulas/fr-a1-62.html',
 },
+'Francês-A2-3': {
+  icon: '👕',
+  titulo: 'Quel look ?',
+  descricao: 'Falar sobre roupas, descrever uma tenue, dar opinião e usar os pronomes COD le, la, les.',
+  duracao: '35 min',
+  skills: ['Vêtements', 'Pronoms COD', 'Opinion'],
+  file: 'aulas/fr-a1-63.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
