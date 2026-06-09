@@ -589,6 +589,14 @@ const AULAS = {
   skills: ['Vêtements', 'Pronoms COD', 'Opinion'],
   file: 'aulas/fr-a1-63.html',
 },
+'Francês-A2-4': {
+  icon: '🧥',
+  titulo: 'Relooking et conseils vestimentaires',
+  descricao: 'Dar conselhos sobre roupas e estilo usando il faut, tu devrais, tu peux e tu pourrais.',
+  duracao: '35 min',
+  skills: ['Conseils', 'Vêtements', 'Il faut'],
+  file: 'aulas/fr-a1-64.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
