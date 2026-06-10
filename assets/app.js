@@ -597,6 +597,14 @@ const AULAS = {
   skills: ['Conseils', 'Vêtements', 'Il faut'],
   file: 'aulas/fr-a1-64.html',
 },
+'Francês-A2-6': {
+  icon: '🎁',
+  titulo: 'Des cadeaux pour tous',
+  descricao: 'Escolher e oferecer presentes, falar de ocasiões especiais e usar os pronomes COI lui e leur.',
+  duracao: '35 min',
+  skills: ['Cadeaux', 'Pronoms COI', 'Occasions'],
+  file: 'aulas/fr-a1-66.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
