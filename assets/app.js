@@ -95,6 +95,14 @@ const AULAS = {
   skills: ['Family', 'To be review', 'Possessive ’s'],
   file: 'aulas/en-a1-6.html',
 },
+'Inglês-A1-7': {
+  icon: '👥',
+  titulo: 'Friends, Families & Groups',
+  descricao: 'Usar we, you e they, falar sobre grupos de pessoas, revisar família, possessive ’s e usar our/their.',
+  duracao: '30 min',
+  skills: ['We / You / They', 'Groups', 'Possessives'],
+  file: 'aulas/en-a1-7.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
