@@ -621,6 +621,14 @@ const AULAS = {
   skills: ['Cadeaux', 'Pronoms COI', 'Occasions'],
   file: 'aulas/fr-a1-66.html',
 },
+'Francês-A2-7': {
+  icon: '🎁',
+  titulo: 'Les cadeaux et les relations',
+  descricao: 'Revisar COD e COI com presentes, família, amigos, comunicação e ocasiões especiais.',
+  duracao: '35 min',
+  skills: ['COD / COI', 'Cadeaux', 'Relations'],
+  file: 'aulas/fr-a1-67.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
