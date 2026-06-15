@@ -103,6 +103,14 @@ const AULAS = {
   skills: ['We / You / They', 'Groups', 'Possessives'],
   file: 'aulas/en-a1-7.html',
 },
+'Inglês-A1-8': {
+  icon: '🎨',
+  titulo: 'Colors Around Us',
+  descricao: 'Aprender cores, descrever objetos e pessoas, revisar o verbo to be, possessive adjectives e possessive ’s.',
+  duracao: '30 min',
+  skills: ['Colors', 'Objects', 'To be review'],
+  file: 'aulas/en-a1-8.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
