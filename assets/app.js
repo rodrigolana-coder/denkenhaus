@@ -111,6 +111,14 @@ const AULAS = {
   skills: ['Colors', 'Objects', 'To be review'],
   file: 'aulas/en-a1-8.html',
 },
+'Inglês-A1-9': {
+  icon: '🎒',
+  titulo: 'Personal Objects',
+  descricao: 'Falar sobre objetos pessoais, usar a/an, formar plurais regulares e revisar possessive ’s.',
+  duracao: '30 min',
+  skills: ['Personal objects', 'A / An', 'Plural nouns'],
+  file: 'aulas/en-a1-9.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
