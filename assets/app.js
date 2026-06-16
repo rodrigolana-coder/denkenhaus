@@ -637,6 +637,14 @@ const AULAS = {
   skills: ['COD / COI', 'Cadeaux', 'Relations'],
   file: 'aulas/fr-a1-67.html',
 },
+'Francês-A2-8': {
+  icon: '🔋',
+  titulo: 'Les objets du quotidien',
+  descricao: 'Descrever objetos, falar de utilidade e usar os pronomes relativos qui e que.',
+  duracao: '35 min',
+  skills: ['Objets', 'QUI / QUE', 'Technologie'],
+  file: 'aulas/fr-a1-68.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
