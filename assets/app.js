@@ -653,6 +653,14 @@ const AULAS = {
   skills: ['Objets', 'QUI / QUE', 'Technologie'],
   file: 'aulas/fr-a1-68.html',
 },
+'Francês-A2-9': {
+  icon: '🛒',
+  titulo: 'Faire les courses',
+  descricao: 'Fazer compras, falar de quantidades, comprar comida e usar o pronome EN.',
+  duracao: '35 min',
+  skills: ['Courses', 'Quantités', 'Pronom EN'],
+  file: 'aulas/fr-a1-69.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
