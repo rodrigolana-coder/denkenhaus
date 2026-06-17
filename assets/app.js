@@ -119,6 +119,14 @@ const AULAS = {
   skills: ['Personal objects', 'A / An', 'Plural nouns'],
   file: 'aulas/en-a1-9.html',
 },
+'Inglês-A1-10': {
+  icon: '🎂',
+  titulo: 'How Old Are You?',
+  descricao: 'Perguntar e responder sobre idade, aprender números de 11 a 100, falar sobre aniversários e revisar o verbo to be.',
+  duracao: '30 min',
+  skills: ['Age', 'Numbers 11–100', 'Birthdays'],
+  file: 'aulas/en-a1-10.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
