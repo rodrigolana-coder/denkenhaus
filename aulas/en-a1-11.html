@@ -1,0 +1,273 @@
+<!-- English A1 — Class 11: Around Town -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialogues</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulary</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammar</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Translation</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversation</button>
+</div>
+
+<!-- 1. DIALOGUES -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialogues</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/11.png" alt="Bank and supermarket"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/11.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 1</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Excuse me. Where's the bank?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">It's next to the supermarket.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Thank you.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">You're welcome.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Is there a café nearby?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Yes. It's across from the bank.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/11-1.png" alt="Chemist and cashpoint"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/11-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 2</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">I need to buy some medicine.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">John</span><span class="dialog-text">There's a chemist on King Street.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Is it far from here?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">John</span><span class="dialog-text">No, it isn't.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Is there a cashpoint nearby?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">John</span><span class="dialog-text">Yes. It's next to the chemist.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/en/11-2.png" alt="Train station"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/en/11-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogue 3</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Sophie</span><span class="dialog-text">Where are you going?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">I'm going to the train station.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sophie</span><span class="dialog-text">Why?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">I'm meeting my cousins there.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sophie</span><span class="dialog-text">Is there a restaurant inside the station?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Yes, there is. Let's have lunch there.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogue 1 of 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULARY -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulary</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>English</th><th>Português</th><th>Example</th></tr>
+
+      <tr><td class="fr-word">bank</td><td>banco</td><td class="fr-example">Where's the bank?</td></tr>
+      <tr><td class="fr-word">bus stop</td><td>ponto de ônibus</td><td class="fr-example">There are three bus stops.</td></tr>
+      <tr><td class="fr-word">café</td><td>café</td><td class="fr-example">Is there a café nearby?</td></tr>
+      <tr><td class="fr-word">car park</td><td>estacionamento</td><td class="fr-example">There is a car park near here.</td></tr>
+      <tr><td class="fr-word">cashpoint</td><td>caixa eletrônico</td><td class="fr-example">It's next to the chemist.</td></tr>
+      <tr><td class="fr-word">chemist</td><td>farmácia</td><td class="fr-example">There's a chemist on King Street.</td></tr>
+      <tr><td class="fr-word">cinema</td><td>cinema</td><td class="fr-example">There isn't a cinema.</td></tr>
+      <tr><td class="fr-word">clothes shop</td><td>loja de roupas</td><td class="fr-example">There are many clothes shops.</td></tr>
+      <tr><td class="fr-word">deli</td><td>delicatessen</td><td class="fr-example">There is a deli near the bank.</td></tr>
+      <tr><td class="fr-word">park</td><td>parque</td><td class="fr-example">The restaurant is across from the park.</td></tr>
+      <tr><td class="fr-word">petrol station</td><td>posto de gasolina</td><td class="fr-example">There is a petrol station nearby.</td></tr>
+      <tr><td class="fr-word">restaurant</td><td>restaurante</td><td class="fr-example">Is there a restaurant inside the station?</td></tr>
+      <tr><td class="fr-word">shoe shop</td><td>loja de sapatos</td><td class="fr-example">There is a shoe shop next to the bank.</td></tr>
+      <tr><td class="fr-word">supermarket</td><td>supermercado</td><td class="fr-example">It's next to the supermarket.</td></tr>
+      <tr><td class="fr-word">train station</td><td>estação de trem</td><td class="fr-example">I'm going to the train station.</td></tr>
+
+      <tr><td class="fr-word">Excuse me.</td><td>Com licença.</td><td class="fr-example">Excuse me. Where's the bank?</td></tr>
+      <tr><td class="fr-word">Where's...?</td><td>Onde fica...?</td><td class="fr-example">Where's the café?</td></tr>
+      <tr><td class="fr-word">Where are you going?</td><td>Para onde você está indo?</td><td class="fr-example">Where are you going?</td></tr>
+      <tr><td class="fr-word">next to</td><td>ao lado de</td><td class="fr-example">It's next to the chemist.</td></tr>
+      <tr><td class="fr-word">across from</td><td>em frente a</td><td class="fr-example">It's across from the bank.</td></tr>
+      <tr><td class="fr-word">near</td><td>perto de</td><td class="fr-example">It's near the station.</td></tr>
+      <tr><td class="fr-word">I'm going to...</td><td>Estou indo para...</td><td class="fr-example">I'm going to the train station.</td></tr>
+    </table>
+
+    <div class="grammar-rule">
+      <h4>How to ask for places</h4>
+      <p class="example">A: Where's the bank? — B: It's next to the supermarket.</p>
+      <p class="example">A: Where's the café? — B: It's across from the park.</p>
+      <p class="example">A: Where are you going? — B: I'm going to the train station.</p>
+      <p class="example">A: Is there a restaurant nearby? — B: Yes, there is.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Previous</button>
+      <span class="fr-slide-info">Section 2 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMAR -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammar</div>
+
+    <div class="grammar-rule">
+      <h4>1. There is / There are</h4>
+      <p><strong>Affirmative</strong></p>
+      <p class="example">There is a bank.</p>
+      <p class="example">There is a café.</p>
+      <p class="example">There are two restaurants.</p>
+      <p class="example">There are three parks.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Negative</h4>
+      <p class="example">There isn't a cinema.</p>
+      <p class="example">There aren't any shoe shops.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Questions</h4>
+      <p class="example">Is there a supermarket?</p>
+      <p class="example">Is there a chemist nearby?</p>
+      <p class="example">Are there any cafés?</p>
+      <p class="example">Are there any parks?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Short answers</h4>
+      <p class="example">Yes, there is.</p>
+      <p class="example">No, there isn't.</p>
+      <p class="example">Yes, there are.</p>
+      <p class="example">No, there aren't.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Review — A / AN</h4>
+      <p class="example">a bank</p>
+      <p class="example">a restaurant</p>
+      <p class="example">a supermarket</p>
+      <p class="example">a bus stop</p>
+      <p class="example">an ATM / a cashpoint</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>6. Review — Plural nouns</h4>
+      <p class="example">bank → banks</p>
+      <p class="example">café → cafés</p>
+      <p class="example">park → parks</p>
+      <p class="example">restaurant → restaurants</p>
+      <p class="example">bus → buses</p>
+      <p class="example">city → cities</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Previous</button>
+      <span class="fr-slide-info">Section 3 of 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRANSLATION -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Translation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Translate from Portuguese to English.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Há um banco perto da minha casa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There is a bank near my house.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Há dois restaurantes nesta rua.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There are two restaurants on this street.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Onde fica o supermercado?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Where's the supermarket?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. O banco fica ao lado da farmácia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">The bank is next to the chemist.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Há um café perto da estação de trem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There is a café near the train station.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Não há um cinema nesta cidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There isn't a cinema in this city.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Estamos indo para o parque.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">We're going to the park.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Há três pontos de ônibus nesta avenida.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There are three bus stops on this avenue.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Existe um caixa eletrônico perto daqui?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">Is there a cashpoint near here?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Há muitas lojas de roupas no centro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There are many clothes shops in the city centre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. O restaurante fica em frente ao parque.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">The restaurant is across from the park.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Há uma loja de sapatos ao lado do banco.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Show answer</button><div class="exercise-answer">There is a shoe shop next to the bank.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-ex-info">Sentences 1–3 of 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSATION -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversation</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Answer the questions out loud.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Is there a supermarket near your house?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Where do you usually buy food?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Is there a bank near your home?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Do you often go to cafés?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">What is your favourite restaurant?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Is there a park in your neighbourhood?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">How do you usually go to the city centre?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Do you use the train station?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">What places do you visit every week?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">What is your favourite place in your city?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Previous</button>
+      <span class="fr-slide-info" id="fr-cv-info">Questions 1–3 of 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Next →</button>
+    </div>
+  </div>
+</div>
