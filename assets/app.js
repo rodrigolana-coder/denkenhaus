@@ -127,6 +127,14 @@ const AULAS = {
   skills: ['Age', 'Numbers 11–100', 'Birthdays'],
   file: 'aulas/en-a1-10.html',
 },
+'Inglês-A1-11': {
+  icon: '🏙️',
+  titulo: 'Around Town',
+  descricao: 'Aprender lugares da cidade, perguntar onde ficam lugares, usar there is / there are e revisar a/an e plurais.',
+  duracao: '30 min',
+  skills: ['Places in town', 'There is / There are', 'Directions'],
+  file: 'aulas/en-a1-11.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
