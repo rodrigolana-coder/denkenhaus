@@ -135,6 +135,14 @@ const AULAS = {
   skills: ['Places in town', 'There is / There are', 'Directions'],
   file: 'aulas/en-a1-11.html',
 },
+'Inglês-A1-12': {
+  icon: '🌍',
+  titulo: 'The Many Englishes Around the World',
+  descricao: 'Curiosity lesson about different varieties of English, accents, vocabulary and English around the world.',
+  duracao: '20 min',
+  skills: ['Reading', 'Culture', 'Comprehension'],
+  file: 'aulas/en-a1-12.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
