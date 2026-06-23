@@ -677,6 +677,22 @@ const AULAS = {
   skills: ['Courses', 'Quantités', 'Pronom EN'],
   file: 'aulas/fr-a1-69.html',
 },
+'Francês-A2-10': {
+  icon: '🍽️',
+  titulo: 'Pourquoi les Français mangent-ils si tard ?',
+  descricao: 'Curiosité sur les horaires des repas en France, la culture du déjeuner et du dîner, et le repas comme moment de partage.',
+  duracao: '20 min',
+  skills: ['Reading', 'Culture', 'Comprehension'],
+  file: 'aulas/fr-a1-70.html',
+},
+'Francês-A2-11': {
+  icon: '🧺',
+  titulo: 'Un week-end à la campagne',
+  descricao: 'Revisar Y e EN em situações naturais com viagens, lugares, alimentos, quantidades e conversação.',
+  duracao: '35 min',
+  skills: ['Y / EN', 'Voyages', 'Courses'],
+  file: 'aulas/fr-a1-71.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
