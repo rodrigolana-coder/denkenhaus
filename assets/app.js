@@ -701,6 +701,14 @@ const AULAS = {
   skills: ['Y / EN', 'Voyages', 'Courses'],
   file: 'aulas/fr-a1-71.html',
 },
+'Francês-A2-12': {
+  icon: '⚖️',
+  titulo: 'Avant et maintenant',
+  descricao: 'Comparar situações, falar de mudanças e usar os comparativos plus que, moins que, aussi que, meilleur e mieux.',
+  duracao: '35 min',
+  skills: ['Comparatifs', 'Changements', 'Présent / Passé'],
+  file: 'aulas/fr-a1-72.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
