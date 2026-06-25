@@ -151,6 +151,14 @@ const AULAS = {
   skills: ['Review', 'Ages', 'Around town'],
   file: 'aulas/en-a1-13.html',
 },
+'Inglês-A1-14': {
+  icon: '🥪',
+  titulo: 'Ordering Food and Drinks',
+  descricao: 'Pedir comidas e bebidas de forma educada usando I’d like e Can I have, com vocabulário de cafés e restaurantes.',
+  duracao: '30 min',
+  skills: ['Ordering food', 'I’d like', 'Can I have'],
+  file: 'aulas/en-a1-14.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
