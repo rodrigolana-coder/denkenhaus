@@ -709,6 +709,14 @@ const AULAS = {
   skills: ['Comparatifs', 'Changements', 'Présent / Passé'],
   file: 'aulas/fr-a1-72.html',
 },
+'Francês-A2-13': {
+  icon: '🏠',
+  titulo: 'Ma maison idéale',
+  descricao: 'Falar sobre moradia, descrever cômodos, móveis e revisar il y a e preposições de lugar.',
+  duracao: '35 min',
+  skills: ['Logement', 'Mobilier', 'Prépositions'],
+  file: 'aulas/fr-a1-73.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
