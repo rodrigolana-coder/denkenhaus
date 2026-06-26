@@ -159,6 +159,14 @@ const AULAS = {
   skills: ['Ordering food', 'I’d like', 'Can I have'],
   file: 'aulas/en-a1-14.html',
 },
+'Inglês-A1-15': {
+  icon: '☕',
+  titulo: 'Curiosity: Tea Time',
+  descricao: 'Conhecer a tradição britânica do chá enquanto revisa vocabulário de cafés, comidas e bebidas, I’d like, Would you like e compreensão de leitura.',
+  duracao: '30 min',
+  skills: ['Reading', 'Culture', 'Food & Drinks'],
+  file: 'aulas/en-a1-15.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
