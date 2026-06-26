@@ -733,6 +733,14 @@ const AULAS = {
   skills: ['Logement', 'Mobilier', 'Prépositions'],
   file: 'aulas/fr-a1-73.html',
 },
+'Francês-A2-14': {
+  icon: '🛠️',
+  titulo: 'Les transformations de la maison',
+  descricao: 'Falar de mudanças, reformas e transformações usando il y a, depuis e passé composé.',
+  duracao: '35 min',
+  skills: ['Il y a / Depuis', 'Logement', 'Passé composé'],
+  file: 'aulas/fr-a1-74.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
