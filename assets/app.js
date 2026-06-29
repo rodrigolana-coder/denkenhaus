@@ -167,6 +167,14 @@ const AULAS = {
   skills: ['Reading', 'Culture', 'Food & Drinks'],
   file: 'aulas/en-a1-15.html',
 },
+'Inglês-A1-16': {
+  icon: '🧩',
+  titulo: 'Describing Things',
+  descricao: 'Aprender adjetivos comuns, posição dos adjetivos, to be + adjective e intensificadores como very, really e quite.',
+  duracao: '30 min',
+  skills: ['Adjectives', 'Descriptions', 'Very / Really / Quite'],
+  file: 'aulas/en-a1-16.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -740,6 +748,22 @@ const AULAS = {
   duracao: '35 min',
   skills: ['Il y a / Depuis', 'Logement', 'Passé composé'],
   file: 'aulas/fr-a1-74.html',
+},
+'Francês-A2-15': {
+  icon: '☕',
+  titulo: 'Les cafés en France',
+  descricao: 'Curiosité sur les cafés français, leur histoire, les terrasses, les habitudes et leur importance culturelle.',
+  duracao: '25 min',
+  skills: ['Culture', 'Cafés', 'Compréhension'],
+  file: 'aulas/fr-a1-75.html',
+},
+'Francês-A2-16': {
+  icon: '🏢',
+  titulo: 'Chercher un logement',
+  descricao: 'Procurar moradia, pedir informações, entender anúncios imobiliários e revisar logement, mobilier e comparativos.',
+  duracao: '35 min',
+  skills: ['Logement', 'Annonces', 'Informations'],
+  file: 'aulas/fr-a1-76.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
