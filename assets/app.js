@@ -765,6 +765,14 @@ const AULAS = {
   skills: ['Logement', 'Annonces', 'Informations'],
   file: 'aulas/fr-a1-76.html',
 },
+'Francês-A2-17': {
+  icon: '🏡',
+  titulo: 'Habiter autrement',
+  descricao: 'Falar da evolução de hábitos, moradia e cidades usando de plus en plus, de moins en moins e de mieux en mieux.',
+  duracao: '35 min',
+  skills: ['Évolution', 'De plus en plus', 'Mode de vie'],
+  file: 'aulas/fr-a1-77.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
