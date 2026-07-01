@@ -781,6 +781,14 @@ const AULAS = {
   skills: ['Évolution', 'De plus en plus', 'Mode de vie'],
   file: 'aulas/fr-a1-77.html',
 },
+'Francês-A2-18': {
+  icon: '🏘️',
+  titulo: 'La colocation',
+  descricao: 'Expressar regras, obrigações, proibições, permissões e conselhos em situações de vida compartilhada.',
+  duracao: '35 min',
+  skills: ['Règles', 'Obligation', 'Colocation'],
+  file: 'aulas/fr-a1-78.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
