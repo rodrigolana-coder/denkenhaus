@@ -797,6 +797,14 @@ const AULAS = {
   skills: ['Règles', 'Obligation', 'Colocation'],
   file: 'aulas/fr-a1-78.html',
 },
+'fr-a2-19': {
+  icon: '🤝',
+  titulo: 'Bien vivre ensemble',
+  descricao: 'Revisar il faut, il ne faut pas, devoir, pouvoir, il vaut mieux e tu devrais em situações práticas.',
+  duracao: '35 min',
+  skills: ['Révision', 'Obligation', 'Conseil'],
+  file: 'aulas/fr-a1-79.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
