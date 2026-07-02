@@ -183,6 +183,14 @@ const AULAS = {
   skills: ['Shopping', 'This / That', 'Prices'],
   file: 'aulas/en-a1-17.html',
 },
+'Inglês-A1-18': {
+  icon: '🌍',
+  titulo: 'Places Around the World',
+  descricao: 'Aprender lugares da natureza e da cidade, revisar this/that/these/those e descrever lugares com adjetivos.',
+  duracao: '30 min',
+  skills: ['Places', 'This / That', 'Descriptions'],
+  file: 'aulas/en-a1-18.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
