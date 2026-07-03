@@ -191,6 +191,14 @@ const AULAS = {
   skills: ['Places', 'This / That', 'Descriptions'],
   file: 'aulas/en-a1-18.html',
 },
+'Inglês-A1-20': {
+  icon: '🚗',
+  titulo: 'Curiosity: Driving on the Left',
+  descricao: 'Ler sobre por que as pessoas dirigem do lado esquerdo no Reino Unido, revisando países, direções, lugares, números e compreensão de leitura.',
+  duracao: '25 min',
+  skills: ['Reading', 'Culture', 'Directions'],
+  file: 'aulas/en-a1-20.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
