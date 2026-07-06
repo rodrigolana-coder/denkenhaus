@@ -199,6 +199,14 @@ const AULAS = {
   skills: ['Reading', 'Culture', 'Directions'],
   file: 'aulas/en-a1-20.html',
 },
+'Inglês-A1-21': {
+  icon: '🏙️',
+  titulo: 'My Favourite City',
+  descricao: 'Dar opiniões com I think, usar I don’t think, revisar there is/there are e praticar some e a lot of para falar de cidades.',
+  duracao: '30 min',
+  skills: ['I think', 'There is / There are', 'Some / A lot of'],
+  file: 'aulas/en-a1-21.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
