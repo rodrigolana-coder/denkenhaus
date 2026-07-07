@@ -207,6 +207,14 @@ const AULAS = {
   skills: ['I think', 'There is / There are', 'Some / A lot of'],
   file: 'aulas/en-a1-21.html',
 },
+'Inglês-A1-22': {
+  icon: '📍',
+  titulo: 'Asking Where Places Are',
+  descricao: 'Aprender preposições de lugar, perguntas com Is there/Are there, negativas com there isn’t/there aren’t e uso de any.',
+  duracao: '30 min',
+  skills: ['Prepositions', 'There is / There are', 'Places'],
+  file: 'aulas/en-a1-22.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
