@@ -1,0 +1,279 @@
+<!-- Francês A2 — Aula 81: Mes amis -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabulário</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Gramática</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr81.png" alt="Mon meilleur ami"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr81.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Mon meilleur ami</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Tu m’as souvent parlé de ton meilleur ami.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui. C’est quelqu’un qui me connaît depuis l’enfance.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">C’est lui que tu vois tous les week-ends ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui, exactement.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">C’est aussi la personne à qui tu racontes tout ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Lucas</span><span class="dialog-text">Oui. Je peux toujours lui faire confiance.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr81-1.png" alt="Une nouvelle collègue"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr81-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Une nouvelle collègue</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">Tu connais la nouvelle collègue ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui. C’est la femme qui travaille au troisième étage.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">C’est celle que tout le monde apprécie ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Oui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Nora</span><span class="dialog-text">C’est aussi la personne à qui le directeur confie les nouveaux projets ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Hugo</span><span class="dialog-text">Exactement.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/fr/fr81-2.png" alt="Une personne importante"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/fr/fr81-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Une personne importante</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Qui est la personne la plus importante dans ta vie ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">C’est ma sœur.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">C’est elle qui t’aide le plus ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Oui.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">C’est aussi la personne à qui tu demandes des conseils ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Très souvent.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Mei</span><span class="dialog-text">Et c’est la personne que tu admires le plus ?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Tom</span><span class="dialog-text">Sans aucun doute.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABULÁRIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabulário</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">un ami / une amie</td><td>amigo(a)</td><td class="fr-example">C’est un ami que je vois souvent.</td></tr>
+      <tr><td class="fr-word">un meilleur ami</td><td>melhor amigo</td><td class="fr-example">C’est mon meilleur ami.</td></tr>
+      <tr><td class="fr-word">un collègue</td><td>colega</td><td class="fr-example">C’est un collègue que j’apprécie.</td></tr>
+      <tr><td class="fr-word">un voisin</td><td>vizinho</td><td class="fr-example">Mon voisin est très gentil.</td></tr>
+      <tr><td class="fr-word">une sœur</td><td>irmã</td><td class="fr-example">C’est ma sœur.</td></tr>
+      <tr><td class="fr-word">un frère</td><td>irmão</td><td class="fr-example">Mon frère m’aide souvent.</td></tr>
+      <tr><td class="fr-word">une connaissance</td><td>conhecido(a)</td><td class="fr-example">C’est une connaissance de travail.</td></tr>
+      <tr><td class="fr-word">une relation</td><td>relacionamento</td><td class="fr-example">C’est une relation importante.</td></tr>
+
+      <tr><td class="fr-word">connaître</td><td>conhecer</td><td class="fr-example">Je connais une femme qui parle cinq langues.</td></tr>
+      <tr><td class="fr-word">faire confiance à</td><td>confiar em</td><td class="fr-example">C’est la personne à qui je fais confiance.</td></tr>
+      <tr><td class="fr-word">admirer</td><td>admirar</td><td class="fr-example">C’est la personne que j’admire le plus.</td></tr>
+      <tr><td class="fr-word">aider</td><td>ajudar</td><td class="fr-example">C’est elle qui m’aide le plus.</td></tr>
+      <tr><td class="fr-word">apprécier</td><td>apreciar / gostar</td><td class="fr-example">C’est celle que tout le monde apprécie.</td></tr>
+      <tr><td class="fr-word">raconter</td><td>contar</td><td class="fr-example">C’est la personne à qui je raconte tout.</td></tr>
+      <tr><td class="fr-word">demander un conseil</td><td>pedir um conselho</td><td class="fr-example">Je demande souvent des conseils à ma sœur.</td></tr>
+      <tr><td class="fr-word">confier</td><td>confiar uma tarefa</td><td class="fr-example">Le directeur lui confie les nouveaux projets.</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMÁTICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Gramática — Qui, Que et À qui</div>
+
+    <div class="grammar-rule">
+      <h4>1. QUI</h4>
+      <p><strong>Qui</strong> substitui o sujeito do segundo verbo.</p>
+      <p class="example">Nom + qui + verbe</p>
+      <p class="example">Je connais une femme. Elle parle quatre langues.</p>
+      <p class="example">Je connais une femme qui parle quatre langues.</p>
+      <p class="example">C’est un ami qui habite à Paris.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. QUE / QU’</h4>
+      <p><strong>Que</strong> substitui o complemento direto.</p>
+      <p class="example">Nom + que + sujet + verbe</p>
+      <p class="example">Je lis un livre. J’aime ce livre.</p>
+      <p class="example">Je lis un livre que j’aime.</p>
+      <p class="example">Voici le film que nous avons vu.</p>
+      <p class="example">Le professeur qu’elle admire.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. À QUI</h4>
+      <p><strong>À qui</strong> substitui uma pessoa introduzida por <strong>à</strong>.</p>
+      <p class="example">Nom + à qui + sujet + verbe</p>
+      <p class="example">La femme à qui je parle est médecin.</p>
+      <p class="example">Mon père est la personne à qui je demande des conseils.</p>
+      <p class="example">C’est la personne à qui je fais confiance.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Comment choisir ?</h4>
+      <p><strong>Qui fait l’action ?</strong> → QUI</p>
+      <p class="example">L’étudiant qui parle français.</p>
+
+      <p><strong>Qui reçoit directement l’action ?</strong> → QUE</p>
+      <p class="example">L’étudiant que je connais.</p>
+
+      <p><strong>Le verbe est suivi de à ?</strong> → À QUI</p>
+      <p class="example">L’étudiant à qui je parle.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Mini résumé</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Pronom</th><th>Fonction</th><th>Exemple</th></tr>
+        <tr><td>qui</td><td>sujet</td><td>Le garçon qui parle est mon frère.</td></tr>
+        <tr><td>que / qu’</td><td>COD</td><td>Le livre que je lis est intéressant.</td></tr>
+        <tr><td>à qui</td><td>complément avec à</td><td>La personne à qui je parle est gentille.</td></tr>
+      </table>
+
+      <p class="example">La femme qui travaille ici.</p>
+      <p class="example">La femme que je connais.</p>
+      <p class="example">La femme à qui j’écris.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>6. Verbes fréquents avec à qui</h4>
+      <p class="example">parler à</p>
+      <p class="example">téléphoner à</p>
+      <p class="example">écrire à</p>
+      <p class="example">répondre à</p>
+      <p class="example">demander à</p>
+      <p class="example">offrir à</p>
+      <p class="example">envoyer à</p>
+      <p class="example">prêter à</p>
+      <p class="example">faire confiance à</p>
+      <p class="example">raconter quelque chose à</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o francês.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Tenho um amigo que mora em Paris.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’ai un ami qui habite à Paris.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Ela é a pessoa que eu admiro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Elle est la personne que j’admire.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Este é o professor a quem eu faço perguntas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est le professeur à qui je pose des questions.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Conheço uma mulher que fala cinco idiomas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je connais une femme qui parle cinq langues.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Ele é o amigo em quem eu confio.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est l’ami à qui je fais confiance.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Aqui está o livro que eu procuro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Voici le livre que je cherche.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Ela é a pessoa a quem eu telefono todas as semanas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est la personne à qui je téléphone toutes les semaines.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu gosto das pessoas que sorriem muito.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">J’aime les personnes qui sourient beaucoup.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Este é o colega que ajuda todo mundo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est le collègue qui aide tout le monde.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Ela é a amiga a quem conto tudo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est l’amie à qui je raconte tout.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Este é o filme que vimos ontem.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">C’est le film que nous avons vu hier.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Conheço uma pessoa que sempre me ajuda.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Je connais une personne qui m’aide toujours.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em voz alta, como se estivesse numa aula real.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Décris un ami qui est important pour toi.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Quelle est la personne que tu admires le plus ? Pourquoi ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">À qui demandes-tu des conseils quand tu as un problème ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Qui t’a le plus aidé dans ta vie ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Décris une personne que tu connais depuis longtemps.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Quel est le professeur que tu as préféré à l’école ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Qui est la personne à qui tu fais le plus confiance ?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Décris un collègue ou un camarade que tu apprécies.</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Quelle est la qualité que tu admires le plus chez une personne ?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Qui est quelqu’un que tu aimerais rencontrer un jour ? Pourquoi ?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
