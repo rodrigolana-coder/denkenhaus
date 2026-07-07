@@ -829,7 +829,7 @@ const AULAS = {
   skills: ['Révision', 'Obligation', 'Conseil'],
   file: 'aulas/fr-a1-79.html',
 },
-'fr-a2-21': {
+''Francês-A2-21': {
   icon: '👥',
   titulo: 'Mes amis',
   descricao: 'Usar qui, que e à qui para falar de amigos, relações e pessoas importantes.',
