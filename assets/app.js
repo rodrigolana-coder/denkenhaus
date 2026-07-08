@@ -837,6 +837,14 @@ const AULAS = {
   skills: ['Qui / Que / À qui', 'Relations', 'Description'],
   file: 'aulas/fr-a1-81.html',
 },
+'Francês-A2-22': {
+  icon: '😊',
+  titulo: 'Les qualités et la personnalité',
+  descricao: 'Descrever a personalidade, falar de qualidades e defeitos e usar adjetivos e nomes abstratos.',
+  duracao: '35 min',
+  skills: ['Personnalité', 'Qualités', 'Opinion'],
+  file: 'aulas/fr-a1-82.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
