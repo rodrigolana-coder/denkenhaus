@@ -215,6 +215,14 @@ const AULAS = {
   skills: ['Prepositions', 'There is / There are', 'Places'],
   file: 'aulas/en-a1-22.html',
 },
+'Inglês-A1-23': {
+  icon: '🕒',
+  titulo: 'What Time Is It?',
+  descricao: 'Aprender a dizer as horas, perguntar horários de abertura e fechamento, comprar bilhete de trem e revisar there is/there are.',
+  duracao: '30 min',
+  skills: ['Time', 'Train Station', 'Opening Hours'],
+  file: 'aulas/en-a1-23.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
