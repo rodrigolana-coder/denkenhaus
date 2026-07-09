@@ -223,6 +223,14 @@ const AULAS = {
   skills: ['Time', 'Train Station', 'Opening Hours'],
   file: 'aulas/en-a1-23.html',
 },
+'Inglês-A1-24': {
+  icon: '⏰',
+  titulo: 'Daily Routines & Time',
+  descricao: 'Falar sobre rotina diária, horários, formas digitais e tradicionais de dizer as horas e revisar Present Simple.',
+  duracao: '30 min',
+  skills: ['Daily Routine', 'Time', 'Present Simple'],
+  file: 'aulas/en-a1-24.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
