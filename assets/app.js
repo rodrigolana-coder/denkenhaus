@@ -861,6 +861,14 @@ const AULAS = {
   skills: ['Personnalité', 'Qualités', 'Opinion'],
   file: 'aulas/fr-a1-82.html',
 },
+'Francês-A2-23': {
+  icon: '✅',
+  titulo: 'Le passé composé',
+  descricao: 'Revisar o passé composé, o acordo com être e os casos simples sem acordo com avoir.',
+  duracao: '35 min',
+  skills: ['Passé composé', 'Accord', 'Être / Avoir'],
+  file: 'aulas/fr-a1-83.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
