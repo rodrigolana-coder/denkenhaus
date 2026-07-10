@@ -885,6 +885,14 @@ const AULAS = {
   skills: ['Passé composé', 'Accord', 'Être / Avoir'],
   file: 'aulas/fr-a1-83.html',
 },
+'Francês-A2-24': {
+  icon: '🗣️',
+  titulo: 'Les voisins',
+  descricao: 'Relatar falas, informações e opiniões com dire que, raconter que, expliquer que e outras estruturas do discurso indireto.',
+  duracao: '35 min',
+  skills: ['Discours indirect', 'Dire que', 'Voisinage'],
+  file: 'aulas/fr-a1-84.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
