@@ -231,6 +231,14 @@ const AULAS = {
   skills: ['Daily Routine', 'Time', 'Present Simple'],
   file: 'aulas/en-a1-24.html',
 },
+'Inglês-A1-25': {
+  icon: '🕰️',
+  titulo: 'Curiosity: Big Ben',
+  descricao: 'Ler sobre Big Ben, sua história e seu funcionamento, revisando horas, números, lugares, adjetivos e Present Simple.',
+  duracao: '25 min',
+  skills: ['Reading', 'Culture', 'Time'],
+  file: 'aulas/en-a1-25.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
