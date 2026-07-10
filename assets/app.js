@@ -853,6 +853,14 @@ const AULAS = {
   skills: ['Révision', 'Obligation', 'Conseil'],
   file: 'aulas/fr-a1-79.html',
 },
+'Francês-A2-20': {
+  icon: '👋',
+  titulo: 'Curiosité : Pourquoi dire bonjour ?',
+  descricao: 'Compreender a importância das saudações e das regras de polidez na vida cotidiana francesa.',
+  duracao: '25 min',
+  skills: ['Lecture', 'Culture', 'Politesse'],
+  file: 'aulas/fr-a1-80.html',
+},
 'Francês-A2-21': {
   icon: '👥',
   titulo: 'Mes amis',
