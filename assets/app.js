@@ -901,6 +901,14 @@ const AULAS = {
   skills: ['Discours indirect', 'Dire que', 'Voisinage'],
   file: 'aulas/fr-a1-84.html',
 },
+'Francês-A2-25': {
+  icon: '🧺',
+  titulo: 'Curiosité : Les marchés en France',
+  descricao: 'Descobrir a importância dos mercados na vida cotidiana francesa, seus produtos locais, especialidades regionais e ambiente social.',
+  duracao: '25 min',
+  skills: ['Lecture', 'Culture', 'Compréhension'],
+  file: 'aulas/fr-a1-85.html',
+},
 'Francês-A2-26': {
   icon: '🔄',
   titulo: 'Avant et maintenant',
