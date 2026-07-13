@@ -239,6 +239,14 @@ const AULAS = {
   skills: ['Reading', 'Culture', 'Time'],
   file: 'aulas/en-a1-25.html',
 },
+'Inglês-A1-26': {
+  icon: '👀',
+  titulo: 'Describing People',
+  descricao: 'Descrever a aparência física de pessoas, usar to be + adjetivo e have/has para características físicas, revisando vocabulário de família.',
+  duracao: '30 min',
+  skills: ['Physical Appearance', 'To Be + Adjective', 'Have/Has'],
+  file: 'aulas/en-a1-26.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -892,6 +900,14 @@ const AULAS = {
   duracao: '35 min',
   skills: ['Discours indirect', 'Dire que', 'Voisinage'],
   file: 'aulas/fr-a1-84.html',
+},
+'Francês-A2-26': {
+  icon: '🔄',
+  titulo: 'Avant et maintenant',
+  descricao: 'Comparar uma situação passada e a situação atual usando avant e maintenant, falar sobre mudanças na vida e revisar passé composé e présent.',
+  duracao: '30 min',
+  skills: ['Avant/Maintenant', 'Comparaisons', 'Passé Composé'],
+  file: 'aulas/fr-a1-86.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
