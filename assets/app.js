@@ -247,6 +247,14 @@ const AULAS = {
   skills: ['Physical Appearance', 'To Be + Adjective', 'Have/Has'],
   file: 'aulas/en-a1-26.html',
 },
+'Inglês-A1-27': {
+  icon: '❤️',
+  titulo: 'What Do You Like?',
+  descricao: 'Apresentar o Present Simple com I/you/we/they, falar sobre trabalho, moradia, gostos e fazer perguntas e negativas com do/don\'t.',
+  duracao: '30 min',
+  skills: ['Present Simple', 'Do/Don\'t', 'Likes & Dislikes'],
+  file: 'aulas/en-a1-27.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -916,6 +924,14 @@ const AULAS = {
   duracao: '30 min',
   skills: ['Avant/Maintenant', 'Comparaisons', 'Passé Composé'],
   file: 'aulas/fr-a1-86.html',
+},
+'Francês-A2-27': {
+  icon: '⚖️',
+  titulo: 'Comparer des personnes et des choses',
+  descricao: 'Fazer comparações usando plus/moins/aussi que, comparar substantivos, adjetivos, verbos e advérbios, revisando os comparativos irregulares meilleur e mieux.',
+  duracao: '30 min',
+  skills: ['Comparatifs', 'Plus/Moins/Aussi', 'Meilleur/Mieux'],
+  file: 'aulas/fr-a1-87.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
