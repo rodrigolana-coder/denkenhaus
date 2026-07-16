@@ -263,6 +263,14 @@ const AULAS = {
   skills: ['Present Simple (He/She/It)', 'Does/Doesn\'t', 'Has'],
   file: 'aulas/en-a1-28.html',
 },
+'Inglês-A1-29': {
+  icon: '🔁',
+  titulo: 'Present Simple Review',
+  descricao: 'Revisar o Present Simple em todas as pessoas, distinguir do/does e don\'t/doesn\'t, revisar have/has e descrever rotinas diárias com confiança.',
+  duracao: '30 min',
+  skills: ['Present Simple Review', 'Do/Does', 'Don\'t/Doesn\'t'],
+  file: 'aulas/en-a1-29.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
