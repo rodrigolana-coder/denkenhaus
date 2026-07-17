@@ -957,6 +957,14 @@ const AULAS = {
   skills: ['Comparatifs', 'Plus/Moins/Aussi', 'Meilleur/Mieux'],
   file: 'aulas/fr-a1-87.html',
 },
+'Francês-A2-28': {
+  icon: '💫',
+  titulo: 'Une rencontre inoubliable',
+  descricao: 'Contar como conheceu alguém revisando passé composé e imparfait, e aprendendo os 10 primeiros particípios passados irregulares.',
+  duracao: '30 min',
+  skills: ['Passé Composé', 'Imparfait', 'Participes Irréguliers'],
+  file: 'aulas/fr-a1-88.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
