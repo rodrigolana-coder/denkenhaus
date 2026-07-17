@@ -271,6 +271,14 @@ const AULAS = {
   skills: ['Present Simple Review', 'Do/Does', 'Don\'t/Doesn\'t'],
   file: 'aulas/en-a1-29.html',
 },
+'Inglês-A1-30': {
+  icon: '🙏',
+  titulo: 'Curiosity: Why Do British People Say "Sorry" So Much?',
+  descricao: 'Texto de leitura sobre um hábito cultural britânico, revisando Present Simple, expressões de educação e vocabulário do cotidiano, com 10 perguntas de compreensão.',
+  duracao: '20 min',
+  skills: ['Reading Comprehension', 'Culture', 'Present Simple Review'],
+  file: 'aulas/en-a1-30.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
