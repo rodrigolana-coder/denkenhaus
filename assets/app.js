@@ -279,6 +279,14 @@ const AULAS = {
   skills: ['Reading Comprehension', 'Culture', 'Present Simple Review'],
   file: 'aulas/en-a1-30.html',
 },
+'Inglês-A1-31': {
+  icon: '📅',
+  titulo: 'Making Friends',
+  descricao: 'Aprender os dias da semana, colocações verbais comuns, fazer perguntas com WH- words e revisar o Present Simple com we/you/they.',
+  duracao: '30 min',
+  skills: ['WH- Questions', 'Days of the Week', 'Present Simple (We/You/They)'],
+  file: 'aulas/en-a1-31.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -964,6 +972,14 @@ const AULAS = {
   duracao: '30 min',
   skills: ['Passé Composé', 'Imparfait', 'Participes Irréguliers'],
   file: 'aulas/fr-a1-88.html',
+},
+'Francês-A2-29': {
+  icon: '📖',
+  titulo: 'Une histoire à raconter',
+  descricao: 'Contar um evento no passado revisando passé composé e imparfait, revisando os 10 primeiros particípios irregulares e aprendendo 10 novos.',
+  duracao: '30 min',
+  skills: ['Passé Composé', 'Imparfait', 'Participes Irréguliers (2/3)'],
+  file: 'aulas/fr-a1-89.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
