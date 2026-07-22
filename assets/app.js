@@ -191,6 +191,14 @@ const AULAS = {
   skills: ['Places', 'This / That', 'Descriptions'],
   file: 'aulas/en-a1-18.html',
 },
+'Inglês-A1-19': {
+  icon: '🏙️',
+  titulo: 'Around the City',
+  descricao: 'Consolidar vocabulário de lugares na cidade e na natureza, revisar this/that/these/those, there is/there are e adjetivos para descrever lugares e expressar preferências.',
+  duracao: '30 min',
+  skills: ['Places', 'This/That/These/Those', 'There is/There are'],
+  file: 'aulas/en-a1-19.html',
+},
 'Inglês-A1-20': {
   icon: '🚗',
   titulo: 'Curiosity: Driving on the Left',
