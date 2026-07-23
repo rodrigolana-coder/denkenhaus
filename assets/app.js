@@ -1021,6 +1021,22 @@ const AULAS = {
   skills: ['Passé Composé', 'Imparfait', 'Participes Irréguliers (2/3)'],
   file: 'aulas/fr-a1-89.html',
 },
+'Francês-A2-30': {
+  icon: '📚',
+  titulo: 'Curiosité: Les librairies en France',
+  descricao: 'Texto de leitura sobre a importância cultural das livrarias na França, revisando particípios irregulares em contexto, com 12 perguntas de compreensão.',
+  duracao: '20 min',
+  skills: ['Reading Comprehension', 'Culture', 'Participes Irréguliers'],
+  file: 'aulas/fr-a1-90.html',
+},
+'Francês-A2-31': {
+  icon: '🎒',
+  titulo: 'Raconter un souvenir',
+  descricao: 'Contar uma lembrança no passado revisando passé composé e imparfait, revisando os 20 particípios irregulares já vistos e aprendendo os 5 últimos, completando os 25 do nível A2.',
+  duracao: '30 min',
+  skills: ['Passé Composé', 'Imparfait', 'Participes Irréguliers (3/3)'],
+  file: 'aulas/fr-a1-91.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
