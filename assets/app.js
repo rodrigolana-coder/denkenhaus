@@ -327,6 +327,14 @@ const AULAS = {
   skills: ['Reading Comprehension', 'Culture', 'Adverbs of Frequency'],
   file: 'aulas/en-a1-35.html',
 },
+'Inglês-A1-36': {
+  icon: '💻',
+  titulo: 'Technology & Free Time',
+  descricao: 'Aprender vocabulário de tecnologia, usar like + -ing para atividades que você gosta e want + to + verbo para planos e intenções.',
+  duracao: '30 min',
+  skills: ['Technology Vocabulary', 'Like + -ing', 'Want + to + Verb'],
+  file: 'aulas/en-a1-36.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
