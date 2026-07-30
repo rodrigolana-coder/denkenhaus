@@ -335,6 +335,14 @@ const AULAS = {
   skills: ['Technology Vocabulary', 'Like + -ing', 'Want + to + Verb'],
   file: 'aulas/en-a1-36.html',
 },
+'Inglês-A1-37': {
+  icon: '🏡',
+  titulo: 'At Home After Work',
+  descricao: 'Revisar like + -ing, want + to + verbo, advérbios de frequência e How often...?, combinando vocabulário de tarefas domésticas e tempo livre.',
+  duracao: '30 min',
+  skills: ['Like + -ing', 'Want + to + Verb', 'Adverbs of Frequency'],
+  file: 'aulas/en-a1-37.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -1068,6 +1076,22 @@ const AULAS = {
   duracao: '30 min',
   skills: ['Adverbes en -ment', 'Position des Adverbes', 'Vie Professionnelle'],
   file: 'aulas/fr-a1-94.html',
+},
+'Francês-A2-35': {
+  icon: '🍁',
+  titulo: 'Curiosité: Le Québec',
+  descricao: 'Texto de leitura sobre a região francófona do Québec no Canadá, sua história, cultura e diferenças linguísticas, com 12 perguntas de compreensão.',
+  duracao: '20 min',
+  skills: ['Reading Comprehension', 'Culture', 'Francophonie'],
+  file: 'aulas/fr-a1-95.html',
+},
+'Francês-A2-36': {
+  icon: '🔁',
+  titulo: 'Révision (classes 93 et 94)',
+  descricao: 'Revisar o plus-que-parfait e os advérbios, falando sobre estudos, estágios e experiências profissionais de forma mais natural.',
+  duracao: '30 min',
+  skills: ['Plus-que-parfait', 'Adverbes', 'Révision'],
+  file: 'aulas/fr-a1-96.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
