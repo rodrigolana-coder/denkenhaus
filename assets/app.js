@@ -343,6 +343,14 @@ const AULAS = {
   skills: ['Like + -ing', 'Want + to + Verb', 'Adverbs of Frequency'],
   file: 'aulas/en-a1-37.html',
 },
+'Inglês-A1-38': {
+  icon: '🎬',
+  titulo: 'What Are You Doing?',
+  descricao: 'Apresentar o Present Continuous, distinguindo-o do Present Simple, para perguntar e responder sobre ações acontecendo agora.',
+  duracao: '30 min',
+  skills: ['Present Continuous', 'Present Simple vs Continuous', 'Verb + -ing'],
+  file: 'aulas/en-a1-38.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
