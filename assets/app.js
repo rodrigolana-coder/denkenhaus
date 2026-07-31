@@ -351,6 +351,14 @@ const AULAS = {
   skills: ['Present Continuous', 'Present Simple vs Continuous', 'Verb + -ing'],
   file: 'aulas/en-a1-38.html',
 },
+'Inglês-A1-40': {
+  icon: '🦅',
+  titulo: 'Curiosity: Why Is the Bald Eagle the Symbol of the United States?',
+  descricao: 'Texto de leitura sobre a águia-de-cabeça-branca como símbolo nacional dos EUA, revisando vocabulário de natureza e Present Simple, com 10 perguntas de compreensão.',
+  duracao: '20 min',
+  skills: ['Reading Comprehension', 'Culture', 'Nature Vocabulary'],
+  file: 'aulas/en-a1-40.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
