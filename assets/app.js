@@ -49,6 +49,14 @@ const AULAS = {
     duracao: '25 min', skills: ['Conversação','Gramática','Vocabulário'],
     file: 'aulas/gl-a1-1.html',
   },
+'Italiano-A1-1': {
+  icon: '👋',
+  titulo: 'Piacere!',
+  descricao: 'Aprender saudações, apresentar-se, perguntar o nome, usar essere e chiamarsi e reconhecer os números de 0 a 10.',
+  duracao: '30 min',
+  skills: ['Saluti', 'Presentarsi', 'Essere / Chiamarsi'],
+  file: 'aulas/it-a1-1.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
