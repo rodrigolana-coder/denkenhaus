@@ -1,0 +1,301 @@
+<!-- Italiano A1 — Aula 1: Piacere! (Salutare e presentarsi) -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it1.png" alt="Due nuovi studenti"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Due nuovi studenti</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Chiara</span><span class="dialog-text">Ciao! Io sono Chiara. Come ti chiami?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Mi chiamo Luca.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Chiara</span><span class="dialog-text">Piacere, Luca!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Piacere mio!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Chiara</span><span class="dialog-text">Sei nuovo qui?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Sì, sono nuovo.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it1-1.png" alt="Dal medico"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it1-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Dal medico</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Dottor Romano</span><span class="dialog-text">Buongiorno, sono il dottor Romano.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sig. Bianchi</span><span class="dialog-text">Buongiorno, dottore. Sono il signor Bianchi.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Dottor Romano</span><span class="dialog-text">Piacere, signor Bianchi.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sig. Bianchi</span><span class="dialog-text">Piacere.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Dottor Romano</span><span class="dialog-text">Come sta?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sig. Bianchi</span><span class="dialog-text">Bene, grazie.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it1-2.png" alt="Alla reception dell'hotel"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it1-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Alla reception dell’hotel</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Buonasera! Benvenuta all’Hotel Panorama.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Buonasera. Mi chiamo Sara Conti.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Piacere, signora Conti. Io sono Elena.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Piacere!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">La sua camera è la numero otto.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Grazie!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Prego!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — I saluti</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">Ciao!</td><td>Oi! / Tchau!</td><td class="fr-example">Ciao! Come ti chiami?</td></tr>
+      <tr><td class="fr-word">Buongiorno!</td><td>Bom dia!</td><td class="fr-example">Buongiorno, sono il dottor Romano.</td></tr>
+      <tr><td class="fr-word">Buonasera!</td><td>Boa tarde! / Boa noite!</td><td class="fr-example">Buonasera! Benvenuta all’Hotel Panorama.</td></tr>
+      <tr><td class="fr-word">Buonanotte!</td><td>Boa noite!</td><td class="fr-example">Buonanotte, a domani!</td></tr>
+      <tr><td class="fr-word">Arrivederci!</td><td>Até logo!</td><td class="fr-example">Arrivederci, a presto!</td></tr>
+      <tr><td class="fr-word">Benvenuto!</td><td>Bem-vindo!</td><td class="fr-example">Benvenuto nella nostra scuola!</td></tr>
+      <tr><td class="fr-word">Benvenuta!</td><td>Bem-vinda!</td><td class="fr-example">Benvenuta all’Hotel Panorama.</td></tr>
+      <tr><td class="fr-word">Grazie!</td><td>Obrigado/a!</td><td class="fr-example">Grazie! — Prego!</td></tr>
+      <tr><td class="fr-word">Prego!</td><td>De nada!</td><td class="fr-example">Grazie! — Prego!</td></tr>
+      <tr><td class="fr-word">Piacere!</td><td>Prazer!</td><td class="fr-example">Piacere, Luca!</td></tr>
+      <tr><td class="fr-word">Piacere mio!</td><td>O prazer é meu!</td><td class="fr-example">Piacere, Luca! — Piacere mio!</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>Italiano</th><th>Tradução</th><th>Exemplo</th></tr>
+
+      <tr><td class="fr-word">Io sono…</td><td>Eu sou…</td><td class="fr-example">Io sono Chiara.</td></tr>
+      <tr><td class="fr-word">Sono…</td><td>Sou…</td><td class="fr-example">Sono Luca.</td></tr>
+      <tr><td class="fr-word">Mi chiamo…</td><td>Eu me chamo…</td><td class="fr-example">Mi chiamo Sara Conti.</td></tr>
+      <tr><td class="fr-word">Come ti chiami?</td><td>Como você se chama?</td><td class="fr-example">Come ti chiami? — Mi chiamo Luca.</td></tr>
+      <tr><td class="fr-word">Sei nuovo?</td><td>Você é novo?</td><td class="fr-example">Sei nuovo qui?</td></tr>
+      <tr><td class="fr-word">Sei nuova?</td><td>Você é nova?</td><td class="fr-example">Sei nuova qui?</td></tr>
+      <tr><td class="fr-word">Sì</td><td>Sim</td><td class="fr-example">Sì, sono nuovo.</td></tr>
+      <tr><td class="fr-word">No</td><td>Não</td><td class="fr-example">No, non sono nuovo.</td></tr>
+      <tr><td class="fr-word">Come sta?</td><td>Como o senhor/a senhora está?</td><td class="fr-example">Come sta? — Bene, grazie.</td></tr>
+      <tr><td class="fr-word">Bene, grazie.</td><td>Bem, obrigado/a.</td><td class="fr-example">Come sta? — Bene, grazie.</td></tr>
+      <tr><td class="fr-word">Signore</td><td>Senhor</td><td class="fr-example">Sono il signor Bianchi.</td></tr>
+      <tr><td class="fr-word">Signora</td><td>Senhora</td><td class="fr-example">Piacere, signora Conti.</td></tr>
+      <tr><td class="fr-word">Dottore</td><td>Doutor / médico</td><td class="fr-example">Sono il dottor Romano.</td></tr>
+      <tr><td class="fr-word">Hotel</td><td>Hotel</td><td class="fr-example">Benvenuta all’Hotel Panorama.</td></tr>
+      <tr><td class="fr-word">Camera</td><td>Quarto</td><td class="fr-example">La sua camera è la numero otto.</td></tr>
+    </table>
+
+    <div class="grammar-rule" style="margin-top:1.5rem;">
+      <h4>I numeri da 0 a 10</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Número</th><th>Italiano</th><th>Português</th></tr>
+        <tr><td>0</td><td>zero</td><td>zero</td></tr>
+        <tr><td>1</td><td>uno</td><td>um</td></tr>
+        <tr><td>2</td><td>due</td><td>dois</td></tr>
+        <tr><td>3</td><td>tre</td><td>três</td></tr>
+        <tr><td>4</td><td>quattro</td><td>quatro</td></tr>
+        <tr><td>5</td><td>cinque</td><td>cinco</td></tr>
+        <tr><td>6</td><td>sei</td><td>seis</td></tr>
+        <tr><td>7</td><td>sette</td><td>sete</td></tr>
+        <tr><td>8</td><td>otto</td><td>oito</td></tr>
+        <tr><td>9</td><td>nove</td><td>nove</td></tr>
+        <tr><td>10</td><td>dieci</td><td>dez</td></tr>
+      </table>
+      <p style="font-size:0.85rem;color:#5a6e8a;margin-top:0.5rem;">⚠️ <strong>Attenzione:</strong> a palavra <strong>sei</strong> pode significar "você é" ou o número "seis" — o contexto define o sentido. Ex: <em>Sei italiano?</em> (Você é italiano?) × <em>La camera numero sei.</em> (O quarto número seis.)</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica — Salutare e presentarsi</div>
+
+    <div class="grammar-rule">
+      <h4>1. Il verbo essere — io e tu</h4>
+      <p>O verbo <strong>essere</strong> significa <strong>ser</strong> ou <strong>estar</strong>.</p>
+      <table class="fr-vocab-table">
+        <tr><th>Pronome</th><th>Verbo</th><th>Português</th></tr>
+        <tr><td>io</td><td>sono</td><td>eu sou / estou</td></tr>
+        <tr><td>tu</td><td>sei</td><td>você é / está</td></tr>
+      </table>
+      <p class="example">Io sono Chiara.</p>
+      <p class="example">Sono Luca.</p>
+      <p class="example">Tu sei Marco.</p>
+      <p class="example">Sei nuovo?</p>
+      <p>Em italiano, o pronome geralmente pode ser omitido, pois a forma do verbo já indica a pessoa: <strong>Io sono Luca.</strong> / <strong>Sono Luca.</strong> — a segunda forma é normalmente mais natural.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>2. Frasi affermative e domande</h4>
+      <p>Para transformar uma afirmação em pergunta, geralmente não mudamos a ordem das palavras — a entonação indica que é uma pergunta.</p>
+      <p class="example">Sei nuovo. (afirmação) → Sei nuovo? (pergunta)</p>
+      <p class="example">Sei Luca?</p>
+      <p class="example">Sei italiana?</p>
+      <p class="example">Sei uno studente?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>3. Il verbo chiamarsi</h4>
+      <p>O verbo <strong>chiamarsi</strong> significa <strong>chamar-se</strong>.</p>
+      <table class="fr-vocab-table">
+        <tr><th>Pronome</th><th>Forma</th><th>Português</th></tr>
+        <tr><td>io</td><td>mi chiamo</td><td>eu me chamo</td></tr>
+        <tr><td>tu</td><td>ti chiami</td><td>você se chama</td></tr>
+      </table>
+      <p class="example">Mi chiamo Laura.</p>
+      <p class="example">Come ti chiami?</p>
+      <p class="example">Ti chiami Marco?</p>
+      <p>Também podemos usar o verbo <strong>essere</strong> para dizer o nome: <strong>Sono Paolo.</strong></p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>4. Ciao, buongiorno e buonasera</h4>
+      <p><strong>Ciao</strong> — situações informais, com amigos, colegas e pessoas conhecidas.</p>
+      <p class="example">Ciao! Come ti chiami?</p>
+      <p><strong>Buongiorno</strong> — pela manhã, e também em situações formais.</p>
+      <p class="example">Buongiorno, sono il dottor Romano.</p>
+      <p><strong>Buonasera</strong> — no fim da tarde e à noite.</p>
+      <p class="example">Buonasera! Benvenuta all’Hotel Panorama.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>5. Piacere</h4>
+      <p><strong>Piacere</strong> é utilizado quando conhecemos alguém.</p>
+      <p class="example">Piacere! — Prazer!</p>
+      <p class="example">Piacere mio! — O prazer é meu!</p>
+      <p class="example">Piacere di conoscerti! — Prazer em conhecer você!</p>
+      <p><strong>Exemplo de diálogo:</strong></p>
+      <p class="example">A: Mi chiamo Giulia. — B: Piacere, Giulia! — A: Piacere mio!</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Oi! Eu sou Marco.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ciao! Sono Marco.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Bom dia! Eu me chamo Laura.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Buongiorno! Mi chiamo Laura.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Como você se chama?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Come ti chiami?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Prazer, Luca!</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Piacere, Luca!</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. O prazer é meu.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Piacere mio.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Você é novo aqui?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Sei nuovo qui?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Sim, eu sou novo.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Sì, sono nuovo.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Você é italiana?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Sei italiana?</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Boa noite! Bem-vinda ao hotel.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Buonasera! Benvenuta all’hotel.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. O quarto é o número oito.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La camera è la numero otto.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Bem, obrigado.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Bene, grazie.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Até logo!</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Arrivederci!</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em italiano com frases completas.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Come ti chiami?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Sei un nuovo studente o una nuova studentessa?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Come saluti un amico?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Come saluti una persona al mattino?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Come saluti una persona alla sera?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Come rispondi quando una persona dice “Piacere”?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Qual è il tuo numero preferito da zero a dieci?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Quali numeri italiani ricordi?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Come ti presenti a un nuovo compagno?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come presenti una persona in una situazione formale?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
