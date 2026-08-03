@@ -1133,6 +1133,14 @@ const AULAS = {
   skills: ['Plus-que-parfait', 'Adverbes', 'Révision'],
   file: 'aulas/fr-a1-96.html',
 },
+'Francês-A2-37': {
+  icon: '🔍',
+  titulo: 'Rechercher un emploi',
+  descricao: 'Compreender uma oferta de emprego, apresentar formação e experiência, e falar de competências usando savoir + infinitivo, être capable de, maîtriser e avoir de l\'expérience.',
+  duracao: '30 min',
+  skills: ['Savoir + Infinitif', 'Être Capable De', 'Recherche d\'Emploi'],
+  file: 'aulas/fr-a1-97.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
