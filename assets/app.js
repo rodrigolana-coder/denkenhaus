@@ -359,6 +359,22 @@ const AULAS = {
   skills: ['Present Continuous', 'Present Simple vs Continuous', 'Verb + -ing'],
   file: 'aulas/en-a1-38.html',
 },
+'Inglês-A1-39': {
+  icon: '⏱️',
+  titulo: 'Free Time Activities',
+  descricao: 'Aprender vocabulário de atividades de lazer com play/go/do, revisando Present Simple e Present Continuous.',
+  duracao: '30 min',
+  skills: ['Play/Go/Do Collocations', 'Present Simple vs Continuous', 'Free Time'],
+  file: 'aulas/en-a1-39.html',
+},
+'Inglês-A1-41': {
+  icon: '💡',
+  titulo: 'Making Suggestions',
+  descricao: 'Aprender e usar pronomes objeto (me, you, him, her, it, us, them) e fazer/responder sugestões naturalmente com Shall we...?, Let\'s... e Why don\'t we...?',
+  duracao: '30 min',
+  skills: ['Object Pronouns', 'Making Suggestions', 'Like + -ing'],
+  file: 'aulas/en-a1-41.html',
+},
 'Inglês-A1-40': {
   icon: '🦅',
   titulo: 'Curiosity: Why Is the Bald Eagle the Symbol of the United States?',
