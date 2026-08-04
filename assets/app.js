@@ -57,6 +57,13 @@ const AULAS = {
   skills: ['Saluti', 'Presentarsi', 'Essere / Chiamarsi'],
   file: 'aulas/it-a1-1.html',
 },
+'Italiano-A1-2': {
+  icon: '🌍',
+  titulo: 'Volti e nomi',
+  descricao: 'Usar o verbo essere na terceira pessoa (lui/lei), perguntar quem é alguém e de onde é, e aprender países e nacionalidades.',
+  duracao: '30 min',
+  skills: ['Chi è?', 'Di dov\'è?', 'Nazionalità'],
+  file: 'aulas/it-a1-2.html',
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
