@@ -65,6 +65,14 @@ const AULAS = {
   skills: ['Chi è?', 'Di dov\'è?', 'Nazionalità'],
   file: 'aulas/it-a1-2.html',
 },
+'Italiano-A1-3': {
+  icon: '🔁',
+  titulo: 'Revisione delle classi 1 e 2',
+  descricao: 'Revisar cumprimentos, apresentações, os verbos essere e chiamarsi, perguntar de onde alguém é, países, nacionalidades e os números de 0 a 10.',
+  duracao: '30 min',
+  skills: ['Revisione', 'Verbo Essere', 'Nazionalità'],
+  file: 'aulas/it-a1-3.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
@@ -390,6 +398,14 @@ const AULAS = {
   duracao: '20 min',
   skills: ['Reading Comprehension', 'Culture', 'Nature Vocabulary'],
   file: 'aulas/en-a1-40.html',
+},
+'Inglês-A1-42': {
+  icon: '🎸',
+  titulo: 'Amazing Abilities',
+  descricao: 'Usar can e can\'t para falar sobre habilidades, perguntar e responder com Can...? e aprender vocabulário de habilidades comuns como idiomas, instrumentos e esportes.',
+  duracao: '30 min',
+  skills: ['Can/Can\'t', 'Abilities', 'Questions with Can'],
+  file: 'aulas/en-a1-42.html',
 },
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
