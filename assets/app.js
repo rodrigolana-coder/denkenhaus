@@ -73,6 +73,14 @@ const AULAS = {
   skills: ['Revisione', 'Verbo Essere', 'Nazionalità'],
   file: 'aulas/it-a1-3.html',
 },
+'Italiano-A1-4': {
+  icon: '🎬',
+  titulo: 'Il mio film preferito',
+  descricao: 'Falar sobre filmes, gêneros cinematográficos, atores e atrizes favoritos, além de usar mio, tuo, suo, mia, tua e sua.',
+  duracao: '35 min',
+  skills: ['Cinema', 'Possessivi', 'Preferenze'],
+  file: 'aulas/it-a1-4.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
