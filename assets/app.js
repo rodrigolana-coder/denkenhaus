@@ -415,6 +415,14 @@ const AULAS = {
   skills: ['Can/Can\'t', 'Abilities', 'Questions with Can'],
   file: 'aulas/en-a1-42.html',
 },
+'Inglês-A1-43': {
+  icon: '🎫',
+  titulo: 'Dates & Events',
+  descricao: 'Aprender os números ordinais de 1º a 31º, dizer e entender datas, e usar corretamente in, on e at para falar de shows, peças e eventos.',
+  duracao: '30 min',
+  skills: ['Ordinal Numbers', 'In/On/At', 'Dates & Events'],
+  file: 'aulas/en-a1-43.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
