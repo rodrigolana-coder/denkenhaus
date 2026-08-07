@@ -1,0 +1,300 @@
+<!-- Italiano A1 — Aula 4: Il mio film preferito -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it4.png" alt="Il film preferito"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it4.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Il film preferito</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Martina</span><span class="dialog-text">Qual è il tuo film preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Il mio film preferito è La vita è bella.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Martina</span><span class="dialog-text">È un film italiano?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Sì, è italiano.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Martina</span><span class="dialog-text">Chi è il tuo attore preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Il mio attore preferito è Roberto Benigni. E il tuo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Martina</span><span class="dialog-text">Il mio attore preferito è brasiliano.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it4-1.png" alt="Una famosa attrice"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it4-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Una famosa attrice</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Chi è quella donna?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Lei è Clara Moretti. È un’attrice italiana.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Qual è il suo film preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Il suo film preferito è un film francese.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">E chi è la sua attrice preferita?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">La sua attrice preferita è americana.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">È famosa?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Sì, è molto famosa.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it4-2.png" alt="Un piccolo sondaggio"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it4-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Un piccolo sondaggio</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Ciao, Marco! Posso farti una domanda?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Certo!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Qual è il tuo film preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Il mio film preferito è una commedia spagnola.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">E qual è il tuo genere preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Il mio genere preferito è la commedia. E il tuo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Il mio genere preferito è la fantascienza.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Chi è la tua attrice preferita?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">La mia attrice preferita è inglese.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — Il cinema</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">il film</td><td>o filme</td></tr>
+      <tr><td class="fr-word">il cinema</td><td>o cinema</td></tr>
+      <tr><td class="fr-word">l’attore</td><td>o ator</td></tr>
+      <tr><td class="fr-word">l’attrice</td><td>a atriz</td></tr>
+      <tr><td class="fr-word">il regista</td><td>o diretor</td></tr>
+      <tr><td class="fr-word">la regista</td><td>a diretora</td></tr>
+      <tr><td class="fr-word">il personaggio</td><td>o personagem</td></tr>
+      <tr><td class="fr-word">la storia</td><td>a história</td></tr>
+      <tr><td class="fr-word">il genere</td><td>o gênero</td></tr>
+      <tr><td class="fr-word">il film preferito</td><td>o filme favorito</td></tr>
+      <tr><td class="fr-word">l’attore preferito</td><td>o ator favorito</td></tr>
+      <tr><td class="fr-word">l’attrice preferita</td><td>a atriz favorita</td></tr>
+      <tr><td class="fr-word">famoso / famosa</td><td>famoso / famosa</td></tr>
+      <tr><td class="fr-word">interessante</td><td>interessante</td></tr>
+      <tr><td class="fr-word">divertente</td><td>divertido</td></tr>
+      <tr><td class="fr-word">romantico / romantica</td><td>romântico / romântica</td></tr>
+      <tr><td class="fr-word">noioso / noiosa</td><td>entediante</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>I generi cinematografici</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">la commedia</td><td>a comédia</td></tr>
+      <tr><td class="fr-word">il film d’azione</td><td>o filme de ação</td></tr>
+      <tr><td class="fr-word">il film romantico</td><td>o filme romântico</td></tr>
+      <tr><td class="fr-word">il film horror</td><td>o filme de terror</td></tr>
+      <tr><td class="fr-word">la fantascienza</td><td>a ficção científica</td></tr>
+      <tr><td class="fr-word">il film d’animazione</td><td>o filme de animação</td></tr>
+      <tr><td class="fr-word">il documentario</td><td>o documentário</td></tr>
+      <tr><td class="fr-word">il film drammatico</td><td>o drama</td></tr>
+      <tr><td class="fr-word">il film storico</td><td>o filme histórico</td></tr>
+      <tr><td class="fr-word">il musical</td><td>o musical</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>Paese</th><th>Nazionalità</th></tr>
+      <tr><td>il Brasile</td><td>brasiliano / brasiliana</td></tr>
+      <tr><td>l’Italia</td><td>italiano / italiana</td></tr>
+      <tr><td>la Francia</td><td>francese</td></tr>
+      <tr><td>la Spagna</td><td>spagnolo / spagnola</td></tr>
+      <tr><td>la Germania</td><td>tedesco / tedesca</td></tr>
+      <tr><td>il Giappone</td><td>giapponese</td></tr>
+      <tr><td>la Cina</td><td>cinese</td></tr>
+      <tr><td>il Messico</td><td>messicano / messicana</td></tr>
+      <tr><td>l’Argentina</td><td>argentino / argentina</td></tr>
+      <tr><td>gli Stati Uniti</td><td>americano / americana</td></tr>
+      <tr><td>il Regno Unito</td><td>inglese</td></tr>
+      <tr><td>la Russia</td><td>russo / russa</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica — Gli aggettivi possessivi</div>
+
+    <div class="grammar-rule">
+      <h4>A. Gli aggettivi possessivi</h4>
+      <p>Os possessivos indicam a quem uma pessoa ou coisa pertence. Nesta aula estudaremos:</p>
+      <table class="fr-vocab-table">
+        <tr><th>Pessoa</th><th>Masculino</th><th>Feminino</th><th>Português</th></tr>
+        <tr><td>io</td><td>il mio</td><td>la mia</td><td>meu / minha</td></tr>
+        <tr><td>tu</td><td>il tuo</td><td>la tua</td><td>seu / sua</td></tr>
+        <tr><td>lui / lei</td><td>il suo</td><td>la sua</td><td>dele / dela</td></tr>
+      </table>
+      <p class="example">Il mio film preferito è italiano.</p>
+      <p class="example">La mia attrice preferita è inglese.</p>
+      <p class="example">Qual è il tuo film preferito?</p>
+      <p class="example">Il suo attore preferito è americano.</p>
+      <p class="example">La sua regista preferita è francese.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. O possessivo concorda com a coisa</h4>
+      <p>Em italiano, o possessivo concorda com a palavra que vem depois, e não com a pessoa que possui algo.</p>
+      <p><strong>Palavra masculina:</strong> il mio film, il tuo attore, il suo genere</p>
+      <p><strong>Palavra feminina:</strong> la mia attrice, la tua commedia, la sua nazionalità</p>
+      <p>Por isso dizemos: Marco e <strong>il suo film</strong> preferito. Giulia e <strong>il suo film</strong> preferito. Mesmo que Marco seja homem e Giulia seja mulher, usamos <strong>suo</strong>, porque <strong>film</strong> é masculino.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Suo e sua</h4>
+      <p><strong>Suo</strong> e <strong>sua</strong> podem significar tanto "dele" quanto "dela".</p>
+      <p class="example">Marco ama il cinema. Il suo film preferito è italiano.</p>
+      <p class="example">Giulia ama il cinema. Il suo film preferito è italiano.</p>
+      <p class="example">Marco parla di Anna. La sua attrice preferita è francese.</p>
+      <p>O contexto mostra quem é o possuidor.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Qual è il tuo…?</h4>
+      <p>Utilizamos <strong>Qual è…?</strong> para perguntar qual é a preferência de alguém.</p>
+      <p class="example">Qual è il tuo film preferito?</p>
+      <p class="example">Qual è il tuo genere preferito?</p>
+      <p class="example">Qual è la tua attrice preferita?</p>
+      <p><strong>Respostas:</strong> Il mio film preferito è… / Il mio genere preferito è… / La mia attrice preferita è…</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Nazionalità maschili e femminili</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Maschile</th><th>Femminile</th></tr>
+        <tr><td>italiano</td><td>italiana</td></tr>
+        <tr><td>brasiliano</td><td>brasiliana</td></tr>
+        <tr><td>spagnolo</td><td>spagnola</td></tr>
+        <tr><td>americano</td><td>americana</td></tr>
+        <tr><td>russo</td><td>russa</td></tr>
+        <tr><td>tedesco</td><td>tedesca</td></tr>
+      </table>
+      <p>As terminadas em <strong>-e</strong> mantêm a mesma forma: un attore francese / un’attrice francese; un regista inglese / una regista inglese; un attore giapponese / un’attrice giapponese.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Qual é o seu filme favorito?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Qual è il tuo film preferito?</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Meu filme favorito é italiano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il mio film preferito è italiano.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Qual é o seu gênero favorito?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Qual è il tuo genere preferito?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Meu gênero favorito é a comédia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il mio genere preferito è la commedia.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Quem é o seu ator favorito?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Chi è il tuo attore preferito?</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Meu ator favorito é brasileiro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il mio attore preferito è brasiliano.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Minha atriz favorita é francesa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La mia attrice preferita è francese.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. O filme favorito dele é americano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il suo film preferito è americano.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. O filme favorito dela é espanhol.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il suo film preferito è spagnolo.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. A atriz favorita dele é italiana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La sua attrice preferita è italiana.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. O diretor favorito dela é japonês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il suo regista preferito è giapponese.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Meu filme favorito é muito interessante.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il mio film preferito è molto interessante.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em italiano com frases completas.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Qual è il tuo film preferito?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Di quale paese è il tuo film preferito?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Qual è il tuo genere cinematografico preferito?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Chi è il tuo attore preferito?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Di dov’è il tuo attore preferito?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Chi è la tua attrice preferita?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Qual è il suo film più famoso?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Preferisci le commedie, i film d’azione o i film horror? Perché?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Qual è un film famoso del tuo paese?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come descrivi il tuo film preferito?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
