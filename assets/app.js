@@ -81,6 +81,14 @@ const AULAS = {
   skills: ['Cinema', 'Possessivi', 'Preferenze'],
   file: 'aulas/it-a1-4.html',
 },
+'Italiano-A1-5': {
+  icon: '☕',
+  titulo: 'Curiosità: Il caffè in Italia',
+  descricao: 'Conhecer a cultura do café na Itália, os hábitos dos italianos e os principais tipos de café.',
+  duracao: '30 min',
+  skills: ['Curiosità', 'Caffè', 'Comprensione'],
+  file: 'aulas/it-a1-5.html',
+},
 'Italiano-A1-6': {
   icon: '☕',
   titulo: 'Il caffè in Italia',
