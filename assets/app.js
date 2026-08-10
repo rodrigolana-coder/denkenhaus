@@ -81,6 +81,14 @@ const AULAS = {
   skills: ['Cinema', 'Possessivi', 'Preferenze'],
   file: 'aulas/it-a1-4.html',
 },
+'Italiano-A1-6': {
+  icon: '☕',
+  titulo: 'Il caffè in Italia',
+  descricao: 'Pedir café em um bar italiano, conhecer diferentes tipos de café e falar sobre preferências e hábitos culturais.',
+  duracao: '35 min',
+  skills: ['Caffè', 'Al bar', 'Cultura italiana'],
+  file: 'aulas/it-a1-6.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
