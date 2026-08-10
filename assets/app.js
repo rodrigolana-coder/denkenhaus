@@ -439,6 +439,14 @@ const AULAS = {
   skills: ['Ordinal Numbers', 'In/On/At', 'Dates & Events'],
   file: 'aulas/en-a1-43.html',
 },
+'Inglês-A1-44': {
+  icon: '🔁',
+  titulo: 'What Can You Do & When?',
+  descricao: 'Revisar can/can\'t, habilidades, números ordinais, datas e as preposições in/on/at combinando tudo em conversas naturais.',
+  duracao: '30 min',
+  skills: ['Can/Can\'t Review', 'Ordinal Numbers Review', 'In/On/At Review'],
+  file: 'aulas/en-a1-44.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
