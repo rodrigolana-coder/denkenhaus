@@ -1,0 +1,310 @@
+<!-- Italiano A1 — Aula 5: Curiosità — il caffè in Italia -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it5.png" alt="Al bar"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it5.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Al bar</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Barista</span><span class="dialog-text">Buongiorno! Desidera?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marta</span><span class="dialog-text">Buongiorno. Vorrei un caffè, per favore.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Barista</span><span class="dialog-text">Certo. Lo prende qui al banco?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marta</span><span class="dialog-text">Sì, grazie.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Barista</span><span class="dialog-text">Ecco il suo caffè.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marta</span><span class="dialog-text">Quanto costa?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Barista</span><span class="dialog-text">Un euro e cinquanta.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marta</span><span class="dialog-text">Grazie!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Barista</span><span class="dialog-text">Prego!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it5-1.png" alt="Un cappuccino a colazione"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it5-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Un cappuccino a colazione</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Cosa prendi a colazione?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Pedro</span><span class="dialog-text">Prendo un cappuccino e un cornetto.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Anch’io! Il mio cornetto preferito è quello al cioccolato.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Pedro</span><span class="dialog-text">Il mio preferito è quello alla crema.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Prendi il cappuccino anche dopo pranzo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Pedro</span><span class="dialog-text">A volte. È strano in Italia?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Non è vietato, ma molti italiani lo bevono soprattutto al mattino.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it5-2.png" alt="Quale caffè preferisci?"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it5-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Quale caffè preferisci?</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Qual è il tuo caffè preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Mi piace il caffè macchiato. E il tuo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Preferisco il caffè lungo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Bevi il caffè con lo zucchero?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">No, lo bevo senza zucchero.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Io invece metto sempre un po’ di zucchero.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Quanti caffè bevi al giorno?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Di solito due.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — Al bar</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">il bar</td><td>o café / bar</td></tr>
+      <tr><td class="fr-word">il barista</td><td>o atendente / barista</td></tr>
+      <tr><td class="fr-word">il banco</td><td>o balcão</td></tr>
+      <tr><td class="fr-word">il tavolo</td><td>a mesa</td></tr>
+      <tr><td class="fr-word">ordinare</td><td>pedir</td></tr>
+      <tr><td class="fr-word">prendere</td><td>tomar / pegar / pedir</td></tr>
+      <tr><td class="fr-word">bere</td><td>beber</td></tr>
+      <tr><td class="fr-word">Desidera?</td><td>O que deseja?</td></tr>
+      <tr><td class="fr-word">Vorrei…</td><td>Eu gostaria de…</td></tr>
+      <tr><td class="fr-word">Per favore</td><td>Por favor</td></tr>
+      <tr><td class="fr-word">Ecco…</td><td>Aqui está…</td></tr>
+      <tr><td class="fr-word">Quanto costa?</td><td>Quanto custa?</td></tr>
+      <tr><td class="fr-word">Qui</td><td>Aqui</td></tr>
+      <tr><td class="fr-word">Al banco</td><td>No balcão</td></tr>
+      <tr><td class="fr-word">Al tavolo</td><td>Na mesa</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>Tipi di caffè</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">il caffè</td><td>o café / espresso</td></tr>
+      <tr><td class="fr-word">il caffè espresso</td><td>o café expresso</td></tr>
+      <tr><td class="fr-word">il caffè lungo</td><td>o café com mais água</td></tr>
+      <tr><td class="fr-word">il caffè ristretto</td><td>o café curto e concentrado</td></tr>
+      <tr><td class="fr-word">il caffè macchiato</td><td>o café com um pouco de leite</td></tr>
+      <tr><td class="fr-word">il cappuccino</td><td>o cappuccino</td></tr>
+      <tr><td class="fr-word">il caffellatte</td><td>o café com leite</td></tr>
+      <tr><td class="fr-word">il latte macchiato</td><td>o leite com um pouco de café</td></tr>
+      <tr><td class="fr-word">il caffè decaffeinato</td><td>o café descafeinado</td></tr>
+      <tr><td class="fr-word">il caffè corretto</td><td>o café com uma bebida alcoólica</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>La colazione</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">la colazione</td><td>o café da manhã</td></tr>
+      <tr><td class="fr-word">il cornetto</td><td>o croissant italiano</td></tr>
+      <tr><td class="fr-word">il cornetto semplice</td><td>o cornetto simples</td></tr>
+      <tr><td class="fr-word">il cornetto alla crema</td><td>o cornetto com creme</td></tr>
+      <tr><td class="fr-word">il cornetto al cioccolato</td><td>o cornetto com chocolate</td></tr>
+      <tr><td class="fr-word">lo zucchero</td><td>o açúcar</td></tr>
+      <tr><td class="fr-word">il latte</td><td>o leite</td></tr>
+      <tr><td class="fr-word">la crema</td><td>o creme</td></tr>
+      <tr><td class="fr-word">la tazza</td><td>a xícara</td></tr>
+      <tr><td class="fr-word">il bicchiere</td><td>o copo</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica e curiosità culturali</div>
+
+    <div class="grammar-rule">
+      <h4>A. In Italia, un “caffè” è normalmente un espresso</h4>
+      <p>Ao pedir <strong>Un caffè, per favore</strong>, normalmente você receberá uma xícara pequena de café espresso. Não é necessário dizer sempre <strong>un espresso</strong>, porque <strong>un caffè</strong> já costuma ter esse significado.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. Il cappuccino e la colazione</h4>
+      <p>Na Itália, o cappuccino é muito associado ao café da manhã. Uma combinação muito comum é <strong>Un cappuccino e un cornetto.</strong> Muitos italianos preferem tomar cappuccino pela manhã e escolher um café menor depois do almoço ou do jantar — isso é um hábito cultural, não uma regra obrigatória.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Bere il caffè al banco</h4>
+      <p>É comum entrar em um bar, pedir um café e bebê-lo rapidamente em pé, no balcão: <strong>Prendo un caffè al banco.</strong> Em alguns estabelecimentos, consumir sentado à mesa pode ter um preço diferente do consumo no balcão.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Il “bar” italiano</h4>
+      <p>Em italiano, <strong>bar</strong> não significa apenas um local de bebidas alcoólicas. Um bar italiano pode vender caffè, cappuccino, cornetti, panini, succhi, acqua e dolci, e pode funcionar desde as primeiras horas da manhã.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Pagare prima o dopo?</h4>
+      <p>O procedimento pode variar: pagar primeiro no caixa e mostrar o recibo ao barista; pedir primeiro e pagar depois; ou pagar diretamente ao barista. Uma frase útil: <strong>Devo pagare prima?</strong> (Preciso pagar antes?)</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Espressioni utili — Per ordinare</h4>
+      <p class="example">Vorrei un caffè, per favore.</p>
+      <p class="example">Prendo un cappuccino.</p>
+      <p class="example">Per me un caffè macchiato.</p>
+      <p class="example">Un caffè senza zucchero, per favore.</p>
+      <p class="example">Un cappuccino con latte vegetale, per favore.</p>
+
+      <p><strong>Per chiedere informazioni</strong></p>
+      <p class="example">Quanto costa?</p>
+      <p class="example">Posso pagare con la carta?</p>
+      <p class="example">Devo pagare prima?</p>
+      <p class="example">Avete latte vegetale?</p>
+      <p class="example">Posso bere il caffè al tavolo?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Vorrei</h4>
+      <p><strong>Vorrei</strong> significa "eu gostaria" e é uma forma educada de fazer pedidos.</p>
+      <p class="example">Vorrei un caffè.</p>
+      <p class="example">Vorrei un cappuccino.</p>
+      <p class="example">Vorrei un cornetto al cioccolato.</p>
+      <p>É mais delicado do que simplesmente dizer <strong>Voglio un caffè</strong> — <strong>voglio</strong> significa "eu quero" e pode soar muito direto em algumas situações.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Con e senza</h4>
+      <p><strong>con</strong> — com &nbsp;&nbsp; <strong>senza</strong> — sem</p>
+      <p class="example">Un caffè con zucchero.</p>
+      <p class="example">Un caffè senza zucchero.</p>
+      <p class="example">Un cappuccino con latte vegetale.</p>
+      <p class="example">Un cornetto senza crema.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Mi piace e preferisco</h4>
+      <p>Usamos <strong>mi piace</strong> para dizer que gostamos de alguma coisa:</p>
+      <p class="example">Mi piace il caffè.</p>
+      <p class="example">Mi piace il cappuccino.</p>
+      <p>Usamos <strong>preferisco</strong> para indicar preferência:</p>
+      <p class="example">Preferisco il caffè lungo.</p>
+      <p class="example">Preferisco il cappuccino.</p>
+      <p>Para perguntar: <strong>Quale caffè preferisci?</strong></p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Eu gostaria de um café, por favor.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Vorrei un caffè, per favore.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Quanto custa o cappuccino?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Quanto costa il cappuccino?</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Eu tomo café sem açúcar.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Prendo il caffè senza zucchero.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Você prefere café ou cappuccino?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Preferisci il caffè o il cappuccino?</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Meu café favorito é o café macchiato.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il mio caffè preferito è il caffè macchiato.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Eu gostaria de um cornetto com chocolate.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Vorrei un cornetto al cioccolato.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Você toma café no café da manhã?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Prendi il caffè a colazione?</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Eu prefiro café com leite vegetal.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Preferisco il caffè con latte vegetale.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Posso pagar com cartão?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Posso pagare con la carta?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Preciso pagar antes?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Devo pagare prima?</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Nós bebemos o café no balcão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Beviamo il caffè al banco.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Eu tomo dois cafés por dia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Bevo due caffè al giorno.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em italiano com frases completas.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Ti piace il caffè? Perché?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Qual è il tuo tipo di caffè preferito?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Bevi il caffè con o senza zucchero?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Cosa prendi normalmente a colazione?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Preferisci il caffè, il tè o il succo?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Quanti caffè bevi al giorno?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Hai mai bevuto un vero espresso italiano?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Preferisci bere il caffè al banco o al tavolo?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Quali bevande ordini normalmente in un bar?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Quale abitudine italiana legata al caffè trovi interessante?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
