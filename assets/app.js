@@ -97,6 +97,14 @@ const AULAS = {
   skills: ['Caffè', 'Al bar', 'Cultura italiana'],
   file: 'aulas/it-a1-6.html',
 },
+'Italiano-A1-7': {
+  icon: '👨‍👩‍👧‍👦',
+  titulo: 'La mia famiglia',
+  descricao: 'Falar sobre membros da família, usar mio, mia, tuo, tua, suo e sua e perguntar quem são as pessoas.',
+  duracao: '35 min',
+  skills: ['Famiglia', 'Possessivi', 'Chi è? / Chi sono?'],
+  file: 'aulas/it-a1-7.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
