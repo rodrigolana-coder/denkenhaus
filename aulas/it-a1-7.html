@@ -1,0 +1,295 @@
+<!-- Italiano A1 — Aula 7: La mia famiglia -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it7.png" alt="Una foto di famiglia"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it7.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Una foto di famiglia</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Chi è lei?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Kim</span><span class="dialog-text">Lei è mia sorella, Lily.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">E questa donna è tua madre?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Kim</span><span class="dialog-text">Sì, è mia madre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Chi è la signora accanto a lei?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Kim</span><span class="dialog-text">È mia nonna.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Che bella famiglia!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Kim</span><span class="dialog-text">Grazie!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it7-1.png" alt="Mio zio Henry"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it7-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — Mio zio Henry</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Chi è quell’uomo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Lui è mio zio Henry.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">È il fratello di tuo padre?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">No, è il fratello di mia madre.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">E chi sono quelle persone con lui?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Sua moglie Paula e loro figlia Lara.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Allora Lara è tua cugina.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Esatto!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it7-2.png" alt="I nonni di Luca"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it7-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — I nonni di Luca</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Chi sono queste persone nella foto?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Sono i miei nonni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Come si chiamano?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Mio nonno si chiama Carlo e mia nonna si chiama Rosa.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">E questo ragazzo?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">È mio cugino Matteo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">È italiano?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Sì, è italiano. È di Napoli.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — La famiglia</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">la famiglia</td><td>a família</td></tr>
+      <tr><td class="fr-word">i genitori</td><td>os pais</td></tr>
+      <tr><td class="fr-word">il padre</td><td>o pai</td></tr>
+      <tr><td class="fr-word">il papà</td><td>o pai / papai</td></tr>
+      <tr><td class="fr-word">la madre</td><td>a mãe</td></tr>
+      <tr><td class="fr-word">la mamma</td><td>a mãe / mamãe</td></tr>
+      <tr><td class="fr-word">il marito</td><td>o marido</td></tr>
+      <tr><td class="fr-word">la moglie</td><td>a esposa</td></tr>
+      <tr><td class="fr-word">il figlio</td><td>o filho</td></tr>
+      <tr><td class="fr-word">la figlia</td><td>a filha</td></tr>
+      <tr><td class="fr-word">il fratello</td><td>o irmão</td></tr>
+      <tr><td class="fr-word">la sorella</td><td>a irmã</td></tr>
+      <tr><td class="fr-word">il nonno</td><td>o avô</td></tr>
+      <tr><td class="fr-word">la nonna</td><td>a avó</td></tr>
+      <tr><td class="fr-word">i nonni</td><td>os avós</td></tr>
+      <tr><td class="fr-word">lo zio</td><td>o tio</td></tr>
+      <tr><td class="fr-word">la zia</td><td>a tia</td></tr>
+      <tr><td class="fr-word">il cugino</td><td>o primo</td></tr>
+      <tr><td class="fr-word">la cugina</td><td>a prima</td></tr>
+      <tr><td class="fr-word">il nipote</td><td>o neto / sobrinho</td></tr>
+      <tr><td class="fr-word">la nipote</td><td>a neta / sobrinha</td></tr>
+      <tr><td class="fr-word">il bambino</td><td>o menino / a criança</td></tr>
+      <tr><td class="fr-word">la bambina</td><td>a menina / a criança</td></tr>
+    </table>
+
+    <table class="fr-vocab-table" style="margin-top:1.5rem;">
+      <tr><th>Espressioni utili</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">Chi è lui?</td><td>Quem é ele?</td></tr>
+      <tr><td class="fr-word">Chi è lei?</td><td>Quem é ela?</td></tr>
+      <tr><td class="fr-word">Chi sono?</td><td>Quem são?</td></tr>
+      <tr><td class="fr-word">Lui è mio padre.</td><td>Ele é meu pai.</td></tr>
+      <tr><td class="fr-word">Lei è mia madre.</td><td>Ela é minha mãe.</td></tr>
+      <tr><td class="fr-word">Sono i miei nonni.</td><td>São meus avós.</td></tr>
+      <tr><td class="fr-word">Come si chiama?</td><td>Como ele/ela se chama?</td></tr>
+      <tr><td class="fr-word">Si chiama…</td><td>Ele/Ela se chama…</td></tr>
+      <tr><td class="fr-word">È il fratello di…</td><td>É o irmão de…</td></tr>
+      <tr><td class="fr-word">È la sorella di…</td><td>É a irmã de…</td></tr>
+      <tr><td class="fr-word">Accanto a</td><td>Ao lado de</td></tr>
+      <tr><td class="fr-word">Con</td><td>Com</td></tr>
+      <tr><td class="fr-word">Nella foto</td><td>Na foto</td></tr>
+      <tr><td class="fr-word">Esatto!</td><td>Exato! / Isso mesmo!</td></tr>
+    </table>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica — Parlare della famiglia</div>
+
+    <div class="grammar-rule">
+      <h4>A. Mio e mia</h4>
+      <p>Usamos <strong>mio</strong> com palavras masculinas e <strong>mia</strong> com palavras femininas.</p>
+      <p><strong>Maschile:</strong> mio padre, mio fratello, mio nonno, mio zio, mio cugino</p>
+      <p><strong>Femminile:</strong> mia madre, mia sorella, mia nonna, mia zia, mia cugina</p>
+      <p class="example">Lui è mio padre.</p>
+      <p class="example">Lei è mia madre.</p>
+      <p class="example">Marco è mio fratello.</p>
+      <p class="example">Giulia è mia sorella.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. I possessivi con i familiari</h4>
+      <p>Com nomes de parentesco no singular, normalmente não usamos o artigo antes de <strong>mio, tuo, suo</strong>: mio padre, mia madre, tuo fratello, tua sorella, suo marito, sua moglie.</p>
+      <p>Não dizemos normalmente <span style="text-decoration:line-through;">il mio padre</span> — a forma natural é <strong>mio padre</strong>.</p>
+      <p>⚠️ Com palavras no plural, usamos o artigo: i miei genitori, i miei nonni, le mie sorelle, i tuoi fratelli.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Tuo e tua</h4>
+      <p>Usamos <strong>tuo</strong> e <strong>tua</strong> para falar sobre a família da pessoa com quem estamos conversando.</p>
+      <p class="example">Come si chiama tuo padre?</p>
+      <p class="example">Tua madre è italiana?</p>
+      <p class="example">Hai un fratello? Come si chiama?</p>
+      <p class="example">Questa ragazza è tua sorella?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Suo e sua</h4>
+      <p>Usamos <strong>suo</strong> e <strong>sua</strong> para falar sobre algo que pertence a ele ou a ela.</p>
+      <p class="example">suo padre — o pai dele/dela</p>
+      <p class="example">sua madre — a mãe dele/dela</p>
+      <p class="example">Marco è con suo padre.</p>
+      <p class="example">Anna è con sua madre.</p>
+      <p class="example">Luca presenta sua sorella.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Chi è? e Chi sono?</h4>
+      <p>Usamos <strong>Chi è?</strong> para perguntar sobre uma pessoa.</p>
+      <p class="example">A: Chi è lui? — B: È mio fratello.</p>
+      <p class="example">A: Chi è lei? — B: È mia zia.</p>
+      <p>Usamos <strong>Chi sono?</strong> para perguntar sobre duas ou mais pessoas.</p>
+      <p class="example">A: Chi sono? — B: Sono i miei genitori.</p>
+      <p class="example">A: Chi sono queste persone? — B: Sono i miei nonni.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>F. Explicare una relazione familiare</h4>
+      <p>Podemos usar <strong>di</strong> para explicar relações familiares.</p>
+      <p class="example">È il fratello di mia madre.</p>
+      <p class="example">È la sorella di mio padre.</p>
+      <p class="example">È la figlia di mio zio.</p>
+      <p class="example">È il marito di mia sorella.</p>
+      <p><strong>Exemplo:</strong> Paolo è il fratello di mia madre. Paolo è mio zio. — Laura è la figlia di mio zio. Laura è mia cugina.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Esta é minha família.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Questa è la mia famiglia.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Ele é meu pai.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Lui è mio padre.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Ela é minha mãe.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Lei è mia madre.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Quem é aquele homem?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Chi è quell’uomo?</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Ele é meu tio.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Lui è mio zio.</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Esta menina é sua irmã?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Questa ragazza è tua sorella?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Quem são essas pessoas?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Chi sono queste persone?</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. São meus avós.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Sono i miei nonni.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Minha avó se chama Rosa.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Mia nonna si chiama Rosa.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. O irmão da minha mãe é meu tio.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Il fratello di mia madre è mio zio.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. A filha do meu tio é minha prima.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La figlia di mio zio è mia cugina.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Minha família é brasileira.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">La mia famiglia è brasiliana.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em italiano com frases completas.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Hai una famiglia grande o piccola?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Come si chiama tua madre?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Come si chiama tuo padre?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Hai fratelli o sorelle?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Hai cugini? Come si chiamano?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Dove vivono i tuoi nonni?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Chi è la persona più giovane della tua famiglia?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Chi è la persona più anziana della tua famiglia?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Quali attività fai con la tua famiglia?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come descrivi la tua famiglia?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
