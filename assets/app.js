@@ -455,6 +455,22 @@ const AULAS = {
   skills: ['Can/Can\'t Review', 'Ordinal Numbers Review', 'In/On/At Review'],
   file: 'aulas/en-a1-44.html',
 },
+'Inglês-A1-45': {
+  icon: '🚗',
+  titulo: 'Curiosity: Why Do British People Drive on the Left?',
+  descricao: 'Texto de leitura sobre a origem da direção pela esquerda no Reino Unido, revisando Present Simple, can/can\'t, there is/there are e in/on/at.',
+  duracao: '20 min',
+  skills: ['Reading Comprehension', 'Culture', 'Grammar Review'],
+  file: 'aulas/en-a1-45.html',
+},
+'Inglês-A1-46': {
+  icon: '🍽️',
+  titulo: 'At a Restaurant',
+  descricao: 'Aprender vocabulário de comida e restaurante, pedir comida e bebida educadamente com I\'d like, Would you like...? e Can I have...?',
+  duracao: '30 min',
+  skills: ['Would Like', 'Can I Have...?', 'Restaurant Vocabulary'],
+  file: 'aulas/en-a1-46.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
