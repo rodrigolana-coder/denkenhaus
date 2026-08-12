@@ -1,0 +1,319 @@
+<!-- Italiano A1 — Aula 8: Ti presento un amico -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it8.png" alt="Una nuova amica"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it8.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 1 — Una nuova amica</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Elisa</span><span class="dialog-text">Marco, ti presento Giada. È una mia amica.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Ciao, Giada. Piacere di conoscerti!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giada</span><span class="dialog-text">Piacere mio!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Come si scrive il tuo nome?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giada</span><span class="dialog-text">G-I-A-D-A.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Sei italiana?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giada</span><span class="dialog-text">Sì, sono italiana. Sono di Torino.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elisa</span><span class="dialog-text">Noi siamo compagne di università.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it8-1.png" alt="La famiglia di Anna"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it8-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 2 — La famiglia di Anna</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Chi sono quelle persone?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Sono i miei genitori.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Come si chiamano?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Mia madre si chiama Rosa e mio padre si chiama Paolo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Come si scrive “Paolo”?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">P-A-O-L-O.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Loro sono italiani?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">No, sono brasiliani, ma vivono in Italia.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it8-2.png" alt="Nuovi studenti"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it8-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Diálogo 3 — Nuovi studenti</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Buongiorno! Voi siete i nuovi studenti?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diego</span><span class="dialog-text">Sì, siamo i nuovi studenti.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Come vi chiamate?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diego</span><span class="dialog-text">Io sono Diego e lei è Sara.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Buongiorno!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Di dove siete?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Siamo argentini. Siamo di Buenos Aires.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Benvenuti nella nostra classe!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diego e Sara</span><span class="dialog-text">Grazie!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — Presentare qualcuno</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Tradução</th></tr>
+      <tr><td class="fr-word">Ti presento…</td><td>Apresento-lhe… / Quero apresentar…</td></tr>
+      <tr><td class="fr-word">Questo è…</td><td>Este é…</td></tr>
+      <tr><td class="fr-word">Questa è…</td><td>Esta é…</td></tr>
+      <tr><td class="fr-word">Questi sono…</td><td>Estes são…</td></tr>
+      <tr><td class="fr-word">Queste sono…</td><td>Estas são…</td></tr>
+      <tr><td class="fr-word">È un mio amico.</td><td>Ele é um amigo meu.</td></tr>
+      <tr><td class="fr-word">È una mia amica.</td><td>Ela é uma amiga minha.</td></tr>
+      <tr><td class="fr-word">Piacere di conoscerti.</td><td>Prazer em conhecer você.</td></tr>
+      <tr><td class="fr-word">Come si chiama?</td><td>Como ele/ela se chama?</td></tr>
+      <tr><td class="fr-word">Come vi chiamate?</td><td>Como vocês se chamam?</td></tr>
+      <tr><td class="fr-word">Come si scrive?</td><td>Como se escreve?</td></tr>
+      <tr><td class="fr-word">Si scrive…</td><td>Escreve-se…</td></tr>
+      <tr><td class="fr-word">compagno / compagna</td><td>colega</td></tr>
+      <tr><td class="fr-word">collega</td><td>colega de trabalho</td></tr>
+      <tr><td class="fr-word">nuovo / nuova / nuovi / nuove</td><td>novo / nova / novos / novas</td></tr>
+      <tr><td class="fr-word">Benvenuto! / Benvenuta!</td><td>Bem-vindo! / Bem-vinda!</td></tr>
+      <tr><td class="fr-word">Benvenuti! / Benvenute!</td><td>Bem-vindos! / Bem-vindas!</td></tr>
+    </table>
+
+    <div class="grammar-rule" style="margin-top:1.5rem;">
+      <h4>L’alfabeto italiano</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Lettera</th><th>Nome italiano</th></tr>
+        <tr><td>A</td><td>a</td></tr>
+        <tr><td>B</td><td>bi</td></tr>
+        <tr><td>C</td><td>ci</td></tr>
+        <tr><td>D</td><td>di</td></tr>
+        <tr><td>E</td><td>e</td></tr>
+        <tr><td>F</td><td>effe</td></tr>
+        <tr><td>G</td><td>gi</td></tr>
+        <tr><td>H</td><td>acca</td></tr>
+        <tr><td>I</td><td>i</td></tr>
+        <tr><td>L</td><td>elle</td></tr>
+        <tr><td>M</td><td>emme</td></tr>
+        <tr><td>N</td><td>enne</td></tr>
+        <tr><td>O</td><td>o</td></tr>
+        <tr><td>P</td><td>pi</td></tr>
+        <tr><td>Q</td><td>cu</td></tr>
+        <tr><td>R</td><td>erre</td></tr>
+        <tr><td>S</td><td>esse</td></tr>
+        <tr><td>T</td><td>ti</td></tr>
+        <tr><td>U</td><td>u</td></tr>
+        <tr><td>V</td><td>vi</td></tr>
+        <tr><td>Z</td><td>zeta</td></tr>
+      </table>
+      <p style="font-size:0.85rem;color:#5a6e8a;margin-top:0.5rem;">O alfabeto italiano tradicional possui 21 letras. As abaixo aparecem principalmente em palavras e nomes estrangeiros:</p>
+      <table class="fr-vocab-table">
+        <tr><th>Lettera</th><th>Nome italiano</th></tr>
+        <tr><td>J</td><td>i lunga</td></tr>
+        <tr><td>K</td><td>cappa</td></tr>
+        <tr><td>W</td><td>doppia vu</td></tr>
+        <tr><td>X</td><td>ics</td></tr>
+        <tr><td>Y</td><td>ipsilon</td></tr>
+      </table>
+      <p class="example">Marco: M-A-R-C-O</p>
+      <p class="example">Giulia: G-I-U-L-I-A</p>
+      <p class="example">Rossi: R-O-S-S-I</p>
+      <p class="example">William: W-I-L-L-I-A-M</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica — Il verbo essere (revisione completa)</div>
+
+    <div class="grammar-rule">
+      <h4>A. Il verbo essere</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Pronome</th><th>Essere</th><th>Português</th></tr>
+        <tr><td>io</td><td>sono</td><td>eu sou / estou</td></tr>
+        <tr><td>tu</td><td>sei</td><td>você é / está</td></tr>
+        <tr><td>lui / lei</td><td>è</td><td>ele/ela é ou está</td></tr>
+        <tr><td>noi</td><td>siamo</td><td>nós somos / estamos</td></tr>
+        <tr><td>voi</td><td>siete</td><td>vocês são / estão</td></tr>
+        <tr><td>loro</td><td>sono</td><td>eles/elas são ou estão</td></tr>
+      </table>
+      <p class="example">Io sono italiano.</p>
+      <p class="example">Noi siamo brasiliani.</p>
+      <p class="example">Voi siete nuovi qui?</p>
+      <p class="example">Loro sono i miei genitori.</p>
+      <p>Os pronomes podem ser omitidos: <em>Noi siamo amici. → Siamo amici.</em> Usamos o pronome quando queremos enfatizar ou evitar confusão.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. Noi siamo</h4>
+      <p>Usamos <strong>siamo</strong> para falar de um grupo que inclui quem está falando.</p>
+      <p class="example">Siamo amici. Siamo studenti. Siamo brasiliani. Siamo di Curitiba.</p>
+      <p class="example">A: Siete italiani? — B: No, siamo brasiliani.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Voi siete</h4>
+      <p>Usamos <strong>siete</strong> para falar diretamente com duas ou mais pessoas.</p>
+      <p class="example">Voi siete nuovi? Siete studenti? Di dove siete?</p>
+      <p>Na fala cotidiana, normalmente omitimos <strong>voi</strong>: <em>Di dove siete?</em></p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Loro sono</h4>
+      <p>Usamos <strong>sono</strong> para falar de duas ou mais pessoas.</p>
+      <p class="example">Loro sono i miei amici. Sono italiani. Sono di Roma.</p>
+      <p>A forma <strong>sono</strong> também é usada com <strong>io</strong>: Io sono italiano. / Loro sono italiani. O contexto indica o significado.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Presentare una persona</h4>
+      <p>Para apresentar alguém: <strong>Ti presento + nome</strong></p>
+      <p class="example">Ti presento Luca. Ti presento mia sorella.</p>
+      <p>Também: Questo è Marco. Questa è Giulia. Questi sono i miei amici.</p>
+      <p><strong>Possessivo após o artigo indefinido:</strong> un mio amico (um amigo meu), una mia amica (uma amiga minha).</p>
+      <p class="example">Marco è mio amico. / Marco è un mio amico.</p>
+      <p>As duas formas são possíveis, mas <strong>un mio amico</strong> destaca que Marco é uma das pessoas do grupo de amigos.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>F. Nostro, vostro e loro</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Pessoa</th><th>Masculino</th><th>Feminino</th><th>Português</th></tr>
+        <tr><td>noi</td><td>nostro</td><td>nostra</td><td>nosso / nossa</td></tr>
+        <tr><td>voi</td><td>vostro</td><td>vostra</td><td>seu / sua, de vocês</td></tr>
+        <tr><td>loro</td><td>loro</td><td>loro</td><td>deles / delas</td></tr>
+      </table>
+      <p class="example">Marco è nostro amico.</p>
+      <p class="example">Qual è il vostro cognome?</p>
+      <p class="example">Luca è loro figlio.</p>
+      <p>⚠️ <strong>Loro</strong> não muda: il loro amico, la loro amica, i loro amici, le loro amiche. Diferentemente de mio/tuo/suo/nostro/vostro, o possessivo <strong>loro</strong> normalmente mantém o artigo também com familiares no singular: il loro padre, la loro madre.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduza do português para o italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Quero apresentar minha amiga Giulia.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Ti presento la mia amica Giulia.</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. Este é meu irmão.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Questo è mio fratello.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Esta é uma amiga minha.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Questa è una mia amica.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Prazer em conhecer vocês.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Piacere di conoscervi.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Como se escreve o seu nome?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Come si scrive il tuo nome?</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. Nós somos estudantes de italiano.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Siamo studenti d’italiano.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. Vocês são novos nesta turma?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Siete nuovi in questa classe?</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. Nós somos brasileiros e somos de Curitiba.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Siamo brasiliani e siamo di Curitiba.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Eles são meus amigos.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Loro sono i miei amici.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. Quem são aquelas pessoas?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Chi sono quelle persone?</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Eles são os pais dela.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Sono i suoi genitori.</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Esta é a nossa professora.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button><div class="exercise-answer">Questa è la nostra professoressa.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Responda em italiano com frases completas.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Come si scrive il tuo nome?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Come si scrive il tuo cognome?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Quali lettere italiane sono difficili per te?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Come presenti un amico alla classe?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Chi sono i tuoi migliori amici?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Di dove sono i tuoi amici?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Voi siete una famiglia grande o piccola?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Chi sono le persone nella tua famiglia?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Come presenti due persone che non si conoscono?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Quali informazioni dai quando presenti qualcuno?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
