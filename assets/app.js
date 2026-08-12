@@ -105,6 +105,14 @@ const AULAS = {
   skills: ['Famiglia', 'Possessivi', 'Chi è? / Chi sono?'],
   file: 'aulas/it-a1-7.html',
 },
+'Italiano-A1-8': {
+  icon: '🤝',
+  titulo: 'Ti presento un amico',
+  descricao: 'Apresentar alguém, aprender o alfabeto italiano, revisar completamente o verbo essere (io/tu/lui/lei/noi/voi/loro) e usar nostro, vostro e loro.',
+  duracao: '30 min',
+  skills: ['Verbo Essere Completo', 'Alfabeto', 'Nostro/Vostro/Loro'],
+  file: 'aulas/it-a1-8.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
