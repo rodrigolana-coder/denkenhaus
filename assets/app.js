@@ -471,6 +471,14 @@ const AULAS = {
   skills: ['Would Like', 'Can I Have...?', 'Restaurant Vocabulary'],
   file: 'aulas/en-a1-46.html',
 },
+'Inglês-A1-47': {
+  icon: '📅',
+  titulo: 'Famous Firsts',
+  descricao: 'Aprender a dizer anos e datas em inglês, falar sobre acontecimentos históricos e revisar in, on e at.',
+  duracao: '35 min',
+  skills: ['Years', 'Dates', 'History'],
+  file: 'aulas/en-a1-47.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
