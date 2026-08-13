@@ -495,6 +495,14 @@ const AULAS = {
   skills: ['Years', 'Dates', 'History'],
   file: 'aulas/en-a1-47.html',
 },
+'Inglês-A1-48': {
+  icon: '🔁',
+  titulo: 'Review: At a Restaurant & Famous Firsts',
+  descricao: 'Revisar like x would like, Can I have...?, como dizer anos em inglês, datas e números ordinais, e as preposições in/on/at em contexto de restaurante.',
+  duracao: '30 min',
+  skills: ['Like x Would Like Review', 'Saying Years Review', 'In/On/At Review'],
+  file: 'aulas/en-a1-48.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
