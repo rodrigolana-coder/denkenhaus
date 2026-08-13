@@ -113,6 +113,14 @@ const AULAS = {
   skills: ['Verbo Essere Completo', 'Alfabeto', 'Nostro/Vostro/Loro'],
   file: 'aulas/it-a1-8.html',
 },
+'Italiano-A1-9': {
+  icon: '🔄',
+  titulo: 'Revisione delle classi 6, 7 e 8',
+  descricao: 'Revisar pedidos no bar, família, apresentações, o verbo essere, possessivos e spelling em italiano.',
+  duracao: '35 min',
+  skills: ['Revisione', 'Famiglia', 'Presentazioni'],
+  file: 'aulas/it-a1-9.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
