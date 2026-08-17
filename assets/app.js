@@ -511,6 +511,14 @@ const AULAS = {
   skills: ['Like x Would Like Review', 'Saying Years Review', 'In/On/At Review'],
   file: 'aulas/en-a1-48.html',
 },
+'English-A1-49': {
+  icon: '🕰️',
+  titulo: 'People in the Past',
+  descricao: 'Falar sobre pessoas no passado, usar was e were, formar negativas e perguntas e dizer onde e quando alguém nasceu.',
+  duracao: '35 min',
+  skills: ['Was / Were', 'Jobs', 'Born'],
+  file: 'aulas/en-a1-49.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
