@@ -511,7 +511,7 @@ const AULAS = {
   skills: ['Like x Would Like Review', 'Saying Years Review', 'In/On/At Review'],
   file: 'aulas/en-a1-48.html',
 },
-'English-A1-49': {
+'Inglês-A1-49': {
   icon: '🕰️',
   titulo: 'People in the Past',
   descricao: 'Falar sobre pessoas no passado, usar was e were, formar negativas e perguntas e dizer onde e quando alguém nasceu.',
