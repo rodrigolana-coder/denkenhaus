@@ -121,6 +121,14 @@ const AULAS = {
   skills: ['Revisione', 'Famiglia', 'Presentazioni'],
   file: 'aulas/it-a1-9.html',
 },
+'Italiano-A1-11': {
+  icon: '🎒',
+  titulo: 'Che cosa c’è nella tua borsa?',
+  descricao: 'Falar sobre objetos pessoais, usar artigos indeterminativos, formar o plural e praticar c’è e ci sono.',
+  duracao: '35 min',
+  skills: ['Oggetti personali', 'Articoli', 'Plurale'],
+  file: 'aulas/it-a1-11.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
