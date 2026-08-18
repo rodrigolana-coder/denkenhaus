@@ -129,6 +129,14 @@ const AULAS = {
   skills: ['Oggetti personali', 'Articoli', 'Plurale'],
   file: 'aulas/it-a1-11.html',
 },
+'Italiano-A1-12': {
+  icon: '🎂',
+  titulo: 'Quanti anni hai?',
+  descricao: 'Perguntar e dizer a idade em italiano, usar o verbo avere e aprender os números de 11 a 101.',
+  duracao: '35 min',
+  skills: ['Età', 'Avere', 'Numeri 11–101'],
+  file: 'aulas/it-a1-12.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
