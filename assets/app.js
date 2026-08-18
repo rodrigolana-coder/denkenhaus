@@ -527,6 +527,22 @@ const AULAS = {
   skills: ['Was / Were', 'Jobs', 'Born'],
   file: 'aulas/en-a1-49.html',
 },
+'Inglês-A1-50': {
+  icon: "👑",
+  titulo: "Curiosity: The British Royal Family",
+  descricao: "A monarquia britânica, a família real e a diferença entre chefe de Estado e chefe de governo.",
+  duracao: "15 min",
+  skills: ["Leitura", "Vocabulário"],
+  file: "en-a1-50.html"
+},
+'Inglês-A1-51': {
+  icon: "🕰️",
+  titulo: "Memories",
+  descricao: "Past Simple do verbo to be (was/were), negativas, perguntas e expressões de tempo no passado.",
+  duracao: "25 min",
+  skills: ["Conversação", "Vocabulário", "Gramática"],
+  file: "en-a1-51.html"
+}
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
