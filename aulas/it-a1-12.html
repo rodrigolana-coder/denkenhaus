@@ -1,0 +1,461 @@
+<!-- Italiano A1 — Aula 12: Quanti anni hai? -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Diálogos</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Tradução</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversação</button>
+</div>
+
+<!-- 1. DIÁLOGOS -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Diálogos</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/it/it12.png" alt="Due nuovi amici">
+        </div>
+
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it12.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="fr-dlg-label">Diálogo 1 — Due nuovi amici</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ciao! Come ti chiami?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Leo</span><span class="dialog-text">Mi chiamo Leo. E tu?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Io sono Emma. Quanti anni hai?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Leo</span><span class="dialog-text">Ho diciotto anni. E tu?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Ho diciannove anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Leo</span><span class="dialog-text">Sei studentessa?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Emma</span><span class="dialog-text">Sì, sono studentessa.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/it/it12-1.png" alt="Una foto di amici">
+        </div>
+
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it12-1.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="fr-dlg-label">Diálogo 2 — Una foto di amici</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Chi è quel ragazzo nella foto?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Lui è mio amico Paolo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Quanti anni ha?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Ha ventitré anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">E la ragazza accanto a lui?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Lei è Sara. Ha ventuno anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Sono amici tuoi?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Sì, sono miei amici.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img">
+          <img src="/denkenhaus/img/it/it12-2.png" alt="In classe">
+        </div>
+
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it12-2.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="fr-dlg-label">Diálogo 3 — In classe</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Ragazzi, quanti anni avete?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Io ho quindici anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Anna</span><span class="dialog-text">Io ho sedici anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">E voi due?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Diego</span><span class="dialog-text">Noi abbiamo diciassette anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sara</span><span class="dialog-text">Sì, abbiamo diciassette anni.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Professoressa</span><span class="dialog-text">Bene! Siete una classe giovane.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Diálogo 1 de 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario — L’età e i numeri</div>
+
+    <table class="fr-vocab-table">
+      <tr><th>Italiano</th><th>Português</th></tr>
+      <tr><td class="fr-word">Quanti anni hai?</td><td>Quantos anos você tem?</td></tr>
+      <tr><td class="fr-word">Ho ... anni.</td><td>Eu tenho ... anos.</td></tr>
+      <tr><td class="fr-word">Quanti anni ha?</td><td>Quantos anos ele/ela tem?</td></tr>
+      <tr><td class="fr-word">Ha ... anni.</td><td>Ele/Ela tem ... anos.</td></tr>
+      <tr><td class="fr-word">Quanti anni avete?</td><td>Quantos anos vocês têm?</td></tr>
+      <tr><td class="fr-word">Abbiamo ... anni.</td><td>Nós temos ... anos.</td></tr>
+      <tr><td class="fr-word">avere</td><td>ter</td></tr>
+      <tr><td class="fr-word">l’età</td><td>a idade</td></tr>
+      <tr><td class="fr-word">l’anno</td><td>o ano</td></tr>
+      <tr><td class="fr-word">gli anni</td><td>os anos</td></tr>
+      <tr><td class="fr-word">giovane</td><td>jovem</td></tr>
+      <tr><td class="fr-word">ragazzo</td><td>rapaz</td></tr>
+      <tr><td class="fr-word">ragazza</td><td>moça</td></tr>
+      <tr><td class="fr-word">amico</td><td>amigo</td></tr>
+      <tr><td class="fr-word">amica</td><td>amiga</td></tr>
+      <tr><td class="fr-word">studente</td><td>estudante</td></tr>
+      <tr><td class="fr-word">studentessa</td><td>estudante</td></tr>
+    </table>
+
+    <div class="grammar-rule">
+      <h4>I numeri da 11 a 20</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Numero</th><th>Italiano</th></tr>
+        <tr><td>11</td><td>undici</td></tr>
+        <tr><td>12</td><td>dodici</td></tr>
+        <tr><td>13</td><td>tredici</td></tr>
+        <tr><td>14</td><td>quattordici</td></tr>
+        <tr><td>15</td><td>quindici</td></tr>
+        <tr><td>16</td><td>sedici</td></tr>
+        <tr><td>17</td><td>diciassette</td></tr>
+        <tr><td>18</td><td>diciotto</td></tr>
+        <tr><td>19</td><td>diciannove</td></tr>
+        <tr><td>20</td><td>venti</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Le decine</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Numero</th><th>Italiano</th></tr>
+        <tr><td>30</td><td>trenta</td></tr>
+        <tr><td>40</td><td>quaranta</td></tr>
+        <tr><td>50</td><td>cinquanta</td></tr>
+        <tr><td>60</td><td>sessanta</td></tr>
+        <tr><td>70</td><td>settanta</td></tr>
+        <tr><td>80</td><td>ottanta</td></tr>
+        <tr><td>90</td><td>novanta</td></tr>
+        <tr><td>100</td><td>cento</td></tr>
+        <tr><td>101</td><td>centouno</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Alcuni numeri utili</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Numero</th><th>Italiano</th></tr>
+        <tr><td>21</td><td>ventuno</td></tr>
+        <tr><td>22</td><td>ventidue</td></tr>
+        <tr><td>23</td><td>ventitré</td></tr>
+        <tr><td>24</td><td>ventiquattro</td></tr>
+        <tr><td>25</td><td>venticinque</td></tr>
+        <tr><td>26</td><td>ventisei</td></tr>
+        <tr><td>27</td><td>ventisette</td></tr>
+        <tr><td>28</td><td>ventotto</td></tr>
+        <tr><td>29</td><td>ventinove</td></tr>
+        <tr><td>31</td><td>trentuno</td></tr>
+        <tr><td>38</td><td>trentotto</td></tr>
+        <tr><td>45</td><td>quarantacinque</td></tr>
+        <tr><td>56</td><td>cinquantasei</td></tr>
+        <tr><td>67</td><td>sessantasette</td></tr>
+        <tr><td>79</td><td>settantanove</td></tr>
+        <tr><td>88</td><td>ottantotto</td></tr>
+        <tr><td>99</td><td>novantanove</td></tr>
+      </table>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Anterior</button>
+      <span class="fr-slide-info">Seção 2 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica — Avere e l’età</div>
+
+    <div class="grammar-rule">
+      <h4>A. Il verbo AVERE per dire l’età</h4>
+      <p>Em italiano, para falar a idade, usamos o verbo <strong>avere</strong> e não <strong>essere</strong>.</p>
+
+      <p class="example">Ho diciotto anni.</p>
+      <p class="example">Hai vent’anni?</p>
+      <p class="example">Lui ha ventitré anni.</p>
+      <p class="example">Lei ha quindici anni.</p>
+
+      <p><strong>Non diciamo:</strong></p>
+      <p class="example">Sono diciotto anni. ❌</p>
+
+      <p><strong>Forma corretta:</strong></p>
+      <p class="example">Ho diciotto anni. ✅</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. Il verbo AVERE — forme principali</h4>
+
+      <table class="fr-vocab-table">
+        <tr><th>Pronome</th><th>Avere</th><th>Português</th></tr>
+        <tr><td>io</td><td>ho</td><td>eu tenho</td></tr>
+        <tr><td>tu</td><td>hai</td><td>você tem</td></tr>
+        <tr><td>lui / lei</td><td>ha</td><td>ele / ela tem</td></tr>
+        <tr><td>noi</td><td>abbiamo</td><td>nós temos</td></tr>
+        <tr><td>voi</td><td>avete</td><td>vocês têm</td></tr>
+        <tr><td>loro</td><td>hanno</td><td>eles / elas têm</td></tr>
+      </table>
+
+      <p class="example">Io ho sedici anni.</p>
+      <p class="example">Tu hai ventidue anni.</p>
+      <p class="example">Lui ha trent’anni.</p>
+      <p class="example">Lei ha quarantun anni.</p>
+      <p class="example">Noi abbiamo diciassette anni.</p>
+      <p class="example">Voi avete quindici anni.</p>
+      <p class="example">Loro hanno vent’anni.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Come fare le domande sull’età</h4>
+
+      <p><strong>Informale</strong></p>
+      <p class="example">Quanti anni hai?</p>
+
+      <p><strong>Formale</strong></p>
+      <p class="example">Quanti anni ha?</p>
+
+      <p><strong>Plurale</strong></p>
+      <p class="example">Quanti anni avete?</p>
+      <p class="example">Quanti anni hanno?</p>
+
+      <p><strong>Risposte</strong></p>
+      <p class="example">Ho diciassette anni.</p>
+      <p class="example">Ha ventitré anni.</p>
+      <p class="example">Abbiamo sedici anni.</p>
+      <p class="example">Hanno quattordici anni.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Numeri da 21 a 99</h4>
+
+      <p>Para formar os números depois de 20, juntamos a dezena com a unidade.</p>
+
+      <p class="example">venti + tre → ventitré</p>
+      <p class="example">trenta + due → trentadue</p>
+      <p class="example">quaranta + cinque → quarantacinque</p>
+      <p class="example">sessanta + sette → sessantasette</p>
+
+      <p><strong>Attenzione</strong></p>
+      <p>Com <strong>uno</strong> e <strong>otto</strong>, normalmente a vogal final da dezena cai.</p>
+
+      <p class="example">ventuno</p>
+      <p class="example">ventotto</p>
+      <p class="example">trentuno</p>
+      <p class="example">trentotto</p>
+      <p class="example">quarantuno</p>
+      <p class="example">quarantotto</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Accento in ventitré, trentatré...</h4>
+
+      <p>Quando o número termina em <strong>-tré</strong>, colocamos acento.</p>
+
+      <p class="example">ventitré</p>
+      <p class="example">trentatré</p>
+      <p class="example">quarantatré</p>
+      <p class="example">cinquantatré</p>
+
+      <p class="example">Ho ventitré anni.</p>
+      <p class="example">Mio fratello ha trentatré anni.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>F. Uno, un e una</h4>
+
+      <p><strong>uno</strong> pode ser número:</p>
+      <p class="example">uno, due, tre</p>
+
+      <p><strong>un / uno / una</strong> também podem ser artigos:</p>
+      <p class="example">un libro</p>
+      <p class="example">uno zaino</p>
+      <p class="example">una penna</p>
+
+      <p class="example">Ho un libro.</p>
+      <p class="example">Ho uno zaino.</p>
+      <p class="example">Ho una penna.</p>
+      <p class="example">Ho ventuno anni.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Anterior</button>
+      <span class="fr-slide-info">Seção 3 de 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUÇÃO -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Tradução</div>
+
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">
+      Traduza do português para o italiano.
+    </p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">1. Quantos anos você tem?</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Quanti anni hai?</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">2. Eu tenho quinze anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Ho quindici anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">3. Ela tem vinte e três anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Lei ha ventitré anni.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">4. Ele tem dezessete anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Lui ha diciassette anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">5. Nós temos dezesseis anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Abbiamo sedici anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">6. Vocês têm dezoito anos?</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Avete diciotto anni?</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">7. Meus amigos têm vinte e um anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">I miei amici hanno ventuno anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">8. Minha irmã tem quatorze anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Mia sorella ha quattordici anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">9. Meu pai tem quarenta e cinco anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Mio padre ha quarantacinque anni.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+
+        <div class="exercise-item">
+          <div class="exercise-q">10. Minha mãe tem trinta e oito anos.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Mia madre ha trentotto anni.</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">11. Eles têm noventa e nove anos?</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Hanno novantanove anni?</div>
+        </div>
+
+        <div class="exercise-item">
+          <div class="exercise-q">12. Eu tenho vinte anos e sou estudante.</div>
+          <button class="show-answer-btn" onclick="toggleAnswer(this)">Mostrar resposta</button>
+          <div class="exercise-answer">Ho vent’anni e sono studente.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frases 1–3 de 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAÇÃO -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversação</div>
+
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">
+      Responda em italiano com frases completas.
+    </p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Quanti anni hai?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Quanti anni ha tua madre?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Quanti anni ha tuo padre?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Hai fratelli o sorelle? Quanti anni hanno?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Chi è la persona più giovane della tua famiglia?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Quanti anni ha il tuo migliore amico o la tua migliore amica?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Quanti anni hanno i tuoi compagni di classe?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Preferisci i numeri piccoli o grandi in italiano? Perché?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Quali numeri da 11 a 101 sono difficili per te?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come si dice la tua età in italiano?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Anterior</button>
+      <span class="fr-slide-info" id="fr-cv-info">Perguntas 1–3 de 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Próximo →</button>
+    </div>
+  </div>
+</div>
