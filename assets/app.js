@@ -542,7 +542,7 @@ const AULAS = {
   duracao: "25 min",
   skills: ["Conversação", "Vocabulário", "Gramática"],
   file: "en-a1-51.html"
-}
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
