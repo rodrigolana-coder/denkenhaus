@@ -543,6 +543,14 @@ const AULAS = {
   skills: ["Conversação", "Vocabulário", "Gramática"],
   file: 'aulas/en-a1-51.html',
 },
+'Inglês-A1-52': {
+  icon: '🗓️',
+  titulo: 'How Was Your Weekend?',
+  descricao: 'Falar sobre fins de semana, viagens e experiências passadas, usar perguntas com how e revisar was e were com adjetivos.',
+  duracao: '35 min',
+  skills: ['How Questions', 'Was / Were', 'Adjectives'],
+  file: 'aulas/en-a1-52.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
