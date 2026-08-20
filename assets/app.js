@@ -559,6 +559,14 @@ const AULAS = {
   skills: ['How Questions', 'Was / Were', 'Adjectives'],
   file: 'aulas/en-a1-52.html',
 },
+'Inglês-A1-53': {
+  icon: '🧸',
+  titulo: 'Talking About Your Childhood',
+  descricao: 'Falar sobre infância, cidade natal, escola e lembranças do passado, revisando was/were e perguntas com how + adjective.',
+  duracao: '35 min',
+  skills: ['Childhood', 'Was / Were', 'How + Adjective'],
+  file: 'aulas/en-a1-53.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
