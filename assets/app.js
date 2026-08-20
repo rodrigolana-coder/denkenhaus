@@ -137,6 +137,14 @@ const AULAS = {
   skills: ['Età', 'Avere', 'Numeri 11–101'],
   file: 'aulas/it-a1-12.html',
 },
+'Italiano-A1-13': {
+  icon: '🪪',
+  titulo: 'I dati personali',
+  descricao: 'Perguntar e informar dados pessoais: nome, età, nazionalità, indirizzo, telefono e e-mail, nas formas tu e Lei.',
+  duracao: '25 min',
+  skills: ['Dati Personali', 'Tu vs. Lei', 'Abitare/Vivere'],
+  file: 'aulas/it-a1-13.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
