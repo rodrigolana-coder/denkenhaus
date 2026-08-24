@@ -1359,6 +1359,14 @@ const AULAS = {
   skills: ['Savoir + Infinitif', 'Être Capable De', 'Recherche d\'Emploi'],
   file: 'aulas/fr-a1-97.html',
 },
+'Français-A2-38': {
+  icon: '💶',
+  titulo: "L'argent",
+  descricao: "Verbes liés à l'argent (acheter, vendre, gagner, dépenser, économiser, emprunter, prêter, investir) avec le présent et les adverbes de fréquence.",
+  duracao: '25 min',
+  skills: ['Verbes de l\'Argent', 'Présent', 'Adverbes de Fréquence'],
+  file: 'aulas/fr-a1-98.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
