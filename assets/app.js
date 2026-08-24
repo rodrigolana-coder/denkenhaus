@@ -145,6 +145,32 @@ const AULAS = {
   skills: ['Dati Personali', 'Tu vs. Lei', 'Abitare/Vivere'],
   file: 'aulas/it-a1-13.html',
 },
+'Italiano-A1-14': {
+  icon: '🏙️',
+  titulo: 'Dove si trova?',
+  descricao: 'Falar sobre lugares na cidade, perguntar onde ficam e usar c’è, ci sono e preposições de lugar.',
+  duracao: '35 min',
+  skills: ['Luoghi in città', 'C’è / Ci sono', 'Preposizioni di luogo'],
+  file: 'aulas/it-a1-14.html',
+},
+
+'Italiano-A1-15': {
+  icon: '🚤',
+  titulo: 'Curiosità: Venezia',
+  descricao: 'Conhecer Veneza, seus canais, transportes, monumentos, Carnaval e o fenômeno da acqua alta.',
+  duracao: '30 min',
+  skills: ['Cultura italiana', 'Venezia', 'Comprensione'],
+  file: 'aulas/it-a1-15.html',
+},
+
+'Italiano-A1-16': {
+  icon: '🗺️',
+  titulo: 'Come arrivo alla stazione?',
+  descricao: 'Pedir e dar indicações, localizar lugares na cidade e revisar preposições e expressões de localização.',
+  duracao: '35 min',
+  skills: ['Indicazioni', 'Luoghi in città', 'A + articolo'],
+  file: 'aulas/it-a1-16.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
