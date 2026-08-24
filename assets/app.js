@@ -593,6 +593,14 @@ const AULAS = {
   skills: ['Childhood', 'Was / Were', 'How + Adjective'],
   file: 'aulas/en-a1-53.html',
 },
+'Inglês-A1-54': {
+  icon: '💷',
+  titulo: 'Money',
+  descricao: 'Verbos ligados a dinheiro (buy, sell, earn, spend, save, borrow, lend, invest, win) com Present Simple e adverbs of frequency.',
+  duracao: '25 min',
+  skills: ['Money Verbs', 'Present Simple', 'Adverbs of Frequency'],
+  file: 'aulas/en-a1-54.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
