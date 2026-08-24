@@ -1359,7 +1359,7 @@ const AULAS = {
   skills: ['Savoir + Infinitif', 'Être Capable De', 'Recherche d\'Emploi'],
   file: 'aulas/fr-a1-97.html',
 },
-'Français-A2-38': {
+'Francês-A2-38': {
   icon: '💶',
   titulo: "L'argent",
   descricao: "Verbes liés à l'argent (acheter, vendre, gagner, dépenser, économiser, emprunter, prêter, investir) avec le présent et les adverbes de fréquence.",
