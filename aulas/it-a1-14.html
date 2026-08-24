@@ -1,0 +1,321 @@
+<!-- Italiano A1 — Classe 14: Dove si trova? -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialoghi</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Traduzione</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversazione</button>
+</div>
+
+<!-- 1. DIALOGHI -->
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialoghi</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it14.png" alt="Cerco una farmacia"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it14.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 1 — Cerco una farmacia</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Mi scusi, c'è una farmacia qui vicino?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passante</span><span class="dialog-text">Sì, c'è una farmacia in via Roma.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Dove si trova esattamente?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passante</span><span class="dialog-text">Si trova accanto alla banca, di fronte al supermercato.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">È lontana?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passante</span><span class="dialog-text">No, è molto vicina.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Grazie mille!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Passante</span><span class="dialog-text">Prego!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it14-1.png" alt="Alla stazione"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it14-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 2 — Alla stazione</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Matteo</span><span class="dialog-text">Giulia, dov'è la stazione?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Si trova vicino al centro.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Matteo</span><span class="dialog-text">C'è una fermata dell'autobus davanti alla stazione?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Sì, c'è.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Matteo</span><span class="dialog-text">E il parcheggio?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Il parcheggio è dietro la stazione.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Matteo</span><span class="dialog-text">Perfetto. Andiamo!</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Va bene!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it14-2.png" alt="Nel centro della città"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it14-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 3 — Nel centro della città</div>
+
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Che cosa c'è in questa strada?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camila</span><span class="dialog-text">Ci sono un bar, un ristorante e due negozi.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Dove si trova il ristorante?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camila</span><span class="dialog-text">È tra il bar e il negozio di scarpe.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">E dov'è il bancomat?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camila</span><span class="dialog-text">È davanti alla banca.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">C'è anche un cinema qui vicino?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Camila</span><span class="dialog-text">Sì, il cinema è dietro il parco.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogo 1 di 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2. VOCABOLARIO -->
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div class="c-block-title">Vocabolario</div>
+
+    <div class="grammar-rule">
+      <h4>Luoghi in città</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Italiano</th><th>Português</th></tr>
+        <tr><td class="fr-word">la città</td><td>a cidade</td></tr>
+        <tr><td class="fr-word">il centro</td><td>o centro</td></tr>
+        <tr><td class="fr-word">la strada</td><td>a rua</td></tr>
+        <tr><td class="fr-word">la piazza</td><td>a praça</td></tr>
+        <tr><td class="fr-word">la banca</td><td>o banco</td></tr>
+        <tr><td class="fr-word">il bancomat</td><td>o caixa eletrônico</td></tr>
+        <tr><td class="fr-word">la fermata dell'autobus</td><td>o ponto de ônibus</td></tr>
+        <tr><td class="fr-word">la stazione</td><td>a estação</td></tr>
+        <tr><td class="fr-word">la stazione ferroviaria</td><td>a estação de trem</td></tr>
+        <tr><td class="fr-word">il parcheggio</td><td>o estacionamento</td></tr>
+        <tr><td class="fr-word">la farmacia</td><td>a farmácia</td></tr>
+        <tr><td class="fr-word">il supermercato</td><td>o supermercado</td></tr>
+        <tr><td class="fr-word">il bar</td><td>o café / bar</td></tr>
+        <tr><td class="fr-word">il ristorante</td><td>o restaurante</td></tr>
+        <tr><td class="fr-word">il cinema</td><td>o cinema</td></tr>
+        <tr><td class="fr-word">il parco</td><td>o parque</td></tr>
+        <tr><td class="fr-word">il distributore di benzina</td><td>o posto de gasolina</td></tr>
+        <tr><td class="fr-word">il negozio</td><td>a loja</td></tr>
+        <tr><td class="fr-word">il negozio di vestiti</td><td>a loja de roupas</td></tr>
+        <tr><td class="fr-word">il negozio di scarpe</td><td>a loja de calçados</td></tr>
+        <tr><td class="fr-word">la panetteria</td><td>a padaria</td></tr>
+        <tr><td class="fr-word">l'ufficio postale</td><td>o correio</td></tr>
+        <tr><td class="fr-word">l'ospedale</td><td>o hospital</td></tr>
+        <tr><td class="fr-word">la scuola</td><td>a escola</td></tr>
+        <tr><td class="fr-word">l'hotel</td><td>o hotel</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Espressioni utili</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Italiano</th><th>Português</th></tr>
+        <tr><td class="fr-word">Dove si trova?</td><td>Onde fica?</td></tr>
+        <tr><td class="fr-word">Dov'è?</td><td>Onde está? / Onde fica?</td></tr>
+        <tr><td class="fr-word">Si trova…</td><td>Fica… / Encontra-se…</td></tr>
+        <tr><td class="fr-word">C'è una farmacia?</td><td>Há uma farmácia?</td></tr>
+        <tr><td class="fr-word">Ci sono dei negozi?</td><td>Há algumas lojas?</td></tr>
+        <tr><td class="fr-word">Qui vicino</td><td>Aqui perto</td></tr>
+        <tr><td class="fr-word">È vicino.</td><td>É perto.</td></tr>
+        <tr><td class="fr-word">È lontano.</td><td>É longe.</td></tr>
+        <tr><td class="fr-word">Esattamente</td><td>Exatamente</td></tr>
+        <tr><td class="fr-word">Mi scusi.</td><td>Com licença.</td></tr>
+        <tr><td class="fr-word">Grazie mille.</td><td>Muito obrigado/a.</td></tr>
+        <tr><td class="fr-word">Andiamo!</td><td>Vamos!</td></tr>
+      </table>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Precedente</button>
+      <span class="fr-slide-info">Sezione 2 di 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3. GRAMMATICA -->
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica</div>
+
+    <div class="grammar-rule">
+      <h4>A. Dove si trova?</h4>
+      <p>Usamos <strong>Dove si trova?</strong> para perguntar onde uma pessoa, um lugar ou uma coisa está localizada.</p>
+      <p class="example">Dove si trova la banca?</p>
+      <p class="example">Dove si trova il cinema?</p>
+      <p class="example">Dove si trova la stazione?</p>
+      <p class="example">La banca si trova in centro.</p>
+      <p class="example">Il cinema si trova vicino al parco.</p>
+      <p class="example">La stazione si trova in via Roma.</p>
+      <p>Na linguagem cotidiana, também podemos perguntar: <strong>Dov'è la banca?</strong> — <strong>Dov'è</strong> é a contração de <strong>dove è</strong>.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. Dove si trovano?</h4>
+      <p>Quando perguntamos sobre dois ou mais lugares, usamos <strong>si trovano</strong>.</p>
+      <p class="example">Dove si trovano i negozi?</p>
+      <p class="example">Dove si trovano i bagni?</p>
+      <p class="example">Dove si trovano la banca e la farmacia?</p>
+      <p class="example">I negozi si trovano in centro.</p>
+      <p class="example">I bagni si trovano vicino all'ingresso.</p>
+      <p class="example">La banca e la farmacia si trovano in via Verdi.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. C'è e ci sono</h4>
+      <p>Usamos <strong>c'è</strong> para falar da existência de uma pessoa, de um lugar ou de uma coisa no singular.</p>
+      <p class="example">C'è una banca in questa strada.</p>
+      <p class="example">C'è un supermercato vicino all'hotel.</p>
+      <p class="example">C'è una fermata dell'autobus davanti alla scuola.</p>
+      <p>Usamos <strong>ci sono</strong> para duas ou mais pessoas, lugares ou coisas.</p>
+      <p class="example">Ci sono due ristoranti.</p>
+      <p class="example">Ci sono molti negozi in centro.</p>
+      <p class="example">Ci sono una banca e una farmacia.</p>
+      <p class="example">C'è un cinema qui vicino? → Sì, c'è. / No, non c'è.</p>
+      <p class="example">Ci sono dei ristoranti vicino all'hotel? → Sì, ci sono. / No, non ci sono.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Le preposizioni di luogo</h4>
+      <p class="example">Vicino a (perto de): La farmacia è vicino alla banca.</p>
+      <p class="example">Lontano da (longe de): La stazione è lontana dal centro.</p>
+      <p class="example">Accanto a (ao lado de): Il ristorante è accanto al bar.</p>
+      <p class="example">Davanti a (em frente a): Il bancomat è davanti alla banca.</p>
+      <p class="example">Dietro (atrás de): Il parcheggio è dietro la stazione.</p>
+      <p class="example">Tra / fra (entre): Il ristorante è tra il bar e la farmacia.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. A + articolo</h4>
+      <p>A preposição <strong>a</strong> pode se unir aos artigos.</p>
+      <table class="fr-vocab-table">
+        <tr><th>Preposizione</th><th>Forma combinata</th><th>Esempio</th></tr>
+        <tr><td class="fr-word">a + il</td><td>al</td><td class="fr-example">vicino al cinema</td></tr>
+        <tr><td class="fr-word">a + lo</td><td>allo</td><td class="fr-example">vicino allo stadio</td></tr>
+        <tr><td class="fr-word">a + la</td><td>alla</td><td class="fr-example">accanto alla banca</td></tr>
+        <tr><td class="fr-word">a + l'</td><td>all'</td><td class="fr-example">davanti all'hotel</td></tr>
+        <tr><td class="fr-word">a + i</td><td>ai</td><td class="fr-example">vicino ai negozi</td></tr>
+        <tr><td class="fr-word">a + gli</td><td>agli</td><td class="fr-example">accanto agli uffici</td></tr>
+        <tr><td class="fr-word">a + le</td><td>alle</td><td class="fr-example">davanti alle scuole</td></tr>
+      </table>
+      <p class="example">La farmacia è vicino al supermercato.</p>
+      <p class="example">Il bar è accanto alla stazione.</p>
+      <p class="example">La fermata è davanti all'hotel.</p>
+      <p class="example">Il parcheggio è vicino ai negozi.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>F. In e a con i luoghi</h4>
+      <p>Usamos frequentemente <strong>in</strong> com ruas e determinadas áreas:</p>
+      <p class="example">in via Roma · in piazza Garibaldi · in centro · in città</p>
+      <p>Usamos <strong>a</strong> com cidades:</p>
+      <p class="example">a Roma · a Milano · a Curitiba</p>
+      <p class="example">La banca si trova in via Roma.</p>
+      <p class="example">Il cinema è in centro.</p>
+      <p class="example">La stazione si trova a Milano.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Precedente</button>
+      <span class="fr-slide-info">Sezione 3 di 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 4. TRADUZIONE -->
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Traduzione</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduci dal portoghese all'italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">1. Onde fica a farmácia?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Dove si trova la farmacia?</div></div>
+        <div class="exercise-item"><div class="exercise-q">2. A farmácia fica perto do banco.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">La farmacia si trova vicino alla banca.</div></div>
+        <div class="exercise-item"><div class="exercise-q">3. Há um supermercado aqui perto?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">C'è un supermercato qui vicino?</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">4. Sim, há um supermercado em frente ao hotel.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Sì, c'è un supermercato davanti all'hotel.</div></div>
+        <div class="exercise-item"><div class="exercise-q">5. Onde fica a estação?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Dove si trova la stazione?</div></div>
+        <div class="exercise-item"><div class="exercise-q">6. A estação fica longe do centro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">La stazione è lontana dal centro.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">7. O restaurante fica entre o bar e o cinema.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Il ristorante è tra il bar e il cinema.</div></div>
+        <div class="exercise-item"><div class="exercise-q">8. O estacionamento fica atrás da estação.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Il parcheggio è dietro la stazione.</div></div>
+        <div class="exercise-item"><div class="exercise-q">9. Há duas lojas nesta rua.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Ci sono due negozi in questa strada.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-list">
+        <div class="exercise-item"><div class="exercise-q">10. O caixa eletrônico fica em frente ao banco.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Il bancomat è davanti alla banca.</div></div>
+        <div class="exercise-item"><div class="exercise-q">11. Onde ficam os restaurantes?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Dove si trovano i ristoranti?</div></div>
+        <div class="exercise-item"><div class="exercise-q">12. Eles ficam perto da praça.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra risposta</button><div class="exercise-answer">Si trovano vicino alla piazza.</div></div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frasi 1–3 di 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<!-- 5. CONVERSAZIONE -->
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversazione</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Rispondi alle domande ad alta voce.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Dove si trova la tua casa?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Che cosa c'è vicino a casa tua?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">C'è un supermercato nella tua strada?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Dove si trova la farmacia più vicina?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Ci sono dei ristoranti nel tuo quartiere?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Dove si trova la fermata dell'autobus più vicina?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Quali luoghi ci sono nel centro della tua città?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Il tuo lavoro o la tua scuola sono vicini a casa?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Qual è un luogo importante della tua città e dove si trova?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come spieghi a un turista dove si trova un posto?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-cv-info">Domande 1–3 di 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Successivo →</button>
+    </div>
+  </div>
+</div>
