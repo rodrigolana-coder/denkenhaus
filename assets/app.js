@@ -1383,6 +1383,14 @@ const AULAS = {
   skills: ['Verbes de l\'Argent', 'Présent', 'Adverbes de Fréquence'],
   file: 'aulas/fr-a1-98.html',
 },
+'Francês-A2-39': {
+  icon: '💼',
+  titulo: 'Petits boulots & argent',
+  descricao: 'Falar sobre pequenos trabalhos e experiências profissionais no passado, usando o passé composé com verbos regulares em -ER.',
+  duracao: '40 min',
+  skills: ['Passé composé', 'Verbes en -ER', 'Petits boulots'],
+  file: 'aulas/fr-a1-99.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
