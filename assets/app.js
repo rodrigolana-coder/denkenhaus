@@ -601,6 +601,22 @@ const AULAS = {
   skills: ['Money Verbs', 'Present Simple', 'Adverbs of Frequency'],
   file: 'aulas/en-a1-54.html',
 },
+'Inglês-A1-55': {
+  icon: '🍁',
+  titulo: 'Curiosity: Canada',
+  descricao: 'Conhecer curiosidades sobre o Canadá, sua geografia, clima, cidades e símbolos, revisando Present Simple, was/were e How + adjective.',
+  duracao: '30 min',
+  skills: ['Canada', 'Culture', 'Reading'],
+  file: 'aulas/en-a1-55.html',
+},
+'Inglês-A1-56': {
+  icon: '💼',
+  titulo: 'Teenage Jobs & Money',
+  descricao: 'Falar sobre primeiros empregos, formas de ganhar dinheiro na adolescência e usar o Past Simple com verbos regulares.',
+  duracao: '35 min',
+  skills: ['Past Simple', 'Regular Verbs', 'Jobs & Money'],
+  file: 'aulas/en-a1-56.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
