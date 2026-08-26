@@ -617,6 +617,14 @@ const AULAS = {
   skills: ['Past Simple', 'Regular Verbs', 'Jobs & Money'],
   file: 'aulas/en-a1-56.html',
 },
+'Inglês-A1-57': {
+  icon: '💰',
+  titulo: 'Rags to Riches',
+  descricao: 'Past Simple negativo e perguntas com Did, além de adjetivos sobre dinheiro (rich, poor, broke, generous, mean).',
+  duracao: '25 min',
+  skills: ['Past Simple Negative', 'Did Questions', 'Money Adjectives'],
+  file: 'aulas/en-a1-57.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
@@ -1390,6 +1398,14 @@ const AULAS = {
   duracao: '40 min',
   skills: ['Passé composé', 'Verbes en -ER', 'Petits boulots'],
   file: 'aulas/fr-a1-99.html',
+},
+'Français-A1-40': {
+  icon: '💰',
+  titulo: 'Partir de rien et faire fortune',
+  descricao: "Négation et questions au passé composé, plus des adjectifs liés à l'argent (riche, pauvre, fauché, généreux, radin).",
+  duracao: '25 min',
+  skills: ['Passé Composé Négation', 'Questions avec Est-ce Que', 'Adjectifs de l\'Argent'],
+  file: 'aulas/fr-a1-100.html',
 },
 'Espanhol-A1-18': {
   icon: '✉️',
