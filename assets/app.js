@@ -1399,7 +1399,7 @@ const AULAS = {
   skills: ['Passé composé', 'Verbes en -ER', 'Petits boulots'],
   file: 'aulas/fr-a1-99.html',
 },
-'Français-A1-40': {
+'Francês-A2-40': {
   icon: '💰',
   titulo: 'Partir de rien et faire fortune',
   descricao: "Négation et questions au passé composé, plus des adjectifs liés à l'argent (riche, pauvre, fauché, généreux, radin).",
