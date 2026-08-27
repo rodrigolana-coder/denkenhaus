@@ -171,6 +171,14 @@ const AULAS = {
   skills: ['Indicazioni', 'Luoghi in città', 'A + articolo'],
   file: 'aulas/it-a1-16.html',
 },
+'Italiano-A1-17': {
+  icon: '☕',
+  titulo: 'Al bar: snack e bevande',
+  descricao: 'Falar sobre lanches e bebidas, pedir em um bar e indicar posse com di, di chi è e os possessivos.',
+  duracao: '35 min',
+  skills: ['Snack e bevande', 'Possesso con di', 'Possessivi'],
+  file: 'aulas/it-a1-17.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
