@@ -625,6 +625,14 @@ const AULAS = {
   skills: ['Past Simple Negative', 'Did Questions', 'Money Adjectives'],
   file: 'aulas/en-a1-57.html',
 },
+'Inglês-A1-58': {
+  icon: '🔁',
+  titulo: 'Review: Teenage Jobs & Rags to Riches',
+  descricao: 'Revisar o Past Simple afirmativo, negativo e interrogativo, distinguir Did de Was/Were e consolidar vocabulário de empregos e dinheiro.',
+  duracao: '40 min',
+  skills: ['Past Simple', 'Did × Was/Were', 'Jobs & Money'],
+  file: 'aulas/en-a1-58.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
