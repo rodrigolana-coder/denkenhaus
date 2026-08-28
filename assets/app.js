@@ -1423,6 +1423,14 @@ const AULAS = {
   skills: ['Passé Composé Négation', 'Questions avec Est-ce Que', 'Adjectifs de l\'Argent'],
   file: 'aulas/fr-a1-100.html',
 },
+'Francês-A2-41': {
+  icon: '💶',
+  titulo: 'Une femme dans un monde d’hommes',
+  descricao: 'Aprender particípios passados irregulares frequentes, revisar o passé composé e falar sobre dinheiro, trabalho, sucesso e grandes números.',
+  duracao: '45 min',
+  skills: ['Participes irréguliers', 'Passé composé', 'Grands nombres'],
+  file: 'aulas/fr-a1-101.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
