@@ -649,6 +649,14 @@ const AULAS = {
   skills: ['Past Simple', 'Did × Was/Were', 'Jobs & Money'],
   file: 'aulas/en-a1-58.html',
 },
+'Inglês-A1-59': {
+  icon: '💷',
+  titulo: 'A Woman in a Man’s World',
+  descricao: 'Aprender verbos irregulares no Past Simple, revisar perguntas com Did e falar sobre dinheiro, decisões financeiras e números altos.',
+  duracao: '45 min',
+  skills: ['Irregular Verbs', 'Past Simple', 'High Numbers'],
+  file: 'aulas/en-a1-59.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
