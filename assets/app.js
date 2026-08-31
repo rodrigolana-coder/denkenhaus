@@ -179,6 +179,14 @@ const AULAS = {
   skills: ['Snack e bevande', 'Possesso con di', 'Possessivi'],
   file: 'aulas/it-a1-17.html',
 },
+'Italiano-A1-18': {
+  icon: '🏷️',
+  titulo: 'Siamo chiusi',
+  descricao: 'Entender cartazes de lojas, descrever produtos e lugares e aprender a posição e a concordância dos adjetivos em italiano.',
+  duracao: '35 min',
+  skills: ['Aggettivi', 'Negozi', 'Cartelli'],
+  file: 'aulas/it-a1-18.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
