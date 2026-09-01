@@ -187,6 +187,14 @@ const AULAS = {
   skills: ['Aggettivi', 'Negozi', 'Cartelli'],
   file: 'aulas/it-a1-18.html',
 },
+'Italiano-A1-19': {
+  icon: '💶',
+  titulo: 'Quanto costa?',
+  descricao: 'Perguntar e dizer preços, falar de cores e usar questo, questa, questi, queste, quello, quella, quelli e quelle em situações de compras.',
+  duracao: '35 min',
+  skills: ['Prezzi', 'Colori', 'Dimostrativi'],
+  file: 'aulas/it-a1-19.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
