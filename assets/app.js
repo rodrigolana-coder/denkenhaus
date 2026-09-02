@@ -665,6 +665,23 @@ const AULAS = {
   skills: ['Irregular Verbs', 'Past Simple', 'High Numbers'],
   file: 'aulas/en-a1-59.html',
 },
+'Inglês-A1-60': {
+  icon: '🚗',
+  titulo: 'Why Is Route 66 So Famous?',
+  descricao: 'Conhecer a história da Route 66 e revisar was/were, Past Simple regular, alguns verbos irregulares, anos e vocabulário de viagens.',
+  duracao: '35 min',
+  skills: ['Curiosity', 'Past Simple', 'Travel'],
+  file: 'aulas/en-a1-60.html',
+},
+
+'Inglês-A2-1': {
+  icon: '💡',
+  titulo: 'The Internet Millionaire Game',
+  descricao: 'Memorizar cinco verbos irregulares no Past Simple, revisar did/didn’t e aprender a fazer sugestões com Let’s e Why don’t you/we.',
+  duracao: '40 min',
+  skills: ['Irregular Verbs', 'Suggestions', 'Business'],
+  file: 'aulas/en-a1-61.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
