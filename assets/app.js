@@ -682,6 +682,14 @@ const AULAS = {
   skills: ['Irregular Verbs', 'Suggestions', 'Business'],
   file: 'aulas/en-a1-61.html',
 },
+'Inglês-A2-2': {
+  icon: '🔄',
+  titulo: 'Changes',
+  descricao: 'Talk about important life changes and learn five more irregular verbs in the Past Simple.',
+  duracao: '40 min',
+  skills: ['Life Changes', 'Irregular Verbs — Set 2', 'Past Simple'],
+  file: 'aulas/en-a1-62.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
