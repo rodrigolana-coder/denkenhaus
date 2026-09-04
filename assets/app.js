@@ -195,6 +195,14 @@ const AULAS = {
   skills: ['Prezzi', 'Colori', 'Dimostrativi'],
   file: 'aulas/it-a1-19.html',
 },
+'Italiano-A1-20': {
+  icon: '🇮🇹',
+  titulo: 'I colori delle città italiane',
+  descricao: 'Scopri i colori, i materiali e l’identità di alcune città italiane.',
+  duracao: '40 min',
+  skills: ['Curiosità', 'Cultura italiana', 'Comprensione del testo'],
+  file: 'aulas/it-a1-20.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
