@@ -203,6 +203,14 @@ const AULAS = {
   skills: ['Curiosità', 'Cultura italiana', 'Comprensione del testo'],
   file: 'aulas/it-a1-20.html',
 },
+'Italiano-A1-21': {
+  icon: '📱',
+  titulo: 'Pronto? Come stai?',
+  descricao: 'Imparare a parlare al telefono, chiedere dove si trova una persona e organizzare un incontro con amici.',
+  duracao: '40 min',
+  skills: ['Telefono', 'Luoghi', 'Organizzare un incontro'],
+  file: 'aulas/it-a1-21.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
