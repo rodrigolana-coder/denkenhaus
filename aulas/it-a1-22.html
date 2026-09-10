@@ -1,0 +1,337 @@
+<!-- Italiano A1 — Classe 22: In viaggio -->
+
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialoghi</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Traduzione</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversazione</button>
+</div>
+
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialoghi</div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it22.png" alt="Un fine settimana al mare"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it22.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 1 — Un fine settimana al mare</div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Dove sei questo fine settimana?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Sono al mare con la mia famiglia.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Che bello! C’è una spiaggia vicino al vostro hotel?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Sì, c’è una spiaggia molto grande davanti all’hotel.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">E che cosa c’è vicino alla spiaggia?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Ci sono dei ristoranti, un piccolo mercato e un museo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Qual è il tuo posto preferito?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">La spiaggia, naturalmente!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it22-1.png" alt="Una giornata in montagna"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it22-1.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 2 — Una giornata in montagna</div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Che cosa fate oggi?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Andiamo in montagna.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">C’è un parco nazionale lì?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Sì. È molto bello. Ci sono montagne, un lago e un fiume.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Preferisci il mare o la montagna?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Preferisco la montagna. E tu?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Io preferisco il mare.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Luca</span><span class="dialog-text">Allora la prossima volta andiamo in spiaggia!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid">
+        <div class="fr-dlg-img"><img src="/denkenhaus/img/it/it22-2.png" alt="Una giornata a Roma"></div>
+        <div class="fr-dlg-right">
+          <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;">
+            <source src="/denkenhaus/audio/it/it22-2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="fr-dlg-label">Dialogo 3 — Una giornata a Roma</div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Che cosa vuoi visitare oggi?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Vorrei visitare un museo.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Possiamo andare al museo questa mattina e al teatro stasera.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Ottima idea! C’è anche una galleria d’arte qui vicino?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Sì, è vicino a un palazzo molto famoso.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">E dov’è?</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">In centro, vicino alla piazza.</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Perfetto. Andiamo!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-dlg-info">Dialogo 1 di 3</span>
+      <button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:1rem;">
+      <div class="c-block-title" style="margin-bottom:0;">Vocabolario — In viaggio</div>
+      <audio id="it22-vocab-audio"><source src="/denkenhaus/audio/it/it22-vocab.mp3" type="audio/mpeg"></audio>
+      <button type="button" onclick="document.getElementById('it22-vocab-audio').play()" title="Ascolta il vocabolario" style="border:none;border-radius:50%;width:42px;height:42px;min-width:42px;cursor:pointer;font-size:1.15rem;display:flex;align-items:center;justify-content:center;background:#eef2ff;">🔊</button>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Luoghi</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Italiano</th><th>Português</th></tr>
+        <tr><td class="fr-word">l’aeroporto</td><td>o aeroporto</td></tr>
+        <tr><td class="fr-word">la spiaggia</td><td>a praia</td></tr>
+        <tr><td class="fr-word">la galleria</td><td>a galeria</td></tr>
+        <tr><td class="fr-word">il lago</td><td>o lago</td></tr>
+        <tr><td class="fr-word">il mercato</td><td>o mercado</td></tr>
+        <tr><td class="fr-word">la montagna</td><td>a montanha</td></tr>
+        <tr><td class="fr-word">il museo</td><td>o museu</td></tr>
+        <tr><td class="fr-word">il parco nazionale</td><td>o parque nacional</td></tr>
+        <tr><td class="fr-word">il palazzo</td><td>o palácio</td></tr>
+        <tr><td class="fr-word">il fiume</td><td>o rio</td></tr>
+        <tr><td class="fr-word">il mare</td><td>o mar</td></tr>
+        <tr><td class="fr-word">il teatro</td><td>o teatro</td></tr>
+        <tr><td class="fr-word">la città</td><td>a cidade</td></tr>
+        <tr><td class="fr-word">il centro</td><td>o centro</td></tr>
+        <tr><td class="fr-word">la piazza</td><td>a praça</td></tr>
+        <tr><td class="fr-word">il posto</td><td>o lugar</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Natura e città</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Natura</th><th>Città</th></tr>
+        <tr><td>la spiaggia</td><td>l’aeroporto</td></tr>
+        <tr><td>il lago</td><td>la galleria</td></tr>
+        <tr><td>la montagna</td><td>il mercato</td></tr>
+        <tr><td>il parco nazionale</td><td>il museo</td></tr>
+        <tr><td>il fiume</td><td>il palazzo</td></tr>
+        <tr><td>il mare</td><td>il teatro</td></tr>
+      </table>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>Espressioni utili</h4>
+      <table class="fr-vocab-table">
+        <tr><th>Italiano</th><th>Português</th></tr>
+        <tr><td class="fr-word">Dove sei?</td><td>Onde você está?</td></tr>
+        <tr><td class="fr-word">Che cosa c’è?</td><td>O que há?</td></tr>
+        <tr><td class="fr-word">C’è…</td><td>Há…</td></tr>
+        <tr><td class="fr-word">Ci sono…</td><td>Há…</td></tr>
+        <tr><td class="fr-word">Che cosa vuoi visitare?</td><td>O que você quer visitar?</td></tr>
+        <tr><td class="fr-word">Vorrei visitare…</td><td>Eu gostaria de visitar…</td></tr>
+        <tr><td class="fr-word">Andiamo a…</td><td>Vamos a…</td></tr>
+        <tr><td class="fr-word">Qual è il tuo posto preferito?</td><td>Qual é o seu lugar favorito?</td></tr>
+        <tr><td class="fr-word">Preferisco…</td><td>Eu prefiro…</td></tr>
+        <tr><td class="fr-word">Che bello!</td><td>Que legal! / Que bonito!</td></tr>
+        <tr><td class="fr-word">Qui vicino</td><td>Aqui perto</td></tr>
+        <tr><td class="fr-word">La prossima volta</td><td>Da próxima vez</td></tr>
+      </table>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(0)">← Precedente</button>
+      <span class="fr-slide-info">Sezione 2 di 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(2)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block">
+    <div class="c-block-title">Grammatica</div>
+
+    <div class="grammar-rule">
+      <h4>A. C’è e ci sono — Revisione</h4>
+      <p>Usamos <strong>c’è</strong> quando existe <strong>uma</strong> pessoa, coisa ou lugar.</p>
+      <p class="example">C’è una spiaggia.</p>
+      <p class="example">C’è un museo in centro.</p>
+      <p class="example">C’è un lago vicino alla montagna.</p>
+      <p class="example">C’è un aeroporto vicino alla città.</p>
+      <p>Usamos <strong>ci sono</strong> quando existem <strong>duas ou mais</strong> coisas.</p>
+      <p class="example">Ci sono due musei.</p>
+      <p class="example">Ci sono delle montagne.</p>
+      <p class="example">Ci sono molti ristoranti vicino alla spiaggia.</p>
+      <p class="example">Ci sono un lago e un fiume.</p>
+      <p><strong>Domande</strong></p>
+      <p class="example"><strong>A:</strong> C’è un museo qui vicino?</p>
+      <p class="example"><strong>B:</strong> Sì, c’è.</p>
+      <p class="example"><strong>A:</strong> Ci sono delle spiagge?</p>
+      <p class="example"><strong>B:</strong> Sì, ci sono.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>B. Qual è il tuo posto preferito?</h4>
+      <p>Para perguntar o lugar favorito de alguém:</p>
+      <p class="example"><strong>Qual è il tuo posto preferito?</strong></p>
+      <p>Também podemos especificar:</p>
+      <p class="example">Qual è la tua spiaggia preferita?</p>
+      <p class="example">Qual è il tuo museo preferito?</p>
+      <p class="example">Qual è la tua città preferita?</p>
+      <p class="example">Qual è il tuo parco preferito?</p>
+      <p><strong>Risposte</strong></p>
+      <p class="example">Il mio posto preferito è…</p>
+      <p class="example">La mia spiaggia preferita è…</p>
+      <p class="example">Il mio museo preferito è…</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>C. Preferire</h4>
+      <p>Já vimos <strong>preferisco</strong> para falar de preferências.</p>
+      <p><strong>Esempi</strong></p>
+      <p class="example">Preferisco il mare.</p>
+      <p class="example">Preferisco la montagna.</p>
+      <p class="example">Preferisco i musei.</p>
+      <p class="example">Preferisco le spiagge.</p>
+      <p>Para perguntar:</p>
+      <p class="example">Preferisci il mare o la montagna?</p>
+      <p class="example">Preferisci visitare un museo o andare al mercato?</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>D. Andare + luogo</h4>
+      <p>Com alguns lugares, usamos <strong>a + articolo</strong>:</p>
+      <p class="example">al museo</p>
+      <p class="example">al teatro</p>
+      <p class="example">al mercato</p>
+      <p class="example">al mare</p>
+      <p class="example">alla spiaggia</p>
+      <p class="example">all’aeroporto</p>
+      <p><strong>Esempi</strong></p>
+      <p class="example">Andiamo al museo.</p>
+      <p class="example">Vado al mercato.</p>
+      <p class="example">Andiamo alla spiaggia.</p>
+      <p class="example">Vado all’aeroporto.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>E. Andare in</h4>
+      <p>Com vários lugares e expressões, usamos <strong>in</strong>:</p>
+      <p class="example">in montagna</p>
+      <p class="example">in città</p>
+      <p class="example">in centro</p>
+      <p><strong>Esempi</strong></p>
+      <p class="example">Andiamo in montagna.</p>
+      <p class="example">Sono in città.</p>
+      <p class="example">Il museo è in centro.</p>
+    </div>
+
+    <div class="grammar-rule">
+      <h4>F. Al mare × in montagna</h4>
+      <p>Algumas expressões precisam ser aprendidas como blocos:</p>
+      <p class="example"><strong>al mare</strong> — no/ao litoral, à praia</p>
+      <p class="example"><strong>in montagna</strong> — na/à montanha</p>
+      <p class="example"><strong>in città</strong> — na cidade</p>
+      <p class="example"><strong>in centro</strong> — no centro</p>
+      <p><strong>Esempi</strong></p>
+      <p class="example">Sono al mare.</p>
+      <p class="example">Andiamo al mare domenica.</p>
+      <p class="example">Sono in montagna con i miei amici.</p>
+      <p class="example">Andiamo in montagna questo fine settimana.</p>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(1)">← Precedente</button>
+      <span class="fr-slide-info">Sezione 3 di 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(3)">Successivo →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block">
+    <div class="c-block-title">Traduzione</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Traduci dal portoghese all’italiano.</p>
+
+    <div class="fr-ex-slide fr-active" id="fr-ex-0"><div class="exercise-list">
+      <div class="exercise-item"><div class="exercise-q">1. Há uma praia perto do hotel.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">C’è una spiaggia vicino all’hotel.</div></div>
+      <div class="exercise-item"><div class="exercise-q">2. Há dois museus no centro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono due musei in centro.</div></div>
+      <div class="exercise-item"><div class="exercise-q">3. Qual é o seu lugar favorito?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Qual è il tuo posto preferito?</div></div>
+    </div></div>
+
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;"><div class="exercise-list">
+      <div class="exercise-item"><div class="exercise-q">4. Minha praia favorita é na Itália.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">La mia spiaggia preferita è in Italia.</div></div>
+      <div class="exercise-item"><div class="exercise-q">5. Eu prefiro o mar.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Preferisco il mare.</div></div>
+      <div class="exercise-item"><div class="exercise-q">6. Você prefere o mar ou a montanha?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Preferisci il mare o la montagna?</div></div>
+    </div></div>
+
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;"><div class="exercise-list">
+      <div class="exercise-item"><div class="exercise-q">7. Vamos ao museu hoje.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Andiamo al museo oggi.</div></div>
+      <div class="exercise-item"><div class="exercise-q">8. Eu gostaria de visitar uma galeria.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Vorrei visitare una galleria.</div></div>
+      <div class="exercise-item"><div class="exercise-q">9. Há um lago no parque nacional.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">C’è un lago nel parco nazionale.</div></div>
+    </div></div>
+
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;"><div class="exercise-list">
+      <div class="exercise-item"><div class="exercise-q">10. Vamos para a montanha neste fim de semana.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Andiamo in montagna questo fine settimana.</div></div>
+      <div class="exercise-item"><div class="exercise-q">11. O aeroporto fica perto da cidade.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">L’aeroporto è vicino alla città.</div></div>
+      <div class="exercise-item"><div class="exercise-q">12. Há um mercado ao lado do teatro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">C’è un mercato accanto al teatro.</div></div>
+    </div></div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-ex-info">Frasi 1–3 di 12</span>
+      <button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Successivo →</button>
+    </div>
+
+    <div class="fr-nav" style="margin-top:1rem;">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(2)">← Grammatica</button>
+      <span class="fr-slide-info">Sezione 4 di 5</span>
+      <button class="fr-nav-btn" onclick="frGoSection(4)">Conversazione →</button>
+    </div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block">
+    <div class="c-block-title">Conversazione</div>
+    <p style="font-size:0.85rem;color:#5a6e8a;margin-bottom:1.25rem;">Rispondi alle domande ad alta voce.</p>
+
+    <div class="fr-conv-slide fr-active" id="fr-cv-0">
+      <div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Qual è il tuo posto preferito nella tua città?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Preferisci il mare o la montagna? Perché?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Qual è la tua spiaggia preferita?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Ti piace visitare i musei?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Quale museo vuoi visitare?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Ci sono parchi nazionali vicino alla tua città?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Preferisci andare al mercato o in un centro commerciale?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Quale città italiana vuoi visitare?</div></div>
+      <div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Che cosa vuoi vedere in Italia: il mare, le montagne o le città?</div></div>
+    </div>
+
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;">
+      <div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Che cosa c’è da visitare nella tua città?</div></div>
+    </div>
+
+    <div class="fr-nav">
+      <button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Precedente</button>
+      <span class="fr-slide-info" id="fr-cv-info">Domande 1–3 di 10</span>
+      <button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Successivo →</button>
+    </div>
+
+    <div class="fr-nav" style="margin-top:1rem;">
+      <button class="fr-nav-btn fr-ghost" onclick="frGoSection(3)">← Traduzione</button>
+      <span class="fr-slide-info">Sezione 5 di 5</span>
+      <button class="fr-nav-btn" disabled>Completato ✓</button>
+    </div>
+  </div>
+</div>
