@@ -714,7 +714,7 @@ const AULAS = {
   skills: ['Why / Because', 'Presents & Gifts', 'Irregular Verbs — Set 3'],
   file: 'aulas/en-a1-63.html',
 },
-'Inglês-A1-64': {
+'Inglês-A2-4': {
   icon: '🎉',
   titulo: 'Celebrations & Changes',
   descricao: 'Review life changes, presents and Why/Because while learning five new irregular verbs and talking about celebrations and special moments.',
@@ -722,7 +722,7 @@ const AULAS = {
   skills: ['Celebrations', 'Irregular Verbs — Set 4', 'Past Simple Review'],
   file: 'aulas/en-a1-64.html',
 },
-'Inglês-A1-65': {
+'Inglês-A2-5': {
   icon: '🇦🇺',
   titulo: 'Why Is Australia So Different?',
   descricao: 'Discover Australia’s unique wildlife and geography while reviewing previously studied grammar and irregular verbs.',
@@ -730,7 +730,7 @@ const AULAS = {
   skills: ['Australian Culture', 'Wildlife & Geography', 'Grammar Review'],
   file: 'aulas/en-a1-65.html',
 },
-'Inglês-A1-66': {
+'Inglês-A2-6': {
   icon: '✈️',
   titulo: 'Home and Away',
   descricao: 'Use be going to to talk about future travel plans and learn five new irregular verbs.',
