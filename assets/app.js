@@ -211,6 +211,14 @@ const AULAS = {
   skills: ['Telefono', 'Luoghi', 'Organizzare un incontro'],
   file: 'aulas/it-a1-21.html',
 },
+'Italiano-A1-22': {
+  icon: '🧳',
+  titulo: 'In viaggio',
+  descricao: 'Parlare di luoghi da visitare, natura e città, usando c’è / ci sono e le preposizioni con i luoghi.',
+  duracao: '40 min',
+  skills: ['Luoghi', 'C’è / Ci sono', 'Preposizioni di luogo'],
+  file: 'aulas/it-a1-22.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
