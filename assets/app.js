@@ -219,6 +219,14 @@ const AULAS = {
   skills: ['Luoghi', 'C’è / Ci sono', 'Preposizioni di luogo'],
   file: 'aulas/it-a1-22.html',
 },
+'Italiano-A1-23': {
+  icon: '🏛️',
+  titulo: 'La città vecchia',
+  descricao: 'Parlare delle attrazioni turistiche di una città, esprimere opinioni e usare alcuni / alcune, molti / molte e c’è / ci sono.',
+  duracao: '40 min',
+  skills: ['Attrazioni turistiche', 'Quantità', 'Opinioni'],
+  file: 'aulas/it-a1-23.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
