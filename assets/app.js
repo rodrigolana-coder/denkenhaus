@@ -754,6 +754,14 @@ const AULAS = {
   skills: ['Be Going To', 'Travel & Future Plans', 'Irregular Verbs — Set 5'],
   file: 'aulas/en-a1-66.html',
 },
+'Inglês-B1-1': {
+  icon: '⏰',
+  titulo: '24 Hours',
+  descricao: 'Talk about daily routines, weekdays and weekends, and describe habits using common expressions from everyday life.',
+  duracao: '40 min',
+  skills: ['Daily Routine', 'Weekdays & Weekends', 'Everyday Expressions'],
+  file: 'aulas/en-b1-1.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
