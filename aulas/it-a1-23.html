@@ -1,0 +1,130 @@
+<!-- Italiano A1 — Classe 23 : La città vecchia -->
+<div class="fr-tabs">
+  <button class="fr-tab fr-tab-active" onclick="frGoSection(0)">Dialoghi</button>
+  <button class="fr-tab" onclick="frGoSection(1)">Vocabolario</button>
+  <button class="fr-tab" onclick="frGoSection(2)">Grammatica</button>
+  <button class="fr-tab" onclick="frGoSection(3)">Traduzione</button>
+  <button class="fr-tab" onclick="frGoSection(4)">Conversazione</button>
+</div>
+
+<div class="fr-section fr-active" id="fr-sec-0">
+  <div class="c-block">
+    <div class="c-block-title">Dialoghi</div>
+    <div class="fr-dlg-slide" id="fr-dlg-0">
+      <div class="fr-dlg-grid"><div class="fr-dlg-img"><img src="/denkenhaus/img/it/it23.png" alt="Nel centro storico"></div><div class="fr-dlg-right">
+        <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/it/it23.mp3" type="audio/mpeg"></audio>
+        <div class="fr-dlg-label">Dialogo 1 — Nel centro storico</div>
+        <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Ti piace questa città?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Sì, molto. Il centro storico è bellissimo.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Che cosa c’è da vedere?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">C’è un palazzo antico e ci sono alcune chiese molto belle.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Ci sono anche dei musei?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Sì, ci sono tre musei in centro.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Giulia</span><span class="dialog-text">Qual è il tuo preferito?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Daniel</span><span class="dialog-text">Il Museo della Città. Secondo me è fantastico.</span></div>
+      </div></div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-1" style="display:none;">
+      <div class="fr-dlg-grid"><div class="fr-dlg-img"><img src="/denkenhaus/img/it/it23-1.png" alt="Dove mangiamo?"></div><div class="fr-dlg-right">
+        <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/it/it23-1.mp3" type="audio/mpeg"></audio>
+        <div class="fr-dlg-label">Dialogo 2 — Dove mangiamo?</div>
+        <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Ci sono dei ristoranti qui vicino?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Sì, ci sono molti ristoranti nella piazza.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Sono buoni?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Alcuni sono molto buoni, ma altri sono troppo cari.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">E quel ristorante davanti al museo?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Secondo me è ottimo e non è molto caro.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Sofia</span><span class="dialog-text">Perfetto. Andiamo lì!</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Marco</span><span class="dialog-text">Va bene.</span></div>
+      </div></div>
+    </div>
+
+    <div class="fr-dlg-slide" id="fr-dlg-2" style="display:none;">
+      <div class="fr-dlg-grid"><div class="fr-dlg-img"><img src="/denkenhaus/img/it/it23-2.png" alt="Una città per le vacanze"></div><div class="fr-dlg-right">
+        <audio controls style="width:100%;margin-bottom:0.5rem;border-radius:8px;"><source src="/denkenhaus/audio/it/it23-2.mp3" type="audio/mpeg"></audio>
+        <div class="fr-dlg-label">Dialogo 3 — Una città per le vacanze</div>
+        <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Qual è la tua città preferita per le vacanze?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Paolo</span><span class="dialog-text">Firenze.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Perché?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Paolo</span><span class="dialog-text">Perché ci sono molti monumenti, musei e palazzi bellissimi.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Ci sono dei mercati?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Paolo</span><span class="dialog-text">Sì, ci sono alcuni mercati molto interessanti.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">E i ristoranti?</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Paolo</span><span class="dialog-text">Ce ne sono molti. Secondo me, il cibo è fantastico.</span></div>
+        <div class="dialog-line"><span class="dialog-speaker">Elena</span><span class="dialog-text">Allora voglio visitarla!</span></div>
+      </div></div>
+    </div>
+    <div class="fr-nav"><button class="fr-nav-btn fr-ghost" id="fr-dlg-prev" onclick="frNavDlg(-1)" disabled>← Precedente</button><span class="fr-slide-info" id="fr-dlg-info">Dialogo 1 di 3</span><button class="fr-nav-btn" id="fr-dlg-next" onclick="frNavDlg(1)">Successivo →</button></div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-1">
+  <div class="c-block">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:1rem;">
+      <div class="c-block-title" style="margin-bottom:0;">Vocabolario — La città vecchia</div>
+      <audio id="it23-vocab-audio"><source src="/denkenhaus/audio/it/it23-vocab.mp3" type="audio/mpeg"></audio>
+      <button type="button" onclick="document.getElementById('it23-vocab-audio').play()" title="Ascolta il vocabolario" style="border:none;border-radius:50%;width:42px;height:42px;min-width:42px;cursor:pointer;font-size:1.15rem;display:flex;align-items:center;justify-content:center;background:#eef2ff;">🔊</button>
+    </div>
+
+    <div class="grammar-rule"><h4>Attrazioni turistiche</h4><table class="fr-vocab-table"><tr><th>Italiano</th><th>Português</th></tr>
+      <tr><td class="fr-word">l’attrazione turistica</td><td>a atração turística</td></tr><tr><td class="fr-word">il centro storico</td><td>o centro histórico</td></tr><tr><td class="fr-word">il monumento</td><td>o monumento</td></tr><tr><td class="fr-word">il palazzo</td><td>o palácio</td></tr><tr><td class="fr-word">la chiesa</td><td>a igreja</td></tr><tr><td class="fr-word">il museo</td><td>o museu</td></tr><tr><td class="fr-word">la galleria</td><td>a galeria</td></tr><tr><td class="fr-word">il mercato</td><td>o mercado</td></tr><tr><td class="fr-word">la piazza</td><td>a praça</td></tr><tr><td class="fr-word">il parco</td><td>o parque</td></tr><tr><td class="fr-word">il teatro</td><td>o teatro</td></tr><tr><td class="fr-word">il ristorante</td><td>o restaurante</td></tr><tr><td class="fr-word">il bar</td><td>o café / bar</td></tr><tr><td class="fr-word">la fontana</td><td>a fonte</td></tr><tr><td class="fr-word">il castello</td><td>o castelo</td></tr><tr><td class="fr-word">il ponte</td><td>a ponte</td></tr><tr><td class="fr-word">la torre</td><td>a torre</td></tr>
+    </table></div>
+
+    <div class="grammar-rule"><h4>Aggettivi di opinione</h4><table class="fr-vocab-table"><tr><th>Italiano</th><th>Português</th></tr>
+      <tr><td class="fr-word">fantastico</td><td>fantástico</td></tr><tr><td class="fr-word">bellissimo</td><td>muito bonito</td></tr><tr><td class="fr-word">bello</td><td>bonito</td></tr><tr><td class="fr-word">interessante</td><td>interessante</td></tr><tr><td class="fr-word">ottimo</td><td>ótimo</td></tr><tr><td class="fr-word">buono</td><td>bom</td></tr><tr><td class="fr-word">niente male</td><td>nada mal</td></tr><tr><td class="fr-word">economico</td><td>barato / econômico</td></tr><tr><td class="fr-word">caro</td><td>caro</td></tr><tr><td class="fr-word">brutto</td><td>feio</td></tr><tr><td class="fr-word">noioso</td><td>entediante</td></tr><tr><td class="fr-word">terribile</td><td>terrível</td></tr><tr><td class="fr-word">orribile</td><td>horrível</td></tr>
+    </table></div>
+
+    <div class="grammar-rule"><h4>Espressioni utili</h4><table class="fr-vocab-table"><tr><th>Italiano</th><th>Português</th></tr>
+      <tr><td class="fr-word">Che cosa c’è da vedere?</td><td>O que há para ver?</td></tr><tr><td class="fr-word">Ci sono dei musei?</td><td>Há museus?</td></tr><tr><td class="fr-word">Ci sono molti ristoranti.</td><td>Há muitos restaurantes.</td></tr><tr><td class="fr-word">Secondo me…</td><td>Na minha opinião…</td></tr><tr><td class="fr-word">Penso che…</td><td>Eu acho que…</td></tr><tr><td class="fr-word">È fantastico.</td><td>É fantástico.</td></tr><tr><td class="fr-word">Non è molto buono.</td><td>Não é muito bom.</td></tr><tr><td class="fr-word">È troppo caro.</td><td>É caro demais.</td></tr><tr><td class="fr-word">Qual è il tuo preferito?</td><td>Qual é o seu favorito?</td></tr><tr><td class="fr-word">Perché?</td><td>Por quê?</td></tr>
+    </table></div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-2">
+  <div class="c-block"><div class="c-block-title">Grammatica</div>
+    <div class="grammar-rule"><h4>A. C’è e ci sono — Revisione</h4><p>Usamos <strong>c’è</strong> com uma pessoa, um objeto ou um lugar no singular.</p><p class="example">C’è un museo.<br>C’è una chiesa in piazza.<br>C’è un palazzo vicino al fiume.</p><p>Usamos <strong>ci sono</strong> com duas ou mais pessoas, objetos ou lugares.</p><p class="example">Ci sono due musei.<br>Ci sono molti ristoranti.<br>Ci sono alcune chiese antiche.</p><p><strong>Domande</strong></p><p class="example">C’è un museo in centro?<br>— Sì, c’è.<br><br>Ci sono dei ristoranti qui vicino?<br>— Sì, ci sono.</p></div>
+    <div class="grammar-rule"><h4>B. Alcuni e alcune</h4><p>Usamos <strong>alcuni / alcune</strong> para falar de uma quantidade indefinida: <strong>alguns / algumas</strong>.</p><table class="fr-vocab-table"><tr><th>Masculino</th><th>Feminino</th></tr><tr><td>alcuni</td><td>alcune</td></tr></table><p class="example">Ci sono alcuni musei interessanti.<br>Ci sono alcuni ristoranti economici.<br>Ci sono alcune chiese antiche.<br>Ci sono alcune piazze molto belle.</p><p>O termo concorda com o substantivo:</p><p class="example">alcuni musei<br>alcuni mercati<br>alcune chiese<br>alcune gallerie</p></div>
+    <div class="grammar-rule"><h4>C. Molti e molte</h4><p>Para dizer <strong>muitos / muitas</strong>, usamos:</p><table class="fr-vocab-table"><tr><th>Masculino</th><th>Feminino</th></tr><tr><td>molti</td><td>molte</td></tr></table><p class="example">Ci sono molti turisti.<br>Ci sono molti ristoranti.<br>Ci sono molte attrazioni turistiche.<br>Ci sono molte piazze.</p><p><strong>Confronto</strong></p><p class="example">Ci sono alcuni musei. → Há alguns museus.<br>Ci sono molti musei. → Há muitos museus.</p></div>
+    <div class="grammar-rule"><h4>D. Dei, degli e delle</h4><p>Também podemos usar <strong>dei / degli / delle</strong> com sentido de <strong>alguns / algumas</strong>, sem indicar uma quantidade específica.</p><p class="example">dei ristoranti<br>dei musei<br>degli hotel<br>degli studenti<br>delle chiese<br>delle piazze</p><p class="example">Ci sono dei ristoranti qui vicino.<br>Ci sono degli hotel in centro.<br>Ci sono delle chiese molto antiche.</p><p class="example">Ci sono dei musei. → Há alguns museus.<br>Ci sono molti musei. → Há muitos museus.</p></div>
+    <div class="grammar-rule"><h4>E. Dare un’opinione</h4><p>Para dar uma opinião, podemos usar:</p><p><strong>Secondo me…</strong></p><p class="example">Secondo me, questo museo è fantastico.<br>Secondo me, il ristorante è troppo caro.</p><p><strong>Penso che…</strong></p><p class="example">Penso che questa città sia molto bella.</p><p>Para este nível, também podemos usar uma estrutura ainda mais simples:</p><p class="example">Penso che è interessante.</p><p>Na fala cotidiana de iniciantes ela é compreensível, mas a forma gramaticalmente correta com <strong>penso che</strong> será estudada mais adiante com o congiuntivo.</p><p>Por enquanto, prefira:</p><p class="example">Secondo me, è interessante.<br>Per me, è interessante.</p></div>
+    <div class="grammar-rule"><h4>F. Aggettivi con essere</h4><p>Podemos usar <strong>essere + adjetivo</strong> para dar opiniões.</p><p class="example">Il museo è fantastico.<br>La città è bellissima.<br>I ristoranti sono buoni.<br>Le attrazioni sono interessanti.<br>Il bar è terribile.</p><p>O adjetivo concorda com o substantivo:</p><p class="example">un museo fantastico<br>una città fantastica<br>due musei fantastici<br>due città fantastiche</p></div>
+    <div class="grammar-rule"><h4>G. Molto × molti</h4><p>É importante diferenciar:</p><p><strong>MOLTO + aggettivo</strong></p><p>Significa <strong>muito</strong>:</p><p class="example">molto bello<br>molto interessante<br>molto caro<br><br>Il museo è molto interessante.</p><p><strong>MOLTI / MOLTE + sostantivo</strong></p><p>Significa <strong>muitos / muitas</strong>:</p><p class="example">molti musei<br>molti ristoranti<br>molte chiese<br>molte attrazioni<br><br>Ci sono molti musei.</p></div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-3">
+  <div class="c-block"><div class="c-block-title">Traduzione</div>
+    <div class="fr-ex-slide fr-active" id="fr-ex-0">
+      <div class="exercise-item"><div class="exercise-q">1. Há um palácio no centro.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">C’è un palazzo in centro.</div></div>
+      <div class="exercise-item"><div class="exercise-q">2. Há alguns museus interessantes.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono alcuni musei interessanti.</div></div>
+      <div class="exercise-item"><div class="exercise-q">3. Há muitas igrejas antigas.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono molte chiese antiche.</div></div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-1" style="display:none;">
+      <div class="exercise-item"><div class="exercise-q">4. Esta cidade é muito bonita.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Questa città è molto bella.</div></div>
+      <div class="exercise-item"><div class="exercise-q">5. Na minha opinião, o museu é fantástico.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Secondo me, il museo è fantastico.</div></div>
+      <div class="exercise-item"><div class="exercise-q">6. Há muitos restaurantes nesta praça.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono molti ristoranti in questa piazza.</div></div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-2" style="display:none;">
+      <div class="exercise-item"><div class="exercise-q">7. Alguns restaurantes são muito caros.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Alcuni ristoranti sono molto cari.</div></div>
+      <div class="exercise-item"><div class="exercise-q">8. Há algumas atrações turísticas perto do hotel.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono alcune attrazioni turistiche vicino all’hotel.</div></div>
+      <div class="exercise-item"><div class="exercise-q">9. O mercado não é ruim.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Il mercato non è male.</div></div>
+    </div>
+    <div class="fr-ex-slide" id="fr-ex-3" style="display:none;">
+      <div class="exercise-item"><div class="exercise-q">10. Este restaurante é terrível.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Questo ristorante è terribile.</div></div>
+      <div class="exercise-item"><div class="exercise-q">11. Há muitos turistas no centro histórico.</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Ci sono molti turisti nel centro storico.</div></div>
+      <div class="exercise-item"><div class="exercise-q">12. Qual é a sua cidade favorita para as férias?</div><button class="show-answer-btn" onclick="toggleAnswer(this)">Mostra la risposta</button><div class="exercise-answer">Qual è la tua città preferita per le vacanze?</div></div>
+    </div>
+    <div class="fr-nav"><button class="fr-nav-btn fr-ghost" id="fr-ex-prev" onclick="frNavEx(-1)" disabled>← Precedente</button><span class="fr-slide-info" id="fr-ex-info">Frasi 1–3 di 12</span><button class="fr-nav-btn" id="fr-ex-next" onclick="frNavEx(1)">Successivo →</button></div>
+  </div>
+</div>
+
+<div class="fr-section" id="fr-sec-4">
+  <div class="c-block"><div class="c-block-title">Conversazione</div>
+    <div class="fr-conv-slide fr-active" id="fr-cv-0"><div class="fr-conv-item"><div class="fr-conv-num">1</div><div class="fr-conv-q">Qual è la tua città preferita per le vacanze?</div></div><div class="fr-conv-item"><div class="fr-conv-num">2</div><div class="fr-conv-q">Che cosa c’è da vedere nella tua città?</div></div><div class="fr-conv-item"><div class="fr-conv-num">3</div><div class="fr-conv-q">Ci sono molti musei nella tua città?</div></div></div>
+    <div class="fr-conv-slide" id="fr-cv-1" style="display:none;"><div class="fr-conv-item"><div class="fr-conv-num">4</div><div class="fr-conv-q">Ci sono delle chiese o dei monumenti famosi?</div></div><div class="fr-conv-item"><div class="fr-conv-num">5</div><div class="fr-conv-q">Qual è l’attrazione turistica più interessante della tua città?</div></div><div class="fr-conv-item"><div class="fr-conv-num">6</div><div class="fr-conv-q">Secondo te, qual è un posto fantastico da visitare?</div></div></div>
+    <div class="fr-conv-slide" id="fr-cv-2" style="display:none;"><div class="fr-conv-item"><div class="fr-conv-num">7</div><div class="fr-conv-q">Ci sono molti ristoranti buoni nella tua città?</div></div><div class="fr-conv-item"><div class="fr-conv-num">8</div><div class="fr-conv-q">Quali luoghi della tua città non sono molto interessanti?</div></div><div class="fr-conv-item"><div class="fr-conv-num">9</div><div class="fr-conv-q">Preferisci visitare musei, mercati, parchi o monumenti? Perché?</div></div></div>
+    <div class="fr-conv-slide" id="fr-cv-3" style="display:none;"><div class="fr-conv-item"><div class="fr-conv-num">10</div><div class="fr-conv-q">Come descrivi la tua città a un turista?</div></div></div>
+    <div class="fr-nav"><button class="fr-nav-btn fr-ghost" id="fr-cv-prev" onclick="frNavCv(-1)" disabled>← Precedente</button><span class="fr-slide-info" id="fr-cv-info">Domande 1–3 di 10</span><button class="fr-nav-btn" id="fr-cv-next" onclick="frNavCv(1)">Successivo →</button></div>
+  </div>
+</div>
