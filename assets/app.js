@@ -762,6 +762,14 @@ const AULAS = {
   skills: ['Be Going To', 'Travel & Future Plans', 'Irregular Verbs — Set 5'],
   file: 'aulas/en-a1-66.html',
 },
+'Inglês-A2-7': {
+  icon: '🌤️',
+  titulo: 'Cheer Up!',
+  descricao: 'Talk about emotions, make negative sentences and questions with going to, and learn five new irregular verbs.',
+  duracao: '40 min',
+  skills: ['Going To: Negatives & Questions', 'Emotions', 'Irregular Verbs: Set 6'],
+  file: 'aulas/en-a1-67.html',
+},
 'Inglês-B1-1': {
   icon: '⏰',
   titulo: '24 Hours',
