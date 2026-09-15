@@ -227,6 +227,14 @@ const AULAS = {
   skills: ['Attrazioni turistiche', 'Quantità', 'Opinioni'],
   file: 'aulas/it-a1-23.html',
 },
+'Italiano-A1-24': {
+  icon: '🗺️',
+  titulo: 'Informazioni turistiche',
+  descricao: 'Chiedere dove si trova un posto, capire indicazioni turistiche e usare non c’è / non ci sono.',
+  duracao: '45 min',
+  skills: ['Informazioni turistiche', 'C’è / Ci sono', 'Preposizioni di luogo'],
+  file: 'aulas/it-a1-24.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
