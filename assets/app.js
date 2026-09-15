@@ -770,6 +770,14 @@ const AULAS = {
   skills: ['Daily Routine', 'Weekdays & Weekends', 'Everyday Expressions'],
   file: 'aulas/en-b1-1.html',
 },
+'Inglês-B1-2': {
+  icon: '🎭',
+  titulo: 'Are You a Culture Vulture?',
+  descricao: 'Talk about free time, hobbies, likes and dislikes, and different ways of spending the weekend.',
+  duracao: '40 min',
+  skills: ['Free Time & Hobbies', 'Likes & Dislikes', 'Culture & Entertainment'],
+  file: 'aulas/en-b1-2.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
