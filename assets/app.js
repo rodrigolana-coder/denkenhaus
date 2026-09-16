@@ -770,6 +770,14 @@ const AULAS = {
   skills: ['Going To: Negatives & Questions', 'Emotions', 'Irregular Verbs: Set 6'],
   file: 'aulas/en-a1-67.html',
 },
+'Inglês-A2-8': {
+  icon: '🧳',
+  titulo: 'Plans & Feelings',
+  descricao: 'Review going to, talk about future plans and emotions, and learn five new irregular verbs.',
+  duracao: '45 min',
+  skills: ['Going To: Complete Review', 'Plans & Feelings', 'Irregular Verbs: Set 7'],
+  file: 'aulas/en-a1-68.html',
+},
 'Inglês-B1-1': {
   icon: '⏰',
   titulo: '24 Hours',
