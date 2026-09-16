@@ -794,6 +794,22 @@ const AULAS = {
   skills: ['Free Time & Hobbies', 'Likes & Dislikes', 'Culture & Entertainment'],
   file: 'aulas/en-b1-2.html',
 },
+'Inglês-B1-3': {
+  icon: '📅',
+  titulo: 'Monday to Friday',
+  descricao: 'Talk about weekday routines, family responsibilities and how often everyday activities happen.',
+  duracao: '40 min',
+  skills: ['Weekday Routines', 'Family Responsibilities', 'Frequency Expressions'],
+  file: 'aulas/en-b1-3.html',
+},
+'Inglês-B1-4': {
+  icon: '☕',
+  titulo: 'At the Same Time',
+  descricao: 'Talk about actions happening right now and temporary situations using the Present Continuous.',
+  duracao: '40 min',
+  skills: ['Present Continuous', 'Actions Happening Now', 'Temporary Situations'],
+  file: 'aulas/en-b1-4.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
