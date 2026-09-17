@@ -826,6 +826,22 @@ const AULAS = {
   skills: ['Present Continuous', 'Actions Happening Now', 'Temporary Situations'],
   file: 'aulas/en-b1-4.html',
 },
+'Inglês-B1-5': {
+  icon: '🎯',
+  titulo: 'What Are You Good At?',
+  descricao: 'Talk about skills, strengths and learning difficulties using be good at followed by nouns and -ing forms.',
+  duracao: '40 min',
+  skills: ['Skills and Abilities', 'Be Good At', 'Language Learning'],
+  file: 'aulas/en-b1-5.html',
+},
+'Inglês-B1-6': {
+  icon: '🎵',
+  titulo: 'Music',
+  descricao: 'Talk about musical tastes, genres, favourite artists, instruments, concerts and live performances.',
+  duracao: '40 min',
+  skills: ['Music Genres', 'Musical Tastes', 'Live Performances'],
+  file: 'aulas/en-b1-6.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
