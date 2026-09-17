@@ -235,6 +235,22 @@ const AULAS = {
   skills: ['Informazioni turistiche', 'C’è / Ci sono', 'Preposizioni di luogo'],
   file: 'aulas/it-a1-24.html',
 },
+'Italiano-A1-25': {
+  icon: '🏘️',
+  titulo: 'I borghi italiani',
+  descricao: 'Scoprire i borghi italiani, la loro storia, le tradizioni locali e luoghi famosi come San Gimignano, le Cinque Terre e Alberobello.',
+  duracao: '40 min',
+  skills: ['Comprensione del testo', 'Cultura italiana', 'Vocabolario dei borghi'],
+  file: 'aulas/it-a1-25.html',
+},
+'Italiano-A1-26': {
+  icon: '🏛️',
+  titulo: 'Revisione: Informazioni in città',
+  descricao: 'Rivedere attrazioni turistiche, opinioni, indicazioni e le strutture c’è, ci sono, non c’è e non ci sono.',
+  duracao: '40 min',
+  skills: ['C’è e Ci sono', 'Informazioni turistiche', 'Opinioni e posizione'],
+  file: 'aulas/it-a1-26.html',
+},
 'Inglês-A1-1': {
     icon: '💬', titulo: 'Presentacións',
     descricao: 'Diálogos reais de apresentação em galego, gramática essencial e vocabulário comparado com o português.',
