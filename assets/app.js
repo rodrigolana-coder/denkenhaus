@@ -794,6 +794,22 @@ const AULAS = {
   skills: ['Going To: Complete Review', 'Plans & Feelings', 'Irregular Verbs: Set 7'],
   file: 'aulas/en-a1-68.html',
 },
+'Inglês-A2-9': {
+  icon: '🏖️',
+  titulo: 'The Holiday of a Lifetime',
+  descricao: 'Talk about holiday plans, compare past and future trips, and learn five new irregular verbs.',
+  duracao: '40 min',
+  skills: ['Holiday Plans', 'Going To', 'Irregular Verbs: Set 8'],
+  file: 'aulas/en-a1-69.html',
+},
+'Inglês-A2-10': {
+  icon: '🇳🇿',
+  titulo: 'New Zealand',
+  descricao: 'Discover New Zealand’s landscapes, Māori culture, wildlife and famous film locations.',
+  duracao: '40 min',
+  skills: ['Reading Comprehension', 'New Zealand Culture', 'Language Review'],
+  file: 'aulas/en-a1-70.html',
+},
 'Inglês-B1-1': {
   icon: '⏰',
   titulo: '24 Hours',
