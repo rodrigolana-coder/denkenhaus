@@ -858,6 +858,14 @@ const AULAS = {
   skills: ['Music Genres', 'Musical Tastes', 'Live Performances'],
   file: 'aulas/en-b1-6.html',
 },
+'Inglês-B2-1': {
+  icon: '📱',
+  titulo: 'Are We Becoming Too Dependent on Convenience?',
+  descricao: 'Discuss modern convenience, dependence on technology and the impact of digital tools on everyday skills and independence.',
+  duracao: '40 min',
+  skills: ['Reading', 'Technology & Convenience', 'Discussion'],
+  file: 'aulas/en-b2-1.html',
+},
   'Francês-A1-1': {
     icon: '💬', titulo: 'Se présenter',
     descricao: "Diálogos reais de apresentação em francês, conjugação dos verbos s'appeler e être, vocabulário essencial.",
