@@ -1656,6 +1656,14 @@ const AULAS = {
   skills: ['Participes irréguliers', 'Passé composé', 'Grands nombres'],
   file: 'aulas/fr-a1-101.html',
 },
+'Francês-A2-42': {
+  icon: '🇨🇭',
+  titulo: 'La Suisse romande',
+  descricao: 'Découvrez la partie francophone de la Suisse, ses villes, ses paysages, sa gastronomie et ses particularités linguistiques.',
+  duracao: '40 min',
+  skills: ['Compréhension écrite', 'Culture suisse', 'Variétés du français'],
+  file: 'aulas/fr-a1-120.html',
+},
 'Espanhol-A1-18': {
   icon: '✉️',
   titulo: 'Escribir una postal',
